@@ -5,7 +5,6 @@ aliases:
 tags:
   - qemu
 ---
-jjjj
 ## 相关代码片段记录
 
 ### -cpu option 相关代码片段

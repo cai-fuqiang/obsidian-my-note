@@ -8,8 +8,7 @@ id: QEMU OBJECT MODEL
 本篇文章，我们主要来介绍下QOM机制
 主要参考 [[QEMU-KVM源码解析与应用.pdf#page=81&offset=76,307,0|QEMU-KVM源码解析与应用, 2.4 QOM介绍]]
 
-## 简介
-
+# 简介
 
 QOM 全称 QEMU Object Model, 是QEMU 使用面向对象的方式来进行抽象设计。面向对象包括封装，继承与多态。而qom就是根据自己自身的需求，设计的一套面向对象的框架。
 
@@ -21,8 +20,9 @@ QOM 全称 QEMU Object Model, 是QEMU 使用面向对象的方式来进行抽象
 
 我们会在下面的流程中讲解到qom是如何针对上面三种面向对象的特性进行设计的。
 
-> 关于上面提到的面向对象的三大要素见 [[OOB]]
-## QOM的class, instance, interface, type, object
+> 关于上面提到的面向对象的三大要素见 [[language/OOB|OOB]]
+
+# QOM的class, instance, interface, type, object
 
 而QOM 则是按照自己的需求重新设计了下, 增加了下面的几个概念:
 
@@ -43,43 +43,281 @@ QOM 全称 QEMU Object Model, 是QEMU 使用面向对象的方式来进行抽象
 
 * interface
 
-  interface是QOM一个比较难琢磨的部分，以下是我个人理解。个人认为interface部分，
-  实际上体现了QOM中对于多态的面向对象的实现。可以实现用父类class，来调用子类
-  的function. 当然，子类也可以区别与父类，定义自己的interface。区别于class中的
-  function，必须定位到其具体的class层，例如PCIDeviceClass,
-  才可以找到其中的`realize()`方法 
+  interface的作用和面向对象语言中interface的作用很像。如果说继承是一种血缘继承，每个子类必须表明自己是哪个父类“生的”，而接口就是为了实现能力扩展，就跟额外学习技能一样。
+  
+  举个例子，老鼠的儿子会打洞。说明鼠儿继承了鼠爸会打洞的技能。但是鼠儿并不满足于此，他想打洞大的更快一些。于是报名了蓝翔，拿下了 挖掘机 skills（interface）。大家可能会想那直接在子类中直接实现 挖掘机 function() 不一样么。那不一样，interface 可以继承。例如，蓝翔老师会开挖掘机，他将挖掘机`interface()`实现了，学生就可以继承该`interface()`直接使用。当然也可以长江后浪推前浪，重新实现（扩展）该功能。另外`interface()` 是可以多继承的。例如，鼠儿还想从此不怕猫，于是又在新东方学习了厨师skills，只要猫来找茬，就直接调用做饭接口，给猫做一桌可口的饭菜。  
   
 * object
 
   具体的对象实例.
 
+我们画图总结下上面的意思。
+![[Excalidraw/QOM type instance interface object.excalidraw]]
 
+`C++`或者其他面向对象语言中的`class`类型是开箱即用的（编写代码，编译器帮忙做好相关数据结构的构建，继承和多态关系），无需程序编写者关心。而QOM也想达到类似的效果。让“模块”开发者只需要非常简单的注册代码+简单的接口，就可以使用QOM功能。
 
-## 类型注册
-```cpp
-typedef enum {
-    MODULE_INIT_MIGRATION,
-    MODULE_INIT_BLOCK,
-    MODULE_INIT_OPTS,
-    MODULE_INIT_QOM,
-    MODULE_INIT_TRACE,
-    MODULE_INIT_XEN_BACKEND,
-    MODULE_INIT_LIBQOS,
-    MODULE_INIT_FUZZ_TARGET,
-    MODULE_INIT_MAX
-} module_init_type;
+# HOW to USE QOM -- API
+
+虽然说QOM实现较复杂，但是QOM 提供了较为简单的API。包括:
+* 类型定义
+	* TypeInfo: 用来定义type, 以EDU module 来说，为 `edu_types[]`
+	* instance type: 用来定义instance, 以`edu module`来说，为 `EduState`
+* 注册方法
+	* DEFINE_TYPES()
+	* type_init()
+		* type_register_static()
+* 对象初始化接口 new()
+	* object_new()
+	* object_new_with_class()
+	* object_new_with_props() 
+## USE API -- 类型定义(struct TypeInfo)
+
+ok，我们来详细介绍.
+
+* **name**: TypeName, 相当于type的唯一标识，当我们使用 `object_new()`接口时，作为参数传入
+* **parent** : 定义继承关系，需要传入parent TypeName
+* **instance_size** : instance 大小
+* **class_size** : class 大小
+* **abstract**: 当为true时，表示该`class` 不包含任何成员.
+* some function
+	* **class_init** : 初始化`class`
+	* **instance_init** : 初始化 `instance`
+* **interfaces**: 定义了一个`InstanceInfo` 数组
+ ```cpp
+ //仅包含一个字符串，用来指定Interface Type类型
+ struct InterfaceInfo {
+     const char *type;
+ };
+ ```
+    
+以`edu`为例:
+
+* type
+
+```c
+static const TypeInfo edu_types[] = {
+    {
+        .name          = TYPE_PCI_EDU_DEVICE,
+        .parent        = TYPE_PCI_DEVICE,
+        .instance_size = sizeof(EduState),
+        .instance_init = edu_instance_init,
+        .class_init    = edu_class_init,
+        .interfaces    = (const InterfaceInfo[]) {
+            { INTERFACE_CONVENTIONAL_PCI_DEVICE },
+            { },
+        },
+    };
+    
+static const TypeInfo conventional_pci_interface_info = {
+    .name          = INTERFACE_CONVENTIONAL_PCI_DEVICE,
+    .parent        = TYPE_INTERFACE,
+};
 ```
-类型注册相关函数, 早于main执行
+值得注意的是`INTERFACE_CONVENTIONAL_PCI_DEVICE`也是一个由`TypeInfo`定义的类型。
+
+* class: 其没有定义`class_size`, 说明其没有自定义的class成员，使用parent class, 所以其class 为`PCIDeviceClass`
+```cpp
+struct PCIDeviceClass {
+    DeviceClass parent_class;
+
+    void (*realize)(PCIDevice *dev, Error **errp);
+	...
+};
+```
+* instance
+```cpp
+struct EduState {
+    PCIDevice pdev;
+    MemoryRegion mmio;
+	...
+};
+```
+
+所以，我们看到，不仅`TypeInfo` 需要通过`parent`来映射其继承关系，还需要在`class`, `instance`相关数据结构中, 隐式包含继承关系(class第一个成员是父class，而instance第一个成员是父instance)
+
+**那这里需要大家思考下，在目前的能力下能否实现，封装，继承和多态。**
+
+封装，和继承不必多说。而多态的目的是父类对象调用子类方法，因为子类的`class` 中完全包含了父类（不是指针，而是类似于组合), 所以其可以自定义`class`  内容. 那也就达到了多态的目的.
+
+## USE API - 类型注册
+
+类型注册有什么作用呢? C++中我们定义了一个class，而在`main()`中我们就可以使用该class创建对象。
+
+而QOM类型注册也是起到这个作用。在这个module的`.c`中写好了注册接口，对于模块开发者而言，这个类型就相当于初始化好了，在其他流程中便可以使用这个类型创建对象。
+
+以`edu`为例:
+
+```cpp
+DEFINE_TYPES(edu_types)
+```
+
+就这么简单?
+
+![[Pasted image 20260521154724.png]]
+
+这也不是什么魔法，无非是将类型初始化流程在`object_new()`调用之前完成（或者是调用中完成）. 
+## USE API - object_new()
+`object_new()` 的是一个通用API, 其只有一个参数`type_name`, 返回值为当前type的object，我们在API 实现相关章节中介绍
+
+## How to access
+
+对于一个`object` 而言，访问的对象可能有三个:
+* class
+* instance
+* interface
+其访问就是属于那种比较蹩脚的，前面我们提到过，子类的`class`, `instance` 的第一个成员，为父类的`class`, `instance`。我们如果要访问父类，例如父class，我们可以从子类数据结构第一个成员去查找。无法像高级语言，直接用子类对象，调用父类成员或方法。
+
+QOM 为了让这些流程变得稍微优雅，一般的做法是，定义一些宏来抽象这些操作，举两个例子
+* 访问父类class
+```cpp
+static void edu_class_init(ObjectClass *class, const void *data)
+{
+    DeviceClass *dc = DEVICE_CLASS(class);
+    PCIDeviceClass *k = PCI_DEVICE_CLASS(class);
+    ...
+}
+```
+* 访问父类`instance`
+```cpp
+static void edu_instance_init(Object *obj)
+{
+    EduState *edu = EDU(obj);
+	...
+}
+```
+
+`ObjectClass` 可以通过宏`DEVICE_CLASS` 转换为`DeviceClass`, 也可以通过`PCI_DEVICE_CLASS` 转换为`PCIDeviceClass`, 通过宏来实现父类子类之间的类型转换，确实比
+```cpp
+DeviceClass *dc = (struct DeviceClass *)(class);
+```
+
+要优雅。
+> instance 转换 `Object->EduState` 同理.
+
+![[Excalidraw/QOM_access_VS_C++_access.excalidraw]]
+
+<font color="red" size=4>所以, 要访问哪个父类的成员或者方法，首先应该通过相关宏转换到该类型</font>
+
+Ok, 下面将进入较硬核的环节 -- QOM 相关API的实现
+# QOM implement
+
+![[Excalidraw/QOM lifeline.excalidraw]]
+
+上图描述了QOM的实现中涉及的主要入口函数。我这边新增了一些图形用于表示和高级语言对比。下面我们来主要解释下上面提到的流程. 但是在介绍相关流程之前，先介绍相关数据结构定义。TypeInfo 定义我们在 [[#USE API -- 类型定义(struct TypeInfo)]] 一章节中介绍了，下面我们介绍其他部分.
+
+## API implement -- struct
+
+主要包含两类数据结构。
+* type 相关
+	* TypeInfo(前面介绍过)
+	* TypeImpl
+	* ObjectClass
+	* Object
+* Interface 相关
+	* InterfaceInfo(前面介绍过)
+	* InterfaceImpl
+	* InterfaceClass
+
+我们先看下`type`相关
+### API implement -- struct  TypeXXX 
+
+| 类别                    | 作用                                                                        |
+| --------------------- | ------------------------------------------------------------------------- |
+| TypeInfo              | 用作代码中定义类型（API struct）, 运行时不访问                                             |
+| TypeImpl              | 运行时存储类的元数据，例如class instance size, 还包括Type 之间的继承关系, 以及Type 与 Interface包含关系 |
+| xxxClass(ObjectClass) | 运行时，类型data的承载体，例如 数据成员，虚函数表等等（函数指针成员)                                     |
+
+> [!PDF|yellow] [[QEMU-KVM源码解析与应用.pdf#page=89&selection=5,8,9,19&color=yellow|QEMU-KVM源码解析与应用, p.89]]
+> TypeImpl的数据基本上都是从TypeInfo复制过来的，表示的是一个类型的基本信息。在C++中，可以使用class关键字定义一个类型。QEMU使用C语言实现面向对象时也必须保存对象的类型信息，所以在TypeInfo里面指定了类型的基本信息，然后在初始化的时候复制到TypeImpl的哈希表中。
+> 
+>> 我个人认为TypeInfo负责提供一个清爽的API interface。而TypeImpl 会包含一些API的实现流程中使用的数据成员，使用者无需关心。
+
+> NOTE
+> 
+> 那这里其实还有一个问题, `TypeImpl` 主要的作用是为了创建class，那为什么不直接创建class，而非得引入中间层呢? 个人认为QEMU 采用了LAZY的策略，当真正用该Type创建实例的时候，才会使用`TypeImpl` 创建class。所以需要TypeImpl class的元数据信息(纯属瞎猜 ) #guess
+
+
+我们来看下`TypeImpl` 比`TypeInfo`增加的成员:
+*  `TypeImpl *parent_type`:  父类型模版
+* `ObjectClass *class`
+* `int num_interfaces`
+* `InterfaceImpl interfaces[MAX_INTERFACES]`： `InterfaceImpl`
+
+再来看下`ObjectClass`
+* `Type type: (TypeImpl *)`
+* `GSList *interfaces`: `InterfaceClass` 链表
+* `GHashTable *properties`: 公共部分的 `properties`
+其作为所有Class的基类，定义了最基础的几个部分。
+
+最后是`Object`, `Object`作为所有`instance`的基实例。包含这些`Object`最基本的功能 -- 生命周期管理, 和一些常用的成员:
+* **`ObjectClass *class`** : 常用 成员
+* **`Object *parent`**: 不知道有啥作用 #TODO
+* **`GHashTable *properties`**: 私有的 `properties` 每个成员不一样
+* **`ObjectFree *free`** : 销毁函数
+* **`uint32_t ref`**: 引用计数
+
+### API implement -- struct  TypeXXX 
+
+前面提到过, `Interface`比较特殊，`Interface` 是一个特殊的`Type`, 每个Interface也会和 `Type` 相关的数据结构。那在实现层`Interface`其他数据结构定义啥:
+
+```cpp
+struct InterfaceImpl
+{
+    const char *typename;
+};
+```
+
+`InterfaceImpl` : 只是用在`TypeImpl`引用Interface
+```cpp
+struct TypeImpl {
+	...
+	InterfaceImpl interfaces[MAX_INTERFACES];
+};
+```
+那这里有个问题: **为什么不直接用TypeImpl** ? 这里我思考了比较久，我觉得他最大的作用，来是用来`copy` TypeInfo中的`InterfaceInfo` #guess
+
+```cpp
+struct InterfaceClass
+{
+    ObjectClass parent_class;
+    /* private: */
+    Type interface_type;
+};
+```
+
+`InterfaceClass`和`ObjectClass`一样，作为基类存在. 这些数据结构，我们以edu为例，用一个长图来描述
+### QOM implment
+
+本章节我们从类型注册开始.
+### 类型的注册
+
+类型注册的入口API有:
+* `DEFINE_TYPES(const TypeInfo *infos)`
+* `type_register_static(const TypeInfo *info)`
+* `type_register_static_array(const TypeInfo *infos, int nr_infos)`
+
+我们展开`DEFINE_TYPES()`
+```c
+#define DEFINE_TYPES(type_array)                                            \
+static void do_qemu_init_ ## type_array(void)                               \
+{                                                                           \
+    type_register_static_array(type_array, ARRAY_SIZE(type_array));         \
+}                                                                           \
+type_init(do_qemu_init_ ## type_array)
+```
+关于`type_init()`接口，和 QEMU model 实现相关，在 [[QEMU moudle]] 一文中讲述。这里我们只需要记住，这里定义的`do_qemu_init_xxxx()`将会在qemu 进程启动时，在`main()` 调用之前执行。那执行什么流程呢? 我们展开`type_register_static_array()`
 
 ```sh
-Breakpoint 4, do_qemu_init_pci_edu_register_types () at ../hw/misc/edu.c:442
-442     type_init(pci_edu_register_types)
-(gdb) bt
-#0  do_qemu_init_pci_edu_register_types () at ../hw/misc/edu.c:442
-#1  0x00007ffff67f3cc4 in __libc_start_main_impl () at /lib64/libc.so.6
-#2  0x0000555555884885 in _start ()
+type_register_static_array
+=> foreach typeinfo
+   ## 对每一个typeinfo 调用
+   => type_register_static
+      ## 每一个要注册的类型都要有父类型，基类为ObjectClass
+      => assert(info->parent);
+         => type_register_internal()
+         => ti:TypeImpl = type_new(info);
+         => type_table_add(ti);
 ```
-
 ### init 流程
 
 ```
@@ -123,8 +361,11 @@ pci_edu_register_types
           => type_table_add
 ```
 
+### type register
+
 ## 类型初始化
 
+在介绍type register之前，我们首先介绍下
 ### type_initialize
 
 ```

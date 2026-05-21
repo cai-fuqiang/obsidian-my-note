@@ -6,5 +6,10 @@
   "obsidian-annotator",
   "obsidian-linter",
   "edit-in-neovim",
-  "pdf-plus"
+  "pdf-plus",
+  "code-link",
+  "code-files",
+  "block-link-plus",
+  "embed-code-file",
+  "convert-url-to-iframe"
 ]

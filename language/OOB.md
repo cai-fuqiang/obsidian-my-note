@@ -60,3 +60,4 @@ class people one_people = (class people )xiaoli;
 
 one_people.what's your name() --> Li God
 ```
+

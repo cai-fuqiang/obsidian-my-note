@@ -1,0 +1,18 @@
+{
+  "extensions": [
+    "c",
+    "h",
+    "ts",
+    "tsx",
+    "js",
+    "jsx",
+    "py"
+  ],
+  "folding": true,
+  "lineNumbers": true,
+  "minimap": true,
+  "semanticValidation": true,
+  "syntaxValidation": true,
+  "theme": "default",
+  "overwriteBg": true
+}

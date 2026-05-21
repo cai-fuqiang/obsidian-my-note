@@ -4,22 +4,29 @@
     "type": "split",
     "children": [
       {
-        "id": "a27c2feef0053c6d",
+        "id": "88956454fb01aaf8",
         "type": "tabs",
         "children": [
           {
-            "id": "c1abf36cd83e82d4",
+            "id": "df2c3ded416c027c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "excalidraw",
               "state": {
-                "file": "QEMU/QEMU OBJECT MODEL.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
+                "file": "Excalidraw/new_tmp.excalidraw.md"
               },
+              "icon": "excalidraw-icon",
+              "title": "new_tmp.excalidraw"
+            }
+          },
+          {
+            "id": "efe28904347b43f3",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "QEMU OBJECT MODEL"
+              "title": "新标签页"
             }
           }
         ]
@@ -54,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#excalidraw",
+                "query": "tag:#guess",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -79,8 +86,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "b172529851f33649",
@@ -96,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Excalidraw/class-多态.md",
+                "file": "Excalidraw/new_tmp.excalidraw.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -106,7 +112,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "class-多态 的反向链接列表"
+              "title": "new_tmp.excalidraw 的反向链接列表"
             }
           },
           {
@@ -167,13 +173,11 @@
               "title": "class-多态 的大纲"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -188,76 +192,59 @@
       "templater-obsidian:Templater": false,
       "pdf-plus:PDF++: Toggle auto-copy": false,
       "pdf-plus:PDF++: Toggle auto-focus": false,
-      "pdf-plus:PDF++: Toggle auto-paste": false
+      "pdf-plus:PDF++: Toggle auto-paste": false,
+      "code-files:Create Code File": false
     }
   },
-  "floating": {
-    "id": "da679b9d64750a21",
-    "type": "floating",
-    "children": [
-      {
-        "id": "b6dea4d157ad6898",
-        "type": "window",
-        "children": [
-          {
-            "id": "2c2dd0f194e99cb0",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "21bd24896243f909",
-                "type": "leaf",
-                "state": {
-                  "type": "pdf",
-                  "state": {
-                    "file": "PDF/QEMU-KVM源码解析与应用.pdf",
-                    "page": 84,
-                    "left": -23,
-                    "top": 149,
-                    "zoom": 0.7218137254901962
-                  },
-                  "icon": "lucide-file-text",
-                  "title": "QEMU-KVM源码解析与应用"
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical",
-        "x": -1137,
-        "y": -923,
-        "width": 1122,
-        "height": 1973,
-        "maximize": false,
-        "zoom": 2
-      }
-    ]
-  },
-  "active": "c1abf36cd83e82d4",
+  "active": "df2c3ded416c027c",
   "lastOpenFiles": [
-    "PDF/QEMU-KVM源码解析与应用.pdf",
-    "QEMU/QEMU OBJECT MODEL.md",
     "Excalidraw/class-多态.md",
+    "Excalidraw/new_tmp.excalidraw.md",
+    "Excalidraw/Libary/UML-ER-library.excalidrawlib",
+    "Excalidraw/Libary",
+    "UML-ER-library.excalidrawlib",
+    "Excalidraw/Scripts/Downloaded/Create DrawIO file.md",
     "Excalidraw/class-封装.md",
-    "Excalidraw/class-继承.md",
-    "kernel/KVM/operate VMCS.md",
-    "language/OOB.md",
+    "QEMU/QEMU OBJECT MODEL.md",
+    "PDF/QEMU-KVM源码解析与应用.pdf",
+    "Excalidraw/QOM_access_VS_C++_access.excalidraw.md",
+    "Excalidraw/QOM lifeline.excalidraw.md",
+    "PDF/armclang_reference_guide_100067_0611_00_en.pdf",
+    "QEMU/QEMU moudle.md",
+    "Excalidraw/Scripts/Downloaded/Create DrawIO file.svg",
+    "2026-05-21.md",
     "PDF/325462-sdm-vol-1-2abcd-3abcd-4.pdf",
     "PDF/architecture-instruction-set-extensions-programming-reference.pdf",
-    "未命名.base",
-    "kernel/KVM",
-    "Untitled.md",
-    "未命名 1.base",
+    "Excalidraw/Drawing 2026-05-21 20.06.21.excalidraw.md",
+    "Excalidraw/class-继承.md",
+    "Excalidraw/Drawing 2026-05-21 18.51.35.excalidraw.md",
     "未命名.md",
+    "协程enter.svg",
+    "projects/qemu-wang-upstream/accel/kvm/未命名.base",
+    "projects/qemu-wang-upstream/accel/kvm",
+    "projects/qemu-wang-upstream/accel",
+    "projects/qemu-wang-upstream/ui/icons/qemu_64x64.png",
+    "projects/qemu-wang-upstream/ui/icons/qemu_512x512.png",
+    "projects/qemu-wang-upstream/ui/icons/qemu_48x48.png",
+    "projects/qemu-wang-upstream/ui/icons/qemu_32x32.png",
+    "projects/qemu-wang-upstream/ui/icons/qemu_32x32.bmp",
+    "projects/qemu-wang-upstream/ui/icons/qemu_256x256.png",
+    "projects/qemu-wang-upstream/ui/icons/qemu_24x24.png",
+    "projects/qemu-wang-upstream/ui/icons/qemu_16x16.png",
+    "projects/qemu-wang-upstream/target/i386/hvf/README.md",
+    "projects/qemu-wang-upstream/scripts/coverity-scan/COMPONENTS.md",
+    "projects/qemu-wang-upstream/hw/uefi/LIMITATIONS.md",
+    "Excalidraw/未命名.canvas",
+    "Excalidraw/Scripts/Untitled.md",
     "QEMU/x86 CPU feature.md",
-    "Excalidraw/未命名.md",
-    "language/未命名",
-    "language",
-    "Excalidraw/Drawing 2026-05-20 18.53.13.excalidraw.md",
-    "未命名 1.md",
-    "PDF",
-    "Excalidraw",
+    "Excalidraw/QOM type instance interface object.excalidraw.md",
+    "kernel/KVM/operate VMCS.md",
+    "language/OOB.md",
+    "Excalidraw/qemu_moduel_init.excalidraw.md",
+    "Clippings/Arm Compiler armclang Reference Guide Version 6.11.md",
+    "Excalidraw/Drawing 2026-05-21 16.01.42.excalidraw.md",
+    "AGENTS.md",
     "未命名.canvas",
-    "未命名 1.canvas",
-    "2026-05-20.md"
+    "未命名 1.canvas"
   ]
 }

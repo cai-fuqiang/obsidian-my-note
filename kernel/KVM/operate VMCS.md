@@ -8,3 +8,6 @@ Intel 手册在下面的章节中描述了使用VMCS的一些方法和限制:
 > > Failure to do so may result in unpredictable behavior; for example, a VM entry may fail for unexplained reasons, or a successful transition (VM entry or VM exit) may load processor state with unexpected values.
 > 
 > 在使用VMCS之前应该进行初始化，否则可能产生一些未知的行为
+
+
+  

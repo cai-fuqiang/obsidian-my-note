@@ -279,7 +279,10 @@
   "displayLintOnFileChangeNotice": false,
   "settingsConvertedToConfigKeyValues": true,
   "additionalFileExtensions": [],
-  "foldersToIgnore": [],
+  "foldersToIgnore": [
+    "projects/qemu-wang-upstream/accel/kvm",
+    "projects/qemu-wang-upstream/docs/spin"
+  ],
   "filesToIgnore": [],
   "linterLocale": "system-default",
   "logLevel": "ERROR",
