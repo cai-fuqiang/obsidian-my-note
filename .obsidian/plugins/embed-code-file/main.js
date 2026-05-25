@@ -37,7 +37,9 @@ var import_obsidian = require("obsidian");
 var DEFAULT_SETTINGS = {
   includedLanguages: "c,cpp,java,python,go,ruby,javascript,js,typescript,ts,shell,sh,bash",
   titleBackgroundColor: "#00000020",
-  titleFontColor: ""
+  titleFontColor: "",
+  wrapCodeBlock: false,
+  showLineNumbers: false
 };
 var EmbedCodeFileSettingTab = class extends import_obsidian.PluginSettingTab {
   constructor(app2, plugin) {
@@ -59,6 +61,18 @@ var EmbedCodeFileSettingTab = class extends import_obsidian.PluginSettingTab {
     new import_obsidian.Setting(containerEl).setName("Background color of title").addText((text) => text.setPlaceholder("#00000020").setValue(this.plugin.settings.titleBackgroundColor).onChange(async (value) => {
       this.plugin.settings.titleBackgroundColor = value;
       await this.plugin.saveSettings();
+    }));
+    new import_obsidian.Setting(containerEl).setName("Wrap code blocks").setDesc("With this option enabled, embedded code files will wrap long lines.").addToggle((toggle) => toggle.setValue(this.plugin.settings.wrapCodeBlock).onChange(async (value) => {
+      this.plugin.settings.wrapCodeBlock = value;
+      await this.plugin.saveSettings();
+      const view = this.app.workspace.getActiveViewOfType(import_obsidian.MarkdownView);
+      view?.previewMode.rerender(true);
+    }));
+    new import_obsidian.Setting(containerEl).setName("Show line numbers").setDesc("With this option enabled, embedded code files will show original source line numbers.").addToggle((toggle) => toggle.setValue(this.plugin.settings.showLineNumbers).onChange(async (value) => {
+      this.plugin.settings.showLineNumbers = value;
+      await this.plugin.saveSettings();
+      const view = this.app.workspace.getActiveViewOfType(import_obsidian.MarkdownView);
+      view?.previewMode.rerender(true);
     }));
   }
 };
@@ -120,6 +134,39 @@ function extractSrcLines(fullSrc, srcLinesNum) {
     }
   });
   return src;
+}
+function sourceLineNumbers(fullSrc, srcLinesNum) {
+  const fullSrcLinesLen = fullSrc.split("\n").length;
+  if (srcLinesNum.length == 0) {
+    return Array.from({ length: fullSrcLinesLen }, (_, index) => String(index + 1));
+  }
+  const compactLineNums = [];
+  srcLinesNum.forEach((lineNum) => {
+    if (lineNum > fullSrcLinesLen) {
+      return;
+    }
+    if (lineNum == 0 && compactLineNums[compactLineNums.length - 1] == 0) {
+      return;
+    }
+    compactLineNums.push(lineNum);
+  });
+  const lineNumbers = [];
+  compactLineNums.forEach((lineNum, index) => {
+    if (index == compactLineNums.length - 1 && lineNum == 0 && compactLineNums[index - 1] == fullSrcLinesLen) {
+      return;
+    }
+    if (index == 0 && lineNum != 1) {
+      lineNumbers.push("");
+      lineNumbers.push(String(lineNum));
+      return;
+    }
+    if (lineNum == 0) {
+      lineNumbers.push("");
+      return;
+    }
+    lineNumbers.push(String(lineNum));
+  });
+  return lineNumbers;
 }
 
 // main.ts
@@ -183,6 +230,7 @@ var EmbedCodeFile = class extends import_obsidian2.Plugin {
         return;
       }
       let srcLinesNum = [];
+      let lineNumbers = [];
       const srcLinesNumString = metaYaml.LINES;
       if (srcLinesNumString) {
         srcLinesNum = analyseSrcLines(srcLinesNumString);
@@ -192,13 +240,49 @@ var EmbedCodeFile = class extends import_obsidian2.Plugin {
       } else {
         src = extractSrcLines(fullSrc, srcLinesNum);
       }
+      lineNumbers = sourceLineNumbers(fullSrc, srcLinesNum);
       let title = metaYaml.TITLE;
       if (!title) {
         title = srcPath;
       }
       await import_obsidian2.MarkdownRenderer.renderMarkdown("```" + lang + "\n" + src + "\n```", el, "", this);
+      this.applyWrapClass(el);
+      this.applyLineNumbers(el, lineNumbers);
       this.addTitleLivePreview(el, title);
     });
+  }
+  applyWrapClass(el) {
+    const pre = el.querySelector("pre");
+    if (!pre) {
+      return;
+    }
+    pre.removeClass("obsidian-embed-code-file-wrap-code");
+    pre.removeClass("obsidian-embed-code-file-no-wrap-code");
+    pre.addClass(this.settings.wrapCodeBlock ? "obsidian-embed-code-file-wrap-code" : "obsidian-embed-code-file-no-wrap-code");
+  }
+  applyLineNumbers(el, lineNumbers) {
+    const pre = el.querySelector("pre");
+    if (!pre) {
+      return;
+    }
+    pre.querySelectorAll(".obsidian-embed-code-file-line-number-gutter").forEach((x) => x.remove());
+    pre.removeClass("obsidian-embed-code-file-line-numbers");
+    if (!this.settings.showLineNumbers) {
+      return;
+    }
+    pre.addClass("obsidian-embed-code-file-line-numbers");
+    const gutter = document.createElement("div");
+    gutter.className = "obsidian-embed-code-file-line-number-gutter";
+    lineNumbers.forEach((lineNumber) => {
+      const lineNumberEl = document.createElement("div");
+      lineNumberEl.className = "obsidian-embed-code-file-line-number";
+      lineNumberEl.appendText(lineNumber);
+      gutter.appendChild(lineNumberEl);
+    });
+    const codeElm = pre.querySelector("code");
+    if (codeElm) {
+      pre.insertBefore(gutter, codeElm);
+    }
   }
   addTitleLivePreview(el, title) {
     const codeElm = el.querySelector("pre > code");
@@ -232,6 +316,7 @@ var EmbedCodeFile = class extends import_obsidian2.Plugin {
     if (title == "") {
       return;
     }
+    this.applyWrapClass(el);
     this.insertTitlePreElement(pre, title);
   }
   insertTitlePreElement(pre, title) {

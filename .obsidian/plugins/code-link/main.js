@@ -7925,7 +7925,8 @@ var DEFAULT_SETTINGS = {
   relImportDirPath: "projects",
   enableTagSearch: true,
   showPathInEmbed: true,
-  importWithIgnore: true
+  importWithIgnore: true,
+  wrapCodeBlock: false
 };
 var loadSettings = async (plugin) => {
   const saved_settings = await plugin.loadData();
@@ -8045,6 +8046,16 @@ var CodeLinkPluginSettingTab = class extends import_obsidian2.PluginSettingTab {
       cb.setValue(this._plugin.settings.showPathInEmbed);
       cb.onChange((value) => {
         this._plugin.settings.showPathInEmbed = value;
+      });
+    });
+    new import_obsidian2.Setting(containerEl).setName("Wrap code blocks").setDesc(
+      "With this option enabled, code embed and hover previews will wrap long lines"
+    ).addToggle((cb) => {
+      cb.setValue(this._plugin.settings.wrapCodeBlock);
+      cb.onChange((value) => {
+        this._plugin.settings.wrapCodeBlock = value;
+        const view = this.app.workspace.getActiveViewOfType(import_obsidian2.MarkdownView);
+        view?.previewMode.rerender(true);
       });
     });
   }
@@ -16207,6 +16218,9 @@ var CodeLinkEmbedPreview = class extends Component {
   _activeNode = null;
   constructor(plugin, sourcePath) {
     super(plugin, sourcePath);
+    this._containerEl.addClass(
+      this._plugin.settings.wrapCodeBlock ? "code-link-wrap-code" : "code-link-no-wrap-code"
+    );
     this._codeEl = this._containerEl.createEl("div", {
       cls: "code-link-embed-preview-code"
     });
@@ -17119,6 +17133,9 @@ var CodeLinkHoverPreviewObserver = class {
     }
     el.empty();
     el.addClass("code-link-hover-preview-popover");
+    el.addClass(
+      this._plugin.settings.wrapCodeBlock ? "code-link-wrap-code" : "code-link-no-wrap-code"
+    );
     const code2 = await this.hovering.content();
     await import_obsidian7.MarkdownRenderer.render(
       this._plugin.app,

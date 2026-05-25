@@ -1,3 +1,69 @@
+.markdown-rendered pre.obsidian-embed-code-file-wrap-code,
+.markdown-rendered pre.obsidian-embed-code-file-wrap-code > code,
+.obsidian-embed-code-file-wrap-code,
+.obsidian-embed-code-file-wrap-code > code {
+    white-space: pre-wrap !important;
+    overflow-wrap: anywhere !important;
+    word-break: break-word !important;
+}
+
+.markdown-rendered pre.obsidian-embed-code-file-wrap-code,
+.obsidian-embed-code-file-wrap-code {
+    overflow-x: hidden !important;
+}
+
+.markdown-rendered pre.obsidian-embed-code-file-no-wrap-code,
+.markdown-rendered pre.obsidian-embed-code-file-no-wrap-code > code,
+.obsidian-embed-code-file-no-wrap-code,
+.obsidian-embed-code-file-no-wrap-code > code {
+    white-space: pre !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+}
+
+.markdown-rendered pre.obsidian-embed-code-file-no-wrap-code,
+.obsidian-embed-code-file-no-wrap-code {
+    overflow-x: auto !important;
+}
+
+.markdown-rendered pre.obsidian-embed-code-file-no-wrap-code > code,
+.obsidian-embed-code-file-no-wrap-code > code {
+    display: block;
+    min-width: max-content;
+}
+
+.markdown-rendered pre.obsidian-embed-code-file-line-numbers,
+.obsidian-embed-code-file-line-numbers {
+    display: grid;
+    grid-template-columns: max-content minmax(0, 1fr);
+    column-gap: 0.75em;
+}
+
+.markdown-rendered pre.obsidian-embed-code-file-line-numbers > .obsidian-embed-code-file,
+.obsidian-embed-code-file-line-numbers > .obsidian-embed-code-file {
+    grid-column: 1 / -1;
+}
+
+.markdown-rendered pre.obsidian-embed-code-file-line-numbers > .obsidian-embed-code-file-line-number-gutter,
+.obsidian-embed-code-file-line-numbers > .obsidian-embed-code-file-line-number-gutter {
+    grid-column: 1;
+    color: var(--text-faint);
+    text-align: right;
+    user-select: none;
+    white-space: pre;
+}
+
+.markdown-rendered pre.obsidian-embed-code-file-line-numbers > code,
+.obsidian-embed-code-file-line-numbers > code {
+    grid-column: 2;
+    min-width: 0;
+}
+
+.markdown-rendered pre.obsidian-embed-code-file-no-wrap-code.obsidian-embed-code-file-line-numbers > code,
+.obsidian-embed-code-file-no-wrap-code.obsidian-embed-code-file-line-numbers > code {
+    min-width: max-content;
+}
+
 .markdown-rendered pre .obsidian-embed-code-file {
     position: relative;
     top: 3px;

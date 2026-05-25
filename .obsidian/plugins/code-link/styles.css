@@ -10,6 +10,40 @@ If your plugin does not need CSS, delete this file.
 /* .code-link-embed-preview-code {
 } */
 
+.markdown-rendered .code-link-wrap-code pre,
+.markdown-rendered .code-link-wrap-code pre code,
+.code-link-wrap-code pre,
+.code-link-wrap-code pre code {
+	white-space: pre-wrap !important;
+	overflow-wrap: anywhere !important;
+	word-break: break-word !important;
+}
+
+.markdown-rendered .code-link-wrap-code pre,
+.code-link-wrap-code pre {
+	overflow-x: hidden !important;
+}
+
+.markdown-rendered .code-link-no-wrap-code pre,
+.markdown-rendered .code-link-no-wrap-code pre code,
+.code-link-no-wrap-code pre,
+.code-link-no-wrap-code pre code {
+	white-space: pre !important;
+	overflow-wrap: normal !important;
+	word-break: normal !important;
+}
+
+.markdown-rendered .code-link-no-wrap-code pre,
+.code-link-no-wrap-code pre {
+	overflow-x: auto !important;
+}
+
+.markdown-rendered .code-link-no-wrap-code pre code,
+.code-link-no-wrap-code pre code {
+	display: block;
+	min-width: max-content;
+}
+
 .code-link-embed-preview-text {
 	font-size: 0.8em;
 	color: gray;
