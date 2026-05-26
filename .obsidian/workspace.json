@@ -23,18 +23,15 @@
             }
           },
           {
-            "id": "ba911328833287f1",
+            "id": "7c3242baade31288",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "excalidraw",
               "state": {
-                "file": "QEMU/QEMU OBJECT MODEL.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
+                "file": "Excalidraw/qemu_cpu_model_tree.excalidraw.md"
               },
-              "icon": "lucide-file",
-              "title": "QEMU OBJECT MODEL"
+              "icon": "excalidraw-icon",
+              "title": "qemu_cpu_model_tree.excalidraw"
             }
           }
         ]
@@ -94,8 +91,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "b172529851f33649",
@@ -111,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "QEMU/QEMU OBJECT MODEL.md",
+                "file": "QEMU/QEMU - CPU model.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -121,7 +117,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "QEMU OBJECT MODEL 的反向链接列表"
+              "title": "QEMU - CPU model 的反向链接列表"
             }
           },
           {
@@ -206,17 +202,62 @@
       "code-files:Create Code File": false
     }
   },
+  "floating": {
+    "id": "f8f0870a9ada3ce1",
+    "type": "floating",
+    "children": [
+      {
+        "id": "41d0e7185d711ace",
+        "type": "window",
+        "children": [
+          {
+            "id": "8620815c78a69691",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "ea8ad173c6c19d55",
+                "type": "leaf",
+                "state": {
+                  "type": "pdf",
+                  "state": {
+                    "file": "PDF/QEMU-KVM源码解析与应用.pdf",
+                    "page": 284,
+                    "left": -11,
+                    "top": 398,
+                    "zoom": 1.4068627450980393
+                  },
+                  "icon": "lucide-file-text",
+                  "title": "QEMU-KVM源码解析与应用"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical",
+        "x": -1137,
+        "y": -923,
+        "width": 1122,
+        "height": 1973,
+        "maximize": false,
+        "zoom": -1
+      }
+    ]
+  },
   "active": "dcaa3af6ef4e6328",
   "lastOpenFiles": [
-    "QEMU/QEMU OBJECT MODEL.md",
-    "QEMU/QEMU - CPU model.md",
     "PDF/QEMU-KVM源码解析与应用.pdf",
+    "QEMU/QEMU - CPU model.md",
     "QEMU/QEMU module.md",
-    "QEMU/x86 CPU feature.md",
-    "Templates/qemu-code.md",
-    "未命名.canvas",
+    "Excalidraw/TypeInfo_Class_instance.md",
     "PDF/325462-sdm-vol-1-2abcd-3abcd-4.pdf",
+    "Templates/qemu-code.md",
+    "2026-05-21.md",
+    "QEMU/QEMU OBJECT MODEL.md",
     "Excalidraw/qemu_cpu_model_tree.excalidraw.md",
+    "QEMU/x86 CPU feature.md",
+    "Excalidraw/qemu_X86_CPU_instance.excalidraw.md",
+    "AI TOOLS/Embed Code File 使用说明.md",
+    "未命名.canvas",
     "draw.io/QOM-interface-type-info.svg",
     "Excalidraw/qemu_object_class_property.excalidraw.md",
     "Excalidraw/PCIDeviceClass层级结构.md",
@@ -233,17 +274,13 @@
     "Excalidraw/interface_class_inherit.excalidraw.md",
     "Excalidraw/qemu_moduel_init.excalidraw.md",
     "Excalidraw/qemu_module_init_type_list.md",
-    "Excalidraw/TypeInfo_Class_instance.md",
     "Excalidraw/QOM_access_VS_C++_access.excalidraw.md",
     "Excalidraw/QOM type instance interface object.excalidraw.md",
     "AGENTS.md",
     "OOB.md",
-    "2026-05-21.md",
     "PDF/architecture-instruction-set-extensions-programming-reference.pdf",
     "PDF/armclang_reference_guide_100067_0611_00_en.pdf",
     "Excalidraw/QOM lifeline.excalidraw.md",
-    "language/OOB.md",
-    "Excalidraw/class-继承.md",
     "draw.io/QOM_edu_class.svg",
     "draw.io",
     "draw",
