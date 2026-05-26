@@ -168,6 +168,63 @@ function sourceLineNumbers(fullSrc, srcLinesNum) {
   });
   return lineNumbers;
 }
+function normalizeCommentStyle(style) {
+  const value = String(style ?? "above").trim().toLowerCase();
+  return ["above", "inline", "icon"].includes(value) ? value : "above";
+}
+function normalizeCommentText(comment) {
+  if (Array.isArray(comment)) {
+    return comment.map((item) => normalizeCommentText(item)).join("\n");
+  }
+  if (comment == null) {
+    return "";
+  }
+  return String(comment);
+}
+function parseLineComments(metaYaml) {
+  const comments = metaYaml?.COMMENTS;
+  const defaultStyle = normalizeCommentStyle(metaYaml?.COMMENT_STYLE);
+  const lineComments = /* @__PURE__ */ new Map();
+  if (!comments || typeof comments !== "object" || Array.isArray(comments)) {
+    return lineComments;
+  }
+  Object.entries(comments).forEach(([lineNumberText, comment]) => {
+    const lineNumber = Number(lineNumberText);
+    if (!Number.isInteger(lineNumber) || lineNumber <= 0) {
+      return;
+    }
+    if (comment && typeof comment === "object" && !Array.isArray(comment)) {
+      const text = normalizeCommentText(comment.text ?? comment.comment);
+      if (!text) {
+        return;
+      }
+      lineComments.set(lineNumber, {
+        style: normalizeCommentStyle(comment.style ?? defaultStyle),
+        text
+      });
+      return;
+    }
+    const text = normalizeCommentText(comment);
+    if (!text) {
+      return;
+    }
+    lineComments.set(lineNumber, {
+      style: defaultStyle,
+      text
+    });
+  });
+  return lineComments;
+}
+function splitHighlightedCodeLines(codeElm, lineCount) {
+  const lines = codeElm.innerHTML.split("\n");
+  while (lines.length < lineCount) {
+    lines.push("");
+  }
+  if (lines.length > lineCount) {
+    lines.length = lineCount;
+  }
+  return lines;
+}
 
 // main.ts
 var EmbedCodeFile = class extends import_obsidian2.Plugin {
@@ -241,14 +298,17 @@ var EmbedCodeFile = class extends import_obsidian2.Plugin {
         src = extractSrcLines(fullSrc, srcLinesNum);
       }
       lineNumbers = sourceLineNumbers(fullSrc, srcLinesNum);
+      const lineComments = parseLineComments(metaYaml);
       let title = metaYaml.TITLE;
       if (!title) {
         title = srcPath;
       }
       await import_obsidian2.MarkdownRenderer.renderMarkdown("```" + lang + "\n" + src + "\n```", el, "", this);
       this.applyWrapClass(el);
-      this.applyLineNumbers(el, lineNumbers);
       this.addTitleLivePreview(el, title);
+      if (!await this.applyLineComments(el, lineNumbers, lineComments)) {
+        this.applyLineNumbers(el, lineNumbers);
+      }
     });
   }
   applyWrapClass(el) {
@@ -276,6 +336,9 @@ var EmbedCodeFile = class extends import_obsidian2.Plugin {
     lineNumbers.forEach((lineNumber) => {
       const lineNumberEl = document.createElement("div");
       lineNumberEl.className = "obsidian-embed-code-file-line-number";
+      if (!lineNumber) {
+        lineNumberEl.addClass("is-empty");
+      }
       lineNumberEl.appendText(lineNumber);
       gutter.appendChild(lineNumberEl);
     });
@@ -283,6 +346,83 @@ var EmbedCodeFile = class extends import_obsidian2.Plugin {
     if (codeElm) {
       pre.insertBefore(gutter, codeElm);
     }
+  }
+  async renderCommentMarkdown(el, text) {
+    el.empty();
+    await import_obsidian2.MarkdownRenderer.renderMarkdown(text, el, "", this);
+  }
+  async applyLineComments(el, lineNumbers, lineComments) {
+    if (!lineComments.size) {
+      return false;
+    }
+    const pre = el.querySelector("pre");
+    const codeElm = el.querySelector("pre > code");
+    if (!pre || !codeElm) {
+      return false;
+    }
+    pre.querySelectorAll(".obsidian-embed-code-file-line-number-gutter").forEach((x) => x.remove());
+    pre.removeClass("obsidian-embed-code-file-line-numbers");
+    pre.addClass("obsidian-embed-code-file-commented");
+    if (this.settings.showLineNumbers) {
+      pre.addClass("obsidian-embed-code-file-line-numbers");
+    }
+    const codeLines = splitHighlightedCodeLines(codeElm, lineNumbers.length);
+    const table = document.createElement("div");
+    table.className = "obsidian-embed-code-file-comment-table";
+    const renderTasks = [];
+    codeLines.forEach((codeLine, index) => {
+      const lineNumber = lineNumbers[index] ?? "";
+      const lineComment = lineNumber ? lineComments.get(Number(lineNumber)) : null;
+      if (lineComment?.style === "above") {
+        const commentRow = document.createElement("div");
+        commentRow.className = "obsidian-embed-code-file-comment-row obsidian-embed-code-file-comment-above-row";
+        const spacer = document.createElement("div");
+        spacer.className = "obsidian-embed-code-file-line-number obsidian-embed-code-file-line-number-spacer";
+        const commentEl = document.createElement("div");
+        commentEl.className = "obsidian-embed-code-file-comment obsidian-embed-code-file-comment-above";
+        renderTasks.push(() => this.renderCommentMarkdown(commentEl, lineComment.text));
+        commentRow.appendChild(spacer);
+        commentRow.appendChild(commentEl);
+        table.appendChild(commentRow);
+      }
+      const lineRow = document.createElement("div");
+      lineRow.className = "obsidian-embed-code-file-code-row";
+      const gutterEl = document.createElement("div");
+      gutterEl.className = "obsidian-embed-code-file-line-number";
+      if (!lineNumber) {
+        gutterEl.addClass("is-empty");
+      }
+      const lineNumberEl = document.createElement("span");
+      lineNumberEl.className = "obsidian-embed-code-file-line-number-text";
+      lineNumberEl.appendText(lineNumber);
+      gutterEl.appendChild(lineNumberEl);
+      if (lineComment?.style === "icon") {
+        const iconEl = document.createElement("span");
+        iconEl.className = "obsidian-embed-code-file-comment-icon";
+        iconEl.setAttribute("aria-label", lineComment.text);
+        iconEl.appendText("!");
+        const tooltipEl = document.createElement("span");
+        tooltipEl.className = "obsidian-embed-code-file-comment-tooltip";
+        renderTasks.push(() => this.renderCommentMarkdown(tooltipEl, lineComment.text));
+        iconEl.appendChild(tooltipEl);
+        gutterEl.appendChild(iconEl);
+      }
+      const codeLineEl = document.createElement("code");
+      codeLineEl.className = "obsidian-embed-code-file-code-line";
+      codeLineEl.innerHTML = codeLine || "&nbsp;";
+      lineRow.appendChild(gutterEl);
+      lineRow.appendChild(codeLineEl);
+      if (lineComment?.style === "inline") {
+        const inlineCommentEl = document.createElement("span");
+        inlineCommentEl.className = "obsidian-embed-code-file-comment obsidian-embed-code-file-comment-inline";
+        renderTasks.push(() => this.renderCommentMarkdown(inlineCommentEl, lineComment.text));
+        lineRow.appendChild(inlineCommentEl);
+      }
+      table.appendChild(lineRow);
+    });
+    codeElm.replaceWith(table);
+    await Promise.all(renderTasks.map((task) => task()));
+    return true;
   }
   addTitleLivePreview(el, title) {
     const codeElm = el.querySelector("pre > code");

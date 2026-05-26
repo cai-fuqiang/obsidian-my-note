@@ -1665,8 +1665,8 @@
             "lastCommittedPoint": null,
             "startBinding": null,
             "endBinding": {
-              "mode": "orbit",
               "elementId": "Oz2gQfIHMdIcUZVB1Tgc3",
+              "mode": "orbit",
               "fixedPoint": [
                 0.0012559120003054769,
                 0.5279753800542992
@@ -1752,8 +1752,8 @@
             ],
             "startBinding": null,
             "endBinding": {
-              "mode": "orbit",
               "elementId": "ofSvxwfYmq_ijeFo0WfhZ",
+              "mode": "orbit",
               "fixedPoint": [
                 0.0012559120003054769,
                 0.5279753800542992

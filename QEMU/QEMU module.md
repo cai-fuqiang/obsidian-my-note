@@ -14,18 +14,10 @@ OK，我们先来看下模块静态加载.
 
 QEMU 为模块定义了如下类型。
 
-```cpp
-typedef enum {
-    MODULE_INIT_MIGRATION,
-    MODULE_INIT_BLOCK,
-    MODULE_INIT_OPTS,
-    MODULE_INIT_QOM,
-    MODULE_INIT_TRACE,
-    MODULE_INIT_XEN_BACKEND,
-    MODULE_INIT_LIBQOS,
-    MODULE_INIT_FUZZ_TARGET,
-    MODULE_INIT_MAX
-} module_init_type;
+```embed-cpp
+PATH: "https://raw.githubusercontent.com/cai-fuqiang/qemu/v11.0.0/include/qemu/module.h"
+LINES: "42-53"
+TITLE: "module_init_type"
 ```
 
 并且定义了如下宏来注册初始化回调函数。
@@ -74,3 +66,27 @@ Breakpoint 4, do_qemu_init_pci_edu_register_types () at ../hw/misc/edu.c:442
 ![[Excalidraw/qemu_moduel_init.excalidraw]]
 
 机制总结如上图
+
+我们接下来看下`register_module_init()`:
+
+```embed-cpp
+PATH: "https://raw.githubusercontent.com/cai-fuqiang/qemu/v11.0.0/util/module.c"
+LINES: "70-82"
+TITLE: "register_module_init"
+```
+
+其主要的流程是构造`ModuleEntry`, 然后在根据具体的`module_init_type`类型连接到不同的链表上。例如下图
+![[Excalidraw/qemu_module_init_type_list]]
+
+然后在下面的流程中会调用注册的相关callback
+```
+main
+   => qemu_init
+      => qemu_init_subsystems
+         => module_call_init(MODULE_INIT_QOM)
+            => foreach_list init_type_list[MODULE_INIT_QOM]
+            {
+               e->init(): pci_edu_register_types
+            }
+```
+

@@ -48,20 +48,190 @@
 .obsidian-embed-code-file-line-numbers > .obsidian-embed-code-file-line-number-gutter {
     grid-column: 1;
     color: var(--text-faint);
+    font-family: var(--font-monospace);
+    font-size: inherit;
+    line-height: var(--line-height-normal, 1.5);
     text-align: right;
     user-select: none;
     white-space: pre;
 }
 
+.obsidian-embed-code-file-line-number {
+    font-family: var(--font-monospace);
+    font-size: inherit;
+    line-height: var(--line-height-normal, 1.5);
+}
+
+.obsidian-embed-code-file-line-number.is-empty::before {
+    content: "\00a0";
+}
+
 .markdown-rendered pre.obsidian-embed-code-file-line-numbers > code,
 .obsidian-embed-code-file-line-numbers > code {
     grid-column: 2;
+    font-family: var(--font-monospace);
+    font-size: inherit;
+    line-height: var(--line-height-normal, 1.5);
     min-width: 0;
 }
 
 .markdown-rendered pre.obsidian-embed-code-file-no-wrap-code.obsidian-embed-code-file-line-numbers > code,
 .obsidian-embed-code-file-no-wrap-code.obsidian-embed-code-file-line-numbers > code {
     min-width: max-content;
+}
+
+.markdown-rendered pre.obsidian-embed-code-file-commented,
+.obsidian-embed-code-file-commented {
+    display: block;
+}
+
+.obsidian-embed-code-file-comment-table {
+    display: grid;
+    grid-template-columns: max-content minmax(0, auto) max-content;
+    column-gap: 0.75em;
+}
+
+.obsidian-embed-code-file-no-wrap-code .obsidian-embed-code-file-comment-table {
+    min-width: max-content;
+}
+
+.obsidian-embed-code-file-code-row,
+.obsidian-embed-code-file-comment-row {
+    display: contents;
+}
+
+.obsidian-embed-code-file-code-row > .obsidian-embed-code-file-line-number,
+.obsidian-embed-code-file-comment-row > .obsidian-embed-code-file-line-number {
+    grid-column: 1;
+    color: var(--text-faint);
+    font-family: var(--font-monospace);
+    font-size: inherit;
+    line-height: var(--line-height-normal, 1.5);
+    text-align: right;
+    user-select: none;
+    white-space: pre;
+}
+
+.obsidian-embed-code-file-code-line {
+    grid-column: 2;
+    display: block;
+    font-family: var(--font-monospace);
+    font-size: inherit;
+    line-height: var(--line-height-normal, 1.5);
+    min-width: 0;
+}
+
+.obsidian-embed-code-file-wrap-code .obsidian-embed-code-file-code-line {
+    white-space: pre-wrap !important;
+    overflow-wrap: anywhere !important;
+    word-break: break-word !important;
+}
+
+.obsidian-embed-code-file-no-wrap-code .obsidian-embed-code-file-code-line {
+    white-space: pre !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+    min-width: max-content;
+}
+
+.obsidian-embed-code-file-comment {
+    background: var(--background-secondary);
+    border: 1px solid var(--background-modifier-border);
+    border-radius: 4px;
+    color: var(--text-muted);
+    font-family: var(--font-interface);
+    font-size: 0.9em;
+    line-height: var(--line-height-normal, 1.5);
+    padding: 0.2em 0.45em;
+    white-space: normal;
+}
+
+.obsidian-embed-code-file-comment p {
+    margin: 0;
+    white-space: pre-wrap;
+}
+
+.obsidian-embed-code-file-comment p + p,
+.obsidian-embed-code-file-comment ul,
+.obsidian-embed-code-file-comment ol {
+    margin-top: 0.2em;
+    margin-bottom: 0;
+}
+
+.obsidian-embed-code-file-comment ul,
+.obsidian-embed-code-file-comment ol {
+    padding-inline-start: 1.25em;
+}
+
+.obsidian-embed-code-file-comment li {
+    margin-block: 0.1em;
+}
+
+.obsidian-embed-code-file-comment li > p {
+    display: inline;
+}
+
+.obsidian-embed-code-file-comment-above {
+    grid-column: 2 / 4;
+    background: var(--background-primary-alt);
+    border-left: 3px solid var(--interactive-accent);
+    margin: 0.15em 0;
+    padding-left: 0.65em;
+}
+
+.obsidian-embed-code-file-comment-inline {
+    grid-column: 3;
+    align-self: start;
+    display: inline-block;
+    margin-left: 0.35em;
+    border-color: var(--interactive-accent);
+}
+
+.obsidian-embed-code-file-comment-inline::before {
+    content: "// ";
+    color: var(--text-faint);
+}
+
+.obsidian-embed-code-file-comment-icon {
+    position: relative;
+    display: inline-block;
+    margin-left: 0.35em;
+    min-width: 1.25em;
+    border-radius: 999px;
+    background: var(--interactive-accent);
+    color: var(--text-on-accent);
+    cursor: help;
+    font-family: var(--font-interface);
+    font-size: 0.75em;
+    font-weight: 700;
+    line-height: 1.25em;
+    text-align: center;
+}
+
+.obsidian-embed-code-file-comment-tooltip {
+    position: absolute;
+    left: 1.1em;
+    top: 50%;
+    z-index: 20;
+    display: none;
+    min-width: 18em;
+    max-width: 36em;
+    padding: 0.45em 0.6em;
+    border: 1px solid var(--interactive-accent);
+    border-radius: 4px;
+    background: var(--background-primary);
+    box-shadow: var(--shadow-s);
+    color: var(--text-normal);
+    font-family: var(--font-interface);
+    font-size: 0.9em;
+    line-height: var(--line-height-normal, 1.5);
+    text-align: left;
+    transform: translateY(-50%);
+    white-space: pre-wrap;
+}
+
+.obsidian-embed-code-file-comment-icon:hover .obsidian-embed-code-file-comment-tooltip {
+    display: block;
 }
 
 .markdown-rendered pre .obsidian-embed-code-file {

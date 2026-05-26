@@ -1,7 +1,7 @@
 <claude-mem-context>
 # Memory Context
 
-# [obsidian-my-note] recent context, 2026-05-21 2:57pm GMT+8
+# [obsidian-my-note] recent context, 2026-05-22 2:28pm GMT+8
 
 Legend: 🎯session 🔴bugfix 🟣feature 🔄refactor ✅change 🔵discovery ⚖️decision 🚨security_alert 🔐security_note
 Format: ID TIME TYPE TITLE
@@ -29,14 +29,15 @@ S123 Debug why code-link Obsidian plugin shows directories but not files (May 21
 236 2:01p 🔵 C/C++ SCM queries exist but limited in code-link plugin
 237 2:05p 🔵 Code-link plugin SCM query coverage varies widely by language
 S126 Diagnose obsidian-code-link plugin showing directories but not files in Obsidian vault (May 21 at 2:11 PM)
-S127 Diagnose obsidian-code-link plugin showing directories but not files in Obsidian vault (May 21 at 2:14 PM)
-**Investigated**: Examined all 7 embedded tree-sitter SCM queries in main.js. Counted QEMU project structure: 11067 files, 751 directories. Confirmed .c files exist at top level. Checked Obsidian config files at .obsibling/*.json.
+S127 Diagnose obsidian-code-link plugin showing directories but not files in Obsidian vault (May 21 at 2:13 PM)
+S128 Obsidian plugin to reference code blocks from elixir.bootlin.com or GitHub projects (May 21 at 2:57 PM)
+**Investigated**: Nothing yet — no tool executions or file operations observed in primary session
 
-**Learned**: Python SCM most limited (2 patterns: class, function). C SCM has 5 patterns but lacks struct/enum fields. QEMU project is C-heavy with 11067 files properly imported. Code-link TagTreeSuggest triggers only on `[[file#tag]]` format, not bare `[[`. Session waiting for user to clarify which scenario they experience.
+**Learned**: User wants an Obsidian plugin that can fetch/embed source code from Bootlin's Linux cross-reference (elixir.bootlin.com) or GitHub repos, likely for embedded/kernel development note-taking in Obsidian
 
-**Completed**: Full SCM audit across all 7 languages. Project structure verified (11067 files, 751 dirs). Analysis delivered to user in Chinese with 3 possible scenarios explaining the behavior.
+**Completed**: No work has started. Session is in early ideation phase only.
 
-**Next Steps**: Awaiting user clarification on which specific scenario: (1) Obsidian built-in file browser hiding non-md files, (2) code-link symbol suggestions missing struct/enum due to limited C SCM, or (3) some other context not yet identified.
+**Next Steps**: Session appears to be awaiting initial investigation — likely next steps: explore Obsidian plugin structure, research elixir.bootlin.com API, design plugin architecture
 
 
 Access 87k tokens of past work via get_observations([IDs]) or mem-search skill.

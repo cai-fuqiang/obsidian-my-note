@@ -11,5 +11,6 @@
   "code-files",
   "block-link-plus",
   "embed-code-file",
-  "convert-url-to-iframe"
+  "convert-url-to-iframe",
+  "floating-toc"
 ]

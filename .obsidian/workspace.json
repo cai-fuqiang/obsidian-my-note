@@ -4,29 +4,37 @@
     "type": "split",
     "children": [
       {
-        "id": "88956454fb01aaf8",
+        "id": "0789e6049f47f56e",
         "type": "tabs",
         "children": [
           {
-            "id": "df2c3ded416c027c",
+            "id": "dcaa3af6ef4e6328",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Excalidraw/new_tmp.excalidraw.md"
+                "file": "QEMU/QEMU - CPU model.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
               },
-              "icon": "excalidraw-icon",
-              "title": "new_tmp.excalidraw"
+              "icon": "lucide-file",
+              "title": "QEMU - CPU model"
             }
           },
           {
-            "id": "efe28904347b43f3",
+            "id": "ba911328833287f1",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "QEMU/QEMU OBJECT MODEL.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "QEMU OBJECT MODEL"
             }
           }
         ]
@@ -86,7 +94,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "b172529851f33649",
@@ -102,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Excalidraw/new_tmp.excalidraw.md",
+                "file": "QEMU/QEMU OBJECT MODEL.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -112,7 +121,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "new_tmp.excalidraw 的反向链接列表"
+              "title": "QEMU OBJECT MODEL 的反向链接列表"
             }
           },
           {
@@ -177,7 +186,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -196,55 +206,55 @@
       "code-files:Create Code File": false
     }
   },
-  "active": "df2c3ded416c027c",
+  "active": "dcaa3af6ef4e6328",
   "lastOpenFiles": [
-    "Excalidraw/class-多态.md",
-    "Excalidraw/new_tmp.excalidraw.md",
-    "Excalidraw/Libary/UML-ER-library.excalidrawlib",
-    "Excalidraw/Libary",
-    "UML-ER-library.excalidrawlib",
-    "Excalidraw/Scripts/Downloaded/Create DrawIO file.md",
-    "Excalidraw/class-封装.md",
     "QEMU/QEMU OBJECT MODEL.md",
+    "QEMU/QEMU - CPU model.md",
     "PDF/QEMU-KVM源码解析与应用.pdf",
-    "Excalidraw/QOM_access_VS_C++_access.excalidraw.md",
-    "Excalidraw/QOM lifeline.excalidraw.md",
-    "PDF/armclang_reference_guide_100067_0611_00_en.pdf",
-    "QEMU/QEMU moudle.md",
-    "Excalidraw/Scripts/Downloaded/Create DrawIO file.svg",
-    "2026-05-21.md",
+    "QEMU/QEMU module.md",
+    "QEMU/x86 CPU feature.md",
+    "Templates/qemu-code.md",
+    "未命名.canvas",
     "PDF/325462-sdm-vol-1-2abcd-3abcd-4.pdf",
+    "Excalidraw/qemu_cpu_model_tree.excalidraw.md",
+    "draw.io/QOM-interface-type-info.svg",
+    "Excalidraw/qemu_object_class_property.excalidraw.md",
+    "Excalidraw/PCIDeviceClass层级结构.md",
+    "draw.io/QOM-interface-class2.drawio.svg",
+    "draw.io/QOM-interface-class2.svg",
+    "draw.io/QOM-interface-class.svg",
+    "2026-05-25.md",
+    "Excalidraw/未命名.base",
+    "2026-05-26.md",
+    "未命名 1.canvas",
+    "kernel/KVM/operate VMCS.md",
+    "Excalidraw/class-多态.md",
+    "Excalidraw/class-封装.md",
+    "Excalidraw/interface_class_inherit.excalidraw.md",
+    "Excalidraw/qemu_moduel_init.excalidraw.md",
+    "Excalidraw/qemu_module_init_type_list.md",
+    "Excalidraw/TypeInfo_Class_instance.md",
+    "Excalidraw/QOM_access_VS_C++_access.excalidraw.md",
+    "Excalidraw/QOM type instance interface object.excalidraw.md",
+    "AGENTS.md",
+    "OOB.md",
+    "2026-05-21.md",
     "PDF/architecture-instruction-set-extensions-programming-reference.pdf",
-    "Excalidraw/Drawing 2026-05-21 20.06.21.excalidraw.md",
+    "PDF/armclang_reference_guide_100067_0611_00_en.pdf",
+    "Excalidraw/QOM lifeline.excalidraw.md",
+    "language/OOB.md",
     "Excalidraw/class-继承.md",
-    "Excalidraw/Drawing 2026-05-21 18.51.35.excalidraw.md",
-    "未命名.md",
+    "draw.io/QOM_edu_class.svg",
+    "draw.io",
+    "draw",
+    "Templates",
+    "未命名",
+    "Excalidraw/Libary/UML-ER-library.excalidrawlib",
+    "Excalidraw/Scripts/Downloaded/Create DrawIO file.svg",
     "协程enter.svg",
-    "projects/qemu-wang-upstream/accel/kvm/未命名.base",
-    "projects/qemu-wang-upstream/accel/kvm",
-    "projects/qemu-wang-upstream/accel",
     "projects/qemu-wang-upstream/ui/icons/qemu_64x64.png",
     "projects/qemu-wang-upstream/ui/icons/qemu_512x512.png",
     "projects/qemu-wang-upstream/ui/icons/qemu_48x48.png",
-    "projects/qemu-wang-upstream/ui/icons/qemu_32x32.png",
-    "projects/qemu-wang-upstream/ui/icons/qemu_32x32.bmp",
-    "projects/qemu-wang-upstream/ui/icons/qemu_256x256.png",
-    "projects/qemu-wang-upstream/ui/icons/qemu_24x24.png",
-    "projects/qemu-wang-upstream/ui/icons/qemu_16x16.png",
-    "projects/qemu-wang-upstream/target/i386/hvf/README.md",
-    "projects/qemu-wang-upstream/scripts/coverity-scan/COMPONENTS.md",
-    "projects/qemu-wang-upstream/hw/uefi/LIMITATIONS.md",
-    "Excalidraw/未命名.canvas",
-    "Excalidraw/Scripts/Untitled.md",
-    "QEMU/x86 CPU feature.md",
-    "Excalidraw/QOM type instance interface object.excalidraw.md",
-    "kernel/KVM/operate VMCS.md",
-    "language/OOB.md",
-    "Excalidraw/qemu_moduel_init.excalidraw.md",
-    "Clippings/Arm Compiler armclang Reference Guide Version 6.11.md",
-    "Excalidraw/Drawing 2026-05-21 16.01.42.excalidraw.md",
-    "AGENTS.md",
-    "未命名.canvas",
-    "未命名 1.canvas"
+    "Excalidraw/未命名.canvas"
   ]
 }
