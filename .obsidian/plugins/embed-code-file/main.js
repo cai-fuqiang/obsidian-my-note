@@ -225,6 +225,42 @@ function splitHighlightedCodeLines(codeElm, lineCount) {
   }
   return lines;
 }
+function parseBooleanParam(value) {
+  if (typeof value === "boolean") {
+    return value;
+  }
+  if (typeof value === "number") {
+    return value !== 0;
+  }
+  if (typeof value === "string") {
+    const normalized = value.trim().toLowerCase();
+    if (["true", "yes", "1", "on"].includes(normalized)) {
+      return true;
+    }
+    if (["false", "no", "0", "off"].includes(normalized)) {
+      return false;
+    }
+  }
+  return null;
+}
+function parseFontSizeParam(value) {
+  if (typeof value === "number" && Number.isFinite(value) && value > 0) {
+    return `${value}px`;
+  }
+  if (typeof value !== "string") {
+    return null;
+  }
+  const fontSize = value.trim();
+  return /^(\d+|\d*\.\d+)(px|em|rem|%)$/.test(fontSize) ? fontSize : null;
+}
+function parseCodeBlockOptions(metaYaml, fallbackWrap) {
+  return {
+    wrapCodeBlock: parseBooleanParam(metaYaml?.WRAP) ?? fallbackWrap,
+    foldable: parseBooleanParam(metaYaml?.FOLDABLE) ?? false,
+    collapsed: parseBooleanParam(metaYaml?.COLLAPSED) ?? false,
+    fontSize: parseFontSizeParam(metaYaml?.FONT_SIZE)
+  };
+}
 
 // main.ts
 var EmbedCodeFile = class extends import_obsidian2.Plugin {
@@ -303,22 +339,36 @@ var EmbedCodeFile = class extends import_obsidian2.Plugin {
       if (!title) {
         title = srcPath;
       }
+      const codeBlockOptions = parseCodeBlockOptions(metaYaml, this.settings.wrapCodeBlock);
       await import_obsidian2.MarkdownRenderer.renderMarkdown("```" + lang + "\n" + src + "\n```", el, "", this);
-      this.applyWrapClass(el);
+      this.applyCodeBlockOptions(el, codeBlockOptions);
       this.addTitleLivePreview(el, title);
       if (!await this.applyLineComments(el, lineNumbers, lineComments)) {
         this.applyLineNumbers(el, lineNumbers);
       }
+      this.applyFoldable(el, codeBlockOptions);
     });
   }
-  applyWrapClass(el) {
+  applyCodeBlockOptions(el, options) {
     const pre = el.querySelector("pre");
     if (!pre) {
       return;
     }
     pre.removeClass("obsidian-embed-code-file-wrap-code");
     pre.removeClass("obsidian-embed-code-file-no-wrap-code");
-    pre.addClass(this.settings.wrapCodeBlock ? "obsidian-embed-code-file-wrap-code" : "obsidian-embed-code-file-no-wrap-code");
+    pre.addClass(options.wrapCodeBlock ? "obsidian-embed-code-file-wrap-code" : "obsidian-embed-code-file-no-wrap-code");
+    pre.removeClass("obsidian-embed-code-file-has-font-size");
+    pre.style.removeProperty("--obsidian-embed-code-file-font-size");
+    if (options.fontSize) {
+      pre.addClass("obsidian-embed-code-file-has-font-size");
+      pre.style.setProperty("--obsidian-embed-code-file-font-size", options.fontSize);
+    }
+  }
+  applyWrapClass(el) {
+    this.applyCodeBlockOptions(el, {
+      wrapCodeBlock: this.settings.wrapCodeBlock,
+      fontSize: null
+    });
   }
   applyLineNumbers(el, lineNumbers) {
     const pre = el.querySelector("pre");
@@ -431,6 +481,34 @@ var EmbedCodeFile = class extends import_obsidian2.Plugin {
     }
     const pre = codeElm.parentElement;
     this.insertTitlePreElement(pre, title);
+  }
+  applyFoldable(el, options) {
+    if (!options.foldable) {
+      return;
+    }
+    const pre = el.querySelector("pre");
+    const titleEl = pre?.querySelector(".obsidian-embed-code-file");
+    if (!pre || !titleEl) {
+      return;
+    }
+    pre.addClass("obsidian-embed-code-file-foldable");
+    titleEl.addClass("obsidian-embed-code-file-fold-toggle");
+    titleEl.setAttribute("role", "button");
+    titleEl.setAttribute("tabindex", "0");
+    const setCollapsed = (collapsed) => {
+      pre.toggleClass("obsidian-embed-code-file-collapsed", collapsed);
+      titleEl.setAttribute("aria-expanded", String(!collapsed));
+    };
+    setCollapsed(options.collapsed);
+    const toggle = () => setCollapsed(!pre.hasClass("obsidian-embed-code-file-collapsed"));
+    this.registerDomEvent(titleEl, "click", toggle);
+    this.registerDomEvent(titleEl, "keydown", (evt) => {
+      if (evt.key !== "Enter" && evt.key !== " ") {
+        return;
+      }
+      evt.preventDefault();
+      toggle();
+    });
   }
   addTitle(el, context) {
     let codeElm = el.querySelector("pre > code");

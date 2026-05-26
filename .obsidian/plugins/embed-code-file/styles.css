@@ -32,6 +32,13 @@
     min-width: max-content;
 }
 
+.obsidian-embed-code-file-has-font-size,
+.obsidian-embed-code-file-has-font-size > code,
+.obsidian-embed-code-file-has-font-size .obsidian-embed-code-file-code-line,
+.obsidian-embed-code-file-has-font-size .obsidian-embed-code-file-line-number {
+    font-size: var(--obsidian-embed-code-file-font-size) !important;
+}
+
 .markdown-rendered pre.obsidian-embed-code-file-line-numbers,
 .obsidian-embed-code-file-line-numbers {
     display: grid;
@@ -232,6 +239,26 @@
 
 .obsidian-embed-code-file-comment-icon:hover .obsidian-embed-code-file-comment-tooltip {
     display: block;
+}
+
+.obsidian-embed-code-file-foldable > .obsidian-embed-code-file-fold-toggle {
+    cursor: pointer;
+    user-select: none;
+}
+
+.obsidian-embed-code-file-foldable > .obsidian-embed-code-file-fold-toggle::before {
+    content: "v";
+    display: inline-block;
+    width: 1em;
+    color: var(--text-faint);
+}
+
+.obsidian-embed-code-file-foldable.obsidian-embed-code-file-collapsed > .obsidian-embed-code-file-fold-toggle::before {
+    content: ">";
+}
+
+.obsidian-embed-code-file-foldable.obsidian-embed-code-file-collapsed > :not(.obsidian-embed-code-file) {
+    display: none !important;
 }
 
 .markdown-rendered pre .obsidian-embed-code-file {
