@@ -145,7 +145,7 @@ COMMENT_STYLE: "above"
 
 - `above`: 注释显示在目标代码行上一行。默认值，适合长说明。
 - `inline`: 注释显示在目标代码行右侧，适合短说明。
-- `icon`: 行号旁显示 `!` 图标，鼠标悬停查看注释。
+- `icon`: 行号旁显示 `!` 图标，鼠标悬停查看注释；点击 `!` 可固定注释窗口，固定后可拖动、缩放和关闭。
 
 示例:
 
@@ -215,6 +215,98 @@ COMMENTS:
 ```
 
 列表在注释框里会使用紧凑间距，避免普通 Markdown 正文列表那种较大的段落间距。
+
+## 局部脚注标注
+
+注释内容里可以使用局部脚注，把上方正文里的标记和下方解释联系起来。语法接近 Markdown 脚注，但只在当前注释框内部生效，不会污染整篇笔记的脚注编号。
+
+基本写法:
+
+```yaml
+COMMENTS:
+  9746:
+    style: "icon"
+    text: |-
+      `~host_feat`[^host] 表示 host/KVM 不支持的 features。
+      `requested_features & ~host_feat`[^mask] 得到 unavailable_features。
+
+      [^host]: host(kvm) 不支持 guest 设置的 features。
+      [^mask]: guest 请求了，但是 host 不支持。
+```
+
+渲染后，正文里的 `[^host]`、`[^mask]` 会变成 `[1]`、`[2]` 这样的上标标记，下方会生成对应解释区。
+
+### 大段脚注和代码块
+
+脚注文本较长，或者需要写代码块时，使用 `|-` 块级写法:
+
+````yaml
+COMMENTS:
+  9746:
+    style: "icon"
+    text: |-
+      `host_feat`[^host] 是 host 支持能力的 mask。
+      `unavailable_features`[^unavailable] 表示 guest 请求但 host 不支持的部分。
+
+      [^host]: |-
+        `host_feat` 来自 KVM/host 的能力查询。
+
+        这里可以写多段说明，也可以写列表:
+
+        - bit 为 1: host 支持
+        - bit 为 0: host 不支持
+
+        ```c
+        uint64_t host_feat =
+            x86_cpu_get_supported_feature_word(NULL, w);
+        ```
+
+      [^unavailable]: |-
+        这个表达式保留 guest 请求但 host 不支持的 bits:
+
+        ```c
+        unavailable_features = requested_features & ~host_feat;
+        ```
+````
+
+长脚注或包含代码块的脚注默认折叠，避免注释窗口被大段解释撑得太长。
+
+### 脚注交互
+
+- 鼠标悬停正文里的 `[1]`，下方对应脚注会高亮。
+- 鼠标悬停下方脚注标题，正文里对应的 `[1]` 会高亮。
+- 点击正文里的 `[1]`，会展开对应脚注，并滚动到该脚注位置。
+- 脚注标题可以点击展开或折叠。
+- `icon` 注释窗口固定后，脚注联动仍然只在当前注释窗口内生效。
+
+## 嵌套 embed-code-file
+
+`COMMENTS` 里的 Markdown 可以再写一层 `embed-*` 代码块，用来在注释中展开相关源码片段。
+
+外层代码块建议使用 4 个反引号，这样内层的 3 个反引号不会提前结束外层代码块:
+
+`````md
+````embed-cpp
+PATH: "https://raw.githubusercontent.com/cai-fuqiang/qemu/v11.0.0/qom/object.c"
+LINES: "407-419"
+TITLE: "type_initialize() caller"
+COMMENTS:
+  410: |-
+    这里可以展开另一个源码片段:
+
+    ```embed-cpp
+    PATH: "https://raw.githubusercontent.com/cai-fuqiang/qemu/v11.0.0/qom/object.c"
+    LINES: "336-337"
+    TITLE: "parent snippet"
+    ```
+````
+`````
+
+嵌套深度限制为一层:
+
+- 顶层 `embed-*`: 支持。
+- 顶层注释里的内层 `embed-*`: 支持。
+- 内层 `embed-*` 的注释里继续嵌套: 不支持，会显示 `ERROR: nested embed-code-file depth limit exceeded`。
 
 ## 完整示例
 

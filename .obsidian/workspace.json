@@ -11,6 +11,22 @@
             "id": "dcaa3af6ef4e6328",
             "type": "leaf",
             "state": {
+              "type": "pdf",
+              "state": {
+                "file": "PDF/325462-sdm-vol-1-2abcd-3abcd-4.pdf",
+                "page": 1,
+                "left": -9,
+                "top": 796,
+                "zoom": 1.079656862745098
+              },
+              "icon": "lucide-file-text",
+              "title": "325462-sdm-vol-1-2abcd-3abcd-4"
+            }
+          },
+          {
+            "id": "5ac08bef7c7cfdc7",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
                 "file": "QEMU/QEMU - CPU model.md",
@@ -23,18 +39,19 @@
             }
           },
           {
-            "id": "7c3242baade31288",
+            "id": "3b119823144e0e12",
             "type": "leaf",
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "Excalidraw/qemu_cpu_model_tree.excalidraw.md"
+                "file": "Excalidraw/cpu_class_init.excalidraw.md"
               },
               "icon": "excalidraw-icon",
-              "title": "qemu_cpu_model_tree.excalidraw"
+              "title": "cpu_class_init.excalidraw"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -91,7 +108,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 396.51103591918945,
+    "collapsed": true
   },
   "right": {
     "id": "b172529851f33649",
@@ -203,28 +221,28 @@
     }
   },
   "floating": {
-    "id": "f8f0870a9ada3ce1",
+    "id": "29d6a0824f318a23",
     "type": "floating",
     "children": [
       {
-        "id": "41d0e7185d711ace",
+        "id": "076b70376f8a7973",
         "type": "window",
         "children": [
           {
-            "id": "8620815c78a69691",
+            "id": "b0158499c1f0aa06",
             "type": "tabs",
             "children": [
               {
-                "id": "ea8ad173c6c19d55",
+                "id": "2c4412dfd3415708",
                 "type": "leaf",
                 "state": {
                   "type": "pdf",
                   "state": {
                     "file": "PDF/QEMU-KVM源码解析与应用.pdf",
-                    "page": 284,
-                    "left": -11,
-                    "top": 398,
-                    "zoom": 1.4068627450980393
+                    "page": 273,
+                    "left": -12,
+                    "top": 578,
+                    "zoom": 1.3075980392156863
                   },
                   "icon": "lucide-file-text",
                   "title": "QEMU-KVM源码解析与应用"
@@ -235,28 +253,35 @@
         ],
         "direction": "vertical",
         "x": -1137,
-        "y": -923,
+        "y": 397,
         "width": 1122,
-        "height": 1973,
+        "height": 652,
         "maximize": false,
-        "zoom": -1
+        "zoom": 0
       }
     ]
   },
-  "active": "dcaa3af6ef4e6328",
+  "active": "5ac08bef7c7cfdc7",
   "lastOpenFiles": [
     "PDF/QEMU-KVM源码解析与应用.pdf",
     "QEMU/QEMU - CPU model.md",
-    "QEMU/QEMU module.md",
-    "Excalidraw/TypeInfo_Class_instance.md",
-    "PDF/325462-sdm-vol-1-2abcd-3abcd-4.pdf",
-    "Templates/qemu-code.md",
-    "2026-05-21.md",
-    "QEMU/QEMU OBJECT MODEL.md",
-    "Excalidraw/qemu_cpu_model_tree.excalidraw.md",
-    "QEMU/x86 CPU feature.md",
-    "Excalidraw/qemu_X86_CPU_instance.excalidraw.md",
     "AI TOOLS/Embed Code File 使用说明.md",
+    "Excalidraw/cpu_class_init.excalidraw.md",
+    "PDF/325462-sdm-vol-1-2abcd-3abcd-4.pdf",
+    "Excalidraw/qemu_cpu_model_tree.excalidraw.md",
+    "scripts/test-embed-code-file-nesting.mjs",
+    "scripts",
+    "QEMU/QEMU module.md",
+    "QEMU/cpu_class_init_function.md",
+    "QEMU/x86 CPU feature.md",
+    "QEMU/QEMU OBJECT MODEL.md",
+    "PDF/armclang_reference_guide_100067_0611_00_en.pdf",
+    "PDF/architecture-instruction-set-extensions-programming-reference.pdf",
+    "Templates/tmp.md",
+    "Templates/qemu-code.md",
+    "Excalidraw/TypeInfo_Class_instance.md",
+    "2026-05-21.md",
+    "Excalidraw/qemu_X86_CPU_instance.excalidraw.md",
     "未命名.canvas",
     "draw.io/QOM-interface-type-info.svg",
     "Excalidraw/qemu_object_class_property.excalidraw.md",
@@ -276,17 +301,10 @@
     "Excalidraw/qemu_module_init_type_list.md",
     "Excalidraw/QOM_access_VS_C++_access.excalidraw.md",
     "Excalidraw/QOM type instance interface object.excalidraw.md",
-    "AGENTS.md",
-    "OOB.md",
-    "PDF/architecture-instruction-set-extensions-programming-reference.pdf",
-    "PDF/armclang_reference_guide_100067_0611_00_en.pdf",
-    "Excalidraw/QOM lifeline.excalidraw.md",
     "draw.io/QOM_edu_class.svg",
     "draw.io",
     "draw",
     "Templates",
-    "未命名",
-    "Excalidraw/Libary/UML-ER-library.excalidrawlib",
     "Excalidraw/Scripts/Downloaded/Create DrawIO file.svg",
     "协程enter.svg",
     "projects/qemu-wang-upstream/ui/icons/qemu_64x64.png",

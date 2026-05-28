@@ -94,8 +94,9 @@
 
 .obsidian-embed-code-file-comment-table {
     display: grid;
-    grid-template-columns: max-content minmax(0, auto) max-content;
+    grid-template-columns: max-content minmax(0, 1fr) max-content;
     column-gap: 0.75em;
+    width: 100%;
 }
 
 .obsidian-embed-code-file-no-wrap-code .obsidian-embed-code-file-comment-table {
@@ -178,6 +179,16 @@
     display: inline;
 }
 
+.obsidian-embed-code-file-comment .obsidian-embed-code-file-render {
+    display: block;
+    margin-top: 0.35em;
+}
+
+.obsidian-embed-code-file-comment .obsidian-embed-code-file-render > pre {
+    margin: 0.35em 0 0;
+    font-size: 0.95em;
+}
+
 .obsidian-embed-code-file-comment-above {
     grid-column: 2 / 4;
     background: var(--background-primary-alt);
@@ -216,13 +227,15 @@
 }
 
 .obsidian-embed-code-file-comment-tooltip {
-    position: absolute;
-    left: 1.1em;
-    top: 50%;
+    grid-column: 1 / -1;
+    align-self: start;
     z-index: 20;
     display: none;
-    min-width: 18em;
-    max-width: 36em;
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    margin: 0.15em 0;
     padding: 0.45em 0.6em;
     border: 1px solid var(--interactive-accent);
     border-radius: 4px;
@@ -233,12 +246,159 @@
     font-size: 0.9em;
     line-height: var(--line-height-normal, 1.5);
     text-align: left;
-    transform: translateY(-50%);
     white-space: pre-wrap;
 }
 
-.obsidian-embed-code-file-comment-icon:hover .obsidian-embed-code-file-comment-tooltip {
+.obsidian-embed-code-file-comment-tooltip-header {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5em;
+    margin: -0.2em -0.35em 0.35em;
+    padding: 0.15em 0.25em 0.3em;
+    border-bottom: 1px solid var(--background-modifier-border);
+    cursor: move;
+    user-select: none;
+}
+
+.obsidian-embed-code-file-comment-tooltip-grip {
+    color: var(--text-faint);
+    font-family: var(--font-monospace);
+    font-size: 0.85em;
+    line-height: 1;
+}
+
+.obsidian-embed-code-file-comment-tooltip-close {
+    border: none;
+    background: transparent;
+    color: var(--text-muted);
+    cursor: pointer;
+    font: inherit;
+    line-height: 1;
+    padding: 0.1em 0.25em;
+}
+
+.obsidian-embed-code-file-comment-tooltip-close:hover,
+.obsidian-embed-code-file-comment-tooltip-close:focus-visible {
+    color: var(--text-normal);
+}
+
+.obsidian-embed-code-file-comment-tooltip-content p {
+    margin: 0;
+    white-space: pre-wrap;
+}
+
+.obsidian-embed-code-file-comment-tooltip-content p + p,
+.obsidian-embed-code-file-comment-tooltip-content ul,
+.obsidian-embed-code-file-comment-tooltip-content ol {
+    margin-top: 0.2em;
+    margin-bottom: 0;
+}
+
+.obsidian-embed-code-file-footnote-ref {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 1.4em;
+    margin-inline: 0.1em;
+    border-radius: 999px;
+    background: var(--background-modifier-border);
+    color: var(--text-accent);
+    cursor: pointer;
+    font-size: 0.75em;
+    font-weight: 700;
+    line-height: 1.35;
+    vertical-align: super;
+}
+
+.obsidian-embed-code-file-footnote-ref:hover,
+.obsidian-embed-code-file-footnote-ref:focus-visible,
+.obsidian-embed-code-file-footnote-ref.is-active {
+    background: var(--interactive-accent);
+    color: var(--text-on-accent);
+    outline: none;
+}
+
+.obsidian-embed-code-file-footnotes {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35em;
+    margin-top: 0.75em;
+    padding-top: 0.55em;
+    border-top: 1px solid var(--background-modifier-border);
+}
+
+.obsidian-embed-code-file-footnote {
+    border: 1px solid var(--background-modifier-border);
+    border-radius: 4px;
+    background: var(--background-secondary);
+}
+
+.obsidian-embed-code-file-footnote.is-active {
+    border-color: var(--interactive-accent);
+    box-shadow: 0 0 0 1px var(--interactive-accent);
+}
+
+.obsidian-embed-code-file-footnote-summary {
+    display: flex;
+    align-items: center;
+    gap: 0.45em;
+    cursor: pointer;
+    padding: 0.25em 0.45em;
+    user-select: none;
+}
+
+.obsidian-embed-code-file-footnote-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 1.5em;
+    border-radius: 999px;
+    background: var(--interactive-accent);
+    color: var(--text-on-accent);
+    font-size: 0.8em;
+    font-weight: 700;
+}
+
+.obsidian-embed-code-file-footnote-label {
+    color: var(--text-muted);
+    font-family: var(--font-monospace);
+    font-size: 0.9em;
+}
+
+.obsidian-embed-code-file-footnote-body {
+    padding: 0.15em 0.6em 0.55em;
+}
+
+.obsidian-embed-code-file-footnote-body pre {
+    margin: 0.35em 0 0;
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.obsidian-embed-code-file-code-row:has(.obsidian-embed-code-file-comment-icon:is(:hover, :focus-visible)) > .obsidian-embed-code-file-comment-tooltip,
+.obsidian-embed-code-file-code-row:has(.obsidian-embed-code-file-comment-tooltip:is(:hover, :focus-within)) > .obsidian-embed-code-file-comment-tooltip {
     display: block;
+}
+
+.obsidian-embed-code-file-comment-tooltip.is-pinned {
+    position: fixed;
+    display: block;
+    min-width: 16rem;
+    min-height: 6rem;
+    max-width: calc(100vw - 1rem);
+    max-height: calc(100vh - 1rem);
+    margin: 0;
+    overflow: auto;
+    resize: both;
+}
+
+.obsidian-embed-code-file-comment-tooltip.is-pinned .obsidian-embed-code-file-comment-tooltip-header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    background: var(--background-primary);
+    z-index: 1;
 }
 
 .obsidian-embed-code-file-foldable > .obsidian-embed-code-file-fold-toggle {

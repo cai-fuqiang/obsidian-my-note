@@ -1,7 +1,7 @@
 <claude-mem-context>
 # Memory Context
 
-# [obsidian-my-note] recent context, 2026-05-22 2:28pm GMT+8
+# [obsidian-my-note] recent context, 2026-05-27 1:13pm GMT+8
 
 Legend: 🎯session 🔴bugfix 🟣feature 🔄refactor ✅change 🔵discovery ⚖️decision 🚨security_alert 🔐security_note
 Format: ID TIME TYPE TITLE
@@ -30,6 +30,7 @@ S123 Debug why code-link Obsidian plugin shows directories but not files (May 21
 237 2:05p 🔵 Code-link plugin SCM query coverage varies widely by language
 S126 Diagnose obsidian-code-link plugin showing directories but not files in Obsidian vault (May 21 at 2:11 PM)
 S127 Diagnose obsidian-code-link plugin showing directories but not files in Obsidian vault (May 21 at 2:13 PM)
+S129 检查现有资源 — 做之前先看有没有现成的 (May 21 at 2:14 PM)
 S128 Obsidian plugin to reference code blocks from elixir.bootlin.com or GitHub projects (May 21 at 2:57 PM)
 **Investigated**: Nothing yet — no tool executions or file operations observed in primary session
 

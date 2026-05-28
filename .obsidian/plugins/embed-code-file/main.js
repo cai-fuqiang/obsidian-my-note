@@ -181,6 +181,84 @@ function normalizeCommentText(comment) {
   }
   return String(comment);
 }
+function escapeHtmlAttribute(value) {
+  return String(value).replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+}
+function dedentLocalFootnoteLines(lines) {
+  const minIndent = lines.reduce((min, line) => {
+    if (!line.trim()) {
+      return min;
+    }
+    const indent = line.match(/^\s*/)?.[0].length ?? 0;
+    return Math.min(min, indent);
+  }, Infinity);
+  if (!Number.isFinite(minIndent) || minIndent === 0) {
+    return lines.join("\n");
+  }
+  return lines.map((line) => line.slice(Math.min(minIndent, line.length))).join("\n");
+}
+function parseLocalFootnotes(text) {
+  const lines = String(text ?? "").split("\n");
+  const bodyLines = [];
+  const definitions = /* @__PURE__ */ new Map();
+  const definitionPattern = /^\[\^([A-Za-z0-9_-]+)\]:\s*(.*)$/;
+  let index = 0;
+  while (index < lines.length) {
+    const match = lines[index].match(definitionPattern);
+    if (!match) {
+      bodyLines.push(lines[index]);
+      index++;
+      continue;
+    }
+    const id = match[1];
+    const firstLine = match[2] ?? "";
+    const definitionLines = [];
+    index++;
+    if (/^\|[-+]?/.test(firstLine.trim())) {
+      while (index < lines.length && !definitionPattern.test(lines[index])) {
+        definitionLines.push(lines[index]);
+        index++;
+      }
+    } else {
+      if (firstLine.trim()) {
+        definitionLines.push(firstLine);
+      }
+      while (index < lines.length && !definitionPattern.test(lines[index])) {
+        definitionLines.push(lines[index]);
+        index++;
+      }
+    }
+    const definitionText = dedentLocalFootnoteLines(definitionLines).trim();
+    if (definitionText) {
+      definitions.set(id, definitionText);
+    }
+  }
+  const orderedFootnotes = [];
+  const numbersById = /* @__PURE__ */ new Map();
+  const bodyText = bodyLines.join("\n").trimEnd();
+  const textWithRefs = bodyText.replace(/\[\^([A-Za-z0-9_-]+)\]/g, (match, id) => {
+    const definition = definitions.get(id);
+    if (!definition) {
+      return match;
+    }
+    if (!numbersById.has(id)) {
+      numbersById.set(id, numbersById.size + 1);
+      orderedFootnotes.push({
+        id,
+        number: numbersById.get(id),
+        text: definition,
+        collapsed: definition.length > 160 || /(^|\n)```/.test(definition)
+      });
+    }
+    const number = numbersById.get(id);
+    const escapedId = escapeHtmlAttribute(id);
+    return `<sup class="obsidian-embed-code-file-footnote-ref" data-footnote-id="${escapedId}" tabindex="0">[${number}]</sup>`;
+  });
+  return {
+    text: textWithRefs,
+    footnotes: orderedFootnotes
+  };
+}
 function parseLineComments(metaYaml) {
   const comments = metaYaml?.COMMENTS;
   const defaultStyle = normalizeCommentStyle(metaYaml?.COMMENT_STYLE);
@@ -263,6 +341,8 @@ function parseCodeBlockOptions(metaYaml, fallbackWrap) {
 }
 
 // main.ts
+var EMBED_CODE_FILE_RENDER_CLASS = "obsidian-embed-code-file-render";
+var MAX_NESTED_EMBED_DEPTH = 1;
 var EmbedCodeFile = class extends import_obsidian2.Plugin {
   async onload() {
     await this.loadSettings();
@@ -284,18 +364,30 @@ var EmbedCodeFile = class extends import_obsidian2.Plugin {
   }
   async registerRenderer(lang) {
     this.registerMarkdownCodeBlockProcessor(`embed-${lang}`, async (meta, el, ctx) => {
+      const sourcePath = ctx?.sourcePath || "";
+      const embedDepth = this.nestedEmbedDepth(el);
+      el.addClass(EMBED_CODE_FILE_RENDER_CLASS);
+      if (embedDepth > MAX_NESTED_EMBED_DEPTH) {
+        await import_obsidian2.MarkdownRenderer.renderMarkdown(
+          "`ERROR: nested embed-code-file depth limit exceeded`",
+          el,
+          sourcePath,
+          this
+        );
+        return;
+      }
       let fullSrc = "";
       let src = "";
       let metaYaml;
       try {
         metaYaml = (0, import_obsidian2.parseYaml)(meta);
       } catch (e) {
-        await import_obsidian2.MarkdownRenderer.renderMarkdown("`ERROR: invalid embedding (invalid YAML)`", el, "", this);
+        await import_obsidian2.MarkdownRenderer.renderMarkdown("`ERROR: invalid embedding (invalid YAML)`", el, sourcePath, this);
         return;
       }
       let srcPath = metaYaml.PATH;
       if (!srcPath) {
-        await import_obsidian2.MarkdownRenderer.renderMarkdown("`ERROR: invalid source path`", el, "", this);
+        await import_obsidian2.MarkdownRenderer.renderMarkdown("`ERROR: invalid source path`", el, sourcePath, this);
         return;
       }
       if (srcPath.startsWith("https://") || srcPath.startsWith("http://")) {
@@ -304,7 +396,7 @@ var EmbedCodeFile = class extends import_obsidian2.Plugin {
           fullSrc = httpResp.text;
         } catch (e) {
           const errMsg = `\`ERROR: could't fetch '${srcPath}'\``;
-          await import_obsidian2.MarkdownRenderer.renderMarkdown(errMsg, el, "", this);
+          await import_obsidian2.MarkdownRenderer.renderMarkdown(errMsg, el, sourcePath, this);
           return;
         }
       } else if (srcPath.startsWith("vault://")) {
@@ -314,12 +406,12 @@ var EmbedCodeFile = class extends import_obsidian2.Plugin {
           fullSrc = await app.vault.read(tFile);
         } else {
           const errMsg = `\`ERROR: could't read file '${srcPath}'\``;
-          await import_obsidian2.MarkdownRenderer.renderMarkdown(errMsg, el, "", this);
+          await import_obsidian2.MarkdownRenderer.renderMarkdown(errMsg, el, sourcePath, this);
           return;
         }
       } else {
         const errMsg = "`ERROR: invalid source path, use 'vault://...' or 'http[s]://...'`";
-        await import_obsidian2.MarkdownRenderer.renderMarkdown(errMsg, el, "", this);
+        await import_obsidian2.MarkdownRenderer.renderMarkdown(errMsg, el, sourcePath, this);
         return;
       }
       let srcLinesNum = [];
@@ -340,14 +432,25 @@ var EmbedCodeFile = class extends import_obsidian2.Plugin {
         title = srcPath;
       }
       const codeBlockOptions = parseCodeBlockOptions(metaYaml, this.settings.wrapCodeBlock);
-      await import_obsidian2.MarkdownRenderer.renderMarkdown("```" + lang + "\n" + src + "\n```", el, "", this);
+      await import_obsidian2.MarkdownRenderer.renderMarkdown("```" + lang + "\n" + src + "\n```", el, sourcePath, this);
       this.applyCodeBlockOptions(el, codeBlockOptions);
       this.addTitleLivePreview(el, title);
-      if (!await this.applyLineComments(el, lineNumbers, lineComments)) {
+      if (!await this.applyLineComments(el, lineNumbers, lineComments, sourcePath)) {
         this.applyLineNumbers(el, lineNumbers);
       }
       this.applyFoldable(el, codeBlockOptions);
     });
+  }
+  nestedEmbedDepth(el) {
+    let depth = 0;
+    let current = el.parentElement;
+    while (current) {
+      if (current.classList?.contains(EMBED_CODE_FILE_RENDER_CLASS)) {
+        depth++;
+      }
+      current = current.parentElement;
+    }
+    return depth;
   }
   applyCodeBlockOptions(el, options) {
     const pre = el.querySelector("pre");
@@ -397,11 +500,91 @@ var EmbedCodeFile = class extends import_obsidian2.Plugin {
       pre.insertBefore(gutter, codeElm);
     }
   }
-  async renderCommentMarkdown(el, text) {
+  async renderCommentMarkdown(el, text, sourcePath) {
     el.empty();
-    await import_obsidian2.MarkdownRenderer.renderMarkdown(text, el, "", this);
+    const parsed = parseLocalFootnotes(text);
+    await import_obsidian2.MarkdownRenderer.renderMarkdown(parsed.text, el, sourcePath, this);
+    await this.renderLocalFootnotes(el, parsed, sourcePath);
   }
-  async applyLineComments(el, lineNumbers, lineComments) {
+  async renderLocalFootnotes(el, parsed, sourcePath) {
+    if (!parsed.footnotes.length) {
+      return;
+    }
+    const footnotesEl = document.createElement("div");
+    footnotesEl.className = "obsidian-embed-code-file-footnotes";
+    const renderTasks = [];
+    parsed.footnotes.forEach((footnote) => {
+      const itemEl = document.createElement("details");
+      itemEl.className = "obsidian-embed-code-file-footnote";
+      itemEl.dataset.footnoteId = footnote.id;
+      itemEl.open = !footnote.collapsed;
+      const summaryEl = document.createElement("summary");
+      summaryEl.className = "obsidian-embed-code-file-footnote-summary";
+      const numberEl = document.createElement("span");
+      numberEl.className = "obsidian-embed-code-file-footnote-number";
+      numberEl.appendText(String(footnote.number));
+      const labelEl = document.createElement("span");
+      labelEl.className = "obsidian-embed-code-file-footnote-label";
+      labelEl.appendText(footnote.id);
+      summaryEl.appendChild(numberEl);
+      summaryEl.appendChild(labelEl);
+      const footnoteBodyEl = document.createElement("div");
+      footnoteBodyEl.className = "obsidian-embed-code-file-footnote-body";
+      itemEl.appendChild(summaryEl);
+      itemEl.appendChild(footnoteBodyEl);
+      footnotesEl.appendChild(itemEl);
+      renderTasks.push(() => this.renderCommentMarkdown(footnoteBodyEl, footnote.text, sourcePath));
+    });
+    el.appendChild(footnotesEl);
+    await Promise.all(renderTasks.map((task) => task()));
+    this.bindLocalFootnoteInteractions(el);
+  }
+  bindLocalFootnoteInteractions(el) {
+    const refs = Array.from(el.querySelectorAll(".obsidian-embed-code-file-footnote-ref"));
+    const footnotes = Array.from(el.querySelectorAll(".obsidian-embed-code-file-footnote"));
+    const footnoteById = (id) => footnotes.find((footnote) => footnote.dataset.footnoteId === id);
+    const refsById = (id) => refs.filter((ref) => ref.dataset.footnoteId === id);
+    const setActive = (id, active) => {
+      const footnote = footnoteById(id);
+      if (footnote) {
+        footnote.toggleClass("is-active", active);
+      }
+      refsById(id).forEach((ref) => ref.toggleClass("is-active", active));
+    };
+    refs.forEach((ref) => {
+      const id = ref.dataset.footnoteId;
+      if (!id) {
+        return;
+      }
+      this.registerDomEvent(ref, "mouseenter", () => setActive(id, true));
+      this.registerDomEvent(ref, "mouseleave", () => setActive(id, false));
+      this.registerDomEvent(ref, "focus", () => setActive(id, true));
+      this.registerDomEvent(ref, "blur", () => setActive(id, false));
+      this.registerDomEvent(ref, "click", (event) => {
+        event.preventDefault();
+        const footnote = footnoteById(id);
+        if (!footnote) {
+          return;
+        }
+        footnote.open = true;
+        setActive(id, true);
+        footnote.scrollIntoView({ block: "nearest", behavior: "smooth" });
+        window.setTimeout(() => setActive(id, false), 1200);
+      });
+    });
+    footnotes.forEach((footnote) => {
+      const id = footnote.dataset.footnoteId;
+      const summaryEl = footnote.querySelector(".obsidian-embed-code-file-footnote-summary");
+      if (!id || !summaryEl) {
+        return;
+      }
+      this.registerDomEvent(summaryEl, "mouseenter", () => setActive(id, true));
+      this.registerDomEvent(summaryEl, "mouseleave", () => setActive(id, false));
+      this.registerDomEvent(summaryEl, "focus", () => setActive(id, true));
+      this.registerDomEvent(summaryEl, "blur", () => setActive(id, false));
+    });
+  }
+  async applyLineComments(el, lineNumbers, lineComments, sourcePath) {
     if (!lineComments.size) {
       return false;
     }
@@ -430,7 +613,7 @@ var EmbedCodeFile = class extends import_obsidian2.Plugin {
         spacer.className = "obsidian-embed-code-file-line-number obsidian-embed-code-file-line-number-spacer";
         const commentEl = document.createElement("div");
         commentEl.className = "obsidian-embed-code-file-comment obsidian-embed-code-file-comment-above";
-        renderTasks.push(() => this.renderCommentMarkdown(commentEl, lineComment.text));
+        renderTasks.push(() => this.renderCommentMarkdown(commentEl, lineComment.text, sourcePath));
         commentRow.appendChild(spacer);
         commentRow.appendChild(commentEl);
         table.appendChild(commentRow);
@@ -446,15 +629,44 @@ var EmbedCodeFile = class extends import_obsidian2.Plugin {
       lineNumberEl.className = "obsidian-embed-code-file-line-number-text";
       lineNumberEl.appendText(lineNumber);
       gutterEl.appendChild(lineNumberEl);
+      let tooltipEl = null;
       if (lineComment?.style === "icon") {
         const iconEl = document.createElement("span");
         iconEl.className = "obsidian-embed-code-file-comment-icon";
-        iconEl.setAttribute("aria-label", lineComment.text);
+        iconEl.tabIndex = 0;
         iconEl.appendText("!");
-        const tooltipEl = document.createElement("span");
+        tooltipEl = document.createElement("div");
         tooltipEl.className = "obsidian-embed-code-file-comment-tooltip";
-        renderTasks.push(() => this.renderCommentMarkdown(tooltipEl, lineComment.text));
-        iconEl.appendChild(tooltipEl);
+        const tooltipHeaderEl = document.createElement("div");
+        tooltipHeaderEl.className = "obsidian-embed-code-file-comment-tooltip-header";
+        const tooltipGripEl = document.createElement("span");
+        tooltipGripEl.className = "obsidian-embed-code-file-comment-tooltip-grip";
+        tooltipGripEl.appendText("::");
+        const closeEl = document.createElement("button");
+        closeEl.className = "obsidian-embed-code-file-comment-tooltip-close";
+        closeEl.type = "button";
+        closeEl.setAttribute("aria-label", "Close comment");
+        closeEl.appendText("x");
+        tooltipHeaderEl.appendChild(tooltipGripEl);
+        tooltipHeaderEl.appendChild(closeEl);
+        const tooltipContentEl = document.createElement("div");
+        tooltipContentEl.className = "obsidian-embed-code-file-comment-tooltip-content";
+        tooltipEl.appendChild(tooltipHeaderEl);
+        tooltipEl.appendChild(tooltipContentEl);
+        renderTasks.push(() => this.renderCommentMarkdown(tooltipContentEl, lineComment.text, sourcePath));
+        this.registerDomEvent(iconEl, "click", (event) => {
+          event.preventDefault();
+          event.stopPropagation();
+          this.togglePinnedIconComment(tooltipEl, iconEl, pre);
+        });
+        this.registerDomEvent(closeEl, "click", (event) => {
+          event.preventDefault();
+          event.stopPropagation();
+          this.unpinIconComment(tooltipEl);
+        });
+        this.registerDomEvent(tooltipHeaderEl, "pointerdown", (event) => {
+          this.startDraggingIconComment(tooltipEl, event);
+        });
         gutterEl.appendChild(iconEl);
       }
       const codeLineEl = document.createElement("code");
@@ -462,10 +674,13 @@ var EmbedCodeFile = class extends import_obsidian2.Plugin {
       codeLineEl.innerHTML = codeLine || "&nbsp;";
       lineRow.appendChild(gutterEl);
       lineRow.appendChild(codeLineEl);
+      if (tooltipEl) {
+        lineRow.appendChild(tooltipEl);
+      }
       if (lineComment?.style === "inline") {
         const inlineCommentEl = document.createElement("span");
         inlineCommentEl.className = "obsidian-embed-code-file-comment obsidian-embed-code-file-comment-inline";
-        renderTasks.push(() => this.renderCommentMarkdown(inlineCommentEl, lineComment.text));
+        renderTasks.push(() => this.renderCommentMarkdown(inlineCommentEl, lineComment.text, sourcePath));
         lineRow.appendChild(inlineCommentEl);
       }
       table.appendChild(lineRow);
@@ -473,6 +688,63 @@ var EmbedCodeFile = class extends import_obsidian2.Plugin {
     codeElm.replaceWith(table);
     await Promise.all(renderTasks.map((task) => task()));
     return true;
+  }
+  togglePinnedIconComment(tooltipEl, iconEl, pre) {
+    if (tooltipEl.hasClass("is-pinned")) {
+      this.unpinIconComment(tooltipEl);
+      return;
+    }
+    const tooltipRect = tooltipEl.getBoundingClientRect();
+    const preRect = pre.getBoundingClientRect();
+    const fallbackWidth = Math.max(260, Math.min(preRect.width, window.innerWidth - 16));
+    const width = Math.max(260, Math.min(tooltipRect.width || fallbackWidth, window.innerWidth - 16));
+    const left = Math.max(8, Math.min(tooltipRect.left || preRect.left, window.innerWidth - width - 8));
+    const top = Math.max(8, Math.min(tooltipRect.top || iconEl.getBoundingClientRect().bottom + 6, window.innerHeight - 120));
+    tooltipEl.pinnedParent = tooltipEl.parentElement;
+    tooltipEl.pinnedNextSibling = tooltipEl.nextSibling;
+    document.body.appendChild(tooltipEl);
+    tooltipEl.addClass("is-pinned");
+    tooltipEl.style.left = `${left}px`;
+    tooltipEl.style.top = `${top}px`;
+    tooltipEl.style.width = `${width}px`;
+    tooltipEl.style.height = "";
+  }
+  unpinIconComment(tooltipEl) {
+    tooltipEl.removeClass("is-pinned");
+    tooltipEl.style.removeProperty("left");
+    tooltipEl.style.removeProperty("top");
+    tooltipEl.style.removeProperty("width");
+    tooltipEl.style.removeProperty("height");
+    if (tooltipEl.pinnedParent) {
+      tooltipEl.pinnedParent.insertBefore(tooltipEl, tooltipEl.pinnedNextSibling);
+      tooltipEl.pinnedParent = null;
+      tooltipEl.pinnedNextSibling = null;
+    }
+  }
+  startDraggingIconComment(tooltipEl, event) {
+    if (!tooltipEl.hasClass("is-pinned") || event.button !== 0) {
+      return;
+    }
+    const target = event.target;
+    if (target?.closest?.(".obsidian-embed-code-file-comment-tooltip-close")) {
+      return;
+    }
+    event.preventDefault();
+    const startRect = tooltipEl.getBoundingClientRect();
+    const startX = event.clientX;
+    const startY = event.clientY;
+    const onMove = (moveEvent) => {
+      const nextLeft = Math.max(8, Math.min(startRect.left + moveEvent.clientX - startX, window.innerWidth - startRect.width - 8));
+      const nextTop = Math.max(8, Math.min(startRect.top + moveEvent.clientY - startY, window.innerHeight - startRect.height - 8));
+      tooltipEl.style.left = `${nextLeft}px`;
+      tooltipEl.style.top = `${nextTop}px`;
+    };
+    const onUp = () => {
+      window.removeEventListener("pointermove", onMove);
+      window.removeEventListener("pointerup", onUp);
+    };
+    window.addEventListener("pointermove", onMove);
+    window.addEventListener("pointerup", onUp, { once: true });
   }
   addTitleLivePreview(el, title) {
     const codeElm = el.querySelector("pre > code");

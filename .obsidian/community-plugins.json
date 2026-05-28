@@ -5,12 +5,12 @@
   "dataview",
   "obsidian-annotator",
   "obsidian-linter",
-  "edit-in-neovim",
   "pdf-plus",
   "code-link",
   "code-files",
   "block-link-plus",
   "embed-code-file",
   "convert-url-to-iframe",
-  "floating-toc"
+  "floating-toc",
+  "edit-in-neovim"
 ]
