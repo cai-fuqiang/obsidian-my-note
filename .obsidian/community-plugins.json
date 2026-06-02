@@ -12,5 +12,7 @@
   "embed-code-file",
   "convert-url-to-iframe",
   "floating-toc",
-  "edit-in-neovim"
+  "edit-in-neovim",
+  "webpage-html-export",
+  "deepl"
 ]

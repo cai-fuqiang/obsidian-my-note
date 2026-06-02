@@ -3,5 +3,6 @@
   "promptDelete": false,
   "showUnsupportedFiles": true,
   "vimMode": true,
-  "showLineNumber": false
+  "showLineNumber": false,
+  "showInlineTitle": true
 }

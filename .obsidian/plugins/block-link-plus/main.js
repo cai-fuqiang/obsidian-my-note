@@ -18417,6 +18417,34 @@ var WHATS_NEW_V2_0_6 = {
     "Outliner\uFF1AEscape \u73FE\u5728\u6703\u9000\u51FA\u76EE\u524D block \u7DE8\u8F2F\uFF0C\u4E26\u6E05\u7A7A block-range selection\u3002"
   ]
 };
+var WHATS_NEW_V2_0_13 = {
+  en: [
+    "Outliner: fixed focus/scroll stability when editing blocks and clicking tabs or working near the bottom of a long outline.",
+    "Outliner: `Tab` / `Shift+Tab` now preserve visible block order whenever possible instead of moving blocks to the target parent's tail."
+  ],
+  zh: [
+    "Outliner\uFF1A\u4FEE\u590D\u4E86\u7F16\u8F91 block \u65F6\u70B9\u51FB\u9009\u9879\u5361\u3001\u4EE5\u53CA\u957F\u5927\u7EB2\u5E95\u90E8\u533A\u57DF\u7684\u7126\u70B9/\u6EDA\u52A8\u7A33\u5B9A\u6027\u95EE\u9898\u3002",
+    "Outliner\uFF1A`Tab` / `Shift+Tab` \u73B0\u5728\u4F1A\u5C3D\u91CF\u4FDD\u6301\u53EF\u89C1 block \u987A\u5E8F\uFF0C\u4E0D\u518D\u9ED8\u8BA4\u628A block \u79FB\u5230\u76EE\u6807\u7236\u8282\u70B9\u5C3E\u90E8\u3002"
+  ],
+  "zh-TW": [
+    "Outliner\uFF1A\u4FEE\u6B63\u4E86\u7DE8\u8F2F block \u6642\u9EDE\u64CA\u5206\u9801\u3001\u4EE5\u53CA\u9577\u5927\u7DB1\u5E95\u90E8\u5340\u57DF\u7684\u7126\u9EDE/\u6372\u52D5\u7A69\u5B9A\u6027\u554F\u984C\u3002",
+    "Outliner\uFF1A`Tab` / `Shift+Tab` \u73FE\u5728\u6703\u76E1\u91CF\u4FDD\u6301\u53EF\u898B block \u9806\u5E8F\uFF0C\u4E0D\u518D\u9810\u8A2D\u628A block \u79FB\u5230\u76EE\u6A19\u7236\u7BC0\u9EDE\u5C3E\u7AEF\u3002"
+  ]
+};
+var WHATS_NEW_V2_0_15 = {
+  en: [
+    "Outliner: structural edits (`Enter`, `Tab`, `Shift+Tab`) now preserve viewport position instead of jumping back to the top of the file.",
+    "Outliner: focus restoration after structural edits is now stable near the bottom of long outlines."
+  ],
+  zh: [
+    "Outliner\uFF1A\u7ED3\u6784\u7F16\u8F91\uFF08`Enter`\u3001`Tab`\u3001`Shift+Tab`\uFF09\u73B0\u5728\u4F1A\u4FDD\u6301\u5F53\u524D\u89C6\u53E3\u4F4D\u7F6E\uFF0C\u4E0D\u518D\u8DF3\u56DE\u6587\u4EF6\u5F00\u5934\u3002",
+    "Outliner\uFF1A\u7ED3\u6784\u7F16\u8F91\u540E\u7684\u7126\u70B9\u6062\u590D\u66F4\u7A33\u5B9A\uFF0C\u957F\u5927\u7EB2\u5E95\u90E8\u7F16\u8F91\u65F6\u4E0D\u518D\u7A81\u7136\u56DE\u9876\u3002"
+  ],
+  "zh-TW": [
+    "Outliner\uFF1A\u7D50\u69CB\u7DE8\u8F2F\uFF08`Enter`\u3001`Tab`\u3001`Shift+Tab`\uFF09\u73FE\u5728\u6703\u4FDD\u6301\u76EE\u524D\u8996\u53E3\u4F4D\u7F6E\uFF0C\u4E0D\u518D\u8DF3\u56DE\u6A94\u6848\u958B\u982D\u3002",
+    "Outliner\uFF1A\u7D50\u69CB\u7DE8\u8F2F\u5F8C\u7684\u7126\u9EDE\u6062\u5FA9\u66F4\u7A69\u5B9A\uFF0C\u9577\u5927\u7DB1\u5E95\u90E8\u7DE8\u8F2F\u6642\u4E0D\u518D\u7A81\u7136\u8DF3\u56DE\u9802\u7AEF\u3002"
+  ]
+};
 var WhatsNewModal = class extends import_obsidian13.Modal {
   constructor(app, options) {
     super(app);
@@ -18455,30 +18483,36 @@ var WhatsNewModal = class extends import_obsidian13.Modal {
     this.contentEl.empty();
   }
   getWhatsNewItems() {
-    var _a2, _b2, _c2, _d2, _e2, _f2, _g;
+    var _a2, _b2, _c2, _d2, _e2, _f2, _g, _h, _i;
     if (this.currentVersion === "1.8.0") {
       return i18n_default.whatsNew.v1_8_0;
     }
+    if (this.currentVersion === "2.0.15") {
+      return (_a2 = WHATS_NEW_V2_0_15[i18n_default.lang]) != null ? _a2 : WHATS_NEW_V2_0_15.en;
+    }
+    if (this.currentVersion === "2.0.13") {
+      return (_b2 = WHATS_NEW_V2_0_13[i18n_default.lang]) != null ? _b2 : WHATS_NEW_V2_0_13.en;
+    }
     if (this.currentVersion === "2.0.6") {
-      return (_a2 = WHATS_NEW_V2_0_6[i18n_default.lang]) != null ? _a2 : WHATS_NEW_V2_0_6.en;
+      return (_c2 = WHATS_NEW_V2_0_6[i18n_default.lang]) != null ? _c2 : WHATS_NEW_V2_0_6.en;
     }
     if (this.currentVersion === "2.0.5") {
-      return (_b2 = WHATS_NEW_V2_0_5[i18n_default.lang]) != null ? _b2 : WHATS_NEW_V2_0_5.en;
+      return (_d2 = WHATS_NEW_V2_0_5[i18n_default.lang]) != null ? _d2 : WHATS_NEW_V2_0_5.en;
     }
     if (this.currentVersion === "2.0.4") {
-      return (_c2 = WHATS_NEW_V2_0_4[i18n_default.lang]) != null ? _c2 : WHATS_NEW_V2_0_4.en;
+      return (_e2 = WHATS_NEW_V2_0_4[i18n_default.lang]) != null ? _e2 : WHATS_NEW_V2_0_4.en;
     }
     if (this.currentVersion === "2.0.3") {
-      return (_d2 = WHATS_NEW_V2_0_3[i18n_default.lang]) != null ? _d2 : WHATS_NEW_V2_0_3.en;
+      return (_f2 = WHATS_NEW_V2_0_3[i18n_default.lang]) != null ? _f2 : WHATS_NEW_V2_0_3.en;
     }
     if (this.currentVersion === "2.0.2") {
-      return (_e2 = WHATS_NEW_V2_0_2[i18n_default.lang]) != null ? _e2 : WHATS_NEW_V2_0_2.en;
+      return (_g = WHATS_NEW_V2_0_2[i18n_default.lang]) != null ? _g : WHATS_NEW_V2_0_2.en;
     }
     if (this.currentVersion === "2.0.1") {
-      return (_f2 = WHATS_NEW_V2_0_1[i18n_default.lang]) != null ? _f2 : WHATS_NEW_V2_0_1.en;
+      return (_h = WHATS_NEW_V2_0_1[i18n_default.lang]) != null ? _h : WHATS_NEW_V2_0_1.en;
     }
     if (this.currentVersion === "2.0.0" || this.currentVersion.startsWith("2.0.")) {
-      return (_g = WHATS_NEW_V2[i18n_default.lang]) != null ? _g : WHATS_NEW_V2.en;
+      return (_i = WHATS_NEW_V2[i18n_default.lang]) != null ? _i : WHATS_NEW_V2.en;
     }
     return i18n_default.whatsNew.fallback;
   }
@@ -25974,6 +26008,86 @@ function collectIds(list, out) {
     collectIds(b.children, out);
   }
 }
+function cloneBlockShallow(b) {
+  var _a2;
+  return {
+    id: b.id,
+    depth: b.depth,
+    text: b.text,
+    children: [],
+    system: {
+      date: b.system.date,
+      updated: b.system.updated,
+      extra: { ...(_a2 = b.system.extra) != null ? _a2 : {} }
+    },
+    _systemHasBlpMarker: b._systemHasBlpMarker
+  };
+}
+function linearizeBlocks(list, out = []) {
+  for (const b of list) {
+    out.push(cloneBlockShallow(b));
+    linearizeBlocks(b.children, out);
+  }
+  return out;
+}
+function rebuildTreeFromLinear(linear) {
+  const roots = [];
+  const stack = [];
+  for (const block of linear) {
+    block.children = [];
+    while (stack.length > block.depth)
+      stack.pop();
+    if (block.depth <= 0) {
+      block.depth = 0;
+      roots.push(block);
+    } else {
+      const parent = stack[block.depth - 1];
+      if (!parent)
+        throw new Error(`Invalid linear outliner depth sequence at block ${block.id}`);
+      parent.children.push(block);
+    }
+    stack[block.depth] = block;
+    stack.length = block.depth + 1;
+  }
+  return roots;
+}
+function findLinearIndexById(linear, id) {
+  return linear.findIndex((b) => b.id === id);
+}
+function findLinearParentId(linear, index) {
+  var _a2, _b2, _c2, _d2, _e2, _f2;
+  const depth = Math.max(0, Math.floor((_b2 = (_a2 = linear[index]) == null ? void 0 : _a2.depth) != null ? _b2 : 0));
+  if (depth <= 0)
+    return null;
+  for (let i = index - 1; i >= 0; i--) {
+    if (((_d2 = (_c2 = linear[i]) == null ? void 0 : _c2.depth) != null ? _d2 : -1) === depth - 1)
+      return (_f2 = (_e2 = linear[i]) == null ? void 0 : _e2.id) != null ? _f2 : null;
+  }
+  return null;
+}
+function findLinearDescendantEnd(linear, index) {
+  var _a2, _b2, _c2, _d2;
+  const depth = Math.max(0, Math.floor((_b2 = (_a2 = linear[index]) == null ? void 0 : _a2.depth) != null ? _b2 : 0));
+  let end = index + 1;
+  while (end < linear.length && ((_d2 = (_c2 = linear[end]) == null ? void 0 : _c2.depth) != null ? _d2 : -1) > depth)
+    end += 1;
+  return end;
+}
+function isValidLinearDepthSequence(linear) {
+  var _a2, _b2, _c2, _d2;
+  for (let i = 0; i < linear.length; i++) {
+    const depth = Math.max(0, Math.floor((_b2 = (_a2 = linear[i]) == null ? void 0 : _a2.depth) != null ? _b2 : 0));
+    if (i === 0) {
+      if (depth !== 0)
+        return false;
+      continue;
+    }
+    const prevDepth = Math.max(0, Math.floor((_d2 = (_c2 = linear[i - 1]) == null ? void 0 : _c2.depth) != null ? _d2 : 0));
+    if (depth > prevDepth + 1)
+      return false;
+  }
+  return true;
+}
 function ensureUniqueGeneratedId(ctx, existing) {
   for (let i = 0; i < 100; i++) {
     const id = ctx.generateId();
@@ -26089,23 +26203,39 @@ function splitAtSelection(file, sel, ctx) {
     didChange: true
   };
 }
-function indentBlock(file, sel) {
-  const next = cloneFile(file);
+function indentBlockPreservingOrder(file, sel) {
+  var _a2, _b2, _c2, _d2;
+  const linear = linearizeBlocks((_a2 = file.blocks) != null ? _a2 : []);
   const dirtyIds = /* @__PURE__ */ new Set();
-  const loc = findBlockLocation(next.blocks, sel.id, null);
-  if (!loc)
+  const index = findLinearIndexById(linear, sel.id);
+  if (index <= 0)
     return { file, selection: sel, dirtyIds, didChange: false };
-  if (loc.index <= 0)
+  const current = linear[index];
+  if (!current)
     return { file, selection: sel, dirtyIds, didChange: false };
-  const prev = loc.siblings[loc.index - 1];
-  if (!prev)
+  const previous = linear[index - 1];
+  if (!previous)
     return { file, selection: sel, dirtyIds, didChange: false };
-  loc.siblings.splice(loc.index, 1);
-  prev.children.push(loc.block);
-  dirtyIds.add(loc.block.id);
-  dirtyIds.add(prev.id);
-  rebuildDepths(next.blocks, 0);
-  return { file: next, selection: sel, dirtyIds, didChange: true };
+  if (((_b2 = previous.depth) != null ? _b2 : 0) < ((_c2 = current.depth) != null ? _c2 : 0)) {
+    return { file, selection: sel, dirtyIds, didChange: false };
+  }
+  const oldParentId = findLinearParentId(linear, index);
+  current.depth = Math.max(0, ((_d2 = current.depth) != null ? _d2 : 0) + 1);
+  if (!isValidLinearDepthSequence(linear)) {
+    return { file, selection: sel, dirtyIds: /* @__PURE__ */ new Set(), didChange: false };
+  }
+  const newParentId = findLinearParentId(linear, index);
+  dirtyIds.add(current.id);
+  if (oldParentId)
+    dirtyIds.add(oldParentId);
+  if (newParentId)
+    dirtyIds.add(newParentId);
+  return {
+    file: { frontmatter: file.frontmatter, blocks: rebuildTreeFromLinear(linear) },
+    selection: sel,
+    dirtyIds,
+    didChange: true
+  };
 }
 function outdentBlock(file, sel) {
   const next = cloneFile(file);
@@ -26122,6 +26252,44 @@ function outdentBlock(file, sel) {
   dirtyIds.add(loc.parent.id);
   rebuildDepths(next.blocks, 0);
   return { file: next, selection: sel, dirtyIds, didChange: true };
+}
+function outdentBlockPreservingOrder(file, sel) {
+  var _a2, _b2, _c2, _d2;
+  const linear = linearizeBlocks((_a2 = file.blocks) != null ? _a2 : []);
+  const dirtyIds = /* @__PURE__ */ new Set();
+  const index = findLinearIndexById(linear, sel.id);
+  if (index < 0)
+    return { file, selection: sel, dirtyIds, didChange: false };
+  const current = linear[index];
+  if (!current)
+    return { file, selection: sel, dirtyIds, didChange: false };
+  if (((_b2 = current.depth) != null ? _b2 : 0) <= 0)
+    return { file, selection: sel, dirtyIds, didChange: false };
+  const oldParentId = findLinearParentId(linear, index);
+  const descendantEnd = findLinearDescendantEnd(linear, index);
+  current.depth = Math.max(0, ((_c2 = current.depth) != null ? _c2 : 0) - 1);
+  dirtyIds.add(current.id);
+  for (let i = index + 1; i < descendantEnd; i++) {
+    const descendant = linear[i];
+    if (!descendant)
+      continue;
+    descendant.depth = Math.max(0, ((_d2 = descendant.depth) != null ? _d2 : 0) - 1);
+    dirtyIds.add(descendant.id);
+  }
+  if (!isValidLinearDepthSequence(linear)) {
+    return { file, selection: sel, dirtyIds: /* @__PURE__ */ new Set(), didChange: false };
+  }
+  const newParentId = findLinearParentId(linear, index);
+  if (oldParentId)
+    dirtyIds.add(oldParentId);
+  if (newParentId)
+    dirtyIds.add(newParentId);
+  return {
+    file: { frontmatter: file.frontmatter, blocks: rebuildTreeFromLinear(linear) },
+    selection: sel,
+    dirtyIds,
+    didChange: true
+  };
 }
 function moveBlockSubtree(file, sourceId, targetId, where) {
   if (!sourceId || !targetId) {
@@ -28615,7 +28783,10 @@ var FileOutlinerView = class extends import_obsidian19.TextFileView {
     this.pendingStructuralExitCommitBypassId = null;
     this.pendingFocus = null;
     this.pendingScrollToId = null;
+    this.pendingViewportRestore = null;
     this.pendingBlurTimer = null;
+    this.pendingEditorFocusRestore = false;
+    this.pendingEditorFocusTimer = null;
     this.structuralUndoStack = [];
     this.structuralRedoStack = [];
     this.structuralHistoryLimit = 100;
@@ -28696,14 +28867,31 @@ var FileOutlinerView = class extends import_obsidian19.TextFileView {
     this.contentEl.addClass("blp-file-outliner-view");
     this.syncFeatureToggles();
     this.registerDomEvent(this.contentEl, "scroll", () => this.display.scheduleVisibleBlockRefresh());
-    this.registerEvent(this.app.workspace.on("active-leaf-change", () => this.updateActiveEditorBridge()));
-    this.registerDomEvent(this.contentEl, "focusin", () => this.updateActiveEditorBridge());
+    this.registerEvent(
+      this.app.workspace.on("active-leaf-change", () => {
+        this.updateActiveEditorBridge();
+        this.queueEditorFocusRestore();
+      })
+    );
+    this.registerDomEvent(this.contentEl, "focusin", (event) => {
+      var _a2;
+      this.updateActiveEditorBridge();
+      const target = event.target;
+      if (target instanceof HTMLElement && ((_a2 = this.editorHostEl) == null ? void 0 : _a2.contains(target))) {
+        this.clearPendingEditorFocusRestore();
+        return;
+      }
+      this.queueEditorFocusRestore();
+    });
     this.registerDomEvent(this.contentEl, "focusout", (event) => {
       const next = event.relatedTarget;
       if (next instanceof HTMLElement && this.contentEl.contains(next)) {
         return;
       }
-      window.setTimeout(() => this.updateActiveEditorBridge(), 0);
+      window.setTimeout(() => {
+        this.updateActiveEditorBridge();
+        this.queueEditorFocusRestore();
+      }, 0);
     });
   }
   /**
@@ -28835,8 +29023,10 @@ var FileOutlinerView = class extends import_obsidian19.TextFileView {
     this.blockRangeSelectedIds.clear();
     this.pendingFocus = null;
     this.pendingScrollToId = null;
+    this.pendingViewportRestore = null;
     this.structuralUndoStack = [];
     this.structuralRedoStack = [];
+    this.clearPendingEditorFocusRestore();
     if (this.pendingBlurTimer) {
       window.clearTimeout(this.pendingBlurTimer);
       this.pendingBlurTimer = null;
@@ -28938,6 +29128,97 @@ var FileOutlinerView = class extends import_obsidian19.TextFileView {
       this.installActiveEditorBridge();
     else
       this.uninstallActiveEditorBridge();
+  }
+  clearPendingEditorFocusRestore() {
+    if (this.pendingEditorFocusTimer) {
+      window.clearTimeout(this.pendingEditorFocusTimer);
+      this.pendingEditorFocusTimer = null;
+    }
+    this.pendingEditorFocusRestore = false;
+  }
+  isEditorRefocusTarget(active) {
+    if (!active)
+      return true;
+    if (active === document.body)
+      return true;
+    if (active === this.rootEl)
+      return true;
+    if (active === this.contentEl)
+      return true;
+    return false;
+  }
+  queueEditorFocusRestore() {
+    if (!this.pendingEditorFocusRestore)
+      return;
+    if (this.pendingEditorFocusTimer) {
+      window.clearTimeout(this.pendingEditorFocusTimer);
+    }
+    this.pendingEditorFocusTimer = window.setTimeout(() => {
+      this.pendingEditorFocusTimer = null;
+      this.restoreEditorFocusIfNeeded();
+    }, 0);
+  }
+  restoreEditorFocusIfNeeded() {
+    if (!this.pendingEditorFocusRestore)
+      return;
+    const editor = this.editorView;
+    const editorHost = this.editorHostEl;
+    if (!this.editingId || !editor || !editorHost || editorHost.style.display === "none") {
+      this.clearPendingEditorFocusRestore();
+      return;
+    }
+    if (this.leaf !== this.app.workspace.activeLeaf)
+      return;
+    const active = document.activeElement;
+    if (active && editorHost.contains(active)) {
+      this.clearPendingEditorFocusRestore();
+      return;
+    }
+    if (!this.isEditorRefocusTarget(active))
+      return;
+    this.pendingEditorFocusRestore = false;
+    this.focusEditorWithoutContainerScroll();
+    this.updateActiveEditorBridge();
+  }
+  captureViewportRestore(focusId) {
+    this.pendingViewportRestore = {
+      scrollTop: this.contentEl.scrollTop,
+      scrollLeft: this.contentEl.scrollLeft,
+      focusId
+    };
+  }
+  clearPendingViewportRestore() {
+    this.pendingViewportRestore = null;
+  }
+  focusEditorWithoutContainerScroll() {
+    const editor = this.editorView;
+    if (!editor)
+      return;
+    const prevTop = this.contentEl.scrollTop;
+    const prevLeft = this.contentEl.scrollLeft;
+    editor.focus();
+    if (this.contentEl.scrollTop !== prevTop)
+      this.contentEl.scrollTop = prevTop;
+    if (this.contentEl.scrollLeft !== prevLeft)
+      this.contentEl.scrollLeft = prevLeft;
+  }
+  restoreViewportAfterStructuralFocus() {
+    const pending = this.pendingViewportRestore;
+    if (!pending)
+      return;
+    this.pendingViewportRestore = null;
+    this.contentEl.scrollTop = pending.scrollTop;
+    this.contentEl.scrollLeft = pending.scrollLeft;
+    const row = this.dom.getBlockEl(pending.focusId);
+    if (!row)
+      return;
+    const hostRect = this.contentEl.getBoundingClientRect();
+    const rowRect = row.getBoundingClientRect();
+    if (rowRect.top < hostRect.top) {
+      this.contentEl.scrollTop += rowRect.top - hostRect.top;
+    } else if (rowRect.bottom > hostRect.bottom) {
+      this.contentEl.scrollTop += rowRect.bottom - hostRect.bottom;
+    }
   }
   setEphemeralState(state) {
     super.setEphemeralState(state);
@@ -29550,11 +29831,14 @@ var FileOutlinerView = class extends import_obsidian19.TextFileView {
     this.syncBlockList(root, renderBlocks);
     this.pruneDom();
     if (this.pendingFocus) {
-      const { id, cursorStart, cursorEnd } = this.pendingFocus;
+      const { id, cursorStart, cursorEnd, scroll } = this.pendingFocus;
       this.pendingFocus = null;
-      this.enterEditMode(id, { cursorStart, cursorEnd, scroll: true });
+      this.enterEditMode(id, { cursorStart, cursorEnd, scroll });
     } else if (this.editingId) {
       this.enterEditMode(this.editingId, { cursorStart: 0, cursorEnd: 0, scroll: false, reuseExisting: true });
+    }
+    if (this.pendingViewportRestore) {
+      this.restoreViewportAfterStructuralFocus();
     }
     if (this.pendingScrollToId) {
       this.scrollToBlockId(this.pendingScrollToId);
@@ -29653,7 +29937,7 @@ var FileOutlinerView = class extends import_obsidian19.TextFileView {
         this.visibleNavCache = null;
         if (focusId && this.blockById.has(focusId)) {
           const end = String((_b3 = (_a3 = this.blockById.get(focusId)) == null ? void 0 : _a3.text) != null ? _b3 : "").length;
-          this.pendingFocus = { id: focusId, cursorStart: end, cursorEnd: end };
+          this.pendingFocus = { id: focusId, cursorStart: end, cursorEnd: end, scroll: false };
           this.pendingScrollToId = focusId;
         }
         this.render({ forceRebuild: true });
@@ -29679,7 +29963,7 @@ var FileOutlinerView = class extends import_obsidian19.TextFileView {
           const focusId = this.getZoomRootId();
           if (focusId && this.blockById.has(focusId)) {
             const end = String((_b3 = (_a3 = this.blockById.get(focusId)) == null ? void 0 : _a3.text) != null ? _b3 : "").length;
-            this.pendingFocus = { id: focusId, cursorStart: end, cursorEnd: end };
+            this.pendingFocus = { id: focusId, cursorStart: end, cursorEnd: end, scroll: false };
             this.pendingScrollToId = focusId;
           }
           this.render({ forceRebuild: true });
@@ -29746,7 +30030,7 @@ var FileOutlinerView = class extends import_obsidian19.TextFileView {
     this.zoomStack = nextStack;
     this.visibleNavCache = null;
     const end = String((_c2 = (_b2 = this.blockById.get(id)) == null ? void 0 : _b2.text) != null ? _c2 : "").length;
-    this.pendingFocus = { id, cursorStart: end, cursorEnd: end };
+    this.pendingFocus = { id, cursorStart: end, cursorEnd: end, scroll: false };
     this.render({ forceRebuild: true });
   }
   zoomOut() {
@@ -29761,7 +30045,7 @@ var FileOutlinerView = class extends import_obsidian19.TextFileView {
     const focusId = (_b2 = (_a2 = this.getZoomRootId()) != null ? _a2 : popped) != null ? _b2 : null;
     if (focusId) {
       const end = String((_d2 = (_c2 = this.blockById.get(focusId)) == null ? void 0 : _c2.text) != null ? _d2 : "").length;
-      this.pendingFocus = { id: focusId, cursorStart: end, cursorEnd: end };
+      this.pendingFocus = { id: focusId, cursorStart: end, cursorEnd: end, scroll: false };
       this.pendingScrollToId = focusId;
     }
     this.render({ forceRebuild: true });
@@ -30006,6 +30290,7 @@ var FileOutlinerView = class extends import_obsidian19.TextFileView {
       this.exitEditMode(this.editingId);
     }
     this.editingId = id;
+    this.clearPendingEditorFocusRestore();
     if (this.pendingBlurTimer) {
       window.clearTimeout(this.pendingBlurTimer);
       this.pendingBlurTimer = null;
@@ -30026,7 +30311,7 @@ var FileOutlinerView = class extends import_obsidian19.TextFileView {
         this.suppressEditorSync = false;
       }
     }
-    this.editorView.focus();
+    this.focusEditorWithoutContainerScroll();
     this.updateActiveEditorBridge();
     if (opts.scroll) {
       this.editorHostEl.scrollIntoView({ block: "nearest" });
@@ -30056,6 +30341,7 @@ var FileOutlinerView = class extends import_obsidian19.TextFileView {
       }
     }
     this.editingId = null;
+    this.clearPendingEditorFocusRestore();
     this.updateActiveEditorBridge();
     this.closeEditorSuggests();
     (_a2 = this.dom.getBlockEl(id)) == null ? void 0 : _a2.classList.remove("is-blp-outliner-active");
@@ -30135,9 +30421,11 @@ var FileOutlinerView = class extends import_obsidian19.TextFileView {
     this.pendingFocus = {
       id: nextSelection.id,
       cursorStart: nextSelection.start,
-      cursorEnd: nextSelection.end
+      cursorEnd: nextSelection.end,
+      scroll: false
     };
-    this.pendingScrollToId = nextSelection.id;
+    this.captureViewportRestore(nextSelection.id);
+    this.pendingScrollToId = null;
     this.render();
     this.markDirtyAndRequestSave();
   }
@@ -30174,10 +30462,17 @@ var FileOutlinerView = class extends import_obsidian19.TextFileView {
       this.pendingFocus = {
         id: result.selection.id,
         cursorStart: result.selection.start,
-        cursorEnd: result.selection.end
+        cursorEnd: result.selection.end,
+        scroll: (opts == null ? void 0 : opts.scroll) === true
       };
+      if ((opts == null ? void 0 : opts.scroll) === true)
+        this.clearPendingViewportRestore();
+      else
+        this.captureViewportRestore(result.selection.id);
+      this.pendingScrollToId = null;
     } else {
       this.pendingFocus = null;
+      this.clearPendingViewportRestore();
       this.pendingScrollToId = result.selection.id;
     }
     this.render();
@@ -30208,6 +30503,7 @@ var FileOutlinerView = class extends import_obsidian19.TextFileView {
     const editorHost = this.editorHostEl;
     if (!id || !editor || !editorHost)
       return;
+    this.pendingEditorFocusRestore = true;
     if (this.pendingBlurTimer)
       window.clearTimeout(this.pendingBlurTimer);
     this.pendingBlurTimer = window.setTimeout(() => {
@@ -30215,11 +30511,16 @@ var FileOutlinerView = class extends import_obsidian19.TextFileView {
       if (this.editingId !== id)
         return;
       const active = document.activeElement;
-      if (active && editorHost.contains(active))
+      if (active && editorHost.contains(active)) {
+        this.clearPendingEditorFocusRestore();
         return;
-      if (active && this.contentEl.contains(active))
+      }
+      this.updateActiveEditorBridge();
+      if (this.leaf !== this.app.workspace.activeLeaf)
         return;
-      this.exitEditMode(id);
+      if (!this.isEditorRefocusTarget(active))
+        return;
+      this.queueEditorFocusRestore();
     }, 32);
   }
   resetArrowNavGoalColumn() {
@@ -30398,7 +30699,7 @@ var FileOutlinerView = class extends import_obsidian19.TextFileView {
     if (!sel)
       return false;
     return this.applyStructuralEngineResult(
-      shift ? outdentBlock(this.outlinerFile, sel) : indentBlock(this.outlinerFile, sel),
+      shift ? outdentBlockPreservingOrder(this.outlinerFile, sel) : indentBlockPreservingOrder(this.outlinerFile, sel),
       sel
     );
   }
@@ -34798,6 +35099,7 @@ var JournalFeedView = class extends import_obsidian25.TextFileView {
       throw new Error("JournalFeedView: feedEl missing");
     }
     const wantsOutliner = this.plugin.settings.fileOutlinerViewEnabled !== false && isFileOutlinerEnabledFile(this.plugin, src.file);
+    const renderMode = wantsOutliner ? "outliner" : "markdown";
     const sectionEl = this.feedEl.createDiv("blp-journal-feed-day");
     const headerEl = sectionEl.createDiv("blp-journal-feed-day-header");
     const dateText = formatDay(src.ts, this.dateFormat);
@@ -34812,13 +35114,14 @@ var JournalFeedView = class extends import_obsidian25.TextFileView {
     const editorHostEl = sectionEl.createDiv("blp-journal-feed-day-editor");
     editorHostEl.dataset.blpJournalEditor = "1";
     editorHostEl.dataset.path = src.file.path;
+    editorHostEl.dataset.blpJournalRenderMode = renderMode;
     const placeholderEl = editorHostEl.createDiv("blp-journal-feed-placeholder");
     placeholderEl.setText("Scroll to load\u2026");
     const section = {
       file: src.file,
       ts: src.ts,
       isIntersecting: false,
-      renderMode: wantsOutliner ? "outliner" : "markdown",
+      renderMode,
       sectionEl,
       headerEl,
       editorHostEl,

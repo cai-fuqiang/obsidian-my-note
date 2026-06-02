@@ -335,6 +335,22 @@ body {
 .blp-journal-feed-day-editor {
   min-height: 160px;
 }
+.blp-journal-feed-day-editor > .workspace-leaf-content {
+  display: block;
+  height: auto;
+  min-height: 0;
+  overflow: visible;
+  background: transparent;
+}
+.blp-journal-feed-day-editor > .workspace-leaf-content > .view-header {
+  display: none;
+}
+.blp-journal-feed-day-editor > .workspace-leaf-content > .view-content {
+  height: auto;
+  min-height: 0;
+  padding: 0;
+  overflow: visible;
+}
 .blp-journal-feed-placeholder {
   color: var(--text-muted);
   font-size: 12px;
@@ -397,9 +413,16 @@ body {
     --blp-outliner-control-padding-right: 4px;
   }
 }
+.blp-journal-feed-day-editor[data-blp-journal-render-mode=outliner] .view-content.blp-file-outliner-view {
+  --blp-outliner-control-width: 40px;
+  --blp-outliner-control-padding-right: 4px;
+}
 .blp-file-outliner-view .blp-file-outliner-root {
   padding: 12px 14px;
   position: relative;
+}
+.blp-journal-feed-day-editor[data-blp-journal-render-mode=outliner] .view-content.blp-file-outliner-view .blp-file-outliner-root {
+  padding: 10px 8px;
 }
 .blp-file-outliner-view .blp-file-outliner-zoom-header {
   display: flex;
@@ -850,4 +873,12 @@ body.blp-outliner-dragging .blp-file-outliner-view .bullet-container,
 .blp-file-outliner-view .ls-block.is-blp-outliner-range-selected .blp-file-outliner-editor {
   box-shadow: inset var(--blp-outliner-active-inset-width) 0 0 var(--ls-block-bullet-active-color);
   background: hsla(var(--interactive-accent-hsl), 0.12);
+}
+.view-content.blp-file-outliner-view::after {
+  content: "";
+  display: block;
+  height: min(42vh, 320px);
+}
+.blp-journal-feed-day-editor[data-blp-journal-render-mode=outliner] .view-content.blp-file-outliner-view::after {
+  height: 0;
 }
