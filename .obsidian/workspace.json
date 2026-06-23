@@ -4,67 +4,53 @@
     "type": "split",
     "children": [
       {
-        "id": "d76707c202e98db3",
+        "id": "4623ee4c4a0827e7",
         "type": "tabs",
         "children": [
           {
-            "id": "d6b17423bc9a4986",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "QEMU_KVM/qemu_kvm_board.canvas",
-                "viewState": {
-                  "x": -1100,
-                  "y": -173.54950477479707,
-                  "zoom": 0
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "qemu_kvm_board"
-            }
-          },
-          {
-            "id": "0c34f936015bd63e",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "PDF/QEMU-KVM源码解析与应用.pdf",
-                "page": 165,
-                "left": -146,
-                "top": 444,
-                "zoom": 1.5
-              },
-              "icon": "lucide-file-text",
-              "title": "QEMU-KVM源码解析与应用"
-            }
-          },
-          {
-            "id": "2b4ff28e94c740f4",
+            "id": "ed9b293059ffca7a",
             "type": "leaf",
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "Excalidraw/qemu_pc_init1.excalidraw.md"
+                "file": "Excalidraw/CPU hotPlug.excalidraw.md"
               },
               "icon": "excalidraw-icon",
-              "title": "qemu_pc_init1.excalidraw"
+              "title": "CPU hotPlug.excalidraw"
             }
           },
           {
-            "id": "f115b63bb40e3d75",
+            "id": "fb3205ff355ab320",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Excalidraw/i440fx.excalidraw.md"
+                "file": "diary/2026-06-22.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
               },
-              "icon": "excalidraw-icon",
-              "title": "i440fx.excalidraw"
+              "icon": "lucide-file",
+              "title": "2026-06-22"
+            }
+          },
+          {
+            "id": "4418ade1198c37d8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "diary/2026-06-23.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "2026-06-23"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -96,7 +82,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#guess",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -121,7 +107,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 396.51103591918945
+    "width": 328.500732421875
   },
   "right": {
     "id": "b172529851f33649",
@@ -137,17 +123,17 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "QEMU_KVM/qemu_kvm_board.canvas",
+                "file": "PDF/ACPI_Spec_6.6.pdf",
                 "collapseAll": true,
-                "extraContext": true,
+                "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": true,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
-                "unlinkedCollapsed": false
+                "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "qemu_kvm_board 的反向链接列表"
+              "title": "ACPI_Spec_6.6 的反向链接列表"
             }
           },
           {
@@ -156,12 +142,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Excalidraw/class-多态.md",
+                "file": "PDF/ACPI_Spec_6.6.pdf",
                 "linksCollapsed": false,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
               },
               "icon": "links-going-out",
-              "title": "class-多态 的出链列表"
+              "title": "ACPI_Spec_6.6 的出链列表"
             }
           },
           {
@@ -171,7 +157,7 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true,
+                "useHierarchy": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
@@ -199,21 +185,81 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Excalidraw/class-多态.md",
-                "followCursor": false,
+                "file": "PDF/ACPI_Spec_6.6.pdf",
+                "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "class-多态 的大纲"
+              "title": "ACPI_Spec_6.6 的大纲"
+            }
+          },
+          {
+            "id": "7334e3ccc029917f",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新标签页"
+            }
+          },
+          {
+            "id": "234c45071bdf3f33",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw-sidepanel",
+              "state": {},
+              "icon": "excalidraw-icon",
+              "title": "Excalidraw 侧边面板"
+            }
+          },
+          {
+            "id": "60b3f421900b996b",
+            "type": "leaf",
+            "state": {
+              "type": "copilot-chat-view",
+              "state": {},
+              "icon": "message-square",
+              "title": "Copilot"
+            }
+          },
+          {
+            "id": "7428399a5ea7f3a7",
+            "type": "leaf",
+            "state": {
+              "type": "planner-timeline",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Timeline"
+            }
+          },
+          {
+            "id": "95ecac0159f9706a",
+            "type": "leaf",
+            "state": {
+              "type": "planner-time-tracker",
+              "state": {},
+              "icon": "timer",
+              "title": "Time Tracker"
+            }
+          },
+          {
+            "id": "27a0830ed4e3eba1",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
             }
           }
-        ]
+        ],
+        "currentTab": 8
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 642.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -230,59 +276,68 @@
       "pdf-plus:PDF++: Toggle auto-focus": false,
       "pdf-plus:PDF++: Toggle auto-paste": false,
       "code-files:Create Code File": false,
-      "webpage-html-export:导出为HTML": false
+      "webpage-html-export:导出为HTML": false,
+      "obsidian-omnivore:Omnivore": false,
+      "media-extended:打开媒体库": false,
+      "media-extended:打开媒体快速切换器": false,
+      "copilot:Open Copilot Chat": false,
+      "obsidian-day-planner:Open Timeline": false,
+      "obsidian-day-planner:Open Multi-Day View": false
     }
   },
-  "active": "d6b17423bc9a4986",
+  "active": "4418ade1198c37d8",
   "lastOpenFiles": [
-    "QEMU_KVM/QEMU module.md",
-    "QEMU_KVM/QEMU - machine.md",
-    "QEMU_KVM/qemu_kvm_board.canvas",
-    "QEMU_KVM/x86 CPU feature.md",
-    "QEMU_KVM/QEMU - CPU model.md",
-    "QEMU_KVM/INTEL_VMX.md",
-    "QEMU_KVM/KVM - API OVERFLOW.md",
+    "diary/2026-06-22.md",
+    "diary/2026-06-23.md",
+    "problems/arm64 无法正常启动-加载fbaa64.efi 失败.md",
+    "problems",
+    "jdds/2403 freeze queue io hung问题调试.md",
+    "jdds/未命名",
+    "jdds",
+    "copilot/copilot-conversations/add_a_task_for_this_time_调试_日记@20260622_095505.md",
+    "copilot/copilot-conversations",
+    "diary_template/diary_template.md",
+    "Excalidraw/CPU hotPlug.excalidraw.md",
+    "diary_template",
+    "diary",
+    "Excalidraw/fw_cfg.excalidraw.md",
     "PDF/QEMU-KVM源码解析与应用.pdf",
-    "Excalidraw/qemu_pc_init1.excalidraw.md",
-    "Excalidraw/i440fx.excalidraw.md",
-    "QEMU_KVM/QEMU OBJECT MODEL.md",
-    "Clippings/Backwards compatibility — QEMU 10.0.3 documentation.md",
-    "Clippings",
-    "Pasted image 20260601223619.png",
-    "PDF/325462-sdm-vol-1-2abcd-3abcd-4.pdf",
-    "draw.io/QOM_edu_class.svg",
-    "PDF/architecture-instruction-set-extensions-programming-reference.pdf",
-    "PDF/armclang_reference_guide_100067_0611_00_en.pdf",
-    "Excalidraw/TypeInfo_Class_instance.md",
-    "Excalidraw/qemu_X86_CPU_instance.excalidraw.md",
-    "Excalidraw/qemu_module_init_type_list.md",
-    "Excalidraw/qemu_cpu_model_tree.excalidraw.md",
-    "Excalidraw/interface_class_inherit.excalidraw.md",
-    "Excalidraw/PCIDeviceClass层级结构.md",
-    "Excalidraw/KVM_file.excalidraw.md",
-    "Templates/kernel code.md",
+    "Excalidraw/Drawing 2026-06-16 14.43.31.excalidraw.md",
+    "PDF/ACPI_Spec_6.6.pdf",
     "Templates/qemu-code.md",
-    "AI TOOLS/tools.md",
-    "Excalidraw/virt_overflow.excalidraw.md",
-    "kernel/KVM/operate VMCS.md",
+    "Clippings/PATCH RFC V4 0033 Support of Virtual CPU Hotplug for ARMv8 Arch.md",
+    "Excalidraw/Scripts/Downloaded/Mindmap Builder.svg",
+    "QEMU_KVM/QEMU module.md",
+    "Excalidraw/PCIDeviceClass层级结构.md",
+    "Excalidraw/qemu_cpu_model_tree.excalidraw.md",
     "Excalidraw/qemu_moduel_init.excalidraw.md",
-    "Excalidraw/cpu_class_init.excalidraw.md",
-    "QEMU/cpu_class_init_function.md",
-    "scripts/test-embed-code-file-nesting.mjs",
-    "scripts",
+    "Excalidraw/qemu_module_init_type_list.md",
+    "copilot/copilot-custom-prompts/Clip Web Page.md",
+    "copilot/copilot-custom-prompts/Clip YouTube Transcript.md",
+    "copilot/copilot-custom-prompts/Rewrite as tweet thread.md",
+    "copilot/copilot-custom-prompts/Rewrite as tweet.md",
+    "copilot/copilot-custom-prompts/Remove URLs.md",
+    "copilot/copilot-custom-prompts/Generate glossary.md",
+    "copilot/copilot-custom-prompts/Generate table of contents.md",
+    "copilot/copilot-custom-prompts/Make longer.md",
+    "copilot/copilot-custom-prompts/Make shorter.md",
+    "copilot/copilot-custom-prompts/Emojify.md",
+    "copilot/copilot-custom-prompts",
+    "copilot",
+    "QEMU_KVM/qemu_kvm_board.canvas",
+    "ACPI_Spec_6.6.webp",
+    "Excalidraw/Scripts/Downloaded/Reverse arrows.svg",
+    "Excalidraw/Scripts/Downloaded/Mindmap format.svg",
+    "Excalidraw/Scripts/Downloaded/Mindmap connector.svg",
+    "QEMU_KVM/未命名.canvas",
+    "325462-sdm-vol-1-2abcd-3abcd-4.webp",
     "未命名.canvas",
+    "未命名 1.canvas",
+    "未命名 2.canvas",
+    "Pasted image 20260601223619.png",
+    "draw.io/QOM_edu_class.svg",
     "draw.io/QOM-interface-type-info.svg",
     "draw.io/QOM-interface-class2.drawio.svg",
-    "draw.io/QOM-interface-class2.svg",
-    "draw.io/QOM-interface-class.svg",
-    "Excalidraw/未命名.base",
-    "未命名 1.canvas",
-    "draw.io",
-    "draw",
-    "Excalidraw/Scripts/Downloaded/Create DrawIO file.svg",
-    "协程enter.svg",
-    "projects/qemu-wang-upstream/ui/icons/qemu_64x64.png",
-    "projects/qemu-wang-upstream/ui/icons/qemu_512x512.png",
     "Excalidraw/未命名.canvas"
   ]
 }

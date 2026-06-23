@@ -56,8 +56,8 @@
   "penModeSingleFingerPanning": true,
   "penModeCrosshairVisible": true,
   "panWithRightMouseButton": false,
-  "renderImageInMarkdownReadingMode": false,
-  "renderImageInHoverPreviewForMDNotes": false,
+  "renderImageInMarkdownReadingMode": true,
+  "renderImageInHoverPreviewForMDNotes": true,
   "renderImageInMarkdownToPDF": false,
   "allowPinchZoom": false,
   "allowWheelZoom": false,
@@ -6129,7 +6129,372 @@
   "mdFontColor": "Black",
   "mdBorderColor": "Black",
   "mdCSS": "",
-  "scriptEngineSettings": {},
+  "scriptEngineSettings": {
+    "Downloaded/Mindmap Builder": {
+      "Layout Config": {
+        "value": {
+          "GAP_X": 120,
+          "GAP_Y": 25,
+          "GAP_MULTIPLIER": 0.6,
+          "ROOT_RADIUS_FACTOR": 0.8,
+          "MIN_RADIUS": 350,
+          "RADIAL_ASPECT_RATIO": 0.7,
+          "RADIAL_POLE_GAP_BONUS": 2,
+          "RADIAL_START_ANGLE": 280,
+          "RADIAL_MAX_SWEEP": 340,
+          "DIRECTIONAL_ARC_SPAN_RADIANS": 1,
+          "GAP_MULTIPLIER_DIRECTIONAL": 1.5,
+          "RADIUS_PADDING_PER_NODE": 7,
+          "VERTICAL_SUBTREE_WIDTH_BLEND_SINGLE": 0.35,
+          "VERTICAL_SUBTREE_WIDTH_BLEND_DUAL": 0.6,
+          "VERTICAL_SUBTREE_SMOOTH_THRESHOLD_MULTIPLIER": 6,
+          "VERTICAL_SUBTREE_SMOOTH_MIN_SCALE": 240,
+          "HORIZONTAL_L1_SOFTCAP_THRESHOLD": 560,
+          "HORIZONTAL_L1_COMPRESSION_MIN_SCALE": 240,
+          "VERTICAL_COMPACT_PARENT_CHILD_GAP_RATIO": 0.55,
+          "DIRECTIONAL_CROSS_AXIS_RATIO": 0.2,
+          "INDICATOR_OFFSET": 10,
+          "INDICATOR_OPACITY": 40,
+          "CONTAINER_PADDING": 10,
+          "MAX_SEGMENT_LENGTH": 80,
+          "MANUAL_GAP_MULTIPLIER": 1.3,
+          "MANUAL_JITTER_RANGE": 300
+        },
+        "hidden": true
+      },
+      "Box Children": {
+        "value": false,
+        "hidden": false
+      },
+      "Hotkeys": {
+        "value": [
+          {
+            "action": "Add",
+            "key": "Enter",
+            "modifiers": [],
+            "scope": 3
+          },
+          {
+            "action": "Add Next Sibling",
+            "key": "Enter",
+            "modifiers": [
+              "Alt"
+            ],
+            "scope": 3
+          },
+          {
+            "action": "Add Prev Sibling",
+            "key": "Enter",
+            "modifiers": [
+              "Alt",
+              "Shift"
+            ],
+            "scope": 3
+          },
+          {
+            "action": "Add + follow",
+            "key": "Enter",
+            "modifiers": [
+              "Mod",
+              "Alt"
+            ],
+            "scope": 3
+          },
+          {
+            "action": "Add + follow + focus",
+            "key": "Enter",
+            "modifiers": [
+              "Mod"
+            ],
+            "scope": 3
+          },
+          {
+            "action": "Add + follow + zoom",
+            "key": "Enter",
+            "modifiers": [
+              "Mod",
+              "Shift"
+            ],
+            "scope": 3
+          },
+          {
+            "action": "Dock/Undock",
+            "key": "Enter",
+            "modifiers": [
+              "Shift"
+            ],
+            "scope": 3
+          },
+          {
+            "action": "Dock & hide",
+            "key": "Escape",
+            "modifiers": [],
+            "scope": 2
+          },
+          {
+            "action": "Edit node",
+            "code": "KeyE",
+            "modifiers": [
+              "Mod"
+            ],
+            "scope": 3
+          },
+          {
+            "action": "Toggle Checkbox",
+            "code": "KeyL",
+            "modifiers": [
+              "Mod"
+            ],
+            "scope": 3
+          },
+          {
+            "action": "Calendar",
+            "code": "KeyD",
+            "modifiers": [
+              "Alt",
+              "Mod"
+            ],
+            "scope": 3
+          },
+          {
+            "action": "Pin/Unpin",
+            "code": "KeyP",
+            "modifiers": [
+              "Alt"
+            ],
+            "scope": 3
+          },
+          {
+            "action": "Box/Unbox",
+            "code": "KeyB",
+            "modifiers": [
+              "Alt"
+            ],
+            "scope": 3
+          },
+          {
+            "action": "Toggle Boundary",
+            "code": "KeyB",
+            "modifiers": [
+              "Alt",
+              "Shift"
+            ],
+            "scope": 3
+          },
+          {
+            "action": "Toggle Submap Root",
+            "code": "KeyJ",
+            "modifiers": [
+              "Alt"
+            ],
+            "scope": 3
+          },
+          {
+            "action": "Group/Ungroup Single Branch",
+            "code": "KeyG",
+            "modifiers": [
+              "Alt"
+            ],
+            "scope": 3
+          },
+          {
+            "action": "Toggle Embed/Link",
+            "code": "KeyE",
+            "modifiers": [
+              "Alt"
+            ],
+            "scope": 3
+          },
+          {
+            "action": "Copy",
+            "code": "KeyC",
+            "modifiers": [
+              "Alt"
+            ],
+            "scope": 3
+          },
+          {
+            "action": "Cut",
+            "code": "KeyX",
+            "modifiers": [
+              "Alt"
+            ],
+            "scope": 3
+          },
+          {
+            "action": "Paste",
+            "code": "KeyV",
+            "modifiers": [
+              "Alt"
+            ],
+            "scope": 3
+          },
+          {
+            "action": "Import Outline from Linked File",
+            "code": "KeyI",
+            "modifiers": [
+              "Alt"
+            ],
+            "scope": 3
+          },
+          {
+            "action": "Rearrange Map",
+            "code": "KeyR",
+            "modifiers": [
+              "Alt"
+            ],
+            "scope": 3
+          },
+          {
+            "action": "Cycle Zoom",
+            "code": "KeyZ",
+            "modifiers": [
+              "Alt"
+            ],
+            "scope": 3
+          },
+          {
+            "action": "Focus (center) node",
+            "code": "KeyF",
+            "modifiers": [
+              "Alt"
+            ],
+            "scope": 3
+          },
+          {
+            "action": "Navigate",
+            "key": "ArrowKeys",
+            "modifiers": [
+              "Alt"
+            ],
+            "scope": 3
+          },
+          {
+            "action": "Navigate & zoom",
+            "key": "ArrowKeys",
+            "modifiers": [
+              "Alt",
+              "Shift"
+            ],
+            "scope": 3
+          },
+          {
+            "action": "Navigate & focus",
+            "key": "ArrowKeys",
+            "modifiers": [
+              "Alt",
+              "Mod"
+            ],
+            "scope": 3
+          },
+          {
+            "action": "Change Order/Promote Node",
+            "code": "ArrowKeys",
+            "modifiers": [
+              "Mod"
+            ],
+            "scope": 3
+          },
+          {
+            "action": "Fold/Unfold Branch",
+            "code": "Digit1",
+            "modifiers": [
+              "Alt"
+            ],
+            "scope": 3
+          },
+          {
+            "action": "Fold/Unfold to Level 1",
+            "code": "Digit2",
+            "modifiers": [
+              "Alt"
+            ],
+            "scope": 3
+          },
+          {
+            "action": "Fold/Unfold Branch Recursively",
+            "code": "Digit3",
+            "modifiers": [
+              "Alt"
+            ],
+            "scope": 3
+          },
+          {
+            "action": "Undo",
+            "key": "z",
+            "modifiers": [
+              "Mod"
+            ],
+            "scope": 2
+          },
+          {
+            "action": "Redo (Ctrl-Shift-Z)",
+            "key": "z",
+            "modifiers": [
+              "Mod",
+              "Shift"
+            ],
+            "scope": 2
+          },
+          {
+            "action": "Redo (Ctrl-Y)",
+            "key": "y",
+            "modifiers": [
+              "Mod"
+            ],
+            "scope": 2
+          }
+        ],
+        "hidden": true
+      },
+      "Preferred Zoom Level": {
+        "value": "Medium",
+        "hidden": false
+      },
+      "Center text in nodes?": {
+        "value": true,
+        "hidden": false
+      },
+      "Arrow Stroke Style": {
+        "value": true,
+        "hidden": false
+      },
+      "Group Branches": {
+        "value": false,
+        "hidden": false
+      },
+      "Is Undocked": {
+        "value": true,
+        "hidden": false
+      },
+      "Max Text Width": {
+        "value": 260,
+        "hidden": false
+      },
+      "Multicolor Mode": {
+        "value": true,
+        "hidden": false
+      }
+    },
+    "Downloaded/Mindmap format": {
+      "MindMap Format": {
+        "value": "Excalidraw/MindMap Format",
+        "description": "This is prepared for the namespace of MindMap Format and does not need to be modified"
+      },
+      "default gap": {
+        "value": 10,
+        "description": "Interval size of element"
+      },
+      "curve length": {
+        "value": 40,
+        "description": "The length of the curve part in the mind map line"
+      },
+      "length between element and line": {
+        "value": 50,
+        "description": "The distance between the tail of the connection and the connecting elements of the mind map"
+      }
+    }
+  },
   "previousRelease": "2.23.7",
   "showReleaseNotes": true,
   "excalidrawMasteryPromoCollapsed": false,
@@ -6139,8 +6504,12 @@
   "latexPreambleLocation": "preamble.sty",
   "taskboneEnabled": false,
   "taskboneAPIkey": "",
-  "pinnedScripts": [],
-  "sidepanelTabs": [],
+  "pinnedScripts": [
+    "Excalidraw/Scripts/Downloaded/Mindmap format.md"
+  ],
+  "sidepanelTabs": [
+    "{\"script\":\"Downloaded/Mindmap Builder\",\"title\":\"Mind Map Builder\"}"
+  ],
   "customPens": [
     {
       "type": "default",
@@ -6489,7 +6858,7 @@
     "borderOpacity": 0,
     "filenameVisible": false
   },
-  "markdownNodeOneClickEditing": false,
+  "markdownNodeOneClickEditing": true,
   "canvasImmersiveEmbed": true,
   "startupScriptPath": "",
   "aiEnabled": true,

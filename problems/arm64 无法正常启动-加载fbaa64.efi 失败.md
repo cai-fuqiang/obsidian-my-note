@@ -1,0 +1,2806 @@
+```
+UEFI firmware (version  built at 21:22:00 on Apr 14 2026)
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/ArmPlatformPkg/PrePeiCore/PrePeiCoreUniCore/DEBUG/ArmPlatformPrePeiCore.dll 0x2000
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/MdeModulePkg/Core/Pei/PeiMain/DEBUG/PeiCore.dll 0xD240
+Register PPI Notify: DCD0BE23-9586-40F4-B643-06522CED4EDE
+Install PPI: 8C8CE578-8A3D-4F1C-9935-896185C32DD3
+Install PPI: 5473C07A-3DCB-4DCA-BD6F-1E9689E7349A
+The 0th FV start address is 0x00000001000, size is 0x001FF000, handle is 0x1000
+Register PPI Notify: 49EDB1C1-BF21-4761-BB12-EB0031AABB39
+Register PPI Notify: EA7CA24B-DED5-4DAD-A389-BF827E8F9B38
+Install PPI: B9E0ABFE-5979-4914-977F-6DEE78C278A6
+Install PPI: DBE23AA9-A345-4B97-85B6-B226F1617389
+DiscoverPeimsAndOrderWithApriori(): Found 0x9 PEI FFS files in the 0th FV
+Loading PEIM 9B3ADA4F-AE56-4C24-8DEA-F03B7558AE50
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/MdeModulePkg/Universal/PCD/Pei/Pcd/DEBUG/PcdPeim.dll 0x39240
+Loading PEIM at 0x00000039160 EntryPoint=0x0000003CE08 PcdPeim.efi
+Install PPI: 06E81C58-4AD7-44BC-8390-F10265F72480
+Install PPI: 01F34D25-4DE2-23AD-3FF3-36353FF323F1
+Install PPI: 4D8B155B-C059-4C8F-8926-06FD4331DB8A
+Install PPI: A60C6B59-E459-425D-9C69-0BCC9CB27D81
+Register PPI Notify: 605EA650-C65C-42E1-BA80-91A52AB618C6
+Loading PEIM 6141E486-7543-4F1A-A579-FF532ED78E75
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/MdeModulePkg/Universal/ResetSystemPei/ResetSystemPei/DEBUG/ResetSystemPei.dll 0x3F240
+Loading PEIM at 0x0000003F160 EntryPoint=0x00000041438 ResetSystemPei.efi
+Install PPI: 6CC45765-CCE4-42FD-BC56-011AAAC6C9A8
+Install PPI: 8C9F4DE3-7B90-47EF-9308-287CECD66DE8
+Install PPI: E09F355D-DAE8-4910-B14A-92780FDCF7CB
+Install PPI: 75CF14AE-3441-49DC-AA10-BB35A7BA8BAB
+Loading PEIM 0FBFFD44-F98F-4E1C-9922-E9B21F13C3F8
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/ArmVirtPkg/MemoryInitPei/MemoryInitPeim/DEBUG/MemoryInit.dll 0x1E400
+Loading PEIM at 0x0000001E160 EntryPoint=0x0000002062C MemoryInit.efi
+ArmMmuLib: skipping cache maintenance on XIP PEIM
+QemuVirtMemInfoPeiLibConstructor: System RAM @ 0x40000000 - 0x13FFFFFFF
+PeiInstallPeiMemory MemoryBegin 0x44000000, MemoryLength 0x4000000
+ArmVirtGetMemoryMap: Dumping System DRAM Memory Map:
+	PhysicalBase: 0x40000000
+	VirtualBase: 0x40000000
+	Length: 0x100000000
+Temp Stack : BaseAddress=0x4007E010 Length=0x1FF0
+Temp Heap  : BaseAddress=0x4007C020 Length=0x1FF0
+Total temporary memory:    16352 bytes.
+  temporary memory stack ever used:       4112 bytes.
+  temporary memory heap used for HobList: 3800 bytes.
+  temporary memory heap occupied by memory pages: 0 bytes.
+Memory Allocation 0x00000004 0x47FFF000 - 0x47FFFFFF
+Memory Allocation 0x00000004 0x47FFE000 - 0x47FFEFFF
+Memory Allocation 0x00000004 0x47FFD000 - 0x47FFDFFF
+Memory Allocation 0x00000004 0x47FFC000 - 0x47FFCFFF
+Memory Allocation 0x00000004 0x47FFB000 - 0x47FFBFFF
+Memory Allocation 0x00000004 0x47FFA000 - 0x47FFAFFF
+Old Stack size 8176, New stack size 131072
+Stack Hob: BaseAddress=0x44000000 Length=0x20000
+Heap Offset = 0x3FA3FE0 Stack Offset = 0x3FA0000
+Reinstall PPI: 8C8CE578-8A3D-4F1C-9935-896185C32DD3
+Reinstall PPI: 5473C07A-3DCB-4DCA-BD6F-1E9689E7349A
+Reinstall PPI: B9E0ABFE-5979-4914-977F-6DEE78C278A6
+Install PPI: F894643D-C449-42D1-8EA8-85BDD8C65BDE
+Loading PEIM 9B3ADA4F-AE56-4C24-8DEA-F03B7558AE50
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/MdeModulePkg/Universal/PCD/Pei/Pcd/DEBUG/PcdPeim.dll 0x47FF4240
+Loading PEIM at 0x00047FF4160 EntryPoint=0x00047FF7E08 PcdPeim.efi
+Reinstall PPI: 06E81C58-4AD7-44BC-8390-F10265F72480
+Reinstall PPI: 4D8B155B-C059-4C8F-8926-06FD4331DB8A
+Reinstall PPI: 01F34D25-4DE2-23AD-3FF3-36353FF323F1
+Reinstall PPI: A60C6B59-E459-425D-9C69-0BCC9CB27D81
+Loading PEIM 2FD8B7AD-F8FA-4021-9FC0-0AA572147CDC
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/ArmPkg/Drivers/CpuPei/CpuPei/DEBUG/CpuPei.dll 0x23400
+Loading PEIM at 0x00000023160 EntryPoint=0x00000025614 CpuPei.efi
+ArmMmuLib: skipping cache maintenance on XIP PEIM
+Install PPI: 1BE840DE-2D92-41EC-B6D3-1964135051FB
+Loading PEIM 2AD0FC59-2314-4BF3-8633-13FA22A624A0
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/ArmPlatformPkg/PlatformPei/PlatformPeim/DEBUG/PlatformPei.dll 0x1A240
+Loading PEIM at 0x0000001A160 EntryPoint=0x0000001BDC4 PlatformPei.efi
+Platform PEIM Loaded
+PlatformPeim: PL011 UART @ 0x9000000
+Install PPI: A030D115-54DD-447B-9064-F206883D7CCC
+Install PPI: 7408D748-FC8C-4EE6-9288-C4BEC092A410
+Loading PEIM 86D70125-BAA3-4296-A62F-602BEBBB9081
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/MdeModulePkg/Core/DxeIplPeim/DxeIpl/DEBUG/DxeIpl.dll 0x27240
+Loading PEIM at 0x00000027160 EntryPoint=0x0000002C1B4 DxeIpl.efi
+Loading PEIM 86D70125-BAA3-4296-A62F-602BEBBB9081
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/MdeModulePkg/Core/DxeIplPeim/DxeIpl/DEBUG/DxeIpl.dll 0x47EEC240
+Loading PEIM at 0x00047EEC160 EntryPoint=0x00047EF11B4 DxeIpl.efi
+Install PPI: EE4E5898-3914-4259-9D6E-DC7BD79403CF
+Install PPI: 1A36E4E7-FAB6-476A-8E75-695A0576FDD7
+Install PPI: 0AE8CE5D-E448-4437-A8D7-EBF5F194F731
+Customized Guided section Memory Size required is 0x8CFB50 and address is 0x4760C000
+ProcessFvFile() FV at 0x4760C010, FvAlignment required is 0x10
+Install PPI: EA7CA24B-DED5-4DAD-A389-BF827E8F9B38
+Notify: PPI Guid: EA7CA24B-DED5-4DAD-A389-BF827E8F9B38, Peim notify entry point: 10904
+The 1th FV start address is 0x0004760C010, size is 0x008CFB40, handle is 0x4760C010
+Install PPI: 49EDB1C1-BF21-4761-BB12-EB0031AABB39
+Notify: PPI Guid: 49EDB1C1-BF21-4761-BB12-EB0031AABB39, Peim notify entry point: 10904
+The FV 4760C010 has already been processed!
+DiscoverPeimsAndOrderWithApriori(): Found 0x0 PEI FFS files in the 1th FV
+DXE IPL Entry
+Loading PEIM D6A2CB7F-6A18-4E2F-B43B-9920A733700A
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/MdeModulePkg/Core/Dxe/DxeMain/DEBUG/DxeCore.dll 0x475C8000
+Loading PEIM at 0x000475C7000 EntryPoint=0x000475CFA1C DxeCore.efi
+Loading DXE CORE at 0x000475C7000 EntryPoint=0x000475CFA1C
+Install PPI: 605EA650-C65C-42E1-BA80-91A52AB618C6
+Notify: PPI Guid: 605EA650-C65C-42E1-BA80-91A52AB618C6, Peim notify entry point: 3CC70
+DxeMain: MemoryBaseAddress=0x48000000 MemoryLength=0xF8000000
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/MdeModulePkg/Core/Dxe/DxeMain/DEBUG/DxeCore.dll 0x475C8000
+HOBLIST address in DXE = 0x13F621018
+Memory Allocation 0x00000004 0x47FFF000 - 0x47FFFFFF
+Memory Allocation 0x00000004 0x47FFE000 - 0x47FFEFFF
+Memory Allocation 0x00000004 0x47FFD000 - 0x47FFDFFF
+Memory Allocation 0x00000004 0x47FFC000 - 0x47FFCFFF
+Memory Allocation 0x00000004 0x47FFB000 - 0x47FFBFFF
+Memory Allocation 0x00000004 0x47FFA000 - 0x47FFAFFF
+Memory Allocation 0x00000004 0x475A7000 - 0x475C6FFF
+Memory Allocation 0x00000003 0x47FF4000 - 0x47FF9FFF
+Memory Allocation 0x00000004 0x47EF3000 - 0x47FF3FFF
+Memory Allocation 0x00000003 0x47EEC000 - 0x47EF2FFF
+Memory Allocation 0x00000004 0x47EDC000 - 0x47EEBFFF
+Memory Allocation 0x00000004 0x4760C000 - 0x47EDBFFF
+Memory Allocation 0x00000003 0x475C7000 - 0x4760BFFF
+Memory Allocation 0x00000003 0x475C7000 - 0x4760BFFF
+Memory Allocation 0x00000004 0x475A7000 - 0x475C6FFF
+Memory Allocation 0x00000004 0x475A6000 - 0x475A6FFF
+Memory Allocation 0x00000004 0x44000000 - 0x4401FFFF
+FV Hob            0x1000 - 0x1FFFFF
+FV Hob            0x4760C010 - 0x47EDBB4F
+FV2 Hob           0x4760C010 - 0x47EDBB4F
+                  00000000-0000-0000-0000-000000000000 - 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792
+FV3 Hob           0x4760C010 - 0x47EDBB4F - 0x0 - 0x1
+                  00000000-0000-0000-0000-000000000000 - 9E21FD93-9C72-4C15-8C4B-E77F1DB2D792
+InstallProtocolInterface: D8117CFE-94A6-11D4-9A3A-0090273FC14D 475EEE50
+InstallProtocolInterface: 8F644FA9-E850-4DB1-9CE2-0B44698E8DA4 13F61D4B0
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13F619018
+InstallProtocolInterface: 8F644FA9-E850-4DB1-9CE2-0B44698E8DA4 13F619BB0
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13F619C98
+InstallProtocolInterface: 220E73B6-6BDB-4413-8405-B974B108619A 13F619130
+InstallProtocolInterface: 220E73B6-6BDB-4413-8405-B974B108619A 13F618A30
+InstallProtocolInterface: FC1BCDB0-7D31-49AA-936A-A4600D9DD083 475EEBF8
+Loading driver 9B680FCE-AD6B-4F3A-B60B-F59899003443
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EBD2040
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/MdeModulePkg/Universal/DevicePathDxe/DevicePathDxe/DEBUG/DevicePathDxe.dll 0x13FBF2000
+Loading driver at 0x0013FBF1000 EntryPoint=0x0013FBF9C00 DevicePathDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EC0D498
+ProtectUefiImageCommon - 0x3EBD2040
+  - 0x000000013FBF1000 - 0x000000000000F000
+InstallProtocolInterface: 0379BE4E-D706-437D-B037-EDB82FB772A4 13FBFD478
+InstallProtocolInterface: 8B843E20-8132-4852-90CC-551A4E4A7F1C 13FBFD468
+InstallProtocolInterface: 05C99A21-C70F-4AD2-8A5F-35DF3343F51E 13FBFD458
+Loading driver 80CF7257-87AB-47F9-A3FE-D50B76D89541
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EBD2340
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/MdeModulePkg/Universal/PCD/Dxe/Pcd/DEBUG/PcdDxe.dll 0x13FBE9000
+Loading driver at 0x0013FBE8000 EntryPoint=0x0013FBECA94 PcdDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EBD2898
+ProtectUefiImageCommon - 0x3EBD2340
+  - 0x000000013FBE8000 - 0x0000000000009000
+InstallProtocolInterface: 11B34006-D85B-4D0A-A290-D5A571310EF7 13FBEF190
+InstallProtocolInterface: 13A3F0F6-264A-3EF0-F2E0-DEC512342F34 13FBEF0F0
+InstallProtocolInterface: 5BE40F57-FA68-4610-BBBF-E9C5FCDAD365 13FBEF0C8
+InstallProtocolInterface: FD0F4478-0EFD-461D-BA2D-E58C45FD5F5E 13FBEF0A8
+Loading driver 9A871B00-1C16-4F61-8D2C-93B6654B5AD6
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EBD8040
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/EmbeddedPkg/Drivers/FdtClientDxe/FdtClientDxe/DEBUG/FdtClientDxe.dll 0x13FBE1000
+Loading driver at 0x0013FBE0000 EntryPoint=0x0013FBE3660 FdtClientDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EBD8D18
+ProtectUefiImageCommon - 0x3EBD8040
+  - 0x000000013FBE0000 - 0x0000000000008000
+InitializeFdtClientDxe: DTB @ 0x47EF3000
+InstallProtocolInterface: E11FACA0-4710-4C8E-A7A2-01BAA2591B4C 13FBE6030
+Loading driver B601F8C4-43B7-4784-95B1-F4226CB40CEE
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EBD83C0
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/MdeModulePkg/Core/RuntimeDxe/RuntimeDxe/DEBUG/RuntimeDxe.dll 0x13FD50000
+Loading driver at 0x0013FD40000 EntryPoint=0x0013FD516E0 RuntimeDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EBD8698
+ProtectUefiImageCommon - 0x3EBD83C0
+  - 0x000000013FD40000 - 0x0000000000040000
+InstallProtocolInterface: B7DFB4E1-052F-449F-87BE-9818FC91B733 13FD60030
+Loading driver F80697E9-7FD6-4665-8646-88E33EF71DFC
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EBE1C40
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/MdeModulePkg/Universal/SecurityStubDxe/SecurityStubDxe/DEBUG/SecurityStubDxe.dll 0x13FB22000
+Loading driver at 0x0013FB21000 EntryPoint=0x0013FB252BC SecurityStubDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EBE1A98
+ProtectUefiImageCommon - 0x3EBE1C40
+  - 0x000000013FB21000 - 0x00000000000BF000
+InstallProtocolInterface: 94AB2F58-1438-4EF1-9152-18941A3A0E68 13FBDA1C8
+InstallProtocolInterface: A46423E3-4617-49F1-B9FF-D1BFA9115839 13FBDA1C0
+InstallProtocolInterface: 15853D7C-3DDF-43E0-A1CB-EBF85B8F872C 13FBDA1A8
+Loading driver 4C6E0267-C77D-410D-8100-1495911A989D
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EBE0BC0
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/EmbeddedPkg/MetronomeDxe/MetronomeDxe/DEBUG/MetronomeDxe.dll 0x13FB1C000
+Loading driver at 0x0013FB1B000 EntryPoint=0x0013FB1D0B8 MetronomeDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EBE0F18
+ProtectUefiImageCommon - 0x3EBE0BC0
+  - 0x000000013FB1B000 - 0x0000000000006000
+InstallProtocolInterface: 26BACCB2-6F42-11D4-BCE7-0080C73C8881 13FB1F030
+Loading driver 348C4D62-BFBD-4882-9ECE-C80BB1C4783B
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EBE01C0
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe/DEBUG/HiiDatabase.dll 0x13FAFE000
+Loading driver at 0x0013FAFD000 EntryPoint=0x0013FB015A0 HiiDatabase.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EBE0718
+ProtectUefiImageCommon - 0x3EBE01C0
+  - 0x000000013FAFD000 - 0x000000000001E000
+InstallProtocolInterface: E9CA4775-8657-47FC-97E7-7ED65A084324 13FB19120
+InstallProtocolInterface: 0FD96974-23AA-4CDC-B9CB-98D17750322A 13FB19198
+InstallProtocolInterface: EF9FC172-A1B2-4693-B327-6D32FC416042 13FB191C0
+InstallProtocolInterface: 587E72D7-CC50-4F79-8209-CA291FC1A10F 13FB19218
+InstallProtocolInterface: 0A8BADD5-03B8-4D19-B128-7B8F0EDAA596 13FB19248
+InstallProtocolInterface: 31A6406A-6BDF-4E46-B2A2-EBAA89C40920 13FB19140
+InstallProtocolInterface: 1A1241E6-8F19-41A9-BC0E-E8EF39E06546 13FB19168
+Loading driver 9A5163E7-5C29-453F-825C-837A46A81E15
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EBDF1C0
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/MdeModulePkg/Universal/SerialDxe/SerialDxe/DEBUG/SerialDxe.dll 0x13FAF8000
+Loading driver at 0x0013FAF7000 EntryPoint=0x0013FAF9750 SerialDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EBDF998
+ProtectUefiImageCommon - 0x3EBDF1C0
+  - 0x000000013FAF7000 - 0x0000000000006000
+InstallProtocolInterface: BB25CF6F-F1D4-11D2-9A0C-0090273FC1FD 13FAFB040
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13FAFB088
+Loading driver D93CE3D8-A7EB-4730-8C8E-CC466A9ECC3C
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EBDEB40
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/MdeModulePkg/Universal/ReportStatusCodeRouter/RuntimeDxe/ReportStatusCodeRouterRuntimeDxe/DEBUG/ReportStatusCodeRouterRuntimeDxe.dll 0x13FD00000
+Loading driver at 0x0013FCF0000 EntryPoint=0x0013FD01B34 ReportStatusCodeRouterRuntimeDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EBDE098
+ProtectUefiImageCommon - 0x3EBDEB40
+  - 0x000000013FCF0000 - 0x0000000000040000
+InstallProtocolInterface: 86212936-0E76-41C8-A03A-2AF2FC1C39E2 13FD10068
+InstallProtocolInterface: D2B2B828-0826-48A7-B3DF-983C006024F0 13FD10050
+Loading driver A210F973-229D-4F4D-AA37-9895E6C9EABA
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EBDE2C0
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/NetworkPkg/DpcDxe/DpcDxe/DEBUG/DpcDxe.dll 0x13FAF2000
+Loading driver at 0x0013FAF1000 EntryPoint=0x0013FAF3494 DpcDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EBDDF18
+ProtectUefiImageCommon - 0x3EBDE2C0
+  - 0x000000013FAF1000 - 0x0000000000006000
+InstallProtocolInterface: 480F8AE9-0C46-4AA9-BC89-DB9FBA619806 13FAF5030
+Loading driver CEC2F7D5-2564-46D4-A23F-501623F7F56A
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EBDD0C0
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/ArmVirtPkg/RealmApertureManagementProtocolDxe/RealmApertureManagementProtocolDxe/DEBUG/RealmApertureManagementProtocolDxe.dll 0x13FAEB000
+Loading driver at 0x0013FAEA000 EntryPoint=0x0013FAECEEC RealmApertureManagementProtocolDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EBDDA18
+ProtectUefiImageCommon - 0x3EBDD0C0
+  - 0x000000013FAEA000 - 0x0000000000007000
+Loading driver 0049858F-8CA7-4CCD-918B-D952CBF32975
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EBDD3C0
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/OvmfPkg/Fdt/VirtioFdtDxe/VirtioFdtDxe/DEBUG/VirtioFdtDxe.dll 0x13FAE4000
+Loading driver at 0x0013FAE3000 EntryPoint=0x0013FAE5B30 VirtioFdtDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EBDD698
+ProtectUefiImageCommon - 0x3EBDD3C0
+  - 0x000000013FAE3000 - 0x0000000000007000
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EBDCB18
+VirtioMmioInit virtio 0.9.5, id 0
+InstallProtocolInterface: FA920010-6785-4941-B6EC-498C579F160A 13EBDCBA8
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EBDCD98
+VirtioMmioInit virtio 0.9.5, id 0
+InstallProtocolInterface: FA920010-6785-4941-B6EC-498C579F160A 13EBDC7A8
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EBDC898
+VirtioMmioInit virtio 0.9.5, id 0
+InstallProtocolInterface: FA920010-6785-4941-B6EC-498C579F160A 13EBDC128
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EBDC698
+VirtioMmioInit virtio 0.9.5, id 0
+InstallProtocolInterface: FA920010-6785-4941-B6EC-498C579F160A 13EBDC528
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EBDC498
+VirtioMmioInit virtio 0.9.5, id 0
+InstallProtocolInterface: FA920010-6785-4941-B6EC-498C579F160A 13EBDB028
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EBDC418
+VirtioMmioInit virtio 0.9.5, id 0
+InstallProtocolInterface: FA920010-6785-4941-B6EC-498C579F160A 13EBDBC28
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EBDBD18
+VirtioMmioInit virtio 0.9.5, id 0
+InstallProtocolInterface: FA920010-6785-4941-B6EC-498C579F160A 13EBDB128
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EBDB898
+VirtioMmioInit virtio 0.9.5, id 0
+InstallProtocolInterface: FA920010-6785-4941-B6EC-498C579F160A 13EBDB9A8
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EBDB818
+VirtioMmioInit virtio 0.9.5, id 0
+InstallProtocolInterface: FA920010-6785-4941-B6EC-498C579F160A 13EBDB2A8
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EBDB798
+VirtioMmioInit virtio 0.9.5, id 0
+InstallProtocolInterface: FA920010-6785-4941-B6EC-498C579F160A 13EBDB428
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EBDA018
+VirtioMmioInit virtio 0.9.5, id 0
+InstallProtocolInterface: FA920010-6785-4941-B6EC-498C579F160A 13EBDAB28
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EBDAC18
+VirtioMmioInit virtio 0.9.5, id 0
+InstallProtocolInterface: FA920010-6785-4941-B6EC-498C579F160A 13EBDAD28
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EBDAA18
+VirtioMmioInit virtio 0.9.5, id 0
+InstallProtocolInterface: FA920010-6785-4941-B6EC-498C579F160A 13EBDA828
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EBDA998
+VirtioMmioInit virtio 0.9.5, id 0
+InstallProtocolInterface: FA920010-6785-4941-B6EC-498C579F160A 13EBDA5A8
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EBDA198
+VirtioMmioInit virtio 0.9.5, id 0
+InstallProtocolInterface: FA920010-6785-4941-B6EC-498C579F160A 13EBDA228
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EBDA398
+VirtioMmioInit virtio 0.9.5, id 0
+InstallProtocolInterface: FA920010-6785-4941-B6EC-498C579F160A 13EBD9F28
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EBD9E18
+VirtioMmioInit virtio 0.9.5, id 0
+InstallProtocolInterface: FA920010-6785-4941-B6EC-498C579F160A 13EBD9C28
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EBD9D98
+VirtioMmioInit virtio 0.9.5, id 0
+InstallProtocolInterface: FA920010-6785-4941-B6EC-498C579F160A 13EBD97A8
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EBD9898
+VirtioMmioInit virtio 0.9.5, id 0
+InstallProtocolInterface: FA920010-6785-4941-B6EC-498C579F160A 13EBD9128
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EBD9698
+VirtioMmioInit virtio 0.9.5, id 0
+InstallProtocolInterface: FA920010-6785-4941-B6EC-498C579F160A 13EBD9528
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EBD9498
+VirtioMmioInit virtio 0.9.5, id 0
+InstallProtocolInterface: FA920010-6785-4941-B6EC-498C579F160A 13EBD7028
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EBD9418
+VirtioMmioInit virtio 0.9.5, id 0
+InstallProtocolInterface: FA920010-6785-4941-B6EC-498C579F160A 13EBD7C28
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EBD7D18
+VirtioMmioInit virtio 0.9.5, id 0
+InstallProtocolInterface: FA920010-6785-4941-B6EC-498C579F160A 13EBD7128
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EBD7898
+VirtioMmioInit virtio 0.9.5, id 0
+InstallProtocolInterface: FA920010-6785-4941-B6EC-498C579F160A 13EBD79A8
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EBD7818
+VirtioMmioInit virtio 0.9.5, id 0
+InstallProtocolInterface: FA920010-6785-4941-B6EC-498C579F160A 13EBD72A8
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EBD7798
+VirtioMmioInit virtio 0.9.5, id 0
+InstallProtocolInterface: FA920010-6785-4941-B6EC-498C579F160A 13EBD7428
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EBD6018
+VirtioMmioInit virtio 0.9.5, id 0
+InstallProtocolInterface: FA920010-6785-4941-B6EC-498C579F160A 13EBD6B28
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EBD6C18
+VirtioMmioInit virtio 0.9.5, id 0
+InstallProtocolInterface: FA920010-6785-4941-B6EC-498C579F160A 13EBD6D28
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EBD6A18
+VirtioMmioInit virtio 0.9.5, id 0
+InstallProtocolInterface: FA920010-6785-4941-B6EC-498C579F160A 13EBD6828
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EBD6998
+VirtioMmioInit virtio 0.9.5, id 0
+InstallProtocolInterface: FA920010-6785-4941-B6EC-498C579F160A 13EBD65A8
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EBD6198
+VirtioMmioInit virtio 0.9.5, id 0
+InstallProtocolInterface: FA920010-6785-4941-B6EC-498C579F160A 13EBD6228
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EBD6398
+VirtioMmioInit virtio 0.9.5, id 0
+InstallProtocolInterface: FA920010-6785-4941-B6EC-498C579F160A 13EBD5F28
+Loading driver 30E617DC-3EB6-4225-B990-A5C22C87AC27
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EBD4BC0
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/ArmVirtPkg/QemuPlatformDxe/QemuPlatformDxe/DEBUG/QemuPlatformDxe.dll 0x13FADF000
+Loading driver at 0x0013FADE000 EntryPoint=0x0013FAE0190 QemuPlatformDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EBD4A18
+ProtectUefiImageCommon - 0x3EBD4BC0
+  - 0x000000013FADE000 - 0x0000000000005000
+Loading driver FE5CEA76-4F72-49E8-986F-2CD899DFFE5D
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EBD4140
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/MdeModulePkg/Universal/FaultTolerantWriteDxe/FaultTolerantWriteDxe/DEBUG/FaultTolerantWriteDxe.dll 0x13FAD7000
+Loading driver at 0x0013FAD6000 EntryPoint=0x0013FADA910 FaultTolerantWriteDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EBD4698
+ProtectUefiImageCommon - 0x3EBD4140
+  - 0x000000013FAD6000 - 0x0000000000008000
+Loading driver 4B28E4C7-FF36-4E10-93CF-A82159E777C5
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EBD3BC0
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/MdeModulePkg/Universal/ResetSystemRuntimeDxe/ResetSystemRuntimeDxe/DEBUG/ResetSystemRuntimeDxe.dll 0x13FCB0000
+Loading driver at 0x0013FCA0000 EntryPoint=0x0013FCB1BBC ResetSystemRuntimeDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EBD3118
+ProtectUefiImageCommon - 0x3EBD3BC0
+  - 0x000000013FCA0000 - 0x0000000000040000
+InstallProtocolInterface: 27CFAC88-46CC-11D4-9A38-0090273FC14D 0
+InstallProtocolInterface: 9DA34AE0-EAF9-4BBF-8EC3-FD60226C44BE 13FCC00B8
+InstallProtocolInterface: 695D7835-8D47-4C11-AB22-FA8ACCE7AE7A 13FCC0080
+InstallProtocolInterface: 2DF6BA0B-7092-440D-BD04-FB091EC3F3C1 13FCC0048
+Loading driver DE371F7C-DEC4-4D21-ADF1-593ABCC15882
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB88040
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/ArmPkg/Drivers/ArmGic/ArmGicDxe/DEBUG/ArmGicDxe.dll 0x13FAD0000
+Loading driver at 0x0013FACF000 EntryPoint=0x0013FAD204C ArmGicDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EBD3418
+ProtectUefiImageCommon - 0x3EB88040
+  - 0x000000013FACF000 - 0x0000000000007000
+Found GIC v3 (re)distributor @ 0x8000000 (0x80A0000)
+InstallProtocolInterface: 2890B3EA-053D-1643-AD0C-D64808DA3FF1 13FAD40A8
+InstallProtocolInterface: 32898322-2DA1-474A-BAAA-F3F7CF569470 13FAD4070
+Loading driver A487A478-51EF-48AA-8794-7BEE2A0562F1
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB900C0
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/ShellPkg/DynamicCommand/TftpDynamicCommand/TftpDynamicCommand/DEBUG/tftpDynamicCommand.dll 0x13FAC2000
+Loading driver at 0x0013FAC1000 EntryPoint=0x0013FAC8274 tftpDynamicCommand.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EB90D18
+InstallProtocolInterface: 6A1EE763-D47A-43B4-AABE-EF1DE2AB56FC 13FACC070
+ProtectUefiImageCommon - 0x3EB900C0
+  - 0x000000013FAC1000 - 0x000000000000E000
+InstallProtocolInterface: 3C7200E9-005F-4EA4-87DE-A3DFAC8A27C3 13FACB190
+Loading driver 19618BCE-55AE-09C6-37E9-4CE04084C7A1
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB8D040
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/ShellPkg/DynamicCommand/HttpDynamicCommand/HttpDynamicCommand/DEBUG/httpDynamicCommand.dll 0x13FAB1000
+Loading driver at 0x0013FAB0000 EntryPoint=0x0013FAB86EC httpDynamicCommand.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EB8DD98
+InstallProtocolInterface: 6A1EE763-D47A-43B4-AABE-EF1DE2AB56FC 13FABD070
+ProtectUefiImageCommon - 0x3EB8D040
+  - 0x000000013FAB0000 - 0x0000000000011000
+InstallProtocolInterface: 3C7200E9-005F-4EA4-87DE-A3DFAC8A27C3 13FABC170
+Loading driver 2F30DA26-F51B-4B6F-85C4-31873C281BCA
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB8D3C0
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/OvmfPkg/LinuxInitrdDynamicShellCommand/LinuxInitrdDynamicShellCommand/DEBUG/LinuxInitrdDynamicShellCommand.dll 0x13FAA5000
+Loading driver at 0x0013FAA4000 EntryPoint=0x0013FAA9F7C LinuxInitrdDynamicShellCommand.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EB8D698
+InstallProtocolInterface: 6A1EE763-D47A-43B4-AABE-EF1DE2AB56FC 13FAAE070
+ProtectUefiImageCommon - 0x3EB8D3C0
+  - 0x000000013FAA4000 - 0x000000000000C000
+InstallProtocolInterface: 3C7200E9-005F-4EA4-87DE-A3DFAC8A27C3 13FAAD150
+Loading driver EBF342FE-B1D3-4EF8-957C-8048606FF671
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB87B40
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/MdeModulePkg/Universal/SetupBrowserDxe/SetupBrowserDxe/DEBUG/SetupBrowser.dll 0x13FA8B000
+Loading driver at 0x0013FA8A000 EntryPoint=0x0013FA8BD58 SetupBrowser.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EB87E18
+ProtectUefiImageCommon - 0x3EB87B40
+  - 0x000000013FA8A000 - 0x000000000001A000
+InstallProtocolInterface: B9D4C360-BCFB-4F9B-9298-53C136982258 13FAA2160
+InstallProtocolInterface: A770C357-B693-4E6D-A6CF-D21C728E550B 13FAA2190
+InstallProtocolInterface: 1F73B18D-4630-43C1-A1DE-6F80855D7DA4 13FAA2170
+Loading driver F9D88642-0737-49BC-81B5-6889CD57D9EA
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB7C040
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/MdeModulePkg/Universal/SmbiosDxe/SmbiosDxe/DEBUG/SmbiosDxe.dll 0x13FA82000
+Loading driver at 0x0013FA81000 EntryPoint=0x0013FA85200 SmbiosDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EB87398
+ProtectUefiImageCommon - 0x3EB7C040
+  - 0x000000013FA81000 - 0x0000000000009000
+Found FwCfg @ 0x9020008/0x9020000
+Found FwCfg DMA @ 0x9020010
+DetectSmbiosVersion: SMBIOS 3.x DocRev from QEMU: 0x00
+DetectSmbiosVersion: SMBIOS version from QEMU: 0x0300
+InstallProtocolInterface: 03583FF6-CB36-4940-947E-B9B39F4AFAF7 13FA88148
+Loading driver 168D1A6E-F4A5-448A-9E95-795661BB3067
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB7C9C0
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/ArmPkg/Drivers/ArmPciCpuIo2Dxe/ArmPciCpuIo2Dxe/DEBUG/ArmPciCpuIo2Dxe.dll 0x13FA7C000
+Loading driver at 0x0013FA7B000 EntryPoint=0x0013FA7D63C ArmPciCpuIo2Dxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EB7C918
+ProtectUefiImageCommon - 0x3EB7C9C0
+  - 0x000000013FA7B000 - 0x0000000000006000
+InstallProtocolInterface: AD61F191-AE5F-4C0E-B9FA-E869D288C64F 13FA7F040
+Loading driver 11A6EDF6-A9BE-426D-A6CC-B22FE51D9224
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB7D040
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/OvmfPkg/PciHotPlugInitDxe/PciHotPlugInit/DEBUG/PciHotPlugInitDxe.dll 0x13FA74000
+Loading driver at 0x0013FA73000 EntryPoint=0x0013FA7712C PciHotPlugInitDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EB7C598
+ProtectUefiImageCommon - 0x3EB7D040
+  - 0x000000013FA73000 - 0x0000000000008000
+InstallProtocolInterface: AA0E8BC1-DABC-46B0-A844-37B8169B2BEA 13FA7A0A8
+Loading driver DCE1B094-7DC6-45D0-9FDD-D7FC3CC3E4EF
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB7D2C0
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/OvmfPkg/QemuRamfbDxe/QemuRamfbDxe/DEBUG/QemuRamfbDxe.dll 0x13FA6C000
+Loading driver at 0x0013FA6B000 EntryPoint=0x0013FA6E174 QemuRamfbDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EB7D518
+ProtectUefiImageCommon - 0x3EB7D2C0
+  - 0x000000013FA6B000 - 0x0000000000008000
+Found FwCfg @ 0x9020008/0x9020000
+Found FwCfg DMA @ 0x9020010
+Error: Image at 0013FA6B000 start failed: Not Found
+remove-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/OvmfPkg/QemuRamfbDxe/QemuRamfbDxe/DEBUG/QemuRamfbDxe.dll 0x3FA6C000
+Loading driver F74D20EE-37E7-48FC-97F7-9B1047749C69
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB7D2C0
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/MdeModulePkg/Logo/LogoDxe/DEBUG/LogoDxe.dll 0x13FA6C000
+Loading driver at 0x0013FA6B000 EntryPoint=0x0013FA6D0CC LogoDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EB7DB18
+InstallProtocolInterface: 6A1EE763-D47A-43B4-AABE-EF1DE2AB56FC 13FA6F070
+ProtectUefiImageCommon - 0x3EB7D2C0
+  - 0x000000013FA6B000 - 0x0000000000008000
+InstallProtocolInterface: 53CD299F-2BC1-40C0-8C07-23F64FDB30E0 13FA6E020
+Loading driver B8D9777E-D72A-451F-9BDB-BAFB52A68415
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB86440
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/ArmPkg/Drivers/CpuDxe/CpuDxe/DEBUG/ArmCpuDxe.dll 0x13FA60000
+Loading driver at 0x0013FA5F000 EntryPoint=0x0013FA62EF0 ArmCpuDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EB86698
+ProtectUefiImageCommon - 0x3EB86440
+  - 0x000000013FA5F000 - 0x000000000000C000
+InstallProtocolInterface: 26BACCB1-6F42-11D4-BCE7-0080C73C8881 13FA670C0
+InstallProtocolInterface: F4560CF6-40EC-4B4A-A192-BF1D57D0B189 13FA67088
+MemoryProtectionCpuArchProtocolNotify:
+InitializeDxeNxMemoryProtectionPolicy: StackBase = 0x00000000475A7000  StackSize = 0x0000000000020000
+InitializeDxeNxMemoryProtectionPolicy: applying strict permissions to active memory regions
+SetUefiImageMemoryAttributes - 0x0000000040000000 - 0x00000000075C7000 (0x0000000000004000)
+SetUefiImageMemoryAttributes - 0x00000000475A7000 - 0x0000000000001000 (0x0000000000006000)
+SetUefiImageMemoryAttributes - 0x000000004760C000 - 0x00000000008E0000 (0x0000000000004000)
+SetUefiImageMemoryAttributes - 0x0000000047EF3000 - 0x0000000000101000 (0x0000000000004000)
+SetUefiImageMemoryAttributes - 0x0000000047FFA000 - 0x00000000F7A65000 (0x0000000000004000)
+SetUefiImageMemoryAttributes - 0x000000013FD90000 - 0x0000000000270000 (0x0000000000004000)
+InitializeDxeNxMemoryProtectionPolicy: applying strict permissions to inactive memory regions
+ProtectUefiImageCommon - 0x475EE8E8
+  - 0x00000000475C7000 - 0x0000000000045000
+SetUefiImageMemoryAttributes - 0x00000000475C7000 - 0x0000000000001000 (0x0000000000004000)
+SetUefiImageMemoryAttributes - 0x00000000475C8000 - 0x0000000000026000 (0x0000000000020000)
+SetUefiImageMemoryAttributes - 0x00000000475EE000 - 0x000000000001E000 (0x0000000000004000)
+ProtectUefiImageCommon - 0x3EBD2040
+  - 0x000000013FBF1000 - 0x000000000000F000
+SetUefiImageMemoryAttributes - 0x000000013FBF1000 - 0x0000000000001000 (0x0000000000004000)
+SetUefiImageMemoryAttributes - 0x000000013FBF2000 - 0x000000000000C000 (0x0000000000020000)
+SetUefiImageMemoryAttributes - 0x000000013FBFE000 - 0x0000000000002000 (0x0000000000004000)
+ProtectUefiImageCommon - 0x3EBD2340
+  - 0x000000013FBE8000 - 0x0000000000009000
+SetUefiImageMemoryAttributes - 0x000000013FBE8000 - 0x0000000000001000 (0x0000000000004000)
+SetUefiImageMemoryAttributes - 0x000000013FBE9000 - 0x0000000000006000 (0x0000000000020000)
+SetUefiImageMemoryAttributes - 0x000000013FBEF000 - 0x0000000000002000 (0x0000000000004000)
+ProtectUefiImageCommon - 0x3EBD8040
+  - 0x000000013FBE0000 - 0x0000000000008000
+SetUefiImageMemoryAttributes - 0x000000013FBE0000 - 0x0000000000001000 (0x0000000000004000)
+SetUefiImageMemoryAttributes - 0x000000013FBE1000 - 0x0000000000005000 (0x0000000000020000)
+SetUefiImageMemoryAttributes - 0x000000013FBE6000 - 0x0000000000002000 (0x0000000000004000)
+ProtectUefiImageCommon - 0x3EBD83C0
+  - 0x000000013FD40000 - 0x0000000000040000
+SetUefiImageMemoryAttributes - 0x000000013FD40000 - 0x0000000000010000 (0x0000000000004000)
+SetUefiImageMemoryAttributes - 0x000000013FD50000 - 0x0000000000010000 (0x0000000000020000)
+SetUefiImageMemoryAttributes - 0x000000013FD60000 - 0x0000000000020000 (0x0000000000004000)
+ProtectUefiImageCommon - 0x3EBE1C40
+  - 0x000000013FB21000 - 0x00000000000BF000
+SetUefiImageMemoryAttributes - 0x000000013FB21000 - 0x0000000000001000 (0x0000000000004000)
+SetUefiImageMemoryAttributes - 0x000000013FB22000 - 0x00000000000B8000 (0x0000000000020000)
+SetUefiImageMemoryAttributes - 0x000000013FBDA000 - 0x0000000000006000 (0x0000000000004000)
+ProtectUefiImageCommon - 0x3EBE0BC0
+  - 0x000000013FB1B000 - 0x0000000000006000
+SetUefiImageMemoryAttributes - 0x000000013FB1B000 - 0x0000000000001000 (0x0000000000004000)
+SetUefiImageMemoryAttributes - 0x000000013FB1C000 - 0x0000000000003000 (0x0000000000020000)
+SetUefiImageMemoryAttributes - 0x000000013FB1F000 - 0x0000000000002000 (0x0000000000004000)
+ProtectUefiImageCommon - 0x3EBE01C0
+  - 0x000000013FAFD000 - 0x000000000001E000
+SetUefiImageMemoryAttributes - 0x000000013FAFD000 - 0x0000000000001000 (0x0000000000004000)
+SetUefiImageMemoryAttributes - 0x000000013FAFE000 - 0x000000000001B000 (0x0000000000020000)
+SetUefiImageMemoryAttributes - 0x000000013FB19000 - 0x0000000000002000 (0x0000000000004000)
+ProtectUefiImageCommon - 0x3EBDF1C0
+  - 0x000000013FAF7000 - 0x0000000000006000
+SetUefiImageMemoryAttributes - 0x000000013FAF7000 - 0x0000000000001000 (0x0000000000004000)
+SetUefiImageMemoryAttributes - 0x000000013FAF8000 - 0x0000000000003000 (0x0000000000020000)
+SetUefiImageMemoryAttributes - 0x000000013FAFB000 - 0x0000000000002000 (0x0000000000004000)
+ProtectUefiImageCommon - 0x3EBDEB40
+  - 0x000000013FCF0000 - 0x0000000000040000
+SetUefiImageMemoryAttributes - 0x000000013FCF0000 - 0x0000000000010000 (0x0000000000004000)
+SetUefiImageMemoryAttributes - 0x000000013FD00000 - 0x0000000000010000 (0x0000000000020000)
+SetUefiImageMemoryAttributes - 0x000000013FD10000 - 0x0000000000020000 (0x0000000000004000)
+ProtectUefiImageCommon - 0x3EBDE2C0
+  - 0x000000013FAF1000 - 0x0000000000006000
+SetUefiImageMemoryAttributes - 0x000000013FAF1000 - 0x0000000000001000 (0x0000000000004000)
+SetUefiImageMemoryAttributes - 0x000000013FAF2000 - 0x0000000000003000 (0x0000000000020000)
+SetUefiImageMemoryAttributes - 0x000000013FAF5000 - 0x0000000000002000 (0x0000000000004000)
+ProtectUefiImageCommon - 0x3EBDD0C0
+  - 0x000000013FAEA000 - 0x0000000000007000
+SetUefiImageMemoryAttributes - 0x000000013FAEA000 - 0x0000000000001000 (0x0000000000004000)
+SetUefiImageMemoryAttributes - 0x000000013FAEB000 - 0x0000000000004000 (0x0000000000020000)
+SetUefiImageMemoryAttributes - 0x000000013FAEF000 - 0x0000000000002000 (0x0000000000004000)
+ProtectUefiImageCommon - 0x3EBDD3C0
+  - 0x000000013FAE3000 - 0x0000000000007000
+SetUefiImageMemoryAttributes - 0x000000013FAE3000 - 0x0000000000001000 (0x0000000000004000)
+SetUefiImageMemoryAttributes - 0x000000013FAE4000 - 0x0000000000004000 (0x0000000000020000)
+SetUefiImageMemoryAttributes - 0x000000013FAE8000 - 0x0000000000002000 (0x0000000000004000)
+ProtectUefiImageCommon - 0x3EBD4BC0
+  - 0x000000013FADE000 - 0x0000000000005000
+SetUefiImageMemoryAttributes - 0x000000013FADE000 - 0x0000000000001000 (0x0000000000004000)
+SetUefiImageMemoryAttributes - 0x000000013FADF000 - 0x0000000000003000 (0x0000000000020000)
+SetUefiImageMemoryAttributes - 0x000000013FAE2000 - 0x0000000000001000 (0x0000000000004000)
+ProtectUefiImageCommon - 0x3EBD4140
+  - 0x000000013FAD6000 - 0x0000000000008000
+SetUefiImageMemoryAttributes - 0x000000013FAD6000 - 0x0000000000001000 (0x0000000000004000)
+SetUefiImageMemoryAttributes - 0x000000013FAD7000 - 0x0000000000006000 (0x0000000000020000)
+SetUefiImageMemoryAttributes - 0x000000013FADD000 - 0x0000000000001000 (0x0000000000004000)
+ProtectUefiImageCommon - 0x3EBD3BC0
+  - 0x000000013FCA0000 - 0x0000000000040000
+SetUefiImageMemoryAttributes - 0x000000013FCA0000 - 0x0000000000010000 (0x0000000000004000)
+SetUefiImageMemoryAttributes - 0x000000013FCB0000 - 0x0000000000010000 (0x0000000000020000)
+SetUefiImageMemoryAttributes - 0x000000013FCC0000 - 0x0000000000020000 (0x0000000000004000)
+ProtectUefiImageCommon - 0x3EB88040
+  - 0x000000013FACF000 - 0x0000000000007000
+SetUefiImageMemoryAttributes - 0x000000013FACF000 - 0x0000000000001000 (0x0000000000004000)
+SetUefiImageMemoryAttributes - 0x000000013FAD0000 - 0x0000000000004000 (0x0000000000020000)
+SetUefiImageMemoryAttributes - 0x000000013FAD4000 - 0x0000000000002000 (0x0000000000004000)
+ProtectUefiImageCommon - 0x3EB900C0
+  - 0x000000013FAC1000 - 0x000000000000E000
+SetUefiImageMemoryAttributes - 0x000000013FAC1000 - 0x0000000000001000 (0x0000000000004000)
+SetUefiImageMemoryAttributes - 0x000000013FAC2000 - 0x0000000000009000 (0x0000000000020000)
+SetUefiImageMemoryAttributes - 0x000000013FACB000 - 0x0000000000004000 (0x0000000000004000)
+ProtectUefiImageCommon - 0x3EB8D040
+  - 0x000000013FAB0000 - 0x0000000000011000
+SetUefiImageMemoryAttributes - 0x000000013FAB0000 - 0x0000000000001000 (0x0000000000004000)
+SetUefiImageMemoryAttributes - 0x000000013FAB1000 - 0x000000000000B000 (0x0000000000020000)
+SetUefiImageMemoryAttributes - 0x000000013FABC000 - 0x0000000000005000 (0x0000000000004000)
+ProtectUefiImageCommon - 0x3EB8D3C0
+  - 0x000000013FAA4000 - 0x000000000000C000
+SetUefiImageMemoryAttributes - 0x000000013FAA4000 - 0x0000000000001000 (0x0000000000004000)
+SetUefiImageMemoryAttributes - 0x000000013FAA5000 - 0x0000000000008000 (0x0000000000020000)
+SetUefiImageMemoryAttributes - 0x000000013FAAD000 - 0x0000000000003000 (0x0000000000004000)
+ProtectUefiImageCommon - 0x3EB87B40
+  - 0x000000013FA8A000 - 0x000000000001A000
+SetUefiImageMemoryAttributes - 0x000000013FA8A000 - 0x0000000000001000 (0x0000000000004000)
+SetUefiImageMemoryAttributes - 0x000000013FA8B000 - 0x0000000000017000 (0x0000000000020000)
+SetUefiImageMemoryAttributes - 0x000000013FAA2000 - 0x0000000000002000 (0x0000000000004000)
+ProtectUefiImageCommon - 0x3EB7C040
+  - 0x000000013FA81000 - 0x0000000000009000
+SetUefiImageMemoryAttributes - 0x000000013FA81000 - 0x0000000000001000 (0x0000000000004000)
+SetUefiImageMemoryAttributes - 0x000000013FA82000 - 0x0000000000006000 (0x0000000000020000)
+SetUefiImageMemoryAttributes - 0x000000013FA88000 - 0x0000000000002000 (0x0000000000004000)
+ProtectUefiImageCommon - 0x3EB7C9C0
+  - 0x000000013FA7B000 - 0x0000000000006000
+SetUefiImageMemoryAttributes - 0x000000013FA7B000 - 0x0000000000001000 (0x0000000000004000)
+SetUefiImageMemoryAttributes - 0x000000013FA7C000 - 0x0000000000003000 (0x0000000000020000)
+SetUefiImageMemoryAttributes - 0x000000013FA7F000 - 0x0000000000002000 (0x0000000000004000)
+ProtectUefiImageCommon - 0x3EB7D040
+  - 0x000000013FA73000 - 0x0000000000008000
+SetUefiImageMemoryAttributes - 0x000000013FA73000 - 0x0000000000001000 (0x0000000000004000)
+SetUefiImageMemoryAttributes - 0x000000013FA74000 - 0x0000000000006000 (0x0000000000020000)
+SetUefiImageMemoryAttributes - 0x000000013FA7A000 - 0x0000000000001000 (0x0000000000004000)
+ProtectUefiImageCommon - 0x3EB7D2C0
+  - 0x000000013FA6B000 - 0x0000000000008000
+SetUefiImageMemoryAttributes - 0x000000013FA6B000 - 0x0000000000001000 (0x0000000000004000)
+SetUefiImageMemoryAttributes - 0x000000013FA6C000 - 0x0000000000002000 (0x0000000000020000)
+SetUefiImageMemoryAttributes - 0x000000013FA6E000 - 0x0000000000005000 (0x0000000000004000)
+ProtectUefiImageCommon - 0x3EB86440
+  - 0x000000013FA5F000 - 0x000000000000C000
+SetUefiImageMemoryAttributes - 0x000000013FA5F000 - 0x0000000000001000 (0x0000000000004000)
+SetUefiImageMemoryAttributes - 0x000000013FA60000 - 0x0000000000007000 (0x0000000000020000)
+SetUefiImageMemoryAttributes - 0x000000013FA67000 - 0x0000000000004000 (0x0000000000004000)
+Loading driver 49EA041E-6752-42CA-B0B1-7344FE2546B7
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB6E040
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/ArmPkg/Drivers/TimerDxe/TimerDxe/DEBUG/ArmTimerDxe.dll 0x13FA5A000
+Loading driver at 0x0013FA59000 EntryPoint=0x0013FA5B384 ArmTimerDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EB86C18
+ProtectUefiImageCommon - 0x3EB6E040
+  - 0x000000013FA59000 - 0x0000000000006000
+SetUefiImageMemoryAttributes - 0x000000013FA59000 - 0x0000000000001000 (0x0000000000004008)
+SetUefiImageMemoryAttributes - 0x000000013FA5A000 - 0x0000000000003000 (0x0000000000020008)
+SetUefiImageMemoryAttributes - 0x000000013FA5D000 - 0x0000000000002000 (0x0000000000004008)
+Found Timer interrupts 29, 30, 27, 26
+InstallProtocolInterface: 26BACCB3-6F42-11D4-BCE7-0080C73C8881 13FA5D050
+Loading driver E660EA85-058E-4B55-A54B-F02F83A24707
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB6ED40
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/MdeModulePkg/Universal/DisplayEngineDxe/DisplayEngineDxe/DEBUG/DisplayEngine.dll 0x13FA43000
+Loading driver at 0x0013FA42000 EntryPoint=0x0013FA439D0 DisplayEngine.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EB6E998
+ProtectUefiImageCommon - 0x3EB6ED40
+  - 0x000000013FA42000 - 0x0000000000017000
+SetUefiImageMemoryAttributes - 0x000000013FA42000 - 0x0000000000001000 (0x0000000000004008)
+SetUefiImageMemoryAttributes - 0x000000013FA43000 - 0x0000000000012000 (0x0000000000020008)
+SetUefiImageMemoryAttributes - 0x000000013FA55000 - 0x0000000000004000 (0x0000000000004008)
+InstallProtocolInterface: 9BBE29E9-FDA1-41EC-AD52-452213742D2E 13FA557C0
+InstallProtocolInterface: 4311EDC0-6054-46D4-9E40-893EA952FCCC 13FA557D8
+Loading driver EBF8ED7C-0DD1-4787-84F1-F48D537DCACF
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB721C0
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe/DEBUG/DriverHealthManagerDxe.dll 0x13FA3A000
+Loading driver at 0x0013FA39000 EntryPoint=0x0013FA3D950 DriverHealthManagerDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EB72498
+ProtectUefiImageCommon - 0x3EB721C0
+  - 0x000000013FA39000 - 0x0000000000009000
+SetUefiImageMemoryAttributes - 0x000000013FA39000 - 0x0000000000001000 (0x0000000000004008)
+SetUefiImageMemoryAttributes - 0x000000013FA3A000 - 0x0000000000006000 (0x0000000000020008)
+SetUefiImageMemoryAttributes - 0x000000013FA40000 - 0x0000000000002000 (0x0000000000004008)
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13FA40580
+InstallProtocolInterface: 330D4706-F2A0-4E4F-A369-B66FA8D54385 13FA40558
+Loading driver 4110465D-5FF3-4F4B-B580-24ED0D06747A
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB6D340
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/OvmfPkg/SmbiosPlatformDxe/SmbiosPlatformDxe/DEBUG/SmbiosPlatformDxe.dll 0x13FA34000
+Loading driver at 0x0013FA33000 EntryPoint=0x0013FA35954 SmbiosPlatformDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EB6D598
+ProtectUefiImageCommon - 0x3EB6D340
+  - 0x000000013FA33000 - 0x0000000000006000
+SetUefiImageMemoryAttributes - 0x000000013FA33000 - 0x0000000000001000 (0x0000000000004008)
+SetUefiImageMemoryAttributes - 0x000000013FA34000 - 0x0000000000004000 (0x0000000000020008)
+SetUefiImageMemoryAttributes - 0x000000013FA38000 - 0x0000000000001000 (0x0000000000004008)
+Found FwCfg @ 0x9020008/0x9020000
+Found FwCfg DMA @ 0x9020010
+SmbiosAdd: Smbios type 1 with size 0x6A is added to 64-bit table
+SmbiosCreateTable: Initialize 64-bit entry point structure
+SmbiosCreate64BitTable() re-allocate SMBIOS 64-bit table
+SmbiosAdd: Smbios type 3 with size 0x25 is added to 64-bit table
+SmbiosAdd: Smbios type 4 with size 0x45 is added to 64-bit table
+SmbiosAdd: Smbios type 4 with size 0x45 is added to 64-bit table
+SmbiosAdd: Smbios type 16 with size 0x19 is added to 64-bit table
+SmbiosAdd: Smbios type 17 with size 0x35 is added to 64-bit table
+SmbiosAdd: Smbios type 32 with size 0xD is added to 64-bit table
+FirmwareVendor:            "EDK II" (6 chars)
+FirmwareVersionString:     "unknown" (7 chars)
+FirmwareReleaseDateString: "2/2/2022" (8 chars)
+SmbiosAdd: Smbios type 0 with size 0x33 is added to 64-bit table
+Loading driver 28A03FF4-12B3-4305-A417-BB1A4F94081E
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB6F0C0
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/MdeModulePkg/Universal/Disk/RamDiskDxe/RamDiskDxe/DEBUG/RamDiskDxe.dll 0x13FA26000
+Loading driver at 0x0013FA25000 EntryPoint=0x0013FA2CA78 RamDiskDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EB6C198
+ProtectUefiImageCommon - 0x3EB6F0C0
+  - 0x000000013FA25000 - 0x000000000000E000
+SetUefiImageMemoryAttributes - 0x000000013FA25000 - 0x0000000000001000 (0x0000000000004008)
+SetUefiImageMemoryAttributes - 0x000000013FA26000 - 0x000000000000A000 (0x0000000000020008)
+SetUefiImageMemoryAttributes - 0x000000013FA30000 - 0x0000000000003000 (0x0000000000004008)
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EB6C598
+InstallProtocolInterface: 330D4706-F2A0-4E4F-A369-B66FA8D54385 13FA30C10
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13FA3131C
+InstallProtocolInterface: 330D4706-F2A0-4E4F-A369-B66FA8D54385 13EB6BCB0
+InstallProtocolInterface: AB38A0DF-6873-44A9-87E6-D4EB56148449 13FA313B8
+InstallProtocolInterface: 28A03FF4-12B3-4305-A417-BB1A4F94081E 13EB6BC98
+Loading driver 63EA1463-FBFA-428A-B97F-E222755852D7
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB697C0
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/OvmfPkg/Fdt/HighMemDxe/HighMemDxe/DEBUG/HighMemDxe.dll 0x13FA21000
+Loading driver at 0x0013FA20000 EntryPoint=0x0013FA22060 HighMemDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EB69B98
+ProtectUefiImageCommon - 0x3EB697C0
+  - 0x000000013FA20000 - 0x0000000000005000
+SetUefiImageMemoryAttributes - 0x000000013FA20000 - 0x0000000000001000 (0x0000000000004008)
+SetUefiImageMemoryAttributes - 0x000000013FA21000 - 0x0000000000003000 (0x0000000000020008)
+SetUefiImageMemoryAttributes - 0x000000013FA24000 - 0x0000000000001000 (0x0000000000004008)
+Loading driver E452CABD-5FE1-4D97-8161-E80ED6A409A8
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB6B0C0
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/OvmfPkg/VirtNorFlashDxe/VirtNorFlashDxe/DEBUG/VirtNorFlashDxe.dll 0x13FC60000
+Loading driver at 0x0013FC50000 EntryPoint=0x0013FC62B58 VirtNorFlashDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EB6B618
+ProtectUefiImageCommon - 0x3EB6B0C0
+  - 0x000000013FC50000 - 0x0000000000040000
+SetUefiImageMemoryAttributes - 0x000000013FC50000 - 0x0000000000010000 (0x0000000000004008)
+SetUefiImageMemoryAttributes - 0x000000013FC60000 - 0x0000000000010000 (0x0000000000020008)
+SetUefiImageMemoryAttributes - 0x000000013FC70000 - 0x0000000000020000 (0x0000000000004008)
+ValidateFvHeader: No Firmware Volume header present
+NorFlashFvbInitialize: The FVB Header is not valid.
+NorFlashFvbInitialize: Installing a correct one for this volume.
+InstallProtocolInterface: D1A86E3F-0707-4C35-83CD-DC2C29C891A3 0
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13FFDF820
+InstallProtocolInterface: 8F644FA9-E850-4DB1-9CE2-0B44698E8DA4 13FFDF7D8
+Ftw: FtwWorkSpaceLba - 0x1, WorkBlockSize  - 0x40000, FtwWorkSpaceBase - 0x0
+Ftw: FtwSpareLba     - 0x2, SpareBlockSize - 0x40000
+Ftw: NumberOfWorkBlock - 0x1, FtwWorkBlockLba - 0x1
+Ftw: WorkSpaceLbaInSpare - 0x0, WorkSpaceBaseInSpare - 0x0
+Ftw: Remaining work space size - 3FFE0
+Ftw: Work block header check mismatch
+Ftw: Work block header check mismatch
+Ftw: Both working and spare blocks are invalid, init workspace
+Ftw: start to reclaim work space
+Ftw: reclaim work space successfully
+InstallProtocolInterface: 3EBD9E82-2C78-4DE6-9786-8D4BFCB7C881 13EB91028
+Loading driver F099D67F-71AE-4C36-B2A3-DCEB0EB2B7D8
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB682C0
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/MdeModulePkg/Universal/WatchdogTimerDxe/WatchdogTimer/DEBUG/WatchdogTimer.dll 0x13FA1B000
+Loading driver at 0x0013FA1A000 EntryPoint=0x0013FA1C1C0 WatchdogTimer.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EB68998
+ProtectUefiImageCommon - 0x3EB682C0
+  - 0x000000013FA1A000 - 0x0000000000006000
+SetUefiImageMemoryAttributes - 0x000000013FA1A000 - 0x0000000000001000 (0x0000000000004008)
+SetUefiImageMemoryAttributes - 0x000000013FA1B000 - 0x0000000000003000 (0x0000000000020008)
+SetUefiImageMemoryAttributes - 0x000000013FA1E000 - 0x0000000000002000 (0x0000000000004008)
+InstallProtocolInterface: 665E3FF5-46CC-11D4-9A38-0090273FC14D 13FA1E050
+Loading driver 128FB770-5E79-4176-9E51-9BB268A17DD1
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB58040
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/MdeModulePkg/Bus/Pci/PciHostBridgeDxe/PciHostBridgeDxe/DEBUG/PciHostBridgeDxe.dll 0x13FA0D000
+Loading driver at 0x0013FA0C000 EntryPoint=0x0013FA12CFC PciHostBridgeDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EB58D98
+ProtectUefiImageCommon - 0x3EB58040
+  - 0x000000013FA0C000 - 0x000000000000E000
+SetUefiImageMemoryAttributes - 0x000000013FA0C000 - 0x0000000000001000 (0x0000000000004008)
+SetUefiImageMemoryAttributes - 0x000000013FA0D000 - 0x000000000000B000 (0x0000000000020008)
+SetUefiImageMemoryAttributes - 0x000000013FA18000 - 0x0000000000002000 (0x0000000000004008)
+Found FwCfg @ 0x9020008/0x9020000
+Found FwCfg DMA @ 0x9020010
+ProcessPciHost: Config[0xB4D0000000+0x10000000) Bus[0x0..0xFF] Io[0x0+0x10000)@0x3EFF0000 Mem32[0x10000000+0x2EFF0000)@0x0 Mem64[0x10000000000+0x8000000000)@0x0
+PciHostBridgeUtilityInitRootBridge: populated root bus 0, with room for 255 subordinate bus(es)
+RootBridge: PciRoot(0x0)
+  Support/Attr: 70001 / 70001
+    DmaAbove4G: Yes
+NoExtConfSpace: No
+     AllocAttr: 3 (CombineMemPMem Mem64Decode)
+           Bus: 0 - FF Translation=0
+            Io: 0 - FFFF Translation=0
+           Mem: 10000000 - 3EFEFFFF Translation=0
+    MemAbove4G: 10000000000 - 17FFFFFFFFF Translation=0
+          PMem: FFFFFFFFFFFFFFFF - 0 Translation=0
+   PMemAbove4G: FFFFFFFFFFFFFFFF - 0 Translation=0
+InstallProtocolInterface: CF8034BE-6768-4D8B-B739-7CCE683A9FBE 13EB583C0
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EB58498
+InstallProtocolInterface: 2F707EBB-4A1A-11D4-9A38-0090273FC14D 13EB641F0
+Loading driver CBD2E4D5-7068-4FF5-B462-9822B4AD8D60
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB646C0
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableRuntimeDxe/DEBUG/VariableRuntimeDxe.dll 0x13C640000
+Loading driver at 0x0013C630000 EntryPoint=0x0013C6454C4 VariableRuntimeDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EB64C98
+ProtectUefiImageCommon - 0x3EB646C0
+  - 0x000000013C630000 - 0x00000000000F0000
+SetUefiImageMemoryAttributes - 0x000000013C630000 - 0x0000000000010000 (0x0000000000004008)
+SetUefiImageMemoryAttributes - 0x000000013C640000 - 0x00000000000C0000 (0x0000000000020008)
+SetUefiImageMemoryAttributes - 0x000000013C700000 - 0x0000000000020000 (0x0000000000004008)
+VarCheckLibRegisterSetVariableCheckHandler - 0x3C64973C Success
+Variable driver common space: 0x3FF9C 0x3FF9C 0x3FF9C
+Variable driver will work with auth variable format!
+InstallProtocolInterface: CD3D0A05-9E24-437C-A891-1EE053DB7638 13C7009F0
+InstallProtocolInterface: AF23B340-97B4-4685-8D4F-A3F28169B21D 13C7009C8
+InstallProtocolInterface: 1E5668E2-8481-11D4-BCF1-0080C73C8881 0
+Variable PK does not exist.
+Variable SetupMode is 1
+Variable SecureBoot is 0
+Variable SecureBootEnable is 0
+Variable CustomMode is 0
+Variable VendorKeys is 1
+Variable driver will work with auth variable support!
+InstallProtocolInterface: 6441F818-6362-4E44-B570-7DBA31DD2453 0
+VarCheckLibRegisterSetVariableCheckHandler - 0x3C648A50 Success
+InstallProtocolInterface: 81D1675C-86F6-48DF-BD95-9A6E4F0925C3 13C700948
+Loading driver 42857F0A-13F2-4B21-8A23-53D3F714B840
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB61240
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/MdeModulePkg/Universal/CapsuleRuntimeDxe/CapsuleRuntimeDxe/DEBUG/CapsuleRuntimeDxe.dll 0x13FC20000
+Loading driver at 0x0013FC10000 EntryPoint=0x0013FC2146C CapsuleRuntimeDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EB61718
+ProtectUefiImageCommon - 0x3EB61240
+  - 0x000000013FC10000 - 0x0000000000030000
+SetUefiImageMemoryAttributes - 0x000000013FC10000 - 0x0000000000010000 (0x0000000000004008)
+SetUefiImageMemoryAttributes - 0x000000013FC20000 - 0x0000000000010000 (0x0000000000020008)
+SetUefiImageMemoryAttributes - 0x000000013FC30000 - 0x0000000000010000 (0x0000000000004008)
+InstallProtocolInterface: 5053697E-2CBC-4819-90D9-0580DEEE5754 0
+Loading driver F0E6A44F-7195-41C3-AC64-54F202CD0A21
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB600C0
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/SecurityPkg/VariableAuthenticated/SecureBootConfigDxe/SecureBootConfigDxe/DEBUG/SecureBootConfigDxe.dll 0x13F966000
+Loading driver at 0x0013F965000 EntryPoint=0x0013F968B04 SecureBootConfigDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EB60A98
+ProtectUefiImageCommon - 0x3EB600C0
+  - 0x000000013F965000 - 0x00000000000A7000
+SetUefiImageMemoryAttributes - 0x000000013F965000 - 0x0000000000001000 (0x0000000000004008)
+SetUefiImageMemoryAttributes - 0x000000013F966000 - 0x000000000009E000 (0x0000000000020008)
+SetUefiImageMemoryAttributes - 0x000000013FA04000 - 0x0000000000008000 (0x0000000000004008)
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EB60718
+InstallProtocolInterface: 330D4706-F2A0-4E4F-A369-B66FA8D54385 13FA04BA8
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13FA06794
+InstallProtocolInterface: 330D4706-F2A0-4E4F-A369-B66FA8D54385 13EB5EC20
+InstallProtocolInterface: F0E6A44F-7195-41C3-AC64-54F202CD0A21 13EB5EC18
+Loading driver AD608272-D07F-4964-801E-7BD3B7888652
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB5C9C0
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/MdeModulePkg/Universal/MonotonicCounterRuntimeDxe/MonotonicCounterRuntimeDxe/DEBUG/MonotonicCounterRuntimeDxe.dll 0x13C510000
+Loading driver at 0x0013C500000 EntryPoint=0x0013C511228 MonotonicCounterRuntimeDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EB5C818
+ProtectUefiImageCommon - 0x3EB5C9C0
+  - 0x000000013C500000 - 0x0000000000030000
+SetUefiImageMemoryAttributes - 0x000000013C500000 - 0x0000000000010000 (0x0000000000004008)
+SetUefiImageMemoryAttributes - 0x000000013C510000 - 0x0000000000010000 (0x0000000000020008)
+SetUefiImageMemoryAttributes - 0x000000013C520000 - 0x0000000000010000 (0x0000000000004008)
+InstallProtocolInterface: 1DA97072-BDDC-4B30-99F1-72A0B56FFF2A 0
+Loading driver B336F62D-4135-4A55-AE4E-4971BBF0885D
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB57CC0
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/EmbeddedPkg/RealTimeClockRuntimeDxe/RealTimeClockRuntimeDxe/DEBUG/RealTimeClock.dll 0x13C4D0000
+Loading driver at 0x0013C4C0000 EntryPoint=0x0013C4D196C RealTimeClock.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EB57A18
+ProtectUefiImageCommon - 0x3EB57CC0
+  - 0x000000013C4C0000 - 0x0000000000030000
+SetUefiImageMemoryAttributes - 0x000000013C4C0000 - 0x0000000000010000 (0x0000000000004008)
+SetUefiImageMemoryAttributes - 0x000000013C4D0000 - 0x0000000000010000 (0x0000000000020008)
+SetUefiImageMemoryAttributes - 0x000000013C4E0000 - 0x0000000000010000 (0x0000000000004008)
+Found PL031 RTC @ 0x9010000
+InstallProtocolInterface: 27CFAC87-46CC-11D4-9A38-0090273FC14D 0
+InitializeRealTimeClock: using default timezone/daylight settings
+InstallProtocolInterface: 27CFAC87-46CC-11D4-9A38-0090273FC14D 0
+Loading driver 6D33944A-EC75-4855-A54D-809C75241F6C
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB3A040
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/MdeModulePkg/Universal/BdsDxe/BdsDxe/DEBUG/BdsDxe.dll 0x13F94B000
+Loading driver at 0x0013F94A000 EntryPoint=0x0013F94E964 BdsDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EB3AD98
+ProtectUefiImageCommon - 0x3EB3A040
+  - 0x000000013F94A000 - 0x000000000001B000
+SetUefiImageMemoryAttributes - 0x000000013F94A000 - 0x0000000000001000 (0x0000000000004008)
+SetUefiImageMemoryAttributes - 0x000000013F94B000 - 0x0000000000018000 (0x0000000000020008)
+SetUefiImageMemoryAttributes - 0x000000013F963000 - 0x0000000000002000 (0x0000000000004008)
+Found FwCfg @ 0x9020008/0x9020000
+Found FwCfg DMA @ 0x9020010
+InstallProtocolInterface: 665E3FF6-46CC-11D4-9A38-0090273FC14D 13F9633D8
+Loading driver 9D1DD27F-6D7F-427B-AEC4-B62F6279C2F1
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB3A340
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/OvmfPkg/PlatformHasAcpiDtDxe/PlatformHasAcpiDtDxe/DEBUG/PlatformHasAcpiDtDxe.dll 0x13F946000
+Loading driver at 0x0013F945000 EntryPoint=0x0013F94727C PlatformHasAcpiDtDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EB3A618
+ProtectUefiImageCommon - 0x3EB3A340
+  - 0x000000013F945000 - 0x0000000000005000
+SetUefiImageMemoryAttributes - 0x000000013F945000 - 0x0000000000001000 (0x0000000000004008)
+SetUefiImageMemoryAttributes - 0x000000013F946000 - 0x0000000000003000 (0x0000000000020008)
+SetUefiImageMemoryAttributes - 0x000000013F949000 - 0x0000000000001000 (0x0000000000004008)
+Found FwCfg @ 0x9020008/0x9020000
+Found FwCfg DMA @ 0x9020010
+InstallProtocolInterface: F0966B41-C23F-41B9-9604-0FF7E111965A 0
+Loading driver D9DCC5DF-4007-435E-9098-8970935504B2
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB56C40
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/OvmfPkg/PlatformDxe/Platform/DEBUG/PlatformDxe.dll 0x13F93E000
+Loading driver at 0x0013F93D000 EntryPoint=0x0013F941790 PlatformDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EB56B18
+ProtectUefiImageCommon - 0x3EB56C40
+  - 0x000000013F93D000 - 0x0000000000008000
+SetUefiImageMemoryAttributes - 0x000000013F93D000 - 0x0000000000001000 (0x0000000000004008)
+SetUefiImageMemoryAttributes - 0x000000013F93E000 - 0x0000000000006000 (0x0000000000020008)
+SetUefiImageMemoryAttributes - 0x000000013F944000 - 0x0000000000001000 (0x0000000000004008)
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13F9445C8
+InstallProtocolInterface: 330D4706-F2A0-4E4F-A369-B66FA8D54385 13F944660
+Loading driver FDFF263D-5F68-4591-87BA-B768F445A9AF
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB55840
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/SecurityPkg/Tcg/Tcg2Dxe/Tcg2Dxe/DEBUG/Tcg2Dxe.dll 0x13F92B000
+Loading driver at 0x0013F92A000 EntryPoint=0x0013F930E58 Tcg2Dxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EB55498
+ProtectUefiImageCommon - 0x3EB55840
+  - 0x000000013F92A000 - 0x0000000000013000
+SetUefiImageMemoryAttributes - 0x000000013F92A000 - 0x0000000000001000 (0x0000000000004008)
+SetUefiImageMemoryAttributes - 0x000000013F92B000 - 0x0000000000010000 (0x0000000000020008)
+SetUefiImageMemoryAttributes - 0x000000013F93B000 - 0x0000000000002000 (0x0000000000004008)
+Found FwCfg @ 0x9020008/0x9020000
+Found FwCfg DMA @ 0x9020010
+WARNING: Tpm2RegisterTpm2DeviceLib - does not support 286BF25A-C2C3-408C-B3B4-25E6758B7317 registration
+No TPM2 instance required!
+Error: Image at 0013F92A000 start failed: Unsupported
+SetUefiImageMemoryAttributes - 0x000000013F92A000 - 0x0000000000013000 (0x0000000000000008)
+remove-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/SecurityPkg/Tcg/Tcg2Dxe/Tcg2Dxe/DEBUG/Tcg2Dxe.dll 0x3F92B000
+Loading driver 51CCF399-4FDF-4E55-A45B-E123F84D456A
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB55840
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/MdeModulePkg/Universal/Console/ConPlatformDxe/ConPlatformDxe/DEBUG/ConPlatformDxe.dll 0x13F937000
+Loading driver at 0x0013F936000 EntryPoint=0x0013F9396D8 ConPlatformDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EB55398
+ProtectUefiImageCommon - 0x3EB55840
+  - 0x000000013F936000 - 0x0000000000007000
+SetUefiImageMemoryAttributes - 0x000000013F936000 - 0x0000000000001000 (0x0000000000004008)
+SetUefiImageMemoryAttributes - 0x000000013F937000 - 0x0000000000004000 (0x0000000000020008)
+SetUefiImageMemoryAttributes - 0x000000013F93B000 - 0x0000000000002000 (0x0000000000004008)
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 13F93B1E0
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 13F93B1C8
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 13F93B1B0
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 13F93B180
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 13F93B1C8
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 13F93B1B0
+Loading driver 408EDCEC-CF6D-477C-A5A8-B4844E3DE281
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB540C0
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/MdeModulePkg/Universal/Console/ConSplitterDxe/ConSplitterDxe/DEBUG/ConSplitterDxe.dll 0x13F92C000
+Loading driver at 0x0013F92B000 EntryPoint=0x0013F93156C ConSplitterDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EB54998
+ProtectUefiImageCommon - 0x3EB540C0
+  - 0x000000013F92B000 - 0x000000000000B000
+SetUefiImageMemoryAttributes - 0x000000013F92B000 - 0x0000000000001000 (0x0000000000004008)
+SetUefiImageMemoryAttributes - 0x000000013F92C000 - 0x0000000000008000 (0x0000000000020008)
+SetUefiImageMemoryAttributes - 0x000000013F934000 - 0x0000000000002000 (0x0000000000004008)
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 13F934758
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 13F934740
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 13F934728
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 13F9346F8
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 13F9346E0
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 13F9346C8
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 13F934698
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 13F934680
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 13F934668
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 13F934638
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 13F934620
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 13F934608
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 13F9345D8
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 13F9345C0
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 13F9345A8
+InstallProtocolInterface: 387477C1-69C7-11D2-8E39-00A0C969723B 13F934430
+InstallProtocolInterface: DD9E7534-7762-4698-8C14-F58517A625AA 13F934460
+InstallProtocolInterface: 31878C87-0B75-11D5-9A4F-0090273FC14D 13F9344D0
+InstallProtocolInterface: 8D59D32B-C655-4AE9-9B15-F25904992A43 13F934528
+InstallProtocolInterface: 387477C2-69C7-11D2-8E39-00A0C969723B 13F9342E0
+InstallProtocolInterface: 387477C2-69C7-11D2-8E39-00A0C969723B 13F9341C0
+Loading driver CCCB0C28-4B24-11D5-9A5A-0090273FC14D
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB46040
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/MdeModulePkg/Universal/Console/GraphicsConsoleDxe/GraphicsConsoleDxe/DEBUG/GraphicsConsoleDxe.dll 0x13F923000
+Loading driver at 0x0013F922000 EntryPoint=0x0013F9262BC GraphicsConsoleDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EB51618
+ProtectUefiImageCommon - 0x3EB46040
+  - 0x000000013F922000 - 0x0000000000009000
+SetUefiImageMemoryAttributes - 0x000000013F922000 - 0x0000000000001000 (0x0000000000004008)
+SetUefiImageMemoryAttributes - 0x000000013F923000 - 0x0000000000005000 (0x0000000000020008)
+SetUefiImageMemoryAttributes - 0x000000013F928000 - 0x0000000000003000 (0x0000000000004008)
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 13F9297E8
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 13F9297D0
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 13F9297B8
+Loading driver 9E863906-A40F-4875-977F-5B93FF237FC6
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB46440
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/MdeModulePkg/Universal/Console/TerminalDxe/TerminalDxe/DEBUG/TerminalDxe.dll 0x13F918000
+Loading driver at 0x0013F917000 EntryPoint=0x0013F91D6A8 TerminalDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EB46798
+ProtectUefiImageCommon - 0x3EB46440
+  - 0x000000013F917000 - 0x000000000000B000
+SetUefiImageMemoryAttributes - 0x000000013F917000 - 0x0000000000001000 (0x0000000000004008)
+SetUefiImageMemoryAttributes - 0x000000013F918000 - 0x0000000000008000 (0x0000000000020008)
+SetUefiImageMemoryAttributes - 0x000000013F920000 - 0x0000000000002000 (0x0000000000004008)
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 13F920458
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 13F920440
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 13F920428
+Loading driver 6B38F7B4-AD98-40E9-9093-ACA2B5A253C4
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB50BC0
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/MdeModulePkg/Universal/Disk/DiskIoDxe/DiskIoDxe/DEBUG/DiskIoDxe.dll 0x13F910000
+Loading driver at 0x0013F90F000 EntryPoint=0x0013F913130 DiskIoDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EB50798
+ProtectUefiImageCommon - 0x3EB50BC0
+  - 0x000000013F90F000 - 0x0000000000008000
+SetUefiImageMemoryAttributes - 0x000000013F90F000 - 0x0000000000001000 (0x0000000000004008)
+SetUefiImageMemoryAttributes - 0x000000013F910000 - 0x0000000000005000 (0x0000000000020008)
+SetUefiImageMemoryAttributes - 0x000000013F915000 - 0x0000000000002000 (0x0000000000004008)
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 13F915178
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 13F915160
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 13F915148
+Loading driver 1FA1F39E-FEFF-4AAE-BD7B-38A070A3B609
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB50240
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/MdeModulePkg/Universal/Disk/PartitionDxe/PartitionDxe/DEBUG/PartitionDxe.dll 0x13F906000
+Loading driver at 0x0013F905000 EntryPoint=0x0013F90A548 PartitionDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EB4F018
+ProtectUefiImageCommon - 0x3EB50240
+  - 0x000000013F905000 - 0x000000000000A000
+SetUefiImageMemoryAttributes - 0x000000013F905000 - 0x0000000000001000 (0x0000000000004008)
+SetUefiImageMemoryAttributes - 0x000000013F906000 - 0x0000000000007000 (0x0000000000020008)
+SetUefiImageMemoryAttributes - 0x000000013F90D000 - 0x0000000000002000 (0x0000000000004008)
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 13F90D158
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 13F90D140
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 13F90D128
+Loading driver 961578FE-B6B7-44C3-AF35-6BC705CD2B1F
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB4F0C0
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/FatPkg/EnhancedFatDxe/Fat/DEBUG/Fat.dll 0x13F8F8000
+Loading driver at 0x0013F8F7000 EntryPoint=0x0013F8FFA18 Fat.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EB4FA98
+ProtectUefiImageCommon - 0x3EB4F0C0
+  - 0x000000013F8F7000 - 0x000000000000E000
+SetUefiImageMemoryAttributes - 0x000000013F8F7000 - 0x0000000000001000 (0x0000000000004008)
+SetUefiImageMemoryAttributes - 0x000000013F8F8000 - 0x000000000000B000 (0x0000000000020008)
+SetUefiImageMemoryAttributes - 0x000000013F903000 - 0x0000000000002000 (0x0000000000004008)
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 13F9031E8
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 13F9031C0
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 13F9031A8
+Loading driver CD3BAFB6-50FB-4FE8-8E4E-AB74D2C1A600
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB4E040
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/MdeModulePkg/Universal/Disk/UnicodeCollation/EnglishDxe/EnglishDxe/DEBUG/EnglishDxe.dll 0x13F8F2000
+Loading driver at 0x0013F8F1000 EntryPoint=0x0013F8F3410 EnglishDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EB4ED18
+ProtectUefiImageCommon - 0x3EB4E040
+  - 0x000000013F8F1000 - 0x0000000000006000
+SetUefiImageMemoryAttributes - 0x000000013F8F1000 - 0x0000000000001000 (0x0000000000004008)
+SetUefiImageMemoryAttributes - 0x000000013F8F2000 - 0x0000000000003000 (0x0000000000020008)
+SetUefiImageMemoryAttributes - 0x000000013F8F5000 - 0x0000000000002000 (0x0000000000004008)
+InstallProtocolInterface: 1D85CD7F-F43D-11D2-9A0C-0090273FC14D 13F8F5068
+InstallProtocolInterface: A4C751FC-23AE-4C3E-92E9-4964CF63F349 13F8F5020
+Loading driver 905F13B0-8F91-4B0A-BD76-E1E78F9422E4
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB4E440
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/MdeModulePkg/Universal/Disk/UdfDxe/UdfDxe/DEBUG/UdfDxe.dll 0x13F8E8000
+Loading driver at 0x0013F8E7000 EntryPoint=0x0013F8EC894 UdfDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EB4E798
+ProtectUefiImageCommon - 0x3EB4E440
+  - 0x000000013F8E7000 - 0x000000000000A000
+SetUefiImageMemoryAttributes - 0x000000013F8E7000 - 0x0000000000001000 (0x0000000000004008)
+SetUefiImageMemoryAttributes - 0x000000013F8E8000 - 0x0000000000007000 (0x0000000000020008)
+SetUefiImageMemoryAttributes - 0x000000013F8EF000 - 0x0000000000002000 (0x0000000000004008)
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 13F8EF1B8
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 13F8EF1A0
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 13F8EF188
+Loading driver 7BD9DDF7-8B83-488E-AEC9-24C78610289C
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB4DB40
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/OvmfPkg/VirtioFsDxe/VirtioFsDxe/DEBUG/VirtioFsDxe.dll 0x13F8DC000
+Loading driver at 0x0013F8DB000 EntryPoint=0x0013F8E26C4 VirtioFsDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EB4DE98
+ProtectUefiImageCommon - 0x3EB4DB40
+  - 0x000000013F8DB000 - 0x000000000000C000
+SetUefiImageMemoryAttributes - 0x000000013F8DB000 - 0x0000000000001000 (0x0000000000004008)
+SetUefiImageMemoryAttributes - 0x000000013F8DC000 - 0x000000000000A000 (0x0000000000020008)
+SetUefiImageMemoryAttributes - 0x000000013F8E6000 - 0x0000000000001000 (0x0000000000004008)
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 13F8E60C0
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 13F8E60A8
+Loading driver 11D92DFB-3CA9-4F93-BA2E-4780ED3E03B5
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB4D1C0
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/OvmfPkg/VirtioBlkDxe/VirtioBlk/DEBUG/VirtioBlkDxe.dll 0x13F8D5000
+Loading driver at 0x0013F8D4000 EntryPoint=0x0013F8D74BC VirtioBlkDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EB4D498
+ProtectUefiImageCommon - 0x3EB4D1C0
+  - 0x000000013F8D4000 - 0x0000000000007000
+SetUefiImageMemoryAttributes - 0x000000013F8D4000 - 0x0000000000001000 (0x0000000000004008)
+SetUefiImageMemoryAttributes - 0x000000013F8D5000 - 0x0000000000004000 (0x0000000000020008)
+SetUefiImageMemoryAttributes - 0x000000013F8D9000 - 0x0000000000002000 (0x0000000000004008)
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 13F8D90D0
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 13F8D90B8
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 13F8D90A0
+Loading driver A92CDB4B-82F1-4E0B-A516-8A655D371524
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB4AC40
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/OvmfPkg/VirtioNetDxe/VirtioNet/DEBUG/VirtioNetDxe.dll 0x13F8CC000
+Loading driver at 0x0013F8CB000 EntryPoint=0x0013F8CFD68 VirtioNetDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EB4A898
+ProtectUefiImageCommon - 0x3EB4AC40
+  - 0x000000013F8CB000 - 0x0000000000009000
+SetUefiImageMemoryAttributes - 0x000000013F8CB000 - 0x0000000000001000 (0x0000000000004008)
+SetUefiImageMemoryAttributes - 0x000000013F8CC000 - 0x0000000000006000 (0x0000000000020008)
+SetUefiImageMemoryAttributes - 0x000000013F8D2000 - 0x0000000000002000 (0x0000000000004008)
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 13F8D2100
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 13F8D20E8
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 13F8D20D0
+Loading driver FAB5D4F4-83C0-4AAF-8480-442D11DF6CEA
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB4A2C0
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/OvmfPkg/VirtioScsiDxe/VirtioScsi/DEBUG/VirtioScsiDxe.dll 0x13F8C4000
+Loading driver at 0x0013F8C3000 EntryPoint=0x0013F8C694C VirtioScsiDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EB4A618
+ProtectUefiImageCommon - 0x3EB4A2C0
+  - 0x000000013F8C3000 - 0x0000000000008000
+SetUefiImageMemoryAttributes - 0x000000013F8C3000 - 0x0000000000001000 (0x0000000000004008)
+SetUefiImageMemoryAttributes - 0x000000013F8C4000 - 0x0000000000005000 (0x0000000000020008)
+SetUefiImageMemoryAttributes - 0x000000013F8C9000 - 0x0000000000002000 (0x0000000000004008)
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 13F8C90D0
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 13F8C90B8
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 13F8C90A0
+Loading driver 58E26F0D-CBAC-4BBA-B70F-18221415665A
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB49140
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/OvmfPkg/VirtioRngDxe/VirtioRng/DEBUG/VirtioRngDxe.dll 0x13F8BD000
+Loading driver at 0x0013F8BC000 EntryPoint=0x0013F8BEE98 VirtioRngDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EB49B18
+ProtectUefiImageCommon - 0x3EB49140
+  - 0x000000013F8BC000 - 0x0000000000007000
+SetUefiImageMemoryAttributes - 0x000000013F8BC000 - 0x0000000000001000 (0x0000000000004008)
+SetUefiImageMemoryAttributes - 0x000000013F8BD000 - 0x0000000000004000 (0x0000000000020008)
+SetUefiImageMemoryAttributes - 0x000000013F8C1000 - 0x0000000000002000 (0x0000000000004008)
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 13F8C10E0
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 13F8C10C8
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 13F8C10B0
+Loading driver 23CACE14-EBA4-49F6-9681-C697FF0B649E
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB49540
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/OvmfPkg/VirtioSerialDxe/VirtioSerial/DEBUG/VirtioSerialDxe.dll 0x13F8B4000
+Loading driver at 0x0013F8B3000 EntryPoint=0x0013F8B7584 VirtioSerialDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EB48B18
+ProtectUefiImageCommon - 0x3EB49540
+  - 0x000000013F8B3000 - 0x0000000000009000
+SetUefiImageMemoryAttributes - 0x000000013F8B3000 - 0x0000000000001000 (0x0000000000004008)
+SetUefiImageMemoryAttributes - 0x000000013F8B4000 - 0x0000000000006000 (0x0000000000020008)
+SetUefiImageMemoryAttributes - 0x000000013F8BA000 - 0x0000000000002000 (0x0000000000004008)
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 13F8BA150
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 13F8BA138
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 13F8BA120
+Loading driver 806040CA-DAD9-4978-A3B4-2D2AB0C8A48F
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB487C0
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/OvmfPkg/QemuKernelLoaderFsDxe/QemuKernelLoaderFsDxe/DEBUG/QemuKernelLoaderFsDxe.dll 0x13F8AD000
+Loading driver at 0x0013F8AC000 EntryPoint=0x0013F8AEF20 QemuKernelLoaderFsDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EB48698
+ProtectUefiImageCommon - 0x3EB487C0
+  - 0x000000013F8AC000 - 0x0000000000007000
+SetUefiImageMemoryAttributes - 0x000000013F8AC000 - 0x0000000000001000 (0x0000000000004008)
+SetUefiImageMemoryAttributes - 0x000000013F8AD000 - 0x0000000000004000 (0x0000000000020008)
+SetUefiImageMemoryAttributes - 0x000000013F8B1000 - 0x0000000000002000 (0x0000000000004008)
+Found FwCfg @ 0x9020008/0x9020000
+Found FwCfg DMA @ 0x9020010
+Error: Image at 0013F8AC000 start failed: Not Found
+SetUefiImageMemoryAttributes - 0x000000013F8AC000 - 0x0000000000007000 (0x0000000000000008)
+remove-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/OvmfPkg/QemuKernelLoaderFsDxe/QemuKernelLoaderFsDxe/DEBUG/QemuKernelLoaderFsDxe.dll 0x3F8AD000
+Loading driver E4F61863-FE2C-4B56-A8F4-08519BC439DF
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB487C0
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/NetworkPkg/VlanConfigDxe/VlanConfigDxe/DEBUG/VlanConfigDxe.dll 0x13F8AA000
+Loading driver at 0x0013F8A9000 EntryPoint=0x0013F8AE348 VlanConfigDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EB48498
+ProtectUefiImageCommon - 0x3EB487C0
+  - 0x000000013F8A9000 - 0x000000000000A000
+SetUefiImageMemoryAttributes - 0x000000013F8A9000 - 0x0000000000001000 (0x0000000000004008)
+SetUefiImageMemoryAttributes - 0x000000013F8AA000 - 0x0000000000007000 (0x0000000000020008)
+SetUefiImageMemoryAttributes - 0x000000013F8B1000 - 0x0000000000002000 (0x0000000000004008)
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 13F8B17C8
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 13F8B17B0
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 13F8B1798
+Loading driver 025BBFC7-E6A9-4B8B-82AD-6815A1AEAF4A
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB47040
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/NetworkPkg/MnpDxe/MnpDxe/DEBUG/MnpDxe.dll 0x13F89C000
+Loading driver at 0x0013F89B000 EntryPoint=0x0013F8A39BC MnpDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EB47E18
+ProtectUefiImageCommon - 0x3EB47040
+  - 0x000000013F89B000 - 0x000000000000E000
+SetUefiImageMemoryAttributes - 0x000000013F89B000 - 0x0000000000001000 (0x0000000000004008)
+SetUefiImageMemoryAttributes - 0x000000013F89C000 - 0x000000000000B000 (0x0000000000020008)
+SetUefiImageMemoryAttributes - 0x000000013F8A7000 - 0x0000000000002000 (0x0000000000004008)
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 13F8A7168
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 13F8A7150
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 13F8A7138
+Loading driver 529D3F93-E8E9-4E73-B1E1-BDF6A9D50113
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB47340
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/NetworkPkg/ArpDxe/ArpDxe/DEBUG/ArpDxe.dll 0x13F892000
+Loading driver at 0x0013F891000 EntryPoint=0x0013F896400 ArpDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EB47698
+ProtectUefiImageCommon - 0x3EB47340
+  - 0x000000013F891000 - 0x000000000000A000
+SetUefiImageMemoryAttributes - 0x000000013F891000 - 0x0000000000001000 (0x0000000000004008)
+SetUefiImageMemoryAttributes - 0x000000013F892000 - 0x0000000000007000 (0x0000000000020008)
+SetUefiImageMemoryAttributes - 0x000000013F899000 - 0x0000000000002000 (0x0000000000004008)
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 13F899128
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 13F899110
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 13F8990F8
+Loading driver 94734718-0BBC-47FB-96A5-EE7A5AE6A2AD
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB45B40
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/NetworkPkg/Dhcp4Dxe/Dhcp4Dxe/DEBUG/Dhcp4Dxe.dll 0x13F885000
+Loading driver at 0x0013F884000 EntryPoint=0x0013F88C730 Dhcp4Dxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EB45E98
+ProtectUefiImageCommon - 0x3EB45B40
+  - 0x000000013F884000 - 0x000000000000D000
+SetUefiImageMemoryAttributes - 0x000000013F884000 - 0x0000000000001000 (0x0000000000004008)
+SetUefiImageMemoryAttributes - 0x000000013F885000 - 0x000000000000A000 (0x0000000000020008)
+SetUefiImageMemoryAttributes - 0x000000013F88F000 - 0x0000000000002000 (0x0000000000004008)
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 13F88FD50
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 13F88FD38
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 13F88FD20
+Loading driver 9FB1A1F3-3B71-4324-B39A-745CBB015FFF
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB45240
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/NetworkPkg/Ip4Dxe/Ip4Dxe/DEBUG/Ip4Dxe.dll 0x13F86F000
+Loading driver at 0x0013F86E000 EntryPoint=0x0013F874828 Ip4Dxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EB45718
+ProtectUefiImageCommon - 0x3EB45240
+  - 0x000000013F86E000 - 0x0000000000016000
+SetUefiImageMemoryAttributes - 0x000000013F86E000 - 0x0000000000001000 (0x0000000000004008)
+SetUefiImageMemoryAttributes - 0x000000013F86F000 - 0x0000000000013000 (0x0000000000020008)
+SetUefiImageMemoryAttributes - 0x000000013F882000 - 0x0000000000002000 (0x0000000000004008)
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 13F882830
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 13F882818
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 13F882800
+Loading driver 6D6963AB-906D-4A65-A7CA-BD40E5D6AF2B
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB44140
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/NetworkPkg/Udp4Dxe/Udp4Dxe/DEBUG/Udp4Dxe.dll 0x13F862000
+Loading driver at 0x0013F861000 EntryPoint=0x0013F868AE8 Udp4Dxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EB44B18
+ProtectUefiImageCommon - 0x3EB44140
+  - 0x000000013F861000 - 0x000000000000D000
+SetUefiImageMemoryAttributes - 0x000000013F861000 - 0x0000000000001000 (0x0000000000004008)
+SetUefiImageMemoryAttributes - 0x000000013F862000 - 0x000000000000A000 (0x0000000000020008)
+SetUefiImageMemoryAttributes - 0x000000013F86C000 - 0x0000000000002000 (0x0000000000004008)
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 13F86C160
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 13F86C148
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 13F86C130
+Loading driver DC3641B8-2FA8-4ED3-BC1F-F9962A03454B
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB43040
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/NetworkPkg/Mtftp4Dxe/Mtftp4Dxe/DEBUG/Mtftp4Dxe.dll 0x13F855000
+Loading driver at 0x0013F854000 EntryPoint=0x0013F85BE6C Mtftp4Dxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EB43D18
+ProtectUefiImageCommon - 0x3EB43040
+  - 0x000000013F854000 - 0x000000000000D000
+SetUefiImageMemoryAttributes - 0x000000013F854000 - 0x0000000000001000 (0x0000000000004008)
+SetUefiImageMemoryAttributes - 0x000000013F855000 - 0x000000000000A000 (0x0000000000020008)
+SetUefiImageMemoryAttributes - 0x000000013F85F000 - 0x0000000000002000 (0x0000000000004008)
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 13F85F158
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 13F85F140
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 13F85F128
+Loading driver 95E3669D-34BE-4775-A651-7EA41B69D89E
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB433C0
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/NetworkPkg/Dhcp6Dxe/Dhcp6Dxe/DEBUG/Dhcp6Dxe.dll 0x13F846000
+Loading driver at 0x0013F845000 EntryPoint=0x0013F84E9F0 Dhcp6Dxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EB43618
+ProtectUefiImageCommon - 0x3EB433C0
+  - 0x000000013F845000 - 0x000000000000F000
+SetUefiImageMemoryAttributes - 0x000000013F845000 - 0x0000000000001000 (0x0000000000004008)
+SetUefiImageMemoryAttributes - 0x000000013F846000 - 0x000000000000C000 (0x0000000000020008)
+SetUefiImageMemoryAttributes - 0x000000013F852000 - 0x0000000000002000 (0x0000000000004008)
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 13F8521C8
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 13F8521B0
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 13F852198
+Loading driver 5BEDB5CC-D830-4EB2-8742-2D4CC9B54F2C
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB42B40
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/NetworkPkg/Ip6Dxe/Ip6Dxe/DEBUG/Ip6Dxe.dll 0x13F828000
+Loading driver at 0x0013F827000 EntryPoint=0x0013F82A7CC Ip6Dxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EB42E98
+ProtectUefiImageCommon - 0x3EB42B40
+  - 0x000000013F827000 - 0x000000000001E000
+SetUefiImageMemoryAttributes - 0x000000013F827000 - 0x0000000000001000 (0x0000000000004008)
+SetUefiImageMemoryAttributes - 0x000000013F828000 - 0x000000000001A000 (0x0000000000020008)
+SetUefiImageMemoryAttributes - 0x000000013F842000 - 0x0000000000003000 (0x0000000000004008)
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 13F8421A8
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 13F842190
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 13F842178
+Loading driver D912C7BC-F098-4367-92BA-E911083C7B0E
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB42240
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/NetworkPkg/Udp6Dxe/Udp6Dxe/DEBUG/Udp6Dxe.dll 0x13F81B000
+Loading driver at 0x0013F81A000 EntryPoint=0x0013F821A68 Udp6Dxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EB41F18
+ProtectUefiImageCommon - 0x3EB42240
+  - 0x000000013F81A000 - 0x000000000000D000
+SetUefiImageMemoryAttributes - 0x000000013F81A000 - 0x0000000000001000 (0x0000000000004008)
+SetUefiImageMemoryAttributes - 0x000000013F81B000 - 0x000000000000A000 (0x0000000000020008)
+SetUefiImageMemoryAttributes - 0x000000013F825000 - 0x0000000000002000 (0x0000000000004008)
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 13F825170
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 13F825158
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 13F825140
+Loading driver 99F03B99-98D8-49DD-A8D3-3219D0FFE41E
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB411C0
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/NetworkPkg/Mtftp6Dxe/Mtftp6Dxe/DEBUG/Mtftp6Dxe.dll 0x13F80E000
+Loading driver at 0x0013F80D000 EntryPoint=0x0013F815534 Mtftp6Dxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EB41998
+ProtectUefiImageCommon - 0x3EB411C0
+  - 0x000000013F80D000 - 0x000000000000D000
+SetUefiImageMemoryAttributes - 0x000000013F80D000 - 0x0000000000001000 (0x0000000000004008)
+SetUefiImageMemoryAttributes - 0x000000013F80E000 - 0x000000000000A000 (0x0000000000020008)
+SetUefiImageMemoryAttributes - 0x000000013F818000 - 0x0000000000002000 (0x0000000000004008)
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 13F818168
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 13F818150
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 13F818138
+Loading driver 1A7E4468-2F55-4A56-903C-01265EB7622B
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB41640
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/NetworkPkg/TcpDxe/TcpDxe/DEBUG/TcpDxe.dll 0x13F7F8000
+Loading driver at 0x0013F7F7000 EntryPoint=0x0013F7F9F7C TcpDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EB40E98
+ProtectUefiImageCommon - 0x3EB41640
+  - 0x000000013F7F7000 - 0x0000000000016000
+SetUefiImageMemoryAttributes - 0x000000013F7F7000 - 0x0000000000001000 (0x0000000000004008)
+SetUefiImageMemoryAttributes - 0x000000013F7F8000 - 0x0000000000013000 (0x0000000000020008)
+SetUefiImageMemoryAttributes - 0x000000013F80B000 - 0x0000000000002000 (0x0000000000004008)
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 13F80B2F8
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 13F80B2E0
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 13F80B2C8
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 13F80B298
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 13F80B2E0
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 13F80B2C8
+Loading driver B95E9FDA-26DE-48D2-8807-1F9107AC5E3A
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB402C0
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/NetworkPkg/UefiPxeBcDxe/UefiPxeBcDxe/DEBUG/UefiPxeBcDxe.dll 0x13F7E4000
+Loading driver at 0x0013F7E3000 EntryPoint=0x0013F7ECFF0 UefiPxeBcDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EB40818
+ProtectUefiImageCommon - 0x3EB402C0
+  - 0x000000013F7E3000 - 0x0000000000014000
+SetUefiImageMemoryAttributes - 0x000000013F7E3000 - 0x0000000000001000 (0x0000000000004008)
+SetUefiImageMemoryAttributes - 0x000000013F7E4000 - 0x0000000000011000 (0x0000000000020008)
+SetUefiImageMemoryAttributes - 0x000000013F7F5000 - 0x0000000000002000 (0x0000000000004008)
+Found FwCfg @ 0x9020008/0x9020000
+Found FwCfg DMA @ 0x9020010
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 13F7F52E0
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 13F7F52C8
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 13F7F52B0
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 13F7F5280
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 13F7F52C8
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 13F7F52B0
+Loading driver 0167CCC4-D0F7-4F21-A3EF-9E64B7CDCE8B
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB3F2C0
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/MdeModulePkg/Bus/Scsi/ScsiBusDxe/ScsiBusDxe/DEBUG/ScsiBus.dll 0x13F7DC000
+Loading driver at 0x0013F7DB000 EntryPoint=0x0013F7DE97C ScsiBus.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EB3F218
+ProtectUefiImageCommon - 0x3EB3F2C0
+  - 0x000000013F7DB000 - 0x0000000000008000
+SetUefiImageMemoryAttributes - 0x000000013F7DB000 - 0x0000000000001000 (0x0000000000004008)
+SetUefiImageMemoryAttributes - 0x000000013F7DC000 - 0x0000000000005000 (0x0000000000020008)
+SetUefiImageMemoryAttributes - 0x000000013F7E1000 - 0x0000000000002000 (0x0000000000004008)
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 13F7E1100
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 13F7E10E8
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 13F7E10D0
+Loading driver 0A66E322-3740-4CCE-AD62-BD172CECCA35
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB3F5C0
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/MdeModulePkg/Bus/Scsi/ScsiDiskDxe/ScsiDiskDxe/DEBUG/ScsiDisk.dll 0x13F7CF000
+Loading driver at 0x0013F7CE000 EntryPoint=0x0013F7D6D70 ScsiDisk.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EB3EE18
+ProtectUefiImageCommon - 0x3EB3F5C0
+  - 0x000000013F7CE000 - 0x000000000000D000
+SetUefiImageMemoryAttributes - 0x000000013F7CE000 - 0x0000000000001000 (0x0000000000004008)
+SetUefiImageMemoryAttributes - 0x000000013F7CF000 - 0x000000000000A000 (0x0000000000020008)
+SetUefiImageMemoryAttributes - 0x000000013F7D9000 - 0x0000000000002000 (0x0000000000004008)
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 13F7D91B0
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 13F7D9198
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 13F7D9180
+Loading driver 5BE3BDF4-53CF-46A3-A6A9-73C34A6E5EE3
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB3E7C0
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/MdeModulePkg/Bus/Pci/NvmExpressDxe/NvmExpressDxe/DEBUG/NvmExpressDxe.dll 0x13F7C2000
+Loading driver at 0x0013F7C1000 EntryPoint=0x0013F7C8DE4 NvmExpressDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EB3E198
+ProtectUefiImageCommon - 0x3EB3E7C0
+  - 0x000000013F7C1000 - 0x000000000000D000
+SetUefiImageMemoryAttributes - 0x000000013F7C1000 - 0x0000000000001000 (0x0000000000004008)
+SetUefiImageMemoryAttributes - 0x000000013F7C2000 - 0x000000000000A000 (0x0000000000020008)
+SetUefiImageMemoryAttributes - 0x000000013F7CC000 - 0x0000000000002000 (0x0000000000004008)
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 13F7CC198
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 13F7CC138
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 13F7CC120
+InstallProtocolInterface: 5C198761-16A8-4E69-972C-89D67954F81D 13F7CC180
+Loading driver 9622E42C-8E38-4A08-9E8F-54F784652F6B
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB3DB40
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/MdeModulePkg/Universal/Acpi/AcpiTableDxe/AcpiTableDxe/DEBUG/AcpiTableDxe.dll 0x13F7B7000
+Loading driver at 0x0013F7B6000 EntryPoint=0x0013F7BB320 AcpiTableDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EB3DA98
+ProtectUefiImageCommon - 0x3EB3DB40
+  - 0x000000013F7B6000 - 0x000000000000B000
+SetUefiImageMemoryAttributes - 0x000000013F7B6000 - 0x0000000000001000 (0x0000000000004008)
+SetUefiImageMemoryAttributes - 0x000000013F7B7000 - 0x0000000000007000 (0x0000000000020008)
+SetUefiImageMemoryAttributes - 0x000000013F7BE000 - 0x0000000000003000 (0x0000000000004008)
+InstallProtocolInterface: FFE06BDD-6107-46A6-7BB2-5A9C7EC5275C 13EB3D2A0
+InstallProtocolInterface: EB97088E-CFDF-49C6-BE4B-D906A5B20E86 13EB3D2B0
+Loading driver B8E62775-BB0A-43F0-A843-5BE8B14F8CCD
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB3C040
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/MdeModulePkg/Universal/Acpi/BootGraphicsResourceTableDxe/BootGraphicsResourceTableDxe/DEBUG/BootGraphicsResourceTableDxe.dll 0x13F7B1000
+Loading driver at 0x0013F7B0000 EntryPoint=0x0013F7B2774 BootGraphicsResourceTableDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EB3D618
+ProtectUefiImageCommon - 0x3EB3C040
+  - 0x000000013F7B0000 - 0x0000000000006000
+SetUefiImageMemoryAttributes - 0x000000013F7B0000 - 0x0000000000001000 (0x0000000000004008)
+SetUefiImageMemoryAttributes - 0x000000013F7B1000 - 0x0000000000003000 (0x0000000000020008)
+SetUefiImageMemoryAttributes - 0x000000013F7B4000 - 0x0000000000002000 (0x0000000000004008)
+InstallProtocolInterface: CDEA2BD3-FC25-4C1C-B97C-B31186064990 13F7B4070
+InstallProtocolInterface: 4B5DC1DF-1EAA-48B2-A7E9-EAC489A00B5C 13F7B4050
+Loading driver 93B80004-9FB3-11D4-9A3A-0090273FC14D
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB3C4C0
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/MdeModulePkg/Bus/Pci/PciBusDxe/PciBusDxe/DEBUG/PciBusDxe.dll 0x13F79F000
+Loading driver at 0x0013F79E000 EntryPoint=0x0013F7A6198 PciBusDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EB3CB98
+ProtectUefiImageCommon - 0x3EB3C4C0
+  - 0x000000013F79E000 - 0x0000000000012000
+SetUefiImageMemoryAttributes - 0x000000013F79E000 - 0x0000000000001000 (0x0000000000004008)
+SetUefiImageMemoryAttributes - 0x000000013F79F000 - 0x000000000000F000 (0x0000000000020008)
+SetUefiImageMemoryAttributes - 0x000000013F7AE000 - 0x0000000000002000 (0x0000000000004008)
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 13F7AE298
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 13F7AE280
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 13F7AE268
+InstallProtocolInterface: 19CB87AB-2CB9-4665-8360-DDCF6054F79D 13F7AE250
+Loading driver 83DD3B39-7CAF-4FAC-A542-E050B767E3A7
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB3B0C0
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/OvmfPkg/VirtioPciDeviceDxe/VirtioPciDeviceDxe/DEBUG/VirtioPciDeviceDxe.dll 0x13F798000
+Loading driver at 0x0013F797000 EntryPoint=0x0013F79A058 VirtioPciDeviceDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EB3BA18
+ProtectUefiImageCommon - 0x3EB3B0C0
+  - 0x000000013F797000 - 0x0000000000007000
+SetUefiImageMemoryAttributes - 0x000000013F797000 - 0x0000000000001000 (0x0000000000004008)
+SetUefiImageMemoryAttributes - 0x000000013F798000 - 0x0000000000004000 (0x0000000000020008)
+SetUefiImageMemoryAttributes - 0x000000013F79C000 - 0x0000000000002000 (0x0000000000004008)
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 13F79C168
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 13F79C150
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 13F79C138
+Loading driver 0170F60C-1D40-4651-956D-F0BD9879D527
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB3B3C0
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/OvmfPkg/Virtio10Dxe/Virtio10/DEBUG/Virtio10.dll 0x13F78F000
+Loading driver at 0x0013F78E000 EntryPoint=0x0013F79256C Virtio10.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EB3B798
+ProtectUefiImageCommon - 0x3EB3B3C0
+  - 0x000000013F78E000 - 0x0000000000009000
+SetUefiImageMemoryAttributes - 0x000000013F78E000 - 0x0000000000001000 (0x0000000000004008)
+SetUefiImageMemoryAttributes - 0x000000013F78F000 - 0x0000000000006000 (0x0000000000020008)
+SetUefiImageMemoryAttributes - 0x000000013F795000 - 0x0000000000002000 (0x0000000000004008)
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 13F7950D0
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 13F7950B8
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 13F7950A0
+Loading driver D6099B94-CD97-4CC5-8714-7F6312701A8A
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB2F0C0
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/OvmfPkg/VirtioGpuDxe/VirtioGpu/DEBUG/VirtioGpuDxe.dll 0x13F785000
+Loading driver at 0x0013F784000 EntryPoint=0x0013F788F18 VirtioGpuDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EB2F918
+ProtectUefiImageCommon - 0x3EB2F0C0
+  - 0x000000013F784000 - 0x000000000000A000
+SetUefiImageMemoryAttributes - 0x000000013F784000 - 0x0000000000001000 (0x0000000000004008)
+SetUefiImageMemoryAttributes - 0x000000013F785000 - 0x0000000000007000 (0x0000000000020008)
+SetUefiImageMemoryAttributes - 0x000000013F78C000 - 0x0000000000002000 (0x0000000000004008)
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 13F78C0B0
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 13F78B1E8
+Loading driver 2FB92EFA-2EE0-4BAE-9EB6-7464125E1EF7
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB2F4C0
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/MdeModulePkg/Bus/Pci/UhciDxe/UhciDxe/DEBUG/UhciDxe.dll 0x13F77A000
+Loading driver at 0x0013F779000 EntryPoint=0x0013F77F190 UhciDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EB39018
+ProtectUefiImageCommon - 0x3EB2F4C0
+  - 0x000000013F779000 - 0x000000000000B000
+SetUefiImageMemoryAttributes - 0x000000013F779000 - 0x0000000000001000 (0x0000000000004008)
+SetUefiImageMemoryAttributes - 0x000000013F77A000 - 0x0000000000008000 (0x0000000000020008)
+SetUefiImageMemoryAttributes - 0x000000013F782000 - 0x0000000000002000 (0x0000000000004008)
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 13F7820F0
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 13F7820D8
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 13F7820C0
+Loading driver BDFE430E-8F2A-4DB0-9991-6F856594777E
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB390C0
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/MdeModulePkg/Bus/Pci/EhciDxe/EhciDxe/DEBUG/EhciDxe.dll 0x13F76E000
+Loading driver at 0x0013F76D000 EntryPoint=0x0013F7741FC EhciDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EB39918
+ProtectUefiImageCommon - 0x3EB390C0
+  - 0x000000013F76D000 - 0x000000000000C000
+SetUefiImageMemoryAttributes - 0x000000013F76D000 - 0x0000000000001000 (0x0000000000004008)
+SetUefiImageMemoryAttributes - 0x000000013F76E000 - 0x0000000000009000 (0x0000000000020008)
+SetUefiImageMemoryAttributes - 0x000000013F777000 - 0x0000000000002000 (0x0000000000004008)
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 13F7770F0
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 13F7770D8
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 13F7770C0
+Loading driver B7F50E91-A759-412C-ADE4-DCD03E7F7C28
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB38040
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/MdeModulePkg/Bus/Pci/XhciDxe/XhciDxe/DEBUG/XhciDxe.dll 0x13F75E000
+Loading driver at 0x0013F75D000 EntryPoint=0x0013F76775C XhciDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EB38F18
+ProtectUefiImageCommon - 0x3EB38040
+  - 0x000000013F75D000 - 0x0000000000010000
+SetUefiImageMemoryAttributes - 0x000000013F75D000 - 0x0000000000001000 (0x0000000000004008)
+SetUefiImageMemoryAttributes - 0x000000013F75E000 - 0x000000000000D000 (0x0000000000020008)
+SetUefiImageMemoryAttributes - 0x000000013F76B000 - 0x0000000000002000 (0x0000000000004008)
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 13F76B160
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 13F76B148
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 13F76B130
+Loading driver 240612B7-A063-11D4-9A3A-0090273FC14D
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB389C0
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/MdeModulePkg/Bus/Usb/UsbBusDxe/UsbBusDxe/DEBUG/UsbBusDxe.dll 0x13F751000
+Loading driver at 0x0013F750000 EntryPoint=0x0013F75752C UsbBusDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EB38618
+ProtectUefiImageCommon - 0x3EB389C0
+  - 0x000000013F750000 - 0x000000000000D000
+SetUefiImageMemoryAttributes - 0x000000013F750000 - 0x0000000000001000 (0x0000000000004008)
+SetUefiImageMemoryAttributes - 0x000000013F751000 - 0x000000000000A000 (0x0000000000020008)
+SetUefiImageMemoryAttributes - 0x000000013F75B000 - 0x0000000000002000 (0x0000000000004008)
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 13F75B1E8
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 13F75B1D0
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 13F75B1B8
+Loading driver 2D2E62CF-9ECF-43B7-8219-94E7FC713DFE
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB383C0
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/MdeModulePkg/Bus/Usb/UsbKbDxe/UsbKbDxe/DEBUG/UsbKbDxe.dll 0x13F748000
+Loading driver at 0x0013F747000 EntryPoint=0x0013F74C04C UsbKbDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EB37B98
+ProtectUefiImageCommon - 0x3EB383C0
+  - 0x000000013F747000 - 0x0000000000009000
+SetUefiImageMemoryAttributes - 0x000000013F747000 - 0x0000000000001000 (0x0000000000004008)
+SetUefiImageMemoryAttributes - 0x000000013F748000 - 0x0000000000006000 (0x0000000000020008)
+SetUefiImageMemoryAttributes - 0x000000013F74E000 - 0x0000000000002000 (0x0000000000004008)
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 13F74E858
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 13F74E840
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 13F74E828
+Loading driver 9FB4B4A7-42C0-4BCD-8540-9BCC6711F83E
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB372C0
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassStorageDxe/DEBUG/UsbMassStorageDxe.dll 0x13F73F000
+Loading driver at 0x0013F73E000 EntryPoint=0x0013F742D78 UsbMassStorageDxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EB37A98
+ProtectUefiImageCommon - 0x3EB372C0
+  - 0x000000013F73E000 - 0x0000000000009000
+SetUefiImageMemoryAttributes - 0x000000013F73E000 - 0x0000000000001000 (0x0000000000004008)
+SetUefiImageMemoryAttributes - 0x000000013F73F000 - 0x0000000000006000 (0x0000000000020008)
+SetUefiImageMemoryAttributes - 0x000000013F745000 - 0x0000000000002000 (0x0000000000004008)
+InstallProtocolInterface: 18A031AB-B443-4D1A-A5C0-0C09261E9F71 13F7451B0
+InstallProtocolInterface: 107A772C-D5E1-11D4-9A46-0090273FC14D 13F745198
+InstallProtocolInterface: 6A7A5CFF-E8D9-4F70-BADA-75AB3025CE14 13F745180
+Loading driver 1788737C-83C4-47B9-899C-B741AB263964
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB36D40
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/ArmVirtPkg/ArmCcaTcg2Dxe/CcaTcg2Dxe/DEBUG/CcaTcg2Dxe.dll 0x13F734000
+Loading driver at 0x0013F733000 EntryPoint=0x0013F738AA8 CcaTcg2Dxe.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EB36C98
+ProtectUefiImageCommon - 0x3EB36D40
+  - 0x000000013F733000 - 0x000000000000B000
+SetUefiImageMemoryAttributes - 0x000000013F733000 - 0x0000000000001000 (0x0000000000004008)
+SetUefiImageMemoryAttributes - 0x000000013F734000 - 0x0000000000008000 (0x0000000000020008)
+SetUefiImageMemoryAttributes - 0x000000013F73C000 - 0x0000000000002000 (0x0000000000004008)
+Error: Image at 0013F733000 start failed: Unsupported
+SetUefiImageMemoryAttributes - 0x000000013F733000 - 0x000000000000B000 (0x0000000000000008)
+remove-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/ArmVirtPkg/ArmCcaTcg2Dxe/CcaTcg2Dxe/DEBUG/CcaTcg2Dxe.dll 0x3F734000
+Loading driver 17985E6F-E778-4D94-AEFA-C5DD2B77E186
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EB36D40
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/OvmfPkg/AcpiPlatformDxe/AcpiPlatformDxe/DEBUG/QemuFwCfgAcpiPlatform.dll 0x13F737000
+Loading driver at 0x0013F736000 EntryPoint=0x0013F73A5E8 QemuFwCfgAcpiPlatform.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EB36318
+ProtectUefiImageCommon - 0x3EB36D40
+  - 0x000000013F736000 - 0x0000000000008000
+SetUefiImageMemoryAttributes - 0x000000013F736000 - 0x0000000000001000 (0x0000000000004008)
+SetUefiImageMemoryAttributes - 0x000000013F737000 - 0x0000000000006000 (0x0000000000020008)
+SetUefiImageMemoryAttributes - 0x000000013F73D000 - 0x0000000000001000 (0x0000000000004008)
+Found FwCfg @ 0x9020008/0x9020000
+Found FwCfg DMA @ 0x9020010
+AcpiPlatformEntryPoint: waiting for root bridges to be connected, registered callback
+Driver AA6C1A48-A341-439C-950E-CC394FDFE144 was discovered but not loaded!!
+Driver 4D9CBEF0-15A0-4D0C-83DB-5213E710C23F was discovered but not loaded!!
+[Bds] Entry...
+[BdsDxe] Locate Variable Policy protocol - Success
+Variable Driver Auto Update Lang, Lang:eng, PlatformLang:en Status: Success
+[Variable]END_OF_DXE is signaled
+Initialize variable error flag (FF)
+Tpm2SubmitCommand - Tcg2 - Not Found
+Tpm2GetCapabilityPcrs fail!
+Tpm2SubmitCommand - Tcg2 - Not Found
+Tpm2HierarchyChangeAuth Result: - Not Found
+PCI Bus First Scanning
+PciBus: Discovered PCI @ [00|00|00]  [VID = 0x1B36, DID = 0x8]
+
+PciBus: Discovered PPB @ [00|01|00]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PCI @ [01|00|00]  [VID = 0x1AF4, DID = 0x1041]
+   BAR[1]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x14
+   BAR[4]: Type = PMem64; Alignment = 0x3FFF;	Length = 0x4000;	Offset = 0x20
+
+PciBus: Discovered PPB @ [00|01|01]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PCI @ [02|00|00]  [VID = 0x1B36, DID = 0xD]
+   BAR[0]: Type =  Mem64; Alignment = 0x3FFF;	Length = 0x4000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|01|02]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PCI @ [03|00|00]  [VID = 0x1AF4, DID = 0x1043]
+   BAR[1]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x14
+   BAR[4]: Type = PMem64; Alignment = 0x3FFF;	Length = 0x4000;	Offset = 0x20
+
+PciBus: Discovered PPB @ [00|01|03]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PCI @ [04|00|00]  [VID = 0x1AF4, DID = 0x1042]
+   BAR[1]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x14
+   BAR[4]: Type = PMem64; Alignment = 0x3FFF;	Length = 0x4000;	Offset = 0x20
+
+PciBus: Discovered PPB @ [00|01|04]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PCI @ [05|00|00]  [VID = 0x1AF4, DID = 0x1050]
+   BAR[0]: Type = PMem32; Alignment = 0x7FFFFF;	Length = 0x800000;	Offset = 0x10
+   BAR[2]: Type = PMem64; Alignment = 0x3FFF;	Length = 0x4000;	Offset = 0x18
+   BAR[3]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x20
+
+PciBus: Discovered PPB @ [00|01|05]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|01|06]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|01|07]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|02|00]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|02|01]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|02|02]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|02|03]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|02|04]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|02|05]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|02|06]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|02|07]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|03|00]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|03|01]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|03|02]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|03|03]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|03|04]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|03|05]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|03|06]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|03|07]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|04|00]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|04|01]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|04|02]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|04|03]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|04|04]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|04|05]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|04|06]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PCI Bus Second Scanning
+PciBus: Discovered PCI @ [00|00|00]  [VID = 0x1B36, DID = 0x8]
+
+PciBus: Discovered PPB @ [00|01|00]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PCI @ [01|00|00]  [VID = 0x1AF4, DID = 0x1041]
+   BAR[1]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x14
+   BAR[4]: Type = PMem64; Alignment = 0x3FFF;	Length = 0x4000;	Offset = 0x20
+
+PciBus: Discovered PPB @ [00|01|01]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PCI @ [02|00|00]  [VID = 0x1B36, DID = 0xD]
+   BAR[0]: Type =  Mem64; Alignment = 0x3FFF;	Length = 0x4000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|01|02]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PCI @ [03|00|00]  [VID = 0x1AF4, DID = 0x1043]
+   BAR[1]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x14
+   BAR[4]: Type = PMem64; Alignment = 0x3FFF;	Length = 0x4000;	Offset = 0x20
+
+PciBus: Discovered PPB @ [00|01|03]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PCI @ [04|00|00]  [VID = 0x1AF4, DID = 0x1042]
+   BAR[1]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x14
+   BAR[4]: Type = PMem64; Alignment = 0x3FFF;	Length = 0x4000;	Offset = 0x20
+
+PciBus: Discovered PPB @ [00|01|04]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PCI @ [05|00|00]  [VID = 0x1AF4, DID = 0x1050]
+   BAR[0]: Type = PMem32; Alignment = 0x7FFFFF;	Length = 0x800000;	Offset = 0x10
+   BAR[2]: Type = PMem64; Alignment = 0x3FFF;	Length = 0x4000;	Offset = 0x18
+   BAR[3]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x20
+
+PciBus: Discovered PPB @ [00|01|05]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|01|06]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|01|07]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|02|00]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|02|01]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|02|02]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|02|03]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|02|04]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|02|05]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|02|06]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|02|07]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|03|00]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|03|01]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|03|02]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|03|03]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|03|04]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|03|05]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|03|06]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|03|07]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|04|00]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|04|01]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|04|02]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|04|03]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|04|04]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|04|05]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|04|06]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PCI @ [00|00|00]  [VID = 0x1B36, DID = 0x8]
+
+PciBus: Discovered PPB @ [00|01|00]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PCI @ [01|00|00]  [VID = 0x1AF4, DID = 0x1041]
+   BAR[1]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x14
+   BAR[4]: Type = PMem64; Alignment = 0x3FFF;	Length = 0x4000;	Offset = 0x20
+
+PciBus: Discovered PPB @ [00|01|01]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PCI @ [02|00|00]  [VID = 0x1B36, DID = 0xD]
+   BAR[0]: Type =  Mem64; Alignment = 0x3FFF;	Length = 0x4000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|01|02]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PCI @ [03|00|00]  [VID = 0x1AF4, DID = 0x1043]
+   BAR[1]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x14
+   BAR[4]: Type = PMem64; Alignment = 0x3FFF;	Length = 0x4000;	Offset = 0x20
+
+PciBus: Discovered PPB @ [00|01|03]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PCI @ [04|00|00]  [VID = 0x1AF4, DID = 0x1042]
+   BAR[1]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x14
+   BAR[4]: Type = PMem64; Alignment = 0x3FFF;	Length = 0x4000;	Offset = 0x20
+
+PciBus: Discovered PPB @ [00|01|04]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PCI @ [05|00|00]  [VID = 0x1AF4, DID = 0x1050]
+   BAR[0]: Type = PMem32; Alignment = 0x7FFFFF;	Length = 0x800000;	Offset = 0x10
+   BAR[2]: Type = PMem64; Alignment = 0x3FFF;	Length = 0x4000;	Offset = 0x18
+   BAR[3]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x20
+
+PciBus: Discovered PPB @ [00|01|05]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|01|06]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|01|07]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|02|00]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|02|01]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|02|02]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|02|03]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|02|04]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|02|05]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|02|06]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|02|07]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|03|00]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|03|01]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|03|02]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|03|03]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|03|04]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|03|05]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|03|06]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|03|07]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|04|00]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|04|01]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|04|02]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|04|03]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|04|04]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|04|05]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciBus: Discovered PPB @ [00|04|06]  [VID = 0x1B36, DID = 0xC]
+   Padding: Type =  Mem32; Alignment = 0x1FFFFF;	Length = 0x200000
+   BAR[0]: Type =  Mem32; Alignment = 0xFFF;	Length = 0x1000;	Offset = 0x10
+
+PciHostBridge: SubmitResources for PciRoot(0x0)
+ Mem: Granularity/SpecificFlag = 32 / 00
+      Length/Alignment = 0x4700000 / 0x7FFFFF
+ Mem: Granularity/SpecificFlag = 64 / 00
+      Length/Alignment = 0x400000 / 0xFFFFF
+PciBus: HostBridge->SubmitResources() - Success
+PciHostBridge: NotifyPhase (AllocateResources)
+ RootBridge: PciRoot(0x0)
+  Mem: Base/Length/Alignment = 10000000/4700000/7FFFFF - Success
+  Mem64: Base/Length/Alignment = 10000000000/400000/FFFFF - Success
+PciBus: HostBridge->NotifyPhase(AllocateResources) - Success
+Process Option ROM: BAR Base/Length = 14600000/10000
+PciBus: Resource Map for Root Bridge PciRoot(0x0)
+Type =  Mem32; Base = 0x10000000;	Length = 0x4700000;	Alignment = 0x7FFFFF
+   Base = 0x10000000;	Length = 0x900000;	Alignment = 0x7FFFFF;	Owner = PPB [00|01|04:**]
+   Base = 0x10A00000;	Length = 0x200000;	Alignment = 0x1FFFFF;	Owner = PPB [00|04|06:**]
+   Base = 0x10C00000;	Length = 0x200000;	Alignment = 0x1FFFFF;	Owner = PPB [00|04|05:**]
+   Base = 0x10E00000;	Length = 0x200000;	Alignment = 0x1FFFFF;	Owner = PPB [00|04|04:**]
+   Base = 0x11000000;	Length = 0x200000;	Alignment = 0x1FFFFF;	Owner = PPB [00|04|03:**]
+   Base = 0x11200000;	Length = 0x200000;	Alignment = 0x1FFFFF;	Owner = PPB [00|04|02:**]
+   Base = 0x11400000;	Length = 0x200000;	Alignment = 0x1FFFFF;	Owner = PPB [00|04|01:**]
+   Base = 0x11600000;	Length = 0x200000;	Alignment = 0x1FFFFF;	Owner = PPB [00|04|00:**]
+   Base = 0x11800000;	Length = 0x200000;	Alignment = 0x1FFFFF;	Owner = PPB [00|03|07:**]
+   Base = 0x11A00000;	Length = 0x200000;	Alignment = 0x1FFFFF;	Owner = PPB [00|03|06:**]
+   Base = 0x11C00000;	Length = 0x200000;	Alignment = 0x1FFFFF;	Owner = PPB [00|03|05:**]
+   Base = 0x11E00000;	Length = 0x200000;	Alignment = 0x1FFFFF;	Owner = PPB [00|03|04:**]
+   Base = 0x12000000;	Length = 0x200000;	Alignment = 0x1FFFFF;	Owner = PPB [00|03|03:**]
+   Base = 0x12200000;	Length = 0x200000;	Alignment = 0x1FFFFF;	Owner = PPB [00|03|02:**]
+   Base = 0x12400000;	Length = 0x200000;	Alignment = 0x1FFFFF;	Owner = PPB [00|03|01:**]
+   Base = 0x12600000;	Length = 0x200000;	Alignment = 0x1FFFFF;	Owner = PPB [00|03|00:**]
+   Base = 0x12800000;	Length = 0x200000;	Alignment = 0x1FFFFF;	Owner = PPB [00|02|07:**]
+   Base = 0x12A00000;	Length = 0x200000;	Alignment = 0x1FFFFF;	Owner = PPB [00|02|06:**]
+   Base = 0x12C00000;	Length = 0x200000;	Alignment = 0x1FFFFF;	Owner = PPB [00|02|05:**]
+   Base = 0x12E00000;	Length = 0x200000;	Alignment = 0x1FFFFF;	Owner = PPB [00|02|04:**]
+   Base = 0x13000000;	Length = 0x200000;	Alignment = 0x1FFFFF;	Owner = PPB [00|02|03:**]
+   Base = 0x13200000;	Length = 0x200000;	Alignment = 0x1FFFFF;	Owner = PPB [00|02|02:**]
+   Base = 0x13400000;	Length = 0x200000;	Alignment = 0x1FFFFF;	Owner = PPB [00|02|01:**]
+   Base = 0x13600000;	Length = 0x200000;	Alignment = 0x1FFFFF;	Owner = PPB [00|02|00:**]
+   Base = 0x13800000;	Length = 0x200000;	Alignment = 0x1FFFFF;	Owner = PPB [00|01|07:**]
+   Base = 0x13A00000;	Length = 0x200000;	Alignment = 0x1FFFFF;	Owner = PPB [00|01|06:**]
+   Base = 0x13C00000;	Length = 0x200000;	Alignment = 0x1FFFFF;	Owner = PPB [00|01|05:**]
+   Base = 0x13E00000;	Length = 0x200000;	Alignment = 0x1FFFFF;	Owner = PPB [00|01|03:**]
+   Base = 0x14000000;	Length = 0x200000;	Alignment = 0x1FFFFF;	Owner = PPB [00|01|02:**]
+   Base = 0x14200000;	Length = 0x200000;	Alignment = 0x1FFFFF;	Owner = PPB [00|01|01:**]
+   Base = 0x14400000;	Length = 0x200000;	Alignment = 0x1FFFFF;	Owner = PPB [00|01|00:**]
+   Base = 0x14600000;	Length = 0x10000;	Alignment = 0xFFFF;	Owner = PCI [00|00|00:00]; Type =  OpRom
+   Base = 0x14610000;	Length = 0x1000;	Alignment = 0xFFF;	Owner = PPB [00|04|06:10]
+   Base = 0x14611000;	Length = 0x1000;	Alignment = 0xFFF;	Owner = PPB [00|04|05:10]
+   Base = 0x14612000;	Length = 0x1000;	Alignment = 0xFFF;	Owner = PPB [00|04|04:10]
+   Base = 0x14613000;	Length = 0x1000;	Alignment = 0xFFF;	Owner = PPB [00|04|03:10]
+   Base = 0x14614000;	Length = 0x1000;	Alignment = 0xFFF;	Owner = PPB [00|04|02:10]
+   Base = 0x14615000;	Length = 0x1000;	Alignment = 0xFFF;	Owner = PPB [00|04|01:10]
+   Base = 0x14616000;	Length = 0x1000;	Alignment = 0xFFF;	Owner = PPB [00|04|00:10]
+   Base = 0x14617000;	Length = 0x1000;	Alignment = 0xFFF;	Owner = PPB [00|03|07:10]
+   Base = 0x14618000;	Length = 0x1000;	Alignment = 0xFFF;	Owner = PPB [00|03|06:10]
+   Base = 0x14619000;	Length = 0x1000;	Alignment = 0xFFF;	Owner = PPB [00|03|05:10]
+   Base = 0x1461A000;	Length = 0x1000;	Alignment = 0xFFF;	Owner = PPB [00|03|04:10]
+   Base = 0x1461B000;	Length = 0x1000;	Alignment = 0xFFF;	Owner = PPB [00|03|03:10]
+   Base = 0x1461C000;	Length = 0x1000;	Alignment = 0xFFF;	Owner = PPB [00|03|02:10]
+   Base = 0x1461D000;	Length = 0x1000;	Alignment = 0xFFF;	Owner = PPB [00|03|01:10]
+   Base = 0x1461E000;	Length = 0x1000;	Alignment = 0xFFF;	Owner = PPB [00|03|00:10]
+   Base = 0x1461F000;	Length = 0x1000;	Alignment = 0xFFF;	Owner = PPB [00|02|07:10]
+   Base = 0x14620000;	Length = 0x1000;	Alignment = 0xFFF;	Owner = PPB [00|02|06:10]
+   Base = 0x14621000;	Length = 0x1000;	Alignment = 0xFFF;	Owner = PPB [00|02|05:10]
+   Base = 0x14622000;	Length = 0x1000;	Alignment = 0xFFF;	Owner = PPB [00|02|04:10]
+   Base = 0x14623000;	Length = 0x1000;	Alignment = 0xFFF;	Owner = PPB [00|02|03:10]
+   Base = 0x14624000;	Length = 0x1000;	Alignment = 0xFFF;	Owner = PPB [00|02|02:10]
+   Base = 0x14625000;	Length = 0x1000;	Alignment = 0xFFF;	Owner = PPB [00|02|01:10]
+   Base = 0x14626000;	Length = 0x1000;	Alignment = 0xFFF;	Owner = PPB [00|02|00:10]
+   Base = 0x14627000;	Length = 0x1000;	Alignment = 0xFFF;	Owner = PPB [00|01|07:10]
+   Base = 0x14628000;	Length = 0x1000;	Alignment = 0xFFF;	Owner = PPB [00|01|06:10]
+   Base = 0x14629000;	Length = 0x1000;	Alignment = 0xFFF;	Owner = PPB [00|01|05:10]
+   Base = 0x1462A000;	Length = 0x1000;	Alignment = 0xFFF;	Owner = PPB [00|01|04:10]
+   Base = 0x1462B000;	Length = 0x1000;	Alignment = 0xFFF;	Owner = PPB [00|01|03:10]
+   Base = 0x1462C000;	Length = 0x1000;	Alignment = 0xFFF;	Owner = PPB [00|01|02:10]
+   Base = 0x1462D000;	Length = 0x1000;	Alignment = 0xFFF;	Owner = PPB [00|01|01:10]
+   Base = 0x1462E000;	Length = 0x1000;	Alignment = 0xFFF;	Owner = PPB [00|01|00:10]
+Type =  Mem64; Base = 0x10000000000;	Length = 0x400000;	Alignment = 0xFFFFF
+   Base = 0x10000000000;	Length = 0x100000;	Alignment = 0xFFFFF;	Owner = PPB [00|01|00:**]; Type = PMem64
+   Base = 0x10000100000;	Length = 0x100000;	Alignment = 0xFFFFF;	Owner = PPB [00|01|02:**]; Type = PMem64
+   Base = 0x10000200000;	Length = 0x100000;	Alignment = 0xFFFFF;	Owner = PPB [00|01|03:**]; Type = PMem64
+   Base = 0x10000300000;	Length = 0x100000;	Alignment = 0xFFFFF;	Owner = PPB [00|01|04:**]; Type = PMem64
+
+PciBus: Resource Map for Bridge [00|01|00]
+Type =  Mem32; Base = 0x14400000;	Length = 0x200000;	Alignment = 0x1FFFFF
+   Base = Padding;	Length = 0x200000;	Alignment = 0x1FFFFF
+   Base = 0x14400000;	Length = 0x1000;	Alignment = 0xFFF;	Owner = PCI [01|00|00:14]
+Type =  Mem32; Base = 0x1462E000;	Length = 0x1000;	Alignment = 0xFFF
+Type = PMem64; Base = 0x10000000000;	Length = 0x100000;	Alignment = 0xFFFFF
+   Base = 0x10000000000;	Length = 0x4000;	Alignment = 0x3FFF;	Owner = PCI [01|00|00:20]
+
+PciBus: Resource Map for Bridge [00|01|01]
+Type =  Mem32; Base = 0x14200000;	Length = 0x200000;	Alignment = 0x1FFFFF
+   Base = Padding;	Length = 0x200000;	Alignment = 0x1FFFFF
+   Base = 0x14200000;	Length = 0x4000;	Alignment = 0x3FFF;	Owner = PCI [02|00|00:10]
+Type =  Mem32; Base = 0x1462D000;	Length = 0x1000;	Alignment = 0xFFF
+
+PciBus: Resource Map for Bridge [00|01|02]
+Type =  Mem32; Base = 0x14000000;	Length = 0x200000;	Alignment = 0x1FFFFF
+   Base = Padding;	Length = 0x200000;	Alignment = 0x1FFFFF
+   Base = 0x14000000;	Length = 0x1000;	Alignment = 0xFFF;	Owner = PCI [03|00|00:14]
+Type =  Mem32; Base = 0x1462C000;	Length = 0x1000;	Alignment = 0xFFF
+Type = PMem64; Base = 0x10000100000;	Length = 0x100000;	Alignment = 0xFFFFF
+   Base = 0x10000100000;	Length = 0x4000;	Alignment = 0x3FFF;	Owner = PCI [03|00|00:20]
+
+PciBus: Resource Map for Bridge [00|01|03]
+Type =  Mem32; Base = 0x13E00000;	Length = 0x200000;	Alignment = 0x1FFFFF
+   Base = Padding;	Length = 0x200000;	Alignment = 0x1FFFFF
+   Base = 0x13E00000;	Length = 0x1000;	Alignment = 0xFFF;	Owner = PCI [04|00|00:14]
+Type =  Mem32; Base = 0x1462B000;	Length = 0x1000;	Alignment = 0xFFF
+Type = PMem64; Base = 0x10000200000;	Length = 0x100000;	Alignment = 0xFFFFF
+   Base = 0x10000200000;	Length = 0x4000;	Alignment = 0x3FFF;	Owner = PCI [04|00|00:20]
+
+PciBus: Resource Map for Bridge [00|01|04]
+Type =  Mem32; Base = 0x10000000;	Length = 0x900000;	Alignment = 0x7FFFFF
+   Base = 0x10000000;	Length = 0x800000;	Alignment = 0x7FFFFF;	Owner = PCI [05|00|00:10]
+   Base = Padding;	Length = 0x200000;	Alignment = 0x1FFFFF
+   Base = 0x10800000;	Length = 0x1000;	Alignment = 0xFFF;	Owner = PCI [05|00|00:20]
+Type =  Mem32; Base = 0x1462A000;	Length = 0x1000;	Alignment = 0xFFF
+Type = PMem64; Base = 0x10000300000;	Length = 0x100000;	Alignment = 0xFFFFF
+   Base = 0x10000300000;	Length = 0x4000;	Alignment = 0x3FFF;	Owner = PCI [05|00|00:18]
+
+PciBus: Resource Map for Bridge [00|01|05]
+Type =  Mem32; Base = 0x13C00000;	Length = 0x200000;	Alignment = 0x1FFFFF
+   Base = Padding;	Length = 0x200000;	Alignment = 0x1FFFFF
+Type =  Mem32; Base = 0x14629000;	Length = 0x1000;	Alignment = 0xFFF
+
+PciBus: Resource Map for Bridge [00|01|06]
+Type =  Mem32; Base = 0x13A00000;	Length = 0x200000;	Alignment = 0x1FFFFF
+   Base = Padding;	Length = 0x200000;	Alignment = 0x1FFFFF
+Type =  Mem32; Base = 0x14628000;	Length = 0x1000;	Alignment = 0xFFF
+
+PciBus: Resource Map for Bridge [00|01|07]
+Type =  Mem32; Base = 0x13800000;	Length = 0x200000;	Alignment = 0x1FFFFF
+   Base = Padding;	Length = 0x200000;	Alignment = 0x1FFFFF
+Type =  Mem32; Base = 0x14627000;	Length = 0x1000;	Alignment = 0xFFF
+
+PciBus: Resource Map for Bridge [00|02|00]
+Type =  Mem32; Base = 0x13600000;	Length = 0x200000;	Alignment = 0x1FFFFF
+   Base = Padding;	Length = 0x200000;	Alignment = 0x1FFFFF
+Type =  Mem32; Base = 0x14626000;	Length = 0x1000;	Alignment = 0xFFF
+
+PciBus: Resource Map for Bridge [00|02|01]
+Type =  Mem32; Base = 0x13400000;	Length = 0x200000;	Alignment = 0x1FFFFF
+   Base = Padding;	Length = 0x200000;	Alignment = 0x1FFFFF
+Type =  Mem32; Base = 0x14625000;	Length = 0x1000;	Alignment = 0xFFF
+
+PciBus: Resource Map for Bridge [00|02|02]
+Type =  Mem32; Base = 0x13200000;	Length = 0x200000;	Alignment = 0x1FFFFF
+   Base = Padding;	Length = 0x200000;	Alignment = 0x1FFFFF
+Type =  Mem32; Base = 0x14624000;	Length = 0x1000;	Alignment = 0xFFF
+
+PciBus: Resource Map for Bridge [00|02|03]
+Type =  Mem32; Base = 0x13000000;	Length = 0x200000;	Alignment = 0x1FFFFF
+   Base = Padding;	Length = 0x200000;	Alignment = 0x1FFFFF
+Type =  Mem32; Base = 0x14623000;	Length = 0x1000;	Alignment = 0xFFF
+
+PciBus: Resource Map for Bridge [00|02|04]
+Type =  Mem32; Base = 0x12E00000;	Length = 0x200000;	Alignment = 0x1FFFFF
+   Base = Padding;	Length = 0x200000;	Alignment = 0x1FFFFF
+Type =  Mem32; Base = 0x14622000;	Length = 0x1000;	Alignment = 0xFFF
+
+PciBus: Resource Map for Bridge [00|02|05]
+Type =  Mem32; Base = 0x12C00000;	Length = 0x200000;	Alignment = 0x1FFFFF
+   Base = Padding;	Length = 0x200000;	Alignment = 0x1FFFFF
+Type =  Mem32; Base = 0x14621000;	Length = 0x1000;	Alignment = 0xFFF
+
+PciBus: Resource Map for Bridge [00|02|06]
+Type =  Mem32; Base = 0x12A00000;	Length = 0x200000;	Alignment = 0x1FFFFF
+   Base = Padding;	Length = 0x200000;	Alignment = 0x1FFFFF
+Type =  Mem32; Base = 0x14620000;	Length = 0x1000;	Alignment = 0xFFF
+
+PciBus: Resource Map for Bridge [00|02|07]
+Type =  Mem32; Base = 0x12800000;	Length = 0x200000;	Alignment = 0x1FFFFF
+   Base = Padding;	Length = 0x200000;	Alignment = 0x1FFFFF
+Type =  Mem32; Base = 0x1461F000;	Length = 0x1000;	Alignment = 0xFFF
+
+PciBus: Resource Map for Bridge [00|03|00]
+Type =  Mem32; Base = 0x12600000;	Length = 0x200000;	Alignment = 0x1FFFFF
+   Base = Padding;	Length = 0x200000;	Alignment = 0x1FFFFF
+Type =  Mem32; Base = 0x1461E000;	Length = 0x1000;	Alignment = 0xFFF
+
+PciBus: Resource Map for Bridge [00|03|01]
+Type =  Mem32; Base = 0x12400000;	Length = 0x200000;	Alignment = 0x1FFFFF
+   Base = Padding;	Length = 0x200000;	Alignment = 0x1FFFFF
+Type =  Mem32; Base = 0x1461D000;	Length = 0x1000;	Alignment = 0xFFF
+
+PciBus: Resource Map for Bridge [00|03|02]
+Type =  Mem32; Base = 0x12200000;	Length = 0x200000;	Alignment = 0x1FFFFF
+   Base = Padding;	Length = 0x200000;	Alignment = 0x1FFFFF
+Type =  Mem32; Base = 0x1461C000;	Length = 0x1000;	Alignment = 0xFFF
+
+PciBus: Resource Map for Bridge [00|03|03]
+Type =  Mem32; Base = 0x12000000;	Length = 0x200000;	Alignment = 0x1FFFFF
+   Base = Padding;	Length = 0x200000;	Alignment = 0x1FFFFF
+Type =  Mem32; Base = 0x1461B000;	Length = 0x1000;	Alignment = 0xFFF
+
+PciBus: Resource Map for Bridge [00|03|04]
+Type =  Mem32; Base = 0x11E00000;	Length = 0x200000;	Alignment = 0x1FFFFF
+   Base = Padding;	Length = 0x200000;	Alignment = 0x1FFFFF
+Type =  Mem32; Base = 0x1461A000;	Length = 0x1000;	Alignment = 0xFFF
+
+PciBus: Resource Map for Bridge [00|03|05]
+Type =  Mem32; Base = 0x11C00000;	Length = 0x200000;	Alignment = 0x1FFFFF
+   Base = Padding;	Length = 0x200000;	Alignment = 0x1FFFFF
+Type =  Mem32; Base = 0x14619000;	Length = 0x1000;	Alignment = 0xFFF
+
+PciBus: Resource Map for Bridge [00|03|06]
+Type =  Mem32; Base = 0x11A00000;	Length = 0x200000;	Alignment = 0x1FFFFF
+   Base = Padding;	Length = 0x200000;	Alignment = 0x1FFFFF
+Type =  Mem32; Base = 0x14618000;	Length = 0x1000;	Alignment = 0xFFF
+
+PciBus: Resource Map for Bridge [00|03|07]
+Type =  Mem32; Base = 0x11800000;	Length = 0x200000;	Alignment = 0x1FFFFF
+   Base = Padding;	Length = 0x200000;	Alignment = 0x1FFFFF
+Type =  Mem32; Base = 0x14617000;	Length = 0x1000;	Alignment = 0xFFF
+
+PciBus: Resource Map for Bridge [00|04|00]
+Type =  Mem32; Base = 0x11600000;	Length = 0x200000;	Alignment = 0x1FFFFF
+   Base = Padding;	Length = 0x200000;	Alignment = 0x1FFFFF
+Type =  Mem32; Base = 0x14616000;	Length = 0x1000;	Alignment = 0xFFF
+
+PciBus: Resource Map for Bridge [00|04|01]
+Type =  Mem32; Base = 0x11400000;	Length = 0x200000;	Alignment = 0x1FFFFF
+   Base = Padding;	Length = 0x200000;	Alignment = 0x1FFFFF
+Type =  Mem32; Base = 0x14615000;	Length = 0x1000;	Alignment = 0xFFF
+
+PciBus: Resource Map for Bridge [00|04|02]
+Type =  Mem32; Base = 0x11200000;	Length = 0x200000;	Alignment = 0x1FFFFF
+   Base = Padding;	Length = 0x200000;	Alignment = 0x1FFFFF
+Type =  Mem32; Base = 0x14614000;	Length = 0x1000;	Alignment = 0xFFF
+
+PciBus: Resource Map for Bridge [00|04|03]
+Type =  Mem32; Base = 0x11000000;	Length = 0x200000;	Alignment = 0x1FFFFF
+   Base = Padding;	Length = 0x200000;	Alignment = 0x1FFFFF
+Type =  Mem32; Base = 0x14613000;	Length = 0x1000;	Alignment = 0xFFF
+
+PciBus: Resource Map for Bridge [00|04|04]
+Type =  Mem32; Base = 0x10E00000;	Length = 0x200000;	Alignment = 0x1FFFFF
+   Base = Padding;	Length = 0x200000;	Alignment = 0x1FFFFF
+Type =  Mem32; Base = 0x14612000;	Length = 0x1000;	Alignment = 0xFFF
+
+PciBus: Resource Map for Bridge [00|04|05]
+Type =  Mem32; Base = 0x10C00000;	Length = 0x200000;	Alignment = 0x1FFFFF
+   Base = Padding;	Length = 0x200000;	Alignment = 0x1FFFFF
+Type =  Mem32; Base = 0x14611000;	Length = 0x1000;	Alignment = 0xFFF
+
+PciBus: Resource Map for Bridge [00|04|06]
+Type =  Mem32; Base = 0x10A00000;	Length = 0x200000;	Alignment = 0x1FFFFF
+   Base = Padding;	Length = 0x200000;	Alignment = 0x1FFFFF
+Type =  Mem32; Base = 0x14610000;	Length = 0x1000;	Alignment = 0xFFF
+
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EB61998
+InstallProtocolInterface: 4CF5B200-68B8-4CA5-9EEC-B23E3F50029A 13EB35428
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EB34D98
+InstallProtocolInterface: 4CF5B200-68B8-4CA5-9EEC-B23E3F50029A 13EB35828
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EB34E98
+InstallProtocolInterface: 4CF5B200-68B8-4CA5-9EEC-B23E3F50029A 13EB33028
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EB35E98
+InstallProtocolInterface: 4CF5B200-68B8-4CA5-9EEC-B23E3F50029A 13EB33428
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EB34B98
+InstallProtocolInterface: 4CF5B200-68B8-4CA5-9EEC-B23E3F50029A 13EB33828
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EB34F18
+InstallProtocolInterface: 4CF5B200-68B8-4CA5-9EEC-B23E3F50029A 13EB32028
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EB35C18
+InstallProtocolInterface: 4CF5B200-68B8-4CA5-9EEC-B23E3F50029A 13EB32428
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EB34C18
+InstallProtocolInterface: 4CF5B200-68B8-4CA5-9EEC-B23E3F50029A 13EB32828
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EB35D18
+InstallProtocolInterface: 4CF5B200-68B8-4CA5-9EEC-B23E3F50029A 13EB31028
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EB34C98
+InstallProtocolInterface: 4CF5B200-68B8-4CA5-9EEC-B23E3F50029A 13EB31428
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EB33F18
+InstallProtocolInterface: 4CF5B200-68B8-4CA5-9EEC-B23E3F50029A 13EB31828
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EB35E18
+InstallProtocolInterface: 4CF5B200-68B8-4CA5-9EEC-B23E3F50029A 13EB30028
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EB32F18
+InstallProtocolInterface: 4CF5B200-68B8-4CA5-9EEC-B23E3F50029A 13EB30428
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EB32C18
+InstallProtocolInterface: 4CF5B200-68B8-4CA5-9EEC-B23E3F50029A 13EB30828
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EB33F98
+InstallProtocolInterface: 4CF5B200-68B8-4CA5-9EEC-B23E3F50029A 13EB08028
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EB30E98
+InstallProtocolInterface: 4CF5B200-68B8-4CA5-9EEC-B23E3F50029A 13EB08428
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EB30F98
+InstallProtocolInterface: 4CF5B200-68B8-4CA5-9EEC-B23E3F50029A 13EB08828
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EB32D18
+InstallProtocolInterface: 4CF5B200-68B8-4CA5-9EEC-B23E3F50029A 13EB07028
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EB08E98
+InstallProtocolInterface: 4CF5B200-68B8-4CA5-9EEC-B23E3F50029A 13EB07428
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EB08F98
+InstallProtocolInterface: 4CF5B200-68B8-4CA5-9EEC-B23E3F50029A 13EB07828
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EB30E18
+InstallProtocolInterface: 4CF5B200-68B8-4CA5-9EEC-B23E3F50029A 13EB06028
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EB30D18
+InstallProtocolInterface: 4CF5B200-68B8-4CA5-9EEC-B23E3F50029A 13EB06428
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EB07E98
+InstallProtocolInterface: 4CF5B200-68B8-4CA5-9EEC-B23E3F50029A 13EB06828
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EB07F98
+InstallProtocolInterface: 4CF5B200-68B8-4CA5-9EEC-B23E3F50029A 13EB05028
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EB07E18
+InstallProtocolInterface: 4CF5B200-68B8-4CA5-9EEC-B23E3F50029A 13EB05428
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EB06F18
+InstallProtocolInterface: 4CF5B200-68B8-4CA5-9EEC-B23E3F50029A 13EB05828
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EB07C98
+InstallProtocolInterface: 4CF5B200-68B8-4CA5-9EEC-B23E3F50029A 13EB04028
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EB07D98
+InstallProtocolInterface: 4CF5B200-68B8-4CA5-9EEC-B23E3F50029A 13EB04428
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EB05F18
+InstallProtocolInterface: 4CF5B200-68B8-4CA5-9EEC-B23E3F50029A 13EB04828
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EB05C18
+InstallProtocolInterface: 4CF5B200-68B8-4CA5-9EEC-B23E3F50029A 13EB03028
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EB04E98
+InstallProtocolInterface: 4CF5B200-68B8-4CA5-9EEC-B23E3F50029A 13EB03428
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EB04F98
+InstallProtocolInterface: 4CF5B200-68B8-4CA5-9EEC-B23E3F50029A 13EB03828
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EB05D18
+InstallProtocolInterface: 4CF5B200-68B8-4CA5-9EEC-B23E3F50029A 13EB02028
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EB03E98
+InstallProtocolInterface: 4CF5B200-68B8-4CA5-9EEC-B23E3F50029A 13EB02428
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EB03F98
+InstallProtocolInterface: 4CF5B200-68B8-4CA5-9EEC-B23E3F50029A 13EB02828
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EB04E18
+InstallProtocolInterface: 4CF5B200-68B8-4CA5-9EEC-B23E3F50029A 13EB01028
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EB04D18
+InstallProtocolInterface: 4CF5B200-68B8-4CA5-9EEC-B23E3F50029A 13EB01428
+InstallProtocolInterface: 30CFE3E7-3DE1-4586-BE20-DEABA1B3B793 0
+OnRootBridgesConnected: root bridges have been connected, installing ACPI tables
+InstallProtocolInterface: 928939B2-4235-462F-9580-F6A2B2C21A4F 0
+InstallQemuFwCfgTables: installed 10 tables
+Connect: PciRoot(0x0)/Pci(0x1,0x4)/Pci(0x0,0x0): Not Found
+[Bds]RegisterKeyNotify: 000C/0000 80000000/00 Success
+[Bds]RegisterKeyNotify: 0017/0000 80000000/00 Success
+[Bds]RegisterKeyNotify: 0000/000D 80000000/00 Success
+Terminal - Mode 0, Column = 80, Row = 25
+Terminal - Mode 1, Column = 80, Row = 50
+Terminal - Mode 2, Column = 100, Row = 31
+InstallProtocolInterface: 387477C1-69C7-11D2-8E39-00A0C969723B 13EAE7040
+InstallProtocolInterface: DD9E7534-7762-4698-8C14-F58517A625AA 13EAE7128
+InstallProtocolInterface: 387477C2-69C7-11D2-8E39-00A0C969723B 13EAE7058
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EAEA718
+InstallProtocolInterface: D3B36F2B-D551-11D4-9A46-0090273FC14D 0
+InstallProtocolInterface: D3B36F2C-D551-11D4-9A46-0090273FC14D 0
+InstallProtocolInterface: D3B36F2D-D551-11D4-9A46-0090273FC14D 0
+InstallProtocolInterface: FA920010-6785-4941-B6EC-498C579F160A 13EAE6CA0
+VirtioSerialDriverBindingStart: Dev: PciRoot(0x0)/Pci(0x1,0x2)/Pci(0x0,0x0)
+VirtioSerialInit:286: features ok: v1.0 multiport
+VirtioSerialInit:304: max device ports: 31
+VirtioSerialTxControl:79: >>> event device-ready, port-id 0, value 1
+VirtioSerialRxControl:128: <<< event device-add, port-id 1, value 1
+VirtioSerialTxControl:79: >>> event port-ready, port-id 1, value 1
+VirtioSerialRxControl:128: <<< event port-name, port-id 1, value 1
+VirtioSerialPortSetName:424: "org.qemu.guest_agent.0"
+VirtioSerialInit:374: OK, 0 consoles, 1 named ports
+XhcCreateUsb3Hc: Capability length 0x40
+XhcCreateUsb3Hc: HcSParams1 0x10001040
+XhcCreateUsb3Hc: HcSParams2 0xF
+XhcCreateUsb3Hc: HcCParams 0x87001
+XhcCreateUsb3Hc: DBOff 0x2000
+XhcCreateUsb3Hc: RTSOff 0x1000
+XhcCreateUsb3Hc: UsbLegSupOffset 0xFFFFFFFF
+XhcCreateUsb3Hc: DebugCapSupOffset 0xFFFFFFFF
+XhcCreateUsb3Hc: Usb2SupOffset 0x0
+XhcCreateUsb3Hc: Usb3SupOffset 0x10
+XhcResetHC!
+XhcInitSched:DCBAA=0x3EAA8000
+XhcInitSched: Created CMD ring [13EAA8240~13EAA9240) EVENT ring [13EAA9240~13EAAB240)
+InstallProtocolInterface: 3E745226-9818-45B6-A2AC-D7CD0E8BA2BC 13EAB8038
+XhcDriverBindingStart: XHCI started for controller @ 3EAFBF18
+InstallProtocolInterface: 240612B7-A063-11D4-9A3A-0090273FC14D 13EAA7020
+XhcGetCapability: 16 ports, 64 bit 1
+UsbRootHubInit: root hub 13EACDD98 - max speed 3, 16 ports
+XhcClearRootHubPortFeature: status Success
+UsbEnumeratePort: port 0 state - 00, change - 01 on 13EACDD98
+UsbEnumeratePort: Device Connect/Disconnect Normally (port 0)
+UsbEnumeratePort: device disconnected event on port 0
+XhcClearRootHubPortFeature: status Success
+UsbEnumeratePort: port 1 state - 00, change - 01 on 13EACDD98
+UsbEnumeratePort: Device Connect/Disconnect Normally (port 1)
+UsbEnumeratePort: device disconnected event on port 1
+XhcClearRootHubPortFeature: status Success
+UsbEnumeratePort: port 2 state - 00, change - 01 on 13EACDD98
+UsbEnumeratePort: Device Connect/Disconnect Normally (port 2)
+UsbEnumeratePort: device disconnected event on port 2
+XhcClearRootHubPortFeature: status Success
+UsbEnumeratePort: port 3 state - 00, change - 01 on 13EACDD98
+UsbEnumeratePort: Device Connect/Disconnect Normally (port 3)
+UsbEnumeratePort: device disconnected event on port 3
+XhcClearRootHubPortFeature: status Success
+UsbEnumeratePort: port 4 state - 00, change - 01 on 13EACDD98
+UsbEnumeratePort: Device Connect/Disconnect Normally (port 4)
+UsbEnumeratePort: device disconnected event on port 4
+XhcClearRootHubPortFeature: status Success
+UsbEnumeratePort: port 5 state - 00, change - 01 on 13EACDD98
+UsbEnumeratePort: Device Connect/Disconnect Normally (port 5)
+UsbEnumeratePort: device disconnected event on port 5
+XhcClearRootHubPortFeature: status Success
+UsbEnumeratePort: port 6 state - 00, change - 01 on 13EACDD98
+UsbEnumeratePort: Device Connect/Disconnect Normally (port 6)
+UsbEnumeratePort: device disconnected event on port 6
+XhcClearRootHubPortFeature: status Success
+UsbEnumeratePort: port 7 state - 00, change - 01 on 13EACDD98
+UsbEnumeratePort: Device Connect/Disconnect Normally (port 7)
+UsbEnumeratePort: device disconnected event on port 7
+XhcClearRootHubPortFeature: status Success
+UsbEnumeratePort: port 8 state - 401, change - 01 on 13EACDD98
+UsbEnumeratePort: Device Connect/Disconnect Normally (port 8)
+UsbEnumeratePort: new device connected at port 8
+XhcUsbPortReset!
+XhcSetRootHubPortFeature: status Success
+XhcClearRootHubPortFeature: status Success
+XhcClearRootHubPortFeature: status Success
+Enable Slot Successfully, The Slot ID = 0x1
+    Address 1 assigned successfully
+UsbEnumerateNewDev: hub port 8 is reset
+UsbEnumerateNewDev: device is of 2 speed
+UsbEnumerateNewDev: device uses translator (0, 0)
+UsbEnumerateNewDev: device is now ADDRESSED at 1
+UsbEnumerateNewDev: max packet size for EP 0 is 64
+Evaluate context
+UsbBuildDescTable: device has 1 configures
+UsbGetOneConfig: total length is 34
+UsbParseConfigDesc: config 1 has 1 interfaces
+UsbParseInterfaceDesc: interface 0(setting 0) has 1 endpoints
+Endpoint[81]: Created INT ring [13EAACAC0~13EAADAC0)
+Configure Endpoint
+UsbEnumerateNewDev: device 1 is now in CONFIGED state
+UsbSelectConfig: config 1 selected for device 1
+UsbSelectSetting: setting 0 selected for interface 0
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EAA7C18
+InstallProtocolInterface: 2B2F68D6-0CD2-44CF-8E8B-BBA20B1B5B75 13EAA7CC0
+XhcClearRootHubPortFeature: status Success
+UsbEnumeratePort: port 9 state - 401, change - 01 on 13EACDD98
+UsbEnumeratePort: Device Connect/Disconnect Normally (port 9)
+UsbEnumeratePort: new device connected at port 9
+XhcUsbPortReset!
+XhcSetRootHubPortFeature: status Success
+XhcClearRootHubPortFeature: status Success
+XhcClearRootHubPortFeature: status Success
+Enable Slot Successfully, The Slot ID = 0x2
+    Address 2 assigned successfully
+UsbEnumerateNewDev: hub port 9 is reset
+UsbEnumerateNewDev: device is of 2 speed
+UsbEnumerateNewDev: device uses translator (0, 0)
+UsbEnumerateNewDev: device is now ADDRESSED at 2
+UsbEnumerateNewDev: max packet size for EP 0 is 64
+Evaluate context
+UsbBuildDescTable: device has 1 configures
+UsbGetOneConfig: total length is 34
+UsbParseConfigDesc: config 1 has 1 interfaces
+UsbParseInterfaceDesc: interface 0(setting 0) has 1 endpoints
+Endpoint[81]: Created INT ring [13EAB0000~13EAB1000)
+Configure Endpoint
+UsbEnumerateNewDev: device 2 is now in CONFIGED state
+UsbSelectConfig: config 1 selected for device 2
+UsbSelectSetting: setting 0 selected for interface 0
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EAA5A98
+InstallProtocolInterface: 2B2F68D6-0CD2-44CF-8E8B-BBA20B1B5B75 13EAA5F40
+UsbConnectDriver: TPL before connect is 8, 13EAA5B98
+InstallProtocolInterface: 387477C1-69C7-11D2-8E39-00A0C969723B 13EAA42B8
+InstallProtocolInterface: DD9E7534-7762-4698-8C14-F58517A625AA 13EAA42D0
+InstallProtocolInterface: D3B36F2B-D551-11D4-9A46-0090273FC14D 0
+UsbConnectDriver: TPL after connect is 8
+XhcClearRootHubPortFeature: status Success
+UsbEnumeratePort: port 10 state - 00, change - 01 on 13EACDD98
+UsbEnumeratePort: Device Connect/Disconnect Normally (port 10)
+UsbEnumeratePort: device disconnected event on port 10
+XhcClearRootHubPortFeature: status Success
+UsbEnumeratePort: port 11 state - 00, change - 01 on 13EACDD98
+UsbEnumeratePort: Device Connect/Disconnect Normally (port 11)
+UsbEnumeratePort: device disconnected event on port 11
+XhcClearRootHubPortFeature: status Success
+UsbEnumeratePort: port 12 state - 00, change - 01 on 13EACDD98
+UsbEnumeratePort: Device Connect/Disconnect Normally (port 12)
+UsbEnumeratePort: device disconnected event on port 12
+XhcClearRootHubPortFeature: status Success
+UsbEnumeratePort: port 13 state - 00, change - 01 on 13EACDD98
+UsbEnumeratePort: Device Connect/Disconnect Normally (port 13)
+UsbEnumeratePort: device disconnected event on port 13
+XhcClearRootHubPortFeature: status Success
+UsbEnumeratePort: port 14 state - 00, change - 01 on 13EACDD98
+UsbEnumeratePort: Device Connect/Disconnect Normally (port 14)
+UsbEnumeratePort: device disconnected event on port 14
+XhcClearRootHubPortFeature: status Success
+UsbEnumeratePort: port 15 state - 00, change - 01 on 13EACDD98
+UsbEnumeratePort: Device Connect/Disconnect Normally (port 15)
+UsbEnumeratePort: device disconnected event on port 15
+UsbBusStart: usb bus started on 13EAFBF18, root hub 13EACDD98
+QemuLoadKernelImage: LoadImage(): Not Found
+InstallProtocolInterface: FA920010-6785-4941-B6EC-498C579F160A 13EAA05A0
+VirtioBlkInit: LbaSize=0x200[B] NumBlocks=0x19000000[Lba]
+VirtioBlkInit: MaxSegments=0xFE[B] MaxSegmentSize=0x80000[B]
+VirtioBlkInit: FirstAligned=0x0[Lba] PhysBlkSize=0x1[Lba]
+VirtioBlkInit: OptimalTransferLengthGranularity=0x0[Lba]
+InstallProtocolInterface: 964E5B21-6459-11D2-8E39-00A0C969723B 13EA9F090
+InstallProtocolInterface: CE345171-BA0B-11D2-8E4F-00A0C969723B 13EA9FD20
+ BlockSize : 512
+ LastBlock : 18FFFFFF
+ Valid efi partition table header
+ Valid efi partition table header
+ Valid primary and Valid backup partition table
+ Partition entries read block success
+ Number of partition entries: 128
+ start check partition entries
+ End check partition entries
+ Index : 0
+ Start LBA : 800
+ End LBA : 647FF
+ Partition size: 64000
+ Start : 100000 End : C8FFE00
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EA9FB98
+InstallProtocolInterface: 964E5B21-6459-11D2-8E39-00A0C969723B 13EA9F7B0
+InstallProtocolInterface: 8CF2F62C-BC9B-4821-808D-EC9EC421A1A0 13EA9F878
+InstallProtocolInterface: C12A7328-F81F-11D2-BA4B-00A0C93EC93B 0
+ Index : 1
+ Start LBA : 64800
+ End LBA : 18FFFFDE
+ Partition size: 18F9B7DF
+ Start : C900000 End : 31FFFFBC00
+InstallProtocolInterface: 09576E91-6D3F-11D2-8E39-00A0C969723B 13EAA4D98
+InstallProtocolInterface: 964E5B21-6459-11D2-8E39-00A0C969723B 13EA8E030
+InstallProtocolInterface: 8CF2F62C-BC9B-4821-808D-EC9EC421A1A0 13EA8E0F8
+InstallProtocolInterface: 0FC63DAF-8483-4772-8E79-3D69D8477DE4 0
+Prepare to Free Pool
+InstallProtocolInterface: CE345171-BA0B-11D2-8E4F-00A0C969723B 13EA9FE20
+ BlockSize : 512
+ LastBlock : 63FFF
+InstallProtocolInterface: 964E5B22-6459-11D2-8E39-00A0C969723B 13EA93030
+Installed Fat filesystem on 13EAA4F18
+InstallProtocolInterface: CE345171-BA0B-11D2-8E4F-00A0C969723B 13EA9F4A0
+ BlockSize : 512
+ LastBlock : 18F9B7DE
+ConnectDevicesFromQemu: 1 OpenFirmware device path(s) connected
+SetBootOrderFromQemu: setting BootOrder: success
+[Bds]OsIndication: 0000000000000000
+[Bds]=============Begin Load Options Dumping ...=============
+  Driver Options:
+  SysPrep Options:
+  Boot Options:
+    Boot0001: UEFI Misc Device 		 0x0001
+    Boot0000: UiApp 		 0x0109
+    Boot0002: EFI Internal Shell 		 0x0001
+  PlatformRecovery Options:
+    PlatformRecovery0000: Default PlatformRecovery 		 0x0001
+[Bds]=============End Load Options Dumping=============
+[Bds]BdsWait ...Zzzzzzzzzzzz...
+[Bds]BdsWait(5)..Zzzz...
+[Bds]BdsWait(4)..Zzzz...
+[Bds]BdsWait(3)..Zzzz...
+[Bds]BdsWait(2)..Zzzz...
+[Bds]BdsWait(1)..Zzzz...
+[Bds]Exit the waiting!
+[Bds]Stop Hotkey Service!
+[Bds]UnregisterKeyNotify: 000C/0000 Success
+[Bds]UnregisterKeyNotify: 0017/0000 Success
+[Bds]UnregisterKeyNotify: 0000/000D Success
+Memory  Previous  Current    Next
+ Type    Pages     Pages     Pages
+======  ========  ========  ========
+  09    00000000  00000030  0000003C
+  0A    00000000  00000050  00000064
+  00    00000000  00000000  00000000
+  06    00000258  00000320  000003E8
+  05    00000190  00000300  000003C0
+  03    000005DC  000004CD  000005DC
+  04    00002EE0  00001109  00002EE0
+  01    00000014  00000000  00000014
+  02    00000000  00000000  00000000
+Memory Type Information settings change.
+[Bds]Booting UEFI Misc Device
+ BlockSize : 512
+ LastBlock : 18FFFFFF
+ Valid efi partition table header
+ Valid efi partition table header
+ Valid primary and Valid backup partition table
+ Partition entries read block success
+ Number of partition entries: 128
+ start check partition entries
+ End check partition entries
+ Index : 0
+ Start LBA : 800
+ End LBA : 647FF
+ Partition size: 64000
+ Start : 100000 End : C8FFE00
+ Index : 1
+ Start LBA : 64800
+ End LBA : 18FFFFDE
+ Partition size: 18F9B7DF
+ Start : C900000 End : 31FFFFBC00
+Prepare to Free Pool
+ BlockSize : 512
+ LastBlock : 18F9B7DE
+FSOpen: Open '\EFI\BOOT\BOOTAA64.EFI' Success
+[Bds] Expand PciRoot(0x0)/Pci(0x1,0x3)/Pci(0x0,0x0) -> PciRoot(0x0)/Pci(0x1,0x3)/Pci(0x0,0x0)/HD(1,GPT,2B7DB446-4177-4D55-A0BD-7B5E9B62F319,0x800,0x64000)/\EFI\BOOT\BOOTAA64.EFI
+BdsDxe: loading Boot0001 "UEFI Misc Device" from PciRoot(0x0)/Pci(0x1,0x3)/Pci(0x0,0x0)
+[Security] 3rd party image[0] can be loaded after EndOfDxe: PciRoot(0x0)/Pci(0x1,0x3)/Pci(0x0,0x0)/HD(1,GPT,2B7DB446-4177-4D55-A0BD-7B5E9B62F319,0x800,0x64000)/\EFI\BOOT\BOOTAA64.EFI.
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EA901C0
+Loading driver at 0x0013C36B000 EntryPoint=0x0013C389000
+Loading driver at 0x0013C36B000 EntryPoint=0x0013C389000
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EA90C18
+ProtectUefiImageCommon - 0x3EA901C0
+  - 0x000000013C36B000 - 0x00000000000D5000
+SetUefiImageMemoryAttributes - 0x000000013C36B000 - 0x000000000001E000 (0x0000000000004008)
+SetUefiImageMemoryAttributes - 0x000000013C389000 - 0x0000000000067000 (0x0000000000020008)
+SetUefiImageMemoryAttributes - 0x000000013C3F0000 - 0x0000000000050000 (0x0000000000004008)
+BdsDxe: starting Boot0001 "UEFI Misc Device" from PciRoot(0x0)/Pci(0x1,0x3)/Pci(0x0,0x0)
+InstallProtocolInterface: 605DAB50-E046-4300-ABB6-3DD810DD8B23 13C41E570
+FSOpen: Open '\EFI\BOOT\fbaa64.efi' Success
+FSOpen: Open '\EFI\BOOT\fbaa64.efi' Success
+SetMemoryAttributes: BaseAddress == 0x13C480000, Length == 0x19000, Attributes == 0x4000
+ClearMemoryAttributes: BaseAddress == 0x13C480000, Length == 0x19000, Attributes == 0x22000
+
+
+Synchronous Exception at 0x000000013C484000
+PC 0x00013C484000
+PC 0x00013C38B19C
+PC 0x00013C38B24C
+PC 0x00013C38C0CC
+PC 0x00013C389030
+PC 0x0000475CE484 (0x0000475C7000+0x00007484) [ 1] DxeCore.dll
+PC 0x00013F9505F0 (0x00013F94A000+0x000065F0) [ 2] BdsDxe.dll
+PC 0x00013F9536B8 (0x00013F94A000+0x000096B8) [ 2] BdsDxe.dll
+PC 0x0000475D0DD0 (0x0000475C7000+0x00009DD0) [ 3] DxeCore.dll
+[ 1] /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/MdeModulePkg/Core/Dxe/DxeMain/DEBUG/DxeCore.dll
+[ 2] /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/MdeModulePkg/Universal/BdsDxe/BdsDxe/DEBUG/BdsDxe.dll
+[ 3] /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/MdeModulePkg/Core/Dxe/DxeMain/DEBUG/DxeCore.dll
+
+  X0 0x000000013EA8FA18   X1 0x000000013FFD0018   X2 0x000000013C484000   X3 0x0000000000000000
+  X4 0x000000013FA67088   X5 0x000000006C646F70   X6 0x000000013C3F8470   X7 0x0000000000000000
+  X8 0x00000000475C6580   X9 0x000000013C4B1018  X10 0x0000000000000003  X11 0x0000000000000000
+ X12 0x0000000000000002  X13 0x0000000000000002  X14 0x0000000000000001  X15 0x00000000000000FF
+ X16 0x000000013FA602F4  X17 0x00000000991EBA53  X18 0x00000000F484200D  X19 0x000000013C40A000
+ X20 0x0000000000000000  X21 0x000000013EA8FA18  X22 0x000000013C41E500  X23 0x0000000000000001
+ X24 0x00000000475C6A20  X25 0x000000013C41E5C8  X26 0x000000013C41E5D0  X27 0x000000013C41E5D8
+ X28 0x000000013C41E5E0   FP 0x00000000475C68F0   LR 0x000000013C38B19C
+
+  V0 0xAFAFAFAFAFAFAFAF AFAFAFAFAFAFAFAF   V1 0xFFFFFF80FFFFFFD0 00000000475C6580
+  V2 0x7363732F332C3140 6567646972622D69   V3 0x0000000000000000 0000000000000000
+  V4 0x0000000000100000 0000000000000000   V5 0x4010040140100401 4010040140100401
+  V6 0x0010000000000000 0010000000000000   V7 0x0000000000000000 0000000000000000
+  V8 0x0000000000000000 0000000000000000   V9 0x0000000000000000 0000000000000000
+ V10 0x0000000000000000 0000000000000000  V11 0x0000000000000000 0000000000000000
+ V12 0x0000000000000000 0000000000000000  V13 0x0000000000000000 0000000000000000
+ V14 0x0000000000000000 0000000000000000  V15 0x0000000000000000 0000000000000000
+ V16 0x0000000000000000 0000000000000000  V17 0x0000000000000000 0000000000000000
+ V18 0x0000000000000000 0000000000000000  V19 0x0000000000000000 0000000000000000
+ V20 0x0000000000000000 0000000000000000  V21 0x0000000000000000 0000000000000000
+ V22 0x0000000000000000 0000000000000000  V23 0x0000000000000000 0000000000000000
+ V24 0x0000000000000000 0000000000000000  V25 0x0000000000000000 0000000000000000
+ V26 0x0000000000000000 0000000000000000  V27 0x0000000000000000 0000000000000000
+ V28 0x0000000000000000 0000000000000000  V29 0x0000000000000000 0000000000000000
+ V30 0x0000000000000000 0000000000000000  V31 0x0000000000000000 0000000000000000
+
+  SP 0x00000000475C68F0  ELR 0x000000013C484000  SPSR 0x60000A05  FPSR 0x00000000
+ ESR 0x8600000F          FAR 0x000000013C484000
+
+ ESR : EC 0x21  IL 0x1  ISS 0x0000000F
+
+Instruction abort: Permission fault, third level
+
+Stack dump:
+  00000475C67F0: 0000000000000001 00000000475C6A20 000000013C41E5C8 000000013C41E5D0
+  00000475C6810: 000000013C41E5D8 000000013C41E5E0 00000000475C6860 000000013C4991F0
+  00000475C6830: 00000000475C6938 000000013C48E000 000000013C48E009 000000013C3F850A
+  00000475C6850: 000000013C497000 0000000100000083 00000000475C6880 EDA74A903F9E3FAA
+  00000475C6870: 53BA1E991913A428 000000006E59243F D1F4008BE9DAF0AD 5C57B620757B268A
+  00000475C6890: C098C486620EDB3C 07AB56E2C89393E3 0000000000000000 0000000000018000
+  00000475C68B0: 0000000000004000 0000000000000400 00001000000768F0 000000013C4991A0
+  00000475C68D0: 000000013C499148 000000013C499140 0000000000000010 000000013C499098
+> 00000475C68F0: 00000000475C6950 000000013C38B24C 0000000000000000 000000013C3F4000
+  00000475C6910: 000000013C40A000 000000013EA8FA18 00015A92475C6950 000000013C484000
+  00000475C6930: 000000013C480000 0000000000000019 000000013C4AF998 000000013C499018
+  00000475C6950: 00000000475C69B0 000000013C38C0CC 0000000000000000 000000013C38942C
+  00000475C6970: 000000013C41E5AF 000000013EA8FA18 000000013C41E000 00000000475C6A20
+  00000475C6990: 000000013EA901C0 000000013EA93030 000000013EAEA0A0 000000013EB61120
+  00000475C69B0: 00000000475C6A50 000000013C389030 0000000000000000 0000000000000000
+  00000475C69D0: 0000000000000000 000000013F963000 000000013E420018 0000000000000001
+
+
+Synchronous Exception at 0x000000013C484000
+ASSERT [ArmCpuDxe] /root/rpmbuild/BUILD/edk2-edk2-stable202308/ArmPkg/Library/DefaultExceptionHandlerLib/AArch64/DefaultExceptionHandler.c(343): ((BOOLEAN)(0==1))
+```
+
+
+# 临时解决方法
+
+可能跟 `fbaa64.efi`有关, 做如下操作:
+```
+cd ./boot/efi/EFI/BOOT/
+mv fbaa64.efi fbaa64.efi.bak
+
+cd ./boot/efi/EFI/openEuler
+mv fbaa64.efi fbaa64.efi.bak
+```
+
+重启后报如下错误:
+```
+InstallProtocolInterface: 605DAB50-E046-4300-ABB6-3DD810DD8B23 13C41E570
+Failed to open \EFI\BOOT\grubaa64.efi - Not Found
+Failed to load image ?J?: Not Found
+start_image() returned Not Found, falling back to default loader
+Failed to open \EFI\BOOT\grubaa64.efi - Not Found
+Failed to load image ?J?: Not Found
+start_image() returned Not Found
+Error: Image at 0013C36B000 start failed: Not Found
+SetUefiImageMemoryAttributes - 0x000000013C36B000 - 0x00000000000D5000 (0x0000000000000008)
+Unloading driver at 0x0013C36B000
+Image Return Status = Not Found
+BdsDxe: failed to start Boot0001 "UEFI Misc Device" from PciRoot(0x0)/Pci(0x1,0x3)/Pci(0x0,0x0): Not Found
+Memory  Previous  Current    Next
+ Type    Pages     Pages     Pages
+======  ========  ========  ========
+  09    00000000  00000030  0000003C
+  0A    00000000  00000050  00000064
+  00    00000000  00000000  00000000
+  06    00000258  00000330  000003FC
+  05    00000190  00000300  000003C0
+  03    000005DC  000004CD  000005DC
+  04    00002EE0  00001205  00002EE0
+  01    00000014  000000D5  0000010A
+  02    00000000  00000002  00000004
+Memory Type Information settings change.
+[Bds]Booting EFI Internal Shell
+[Bds] Expand Fv(64074AFE-340A-4BE6-94BA-91B5B4D0F71E)/FvFile(7C04A583-9E3E-4F1C-AD65-E05268D0B4D1) -> Fv(64074AFE-340A-4BE6-94BA-91B5B4D0F71E)/FvFile(7C04A583-9E3E-4F1C-AD65-E05268D0B4D1)
+BdsDxe: loading Boot0002 "EFI Internal Shell" from Fv(64074AFE-340A-4BE6-94BA-91B5B4D0F71E)/FvFile(7C04A583-9E3E-4F1C-AD65-E05268D0B4D1)
+None of Tcg2Protocol/CcMeasurementProtocol is installed.
+InstallProtocolInterface: 5B1B31A1-9562-11D2-8E3F-00A0C969723B 13EAB61C0
+add-symbol-file /root/rpmbuild/BUILD/edk2-edk2-stable202308/Build/ArmVirtQemu-AARCH64/DEBUG_GCC5/AARCH64/ShellPkg/Application/Shell/Shell/DEBUG/Shell.dll 0x13C360000
+Loading driver at 0x0013C35F000 EntryPoint=0x0013C365DC8 Shell.efi
+InstallProtocolInterface: BC62157E-3E33-4FEC-9920-2D3B36D750DF 13EAC6B18
+ProtectUefiImageCommon - 0x3EAB61C0
+  - 0x000000013C35F000 - 0x00000000000E1000
+SetUefiImageMemoryAttributes - 0x000000013C35F000 - 0x0000000000001000 (0x0000000000004008)
+SetUefiImageMemoryAttributes - 0x000000013C360000 - 0x0000000000078000 (0x0000000000020008)
+SetUefiImageMemoryAttributes - 0x000000013C3D8000 - 0x0000000000068000 (0x0000000000004008)
+BdsDxe: starting Boot0002 "EFI Internal Shell" from Fv(64074AFE-340A-4BE6-94BA-91B5B4D0F71E)/FvFile(7C04A583-9E3E-4F1C-AD65-E05268D0B4D1)
+UEFI Interactive Shell v2.287477C2-69C7-11D2-8E39-00A0C969723B 13E5021A0
+EDK IIlProtocolInterface: 752F3136-4E16-4FDC-A22A-E5F46812F4CA 13E502298
+UEFI v2.70 (EDK II, 0x00010000)008-7F9B-4F30-87AC-60C9FEF5DA4E 13C42BA98
+```
+
+
+做如下操作:
+```
+cd ./boot/efi/EFI/BOOT/
+cp ../openEuler/grubaa64.efi ./
+```
+

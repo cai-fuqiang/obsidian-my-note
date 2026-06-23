@@ -1,9 +1,9 @@
 {
 	"nodes":[
 		{"id":"e00b1ac4e78fe557","type":"file","file":"QEMU_KVM/QEMU module.md","x":-1840,"y":-760,"width":260,"height":240,"color":"1"},
-		{"id":"56b80bd7eaba2698","type":"file","file":"QEMU_KVM/QEMU OBJECT MODEL.md","x":-1240,"y":-740,"width":400,"height":400},
-		{"id":"a83aa4730dd7c012","type":"file","file":"QEMU_KVM/QEMU - machine.md","x":-1740,"y":-160,"width":400,"height":400},
-		{"id":"0a7c276bf31601dc","type":"file","file":"QEMU_KVM/QEMU - CPU model.md","x":-760,"y":-160,"width":400,"height":400}
+		{"id":"0a7c276bf31601dc","type":"file","file":"QEMU_KVM/QEMU - CPU model.md","x":-960,"y":-220,"width":400,"height":400},
+		{"id":"56b80bd7eaba2698","type":"file","file":"QEMU_KVM/QEMU OBJECT MODEL.md","x":-1320,"y":-800,"width":400,"height":400},
+		{"id":"a83aa4730dd7c012","type":"file","file":"QEMU_KVM/QEMU - machine.md","x":-1840,"y":-220,"width":400,"height":400}
 	],
 	"edges":[
 		{"id":"f39d0dca1347b56a","fromNode":"56b80bd7eaba2698","fromSide":"left","toNode":"e00b1ac4e78fe557","toSide":"right","label":"初始化使用"},
