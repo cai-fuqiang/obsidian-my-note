@@ -8,49 +8,16 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ed9b293059ffca7a",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/CPU hotPlug.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "CPU hotPlug.excalidraw"
-            }
-          },
-          {
             "id": "fb3205ff355ab320",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "diary/2026-06-22.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "2026-06-22"
-            }
-          },
-          {
-            "id": "4418ade1198c37d8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "diary/2026-06-23.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "2026-06-23"
+              "title": "新标签页"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -107,7 +74,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 328.500732421875
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "b172529851f33649",
@@ -259,7 +227,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 642.5
+    "width": 270.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -285,59 +253,60 @@
       "obsidian-day-planner:Open Multi-Day View": false
     }
   },
-  "active": "4418ade1198c37d8",
+  "active": "fb3205ff355ab320",
   "lastOpenFiles": [
+    "04-archive/链接笔记.md",
+    "04-archive/other paper/Ben-Yehuda-nested-virt-note.md",
+    "04-archive/other paper",
     "diary/2026-06-22.md",
-    "diary/2026-06-23.md",
-    "problems/arm64 无法正常启动-加载fbaa64.efi 失败.md",
-    "problems",
-    "jdds/2403 freeze queue io hung问题调试.md",
-    "jdds/未命名",
-    "jdds",
-    "copilot/copilot-conversations/add_a_task_for_this_time_调试_日记@20260622_095505.md",
-    "copilot/copilot-conversations",
-    "diary_template/diary_template.md",
-    "Excalidraw/CPU hotPlug.excalidraw.md",
-    "diary_template",
-    "diary",
-    "Excalidraw/fw_cfg.excalidraw.md",
-    "PDF/QEMU-KVM源码解析与应用.pdf",
-    "Excalidraw/Drawing 2026-06-16 14.43.31.excalidraw.md",
-    "PDF/ACPI_Spec_6.6.pdf",
-    "Templates/qemu-code.md",
-    "Clippings/PATCH RFC V4 0033 Support of Virtual CPU Hotplug for ARMv8 Arch.md",
+    "PDF/325462-sdm-vol-1-2abcd-3abcd-4.pdf",
+    "Clippings/The PARA Method A Universal System for Organizing Digital Information.md",
+    "04-archive/problems/arm64 无法正常启动-加载fbaa64.efi 失败.md",
+    "04-archive/problems",
+    "04-archive/language/OOB.md",
+    "04-archive/language",
+    "04-archive/kernel/KVM/operate VMCS.md",
+    "04-archive/kernel/KVM",
+    "04-archive/kernel",
+    "04-archive/jdds/2403 freeze queue io hung问题调试.md",
+    "04-archive/jdds",
+    "04-archive/draw.io/QOM_edu_class.svg",
+    "04-archive/draw.io/QOM-interface-type-info.svg",
+    "04-archive/draw.io/QOM-interface-class2.drawio.svg",
+    "04-archive/draw.io/QOM-interface-class2.svg",
+    "04-archive/draw.io/QOM-interface-class.svg",
+    "04-archive/draw.io",
+    "04-archive/diary_template/diary_template.md",
+    "04-archive/diary_template",
+    "04-archive/diary/2026-06-23.md",
+    "04-archive/diary/2026-06-22.md",
+    "04-archive/diary",
+    "04-archive/copilot/copilot-custom-prompts/Translate to Chinese.md",
+    "04-archive/copilot/copilot-custom-prompts/Summarize.md",
+    "04-archive/copilot/copilot-custom-prompts/Simplify.md",
+    "04-archive/copilot/copilot-custom-prompts/Rewrite as tweet.md",
+    "04-archive/copilot/copilot-custom-prompts/Rewrite as tweet thread.md",
+    "04-archive/copilot/copilot-custom-prompts/Remove URLs.md",
+    "04-archive/copilot/copilot-custom-prompts/Make shorter.md",
+    "04-archive/copilot/copilot-custom-prompts/Make longer.md",
+    "04-archive/copilot/copilot-custom-prompts/Generate table of contents.md",
+    "04-archive/copilot/copilot-custom-prompts/Generate glossary.md",
+    "04-archive/copilot/copilot-custom-prompts/Fix grammar and spelling.md",
+    "04-archive/copilot/copilot-custom-prompts/Explain like I am 5.md",
+    "04-archive/copilot/copilot-custom-prompts/Emojify.md",
+    "04-archive/copilot/copilot-custom-prompts/Clip YouTube Transcript.md",
+    "04-archive/copilot/copilot-custom-prompts/Clip Web Page.md",
+    "04-archive/QEMU_KVM/qemu_kvm_board.canvas",
+    "04-archive/Excalidraw/Scripts/Downloaded/Reverse arrows.svg",
+    "04-archive/Excalidraw/Scripts/Downloaded/Mindmap format.svg",
+    "04-archive/Excalidraw/Scripts/Downloaded/Mindmap connector.svg",
+    "04-archive/Excalidraw/Scripts/Downloaded/Mindmap Builder.svg",
     "Excalidraw/Scripts/Downloaded/Mindmap Builder.svg",
-    "QEMU_KVM/QEMU module.md",
-    "Excalidraw/PCIDeviceClass层级结构.md",
-    "Excalidraw/qemu_cpu_model_tree.excalidraw.md",
-    "Excalidraw/qemu_moduel_init.excalidraw.md",
-    "Excalidraw/qemu_module_init_type_list.md",
-    "copilot/copilot-custom-prompts/Clip Web Page.md",
-    "copilot/copilot-custom-prompts/Clip YouTube Transcript.md",
-    "copilot/copilot-custom-prompts/Rewrite as tweet thread.md",
-    "copilot/copilot-custom-prompts/Rewrite as tweet.md",
-    "copilot/copilot-custom-prompts/Remove URLs.md",
-    "copilot/copilot-custom-prompts/Generate glossary.md",
-    "copilot/copilot-custom-prompts/Generate table of contents.md",
-    "copilot/copilot-custom-prompts/Make longer.md",
-    "copilot/copilot-custom-prompts/Make shorter.md",
-    "copilot/copilot-custom-prompts/Emojify.md",
-    "copilot/copilot-custom-prompts",
-    "copilot",
     "QEMU_KVM/qemu_kvm_board.canvas",
-    "ACPI_Spec_6.6.webp",
-    "Excalidraw/Scripts/Downloaded/Reverse arrows.svg",
-    "Excalidraw/Scripts/Downloaded/Mindmap format.svg",
-    "Excalidraw/Scripts/Downloaded/Mindmap connector.svg",
     "QEMU_KVM/未命名.canvas",
-    "325462-sdm-vol-1-2abcd-3abcd-4.webp",
     "未命名.canvas",
     "未命名 1.canvas",
     "未命名 2.canvas",
-    "Pasted image 20260601223619.png",
-    "draw.io/QOM_edu_class.svg",
-    "draw.io/QOM-interface-type-info.svg",
-    "draw.io/QOM-interface-class2.drawio.svg",
     "Excalidraw/未命名.canvas"
   ]
 }

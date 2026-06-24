@@ -25,5 +25,7 @@
   "tasks-calendar-wrapper",
   "quickadd",
   "obsidian-day-planner",
-  "calendar"
+  "calendar",
+  "editing-toolbar",
+  "obsidian-admonition"
 ]
