@@ -1,0 +1,10 @@
+{
+  "version": "2.0",
+  "mapping": {
+    "03-resource/kernel/fs/ext2/ext2_code.md": "03-resource_kernel_fs_ext2_ext2_code.md.json",
+    "Excalidraw/ext2_alloc_branch.excalidraw.md": "excalidraw_ext2_alloc_branch.excalidraw.md.json",
+    "02-area/daily/2026-06-26.md": "02-area_daily_2026-06-26.md.json",
+    "03-resource/kernel/fs/ext2/ext2_code.excalidraw.md": "03-resource_kernel_fs_ext2_ext2_code.excalidraw.md.json"
+  },
+  "lastUpdated": 1782480448403
+}

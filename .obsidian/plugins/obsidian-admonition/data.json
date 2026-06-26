@@ -1,5 +1,30 @@
 {
-  "userAdmonitions": {},
+  "userAdmonitions": {
+    "translate": {
+      "type": "translate",
+      "color": "30, 159, 75",
+      "icon": {
+        "name": "lucide-languages",
+        "type": "obsidian"
+      },
+      "command": false,
+      "title": "translate",
+      "styleWithCss": false,
+      "noTitle": false
+    },
+    "ignore": {
+      "type": "ignore",
+      "color": "80, 83, 81",
+      "icon": {
+        "name": "expand-arrows-alt",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "ignore",
+      "styleWithCss": false,
+      "noTitle": false
+    }
+  },
   "syntaxHighlight": false,
   "copyButton": false,
   "version": "11.0.0",

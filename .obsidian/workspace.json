@@ -4,20 +4,62 @@
     "type": "split",
     "children": [
       {
-        "id": "4623ee4c4a0827e7",
+        "id": "239261fb4cb4f327",
         "type": "tabs",
         "children": [
           {
-            "id": "fb3205ff355ab320",
+            "id": "685c248f65117ec5",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "02-area/daily/2026-06-26.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "2026-06-26"
+            }
+          },
+          {
+            "id": "8a265ff5cc9a8938",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "03-resource/kernel/fs/ext2/ext2_code.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "ext2_code.excalidraw"
+            }
+          },
+          {
+            "id": "b659f7a108974401",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/ext2_alloc_branch.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "ext2_alloc_branch.excalidraw"
+            }
+          },
+          {
+            "id": "91e89fb4756f3853",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/ext2_alloc_branch.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "ext2_alloc_branch.excalidraw"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -74,8 +116,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 410.51103591918945
   },
   "right": {
     "id": "b172529851f33649",
@@ -153,13 +194,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PDF/ACPI_Spec_6.6.pdf",
+                "file": "03-resource/kernel/fs/ext2/ext2_code.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "ACPI_Spec_6.6 的大纲"
+              "title": "ext2_code 的大纲"
             }
           },
           {
@@ -180,16 +221,6 @@
               "state": {},
               "icon": "excalidraw-icon",
               "title": "Excalidraw 侧边面板"
-            }
-          },
-          {
-            "id": "60b3f421900b996b",
-            "type": "leaf",
-            "state": {
-              "type": "copilot-chat-view",
-              "state": {},
-              "icon": "message-square",
-              "title": "Copilot"
             }
           },
           {
@@ -221,13 +252,24 @@
               "icon": "calendar-with-checkmark",
               "title": "Calendar"
             }
+          },
+          {
+            "id": "0ff59a4de3dde1d3",
+            "type": "leaf",
+            "state": {
+              "type": "hinote-view",
+              "state": {},
+              "icon": "highlighter",
+              "title": "HiNote"
+            }
           }
         ],
-        "currentTab": 8
+        "currentTab": 10
       }
     ],
     "direction": "horizontal",
-    "width": 270.5
+    "width": 270.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -245,63 +287,61 @@
       "pdf-plus:PDF++: Toggle auto-paste": false,
       "code-files:Create Code File": false,
       "webpage-html-export:导出为HTML": false,
-      "obsidian-omnivore:Omnivore": false,
-      "media-extended:打开媒体库": false,
-      "media-extended:打开媒体快速切换器": false,
-      "copilot:Open Copilot Chat": false,
       "obsidian-day-planner:Open Timeline": false,
-      "obsidian-day-planner:Open Multi-Day View": false
+      "obsidian-day-planner:Open Multi-Day View": false,
+      "project-manager:Project manager": false,
+      "hi-note:HiNote": false
     }
   },
-  "active": "fb3205ff355ab320",
+  "active": "b659f7a108974401",
   "lastOpenFiles": [
-    "04-archive/链接笔记.md",
-    "04-archive/other paper/Ben-Yehuda-nested-virt-note.md",
-    "04-archive/other paper",
-    "diary/2026-06-22.md",
-    "PDF/325462-sdm-vol-1-2abcd-3abcd-4.pdf",
-    "Clippings/The PARA Method A Universal System for Organizing Digital Information.md",
-    "04-archive/problems/arm64 无法正常启动-加载fbaa64.efi 失败.md",
-    "04-archive/problems",
-    "04-archive/language/OOB.md",
-    "04-archive/language",
+    "Excalidraw/new_blocks params in ext2_alloc_blocks.excalidraw.md",
+    "03-resource/kernel/fs/ext2/ext2_code.md",
+    "未命名.md",
+    "Pasted Image 20260626175721_697.png",
+    "Excalidraw/ext2_alloc_branch.excalidraw.md",
+    "03-resource/kernel/fs/ext2/ext2_code.excalidraw.md",
+    "02-area/daily/2026-06-26.md",
+    "04-archive/PDF/ACPI_Spec_6.6.pdf",
+    "04-archive/Excalidraw/CPU hotPlug.excalidraw.md",
+    "04-archive/Excalidraw/Drawing 2026-06-16 14.43.31.excalidraw.md",
+    "04-archive/Excalidraw/Drawing 2026-06-16 09.24.16.excalidraw.md",
+    "04-archive/Excalidraw/Drawing 2026-06-15 15.29.51.excalidraw.md",
+    "04-archive/Excalidraw/KVM_file.excalidraw.md",
+    "04-archive/Excalidraw/virt_overflow.excalidraw.md",
+    "04-archive/Excalidraw/qemu_X86_CPU_instance.excalidraw.md",
+    "04-archive/Excalidraw/qemu_pc_init1.excalidraw.md",
+    "04-archive/Excalidraw/qemu_object_class_property.excalidraw.md",
+    "04-archive/Excalidraw/qemu_module_init_type_list.md",
+    "04-archive/Excalidraw/qemu_moduel_init.excalidraw.md",
+    "04-archive/Excalidraw/qemu_cpu_model_tree.excalidraw.md",
+    "04-archive/Excalidraw/PCIDeviceClass层级结构.md",
+    "04-archive/Excalidraw/interface_class_inherit.excalidraw.md",
+    "04-archive/ACPI spec.md",
     "04-archive/kernel/KVM/operate VMCS.md",
-    "04-archive/kernel/KVM",
-    "04-archive/kernel",
-    "04-archive/jdds/2403 freeze queue io hung问题调试.md",
-    "04-archive/jdds",
+    "Clippings/《大话存储》第3章-磁盘原理与技术详解（1）-CSDN博客.md",
+    "Excalidraw/Drawing 2026-06-26 13.12.56.excalidraw.md",
+    "Clippings/ext2_alloc_blocks解析-CSDN博客.md",
+    "02-area/daily/2026-06-23.md",
+    "04-archive/PDF/Linux内核深度解析 - 未知.pdf",
+    "04-archive/PDF/QEMU-KVM源码解析与应用.pdf",
+    "04-archive/PDF/Ben-Yehuda-nested-virt.pdf",
+    "04-archive/PDF/GICv3_Software_Overview_Official_Release_B.pdf",
+    "03-resource/pdf/深入理解linux内核源代码/第九章Ext2文件系统.pdf",
+    "04-archive/QEMU_KVM/qemu_kvm_board.canvas",
+    "03-resource/kernel",
+    "03-resource/efficient_knowledge_collection/未命名",
+    "03-resource/efficient_knowledge_collection",
+    "03-resource/kernel/fs",
     "04-archive/draw.io/QOM_edu_class.svg",
     "04-archive/draw.io/QOM-interface-type-info.svg",
     "04-archive/draw.io/QOM-interface-class2.drawio.svg",
     "04-archive/draw.io/QOM-interface-class2.svg",
     "04-archive/draw.io/QOM-interface-class.svg",
-    "04-archive/draw.io",
-    "04-archive/diary_template/diary_template.md",
-    "04-archive/diary_template",
-    "04-archive/diary/2026-06-23.md",
-    "04-archive/diary/2026-06-22.md",
-    "04-archive/diary",
-    "04-archive/copilot/copilot-custom-prompts/Translate to Chinese.md",
-    "04-archive/copilot/copilot-custom-prompts/Summarize.md",
-    "04-archive/copilot/copilot-custom-prompts/Simplify.md",
-    "04-archive/copilot/copilot-custom-prompts/Rewrite as tweet.md",
-    "04-archive/copilot/copilot-custom-prompts/Rewrite as tweet thread.md",
-    "04-archive/copilot/copilot-custom-prompts/Remove URLs.md",
-    "04-archive/copilot/copilot-custom-prompts/Make shorter.md",
-    "04-archive/copilot/copilot-custom-prompts/Make longer.md",
-    "04-archive/copilot/copilot-custom-prompts/Generate table of contents.md",
-    "04-archive/copilot/copilot-custom-prompts/Generate glossary.md",
-    "04-archive/copilot/copilot-custom-prompts/Fix grammar and spelling.md",
-    "04-archive/copilot/copilot-custom-prompts/Explain like I am 5.md",
-    "04-archive/copilot/copilot-custom-prompts/Emojify.md",
-    "04-archive/copilot/copilot-custom-prompts/Clip YouTube Transcript.md",
-    "04-archive/copilot/copilot-custom-prompts/Clip Web Page.md",
-    "04-archive/QEMU_KVM/qemu_kvm_board.canvas",
     "04-archive/Excalidraw/Scripts/Downloaded/Reverse arrows.svg",
     "04-archive/Excalidraw/Scripts/Downloaded/Mindmap format.svg",
     "04-archive/Excalidraw/Scripts/Downloaded/Mindmap connector.svg",
     "04-archive/Excalidraw/Scripts/Downloaded/Mindmap Builder.svg",
-    "Excalidraw/Scripts/Downloaded/Mindmap Builder.svg",
     "QEMU_KVM/qemu_kvm_board.canvas",
     "QEMU_KVM/未命名.canvas",
     "未命名.canvas",

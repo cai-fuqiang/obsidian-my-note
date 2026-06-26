@@ -1,0 +1,258 @@
+{
+  "version": "2.0",
+  "lastModified": 1782378997606,
+  "highlights": {
+    "highlight-1553093619-232": {
+      "text": "<mark style=\"background:#d3f8b6\">sequentially</mark> iterate",
+      "position": 232,
+      "created": 1782375684439,
+      "updated": 1782376375470,
+      "backgroundColor": "#ffeb3b",
+      "contextBefore": "description: tags: - \"clippings\" --- ## iomap **iomap allows filesystems to",
+      "contextAfter": "over ranges in an inode and ==apply operations== to it.** **iomap <mark style=",
+      "textFingerprint": "<mark style=\"background:#d3f8b6\">sequentially</mark> iterate",
+      "comments": [
+        {
+          "id": "comment-1782375684439-bec4qr931",
+          "content": "连续的",
+          "created": 1782375684439,
+          "updated": 1782375684439
+        }
+      ]
+    },
+    "highlight-1497982229-326": {
+      "text": "grew out of ",
+      "position": 364,
+      "created": 1782376138511,
+      "updated": 1782376503492,
+      "backgroundColor": "#d3f8b6",
+      "contextBefore": "k> iterate== over ranges in an inode and ==apply operations== to it.** **iomap",
+      "contextAfter": "the need to provide a modern block mapping abstraction for filesystems with the",
+      "textFingerprint": "grew out of",
+      "comments": [
+        {
+          "id": "comment-1782376138511-qfpiq7h9i",
+          "content": "源于",
+          "created": 1782376138511,
+          "updated": 1782376138511
+        }
+      ]
+    },
+    "highlight-1518379080-570": {
+      "text": "manipulating files into the page cache",
+      "position": 570,
+      "created": 1782376636272,
+      "updated": 1782376722390,
+      "backgroundColor": "#d2cbff",
+      "contextBefore": "th the ==different IO access methods== they support and assisting the VFS with",
+      "contextAfter": ".** iomap helpers are provided for each of these mechanisms. However, **block ma",
+      "textFingerprint": "manipulating files into the page cache",
+      "comments": [
+        {
+          "id": "comment-1782376636272-dyqx0aeu5",
+          "content": "这是其主要目的，将提供给具体文件系统抽象的接口，能让其从具体文件转换为`pagecache`",
+          "created": 1782376636272,
+          "updated": 1782376684609
+        }
+      ]
+    },
+    "highlight-390165436-1039": {
+      "text": "incredible",
+      "position": 1039,
+      "created": 1782376847236,
+      "updated": 1782376986224,
+      "backgroundColor": "#d3f8b6",
+      "contextBefore": "emory and the location on persistent storage where that data lives. [LWN has an",
+      "contextAfter": "review of the ==old buffer-heads block-mapping== and why they are ==inefficient",
+      "textFingerprint": "incredible",
+      "comments": [
+        {
+          "id": "comment-1782376847236-qgzckixin",
+          "content": "精彩的",
+          "created": 1782376847236,
+          "updated": 1782376847236
+        }
+      ]
+    },
+    "highlight-1833292869-1214": {
+      "text": "inception",
+      "position": 1222,
+      "created": 1782376925239,
+      "updated": 1782377025804,
+      "backgroundColor": "#d3f8b6",
+      "contextBefore": "why they are ==inefficient==](https://lwn.net/Articles/930173/), since the the",
+      "contextAfter": "of Linux. Since buffer-heads work on a 512-byte block based <mark style=\"backgr",
+      "textFingerprint": "inception",
+      "comments": [
+        {
+          "id": "comment-1782376925239-noe3hqa2k",
+          "content": "诞生",
+          "created": 1782376925239,
+          "updated": 1782376925239
+        }
+      ]
+    },
+    "highlight-955323642-1332": {
+      "text": "paradigm",
+      "position": 1332,
+      "created": 1782377034034,
+      "updated": 1782377101242,
+      "backgroundColor": "#d3f8b6",
+      "contextBefore": "6\">inception</mark> of Linux. Since buffer-heads work on a 512-byte block based",
+      "contextAfter": ", **it creates an ==overhead== for modern storage media which ==no longer necess",
+      "textFingerprint": "paradigm",
+      "comments": [
+        {
+          "id": "comment-1782377034034-aqd13jmi9",
+          "content": "范例",
+          "created": 1782377034034,
+          "updated": 1782377034034
+        }
+      ]
+    },
+    "highlight-382764190-1505": {
+      "text": "flexible",
+      "position": 1507,
+      "created": 1782377131018,
+      "updated": 1782377222472,
+      "backgroundColor": "#d3f8b6",
+      "contextBefore": "ge media which ==no longer necessarily works only on 512-blocks==**. **iomap is",
+      "contextAfter": "providing block ranges ==in bytes==**. iomap, with the support of **folios**, p",
+      "textFingerprint": "flexible",
+      "comments": [
+        {
+          "id": "comment-1782377131018-j76qwtbdz",
+          "content": "灵活的",
+          "created": 1782377131018,
+          "updated": 1782377131018
+        }
+      ]
+    },
+    "highlight-1486064653-1697": {
+      "text": "strives",
+      "position": 1697,
+      "created": 1782377320440,
+      "updated": 1782377320440,
+      "backgroundColor": "#d3f8b6",
+      "contextBefore": "t of **folios**, provides a modern replacement for buffer-heads. This document",
+      "contextAfter": "to provide a template for LSFMM for what will hopefully eventually become upstr",
+      "textFingerprint": "strives",
+      "comments": [
+        {
+          "id": "comment-1782377320439-bdotlws8q",
+          "content": "旨在",
+          "created": 1782377320440,
+          "updated": 1782377320440
+        }
+      ]
+    },
+    "highlight-876020185-1896": {
+      "text": "converting",
+      "position": 1896,
+      "created": 1782377358774,
+      "updated": 1782377358774,
+      "backgroundColor": "#d3f8b6",
+      "contextBefore": "me upstream Linux kernel documentation for iomap and guidance for developers on",
+      "contextAfter": "a filesystem over from buffer-heads to iomap. ## A modern block abstraction i",
+      "textFingerprint": "converting",
+      "comments": [
+        {
+          "id": "comment-1782377358774-55r7u81wn",
+          "content": "转换",
+          "created": 1782377358774,
+          "updated": 1782377358774
+        }
+      ]
+    },
+    "highlight-1437350639-2892": {
+      "text": "respective",
+      "position": 2892,
+      "created": 1782378415192,
+      "updated": 1782378454162,
+      "backgroundColor": "#d3f8b6",
+      "contextBefore": "ck range read or write operation with direct IO. In this case your fileystems's",
+      "contextAfter": "struct file\\_operations.write\\_iter() would <mark style=\"background:#d3f8b6\">ev",
+      "textFingerprint": "respective",
+      "comments": [
+        {
+          "id": "comment-1782378415192-ujma17yx0",
+          "content": "各自/分别",
+          "created": 1782378415192,
+          "updated": 1782378415192
+        }
+      ]
+    },
+    "highlight-490688983-2987": {
+      "text": "eventually",
+      "position": 2987,
+      "created": 1782378458385,
+      "updated": 1782378570613,
+      "backgroundColor": "#d3f8b6",
+      "contextBefore": "ckground:#d3f8b6\">respective</mark> struct file\\_operations.write\\_iter() would",
+      "contextAfter": "<mark style=\"background:rgba(136, 49, 204, 0.2)\">call `iomap_dio_rw()` on the f",
+      "textFingerprint": "eventually",
+      "comments": [
+        {
+          "id": "comment-1782378458385-pxz9gxfmq",
+          "content": "最终",
+          "created": 1782378458385,
+          "updated": 1782378458385
+        }
+      ]
+    },
+    "highlight-1280984912-3038": {
+      "text": "call `iomap_dio_rw()` on the filesystem's struct `file_operations.write_iter()`.",
+      "position": 3038,
+      "created": 1782378590895,
+      "updated": 1782378628023,
+      "backgroundColor": "rgba(136, 49, 204, 0.2)",
+      "contextBefore": "erations.write\\_iter() would <mark style=\"background:#d3f8b6\">eventually</mark>",
+      "contextAfter": "<mark style=\"background:rgba(136, 49, 204, 0.2)\">For buffered IO a fileseystem",
+      "textFingerprint": "call `iomap_dio_rw()` on the filesystem's struct `file_operations.write_iter()`.",
+      "comments": [
+        {
+          "id": "comment-1782378590895-srwsrcd3l",
+          "content": "dio会在 write_iter()中调用 iomap_dio_rw()进入iomap入口",
+          "created": 1782378590895,
+          "updated": 1782378601604
+        }
+      ]
+    },
+    "highlight-154035513-3176": {
+      "text": "For buffered IO a fileseystem would use iomap_file_buffered_write() on the same struct file_operations.write_iter().",
+      "position": 3176,
+      "created": 1782378633357,
+      "updated": 1782378666441,
+      "backgroundColor": "rgba(136, 49, 204, 0.2)",
+      "contextBefore": "ap_dio_rw()` on the filesystem's struct `file_operations.write_iter()`.</mark>",
+      "contextAfter": "But that is not the only situation in which a filesystem would deal with buffer",
+      "textFingerprint": "For buffered IO a fileseystem would use iomap_file_buffered_write() on the same struct file_operations.write_iter().",
+      "comments": [
+        {
+          "id": "comment-1782378633357-4k03mmdpb",
+          "content": "而buffer io 则会同样在 write_iter()中调用 iomap_file_buffer_write()",
+          "created": 1782378633357,
+          "updated": 1782378666441
+        }
+      ]
+    },
+    "highlight-854889576-3918": {
+      "text": " considerably ",
+      "position": 3918,
+      "created": 1782378997606,
+      "updated": 1782378997606,
+      "backgroundColor": "#d3f8b6",
+      "contextBefore": "s shown that the filesystem implementation of these operations can be simplified",
+      "contextAfter": "if one struct iomap_ops is provided per major filesystem IO operation: - buffer",
+      "textFingerprint": "considerably",
+      "comments": [
+        {
+          "id": "comment-1782378997606-tdk78kl72",
+          "content": "相当",
+          "created": 1782378997606,
+          "updated": 1782378997606
+        }
+      ]
+    }
+  }
+}
