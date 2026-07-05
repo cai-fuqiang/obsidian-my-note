@@ -1,61 +1,55 @@
 {
   "main": {
-    "id": "2ba8319d2adbca6c",
+    "id": "50a479c6807edde1",
     "type": "split",
     "children": [
       {
-        "id": "239261fb4cb4f327",
+        "id": "40a31bd01e0e99ed",
         "type": "tabs",
         "children": [
           {
-            "id": "685c248f65117ec5",
+            "id": "2bf933a33c3336f5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02-area/daily/2026-06-26.md",
+                "file": "Clippings/卢曼：学习如何阅读.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "2026-06-26"
+              "title": "卢曼：学习如何阅读"
             }
           },
           {
-            "id": "8a265ff5cc9a8938",
+            "id": "130fc859d4997db0",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "03-resource/kernel/fs/ext2/ext2_code.excalidraw.md"
+                "file": "Clippings/卢曼：与卡片盒交流.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
               },
-              "icon": "excalidraw-icon",
-              "title": "ext2_code.excalidraw"
+              "icon": "lucide-file",
+              "title": "卢曼：与卡片盒交流"
             }
           },
           {
-            "id": "b659f7a108974401",
+            "id": "cfac8666b30cc219",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Excalidraw/ext2_alloc_branch.excalidraw.md"
+                "file": "Clippings/我想在數位筆記軟體中使用卡片盒筆記法，該如何管理筆記檔案？.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
               },
-              "icon": "excalidraw-icon",
-              "title": "ext2_alloc_branch.excalidraw"
-            }
-          },
-          {
-            "id": "91e89fb4756f3853",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/ext2_alloc_branch.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "ext2_alloc_branch.excalidraw"
+              "icon": "lucide-file",
+              "title": "我想在數位筆記軟體中使用卡片盒筆記法，該如何管理筆記檔案？"
             }
           }
         ],
@@ -65,28 +59,28 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "55d544a7a1130678",
+    "id": "06f5d7208d5a84fb",
     "type": "split",
     "children": [
       {
-        "id": "661500cdbf7bc52f",
+        "id": "1b76a27d0fa8c883",
         "type": "tabs",
         "children": [
           {
-            "id": "33b2315d9b9ea5c4",
+            "id": "27205bb75c373204",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": true
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "文件列表"
             }
           },
           {
-            "id": "d2fadff65067a589",
+            "id": "6b6d7f32e72fefb2",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -103,7 +97,7 @@
             }
           },
           {
-            "id": "5d6f3c22a894952d",
+            "id": "da98be970893dd39",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -116,57 +110,58 @@
       }
     ],
     "direction": "horizontal",
-    "width": 410.51103591918945
+    "width": 300,
+    "collapsed": true
   },
   "right": {
-    "id": "b172529851f33649",
+    "id": "dd0d68d2635be880",
     "type": "split",
     "children": [
       {
-        "id": "35982c179c61765a",
+        "id": "029875495e3dedf3",
         "type": "tabs",
         "children": [
           {
-            "id": "077ea6bf52522978",
+            "id": "d9e4923e33de3bc4",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PDF/ACPI_Spec_6.6.pdf",
-                "collapseAll": true,
+                "file": "03-resource/01-QEMU_KVM/20-device/hotplug/01-qemu_device_hotplug.md",
+                "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
-                "showSearch": true,
+                "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "ACPI_Spec_6.6 的反向链接列表"
+              "title": "01-qemu_device_hotplug 的反向链接列表"
             }
           },
           {
-            "id": "f4d63f9f27684baf",
+            "id": "55e306d1cf2ef618",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PDF/ACPI_Spec_6.6.pdf",
+                "file": "03-resource/01-QEMU_KVM/20-device/hotplug/01-qemu_device_hotplug.md",
                 "linksCollapsed": false,
-                "unlinkedCollapsed": false
+                "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "ACPI_Spec_6.6 的出链列表"
+              "title": "01-qemu_device_hotplug 的出链列表"
             }
           },
           {
-            "id": "c116b9d1848bd4f5",
+            "id": "8464ccb7c3ef9318",
             "type": "leaf",
             "state": {
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": false,
+                "useHierarchy": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
@@ -175,7 +170,7 @@
             }
           },
           {
-            "id": "05259a6d6130c1b1",
+            "id": "4817004c48ec33c4",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -189,62 +184,22 @@
             }
           },
           {
-            "id": "081467c985541f2d",
+            "id": "b6c5504e14c34e81",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "03-resource/kernel/fs/ext2/ext2_code.md",
-                "followCursor": true,
+                "file": "03-resource/01-QEMU_KVM/20-device/hotplug/01-qemu_device_hotplug.md",
+                "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "ext2_code 的大纲"
+              "title": "01-qemu_device_hotplug 的大纲"
             }
           },
           {
-            "id": "7334e3ccc029917f",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "新标签页"
-            }
-          },
-          {
-            "id": "234c45071bdf3f33",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw-sidepanel",
-              "state": {},
-              "icon": "excalidraw-icon",
-              "title": "Excalidraw 侧边面板"
-            }
-          },
-          {
-            "id": "7428399a5ea7f3a7",
-            "type": "leaf",
-            "state": {
-              "type": "planner-timeline",
-              "state": {},
-              "icon": "calendar-with-checkmark",
-              "title": "Timeline"
-            }
-          },
-          {
-            "id": "95ecac0159f9706a",
-            "type": "leaf",
-            "state": {
-              "type": "planner-time-tracker",
-              "state": {},
-              "icon": "timer",
-              "title": "Time Tracker"
-            }
-          },
-          {
-            "id": "27a0830ed4e3eba1",
+            "id": "46fe179fb30eab7e",
             "type": "leaf",
             "state": {
               "type": "calendar",
@@ -254,7 +209,27 @@
             }
           },
           {
-            "id": "0ff59a4de3dde1d3",
+            "id": "f805caf61df6fce3",
+            "type": "leaf",
+            "state": {
+              "type": "planner-timeline",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Timeline"
+            }
+          },
+          {
+            "id": "26012303388dde3f",
+            "type": "leaf",
+            "state": {
+              "type": "planner-time-tracker",
+              "state": {},
+              "icon": "timer",
+              "title": "Time Tracker"
+            }
+          },
+          {
+            "id": "2d2729f27556aebf",
             "type": "leaf",
             "state": {
               "type": "hinote-view",
@@ -262,14 +237,23 @@
               "icon": "highlighter",
               "title": "HiNote"
             }
+          },
+          {
+            "id": "e82d4d20bd5559f7",
+            "type": "leaf",
+            "state": {
+              "type": "copilot-chat-view",
+              "state": {},
+              "icon": "message-square",
+              "title": "Copilot"
+            }
           }
         ],
-        "currentTab": 10
+        "currentTab": 9
       }
     ],
     "direction": "horizontal",
-    "width": 270.5,
-    "collapsed": true
+    "width": 671.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -290,63 +274,50 @@
       "obsidian-day-planner:Open Timeline": false,
       "obsidian-day-planner:Open Multi-Day View": false,
       "project-manager:Project manager": false,
-      "hi-note:HiNote": false
+      "hi-note:HiNote": false,
+      "meld-encrypt:New encrypted note": false,
+      "meld-encrypt:Lock and Close all open encrypted notes": false,
+      "meld-encrypt:Convert to or from an Encrypted note": false,
+      "meld-encrypt:Encrypt Selection": false,
+      "meld-encrypt:Decrypt at Cursor": false,
+      "copilot:Open Copilot Chat": false
     }
   },
-  "active": "b659f7a108974401",
+  "active": "cfac8666b30cc219",
   "lastOpenFiles": [
-    "Excalidraw/new_blocks params in ext2_alloc_blocks.excalidraw.md",
-    "03-resource/kernel/fs/ext2/ext2_code.md",
-    "未命名.md",
-    "Pasted Image 20260626175721_697.png",
-    "Excalidraw/ext2_alloc_branch.excalidraw.md",
-    "03-resource/kernel/fs/ext2/ext2_code.excalidraw.md",
-    "02-area/daily/2026-06-26.md",
-    "04-archive/PDF/ACPI_Spec_6.6.pdf",
-    "04-archive/Excalidraw/CPU hotPlug.excalidraw.md",
-    "04-archive/Excalidraw/Drawing 2026-06-16 14.43.31.excalidraw.md",
-    "04-archive/Excalidraw/Drawing 2026-06-16 09.24.16.excalidraw.md",
-    "04-archive/Excalidraw/Drawing 2026-06-15 15.29.51.excalidraw.md",
-    "04-archive/Excalidraw/KVM_file.excalidraw.md",
-    "04-archive/Excalidraw/virt_overflow.excalidraw.md",
-    "04-archive/Excalidraw/qemu_X86_CPU_instance.excalidraw.md",
-    "04-archive/Excalidraw/qemu_pc_init1.excalidraw.md",
-    "04-archive/Excalidraw/qemu_object_class_property.excalidraw.md",
-    "04-archive/Excalidraw/qemu_module_init_type_list.md",
-    "04-archive/Excalidraw/qemu_moduel_init.excalidraw.md",
-    "04-archive/Excalidraw/qemu_cpu_model_tree.excalidraw.md",
-    "04-archive/Excalidraw/PCIDeviceClass层级结构.md",
-    "04-archive/Excalidraw/interface_class_inherit.excalidraw.md",
-    "04-archive/ACPI spec.md",
-    "04-archive/kernel/KVM/operate VMCS.md",
-    "Clippings/《大话存储》第3章-磁盘原理与技术详解（1）-CSDN博客.md",
-    "Excalidraw/Drawing 2026-06-26 13.12.56.excalidraw.md",
-    "Clippings/ext2_alloc_blocks解析-CSDN博客.md",
-    "02-area/daily/2026-06-23.md",
-    "04-archive/PDF/Linux内核深度解析 - 未知.pdf",
-    "04-archive/PDF/QEMU-KVM源码解析与应用.pdf",
-    "04-archive/PDF/Ben-Yehuda-nested-virt.pdf",
-    "04-archive/PDF/GICv3_Software_Overview_Official_Release_B.pdf",
-    "03-resource/pdf/深入理解linux内核源代码/第九章Ext2文件系统.pdf",
-    "04-archive/QEMU_KVM/qemu_kvm_board.canvas",
-    "03-resource/kernel",
-    "03-resource/efficient_knowledge_collection/未命名",
-    "03-resource/efficient_knowledge_collection",
-    "03-resource/kernel/fs",
-    "04-archive/draw.io/QOM_edu_class.svg",
-    "04-archive/draw.io/QOM-interface-type-info.svg",
-    "04-archive/draw.io/QOM-interface-class2.drawio.svg",
-    "04-archive/draw.io/QOM-interface-class2.svg",
-    "04-archive/draw.io/QOM-interface-class.svg",
-    "04-archive/Excalidraw/Scripts/Downloaded/Reverse arrows.svg",
-    "04-archive/Excalidraw/Scripts/Downloaded/Mindmap format.svg",
-    "04-archive/Excalidraw/Scripts/Downloaded/Mindmap connector.svg",
-    "04-archive/Excalidraw/Scripts/Downloaded/Mindmap Builder.svg",
-    "QEMU_KVM/qemu_kvm_board.canvas",
-    "QEMU_KVM/未命名.canvas",
-    "未命名.canvas",
-    "未命名 1.canvas",
-    "未命名 2.canvas",
-    "Excalidraw/未命名.canvas"
+    "03-resource/99-pdf/卡片笔记写作法.epub",
+    "03-resource/99-pdf/How_to_Take_Smart_Notes__One_Simple_Techni_-_Sonke_Ahrens.pdf",
+    "Clippings/卢曼：与卡片盒交流.md",
+    "copilot/copilot-conversations/解释这段话@20260705_141506.md",
+    "copilot/copilot-conversations",
+    "copilot",
+    "Clippings/我想在數位筆記軟體中使用卡片盒筆記法，該如何管理筆記檔案？.md",
+    "Clippings/《防弹笔记法》为什么值得学习？.md",
+    "Clippings/卢曼：学习如何阅读.md",
+    "Clippings/(46 封私信  4 条消息) 什么是 Zettelkasten 卡片盒笔记法？.md",
+    "Clippings/卡片笔记写作法（读书笔记含思维导图）.md",
+    "Clippings/【卡片盒筆記法】讓知識產生複利的筆記方法.md",
+    "03-resource/03-efficient_knowledge_collection/PARA/如何分类笔记？一套简单又通用的分类架构— PARA.md",
+    "03-resource/03-efficient_knowledge_collection/PARA",
+    "02-area/100-客户问题解决/小米使能kpatch失败/小米客户 kpatch 使能失败.md",
+    "Clippings",
+    "02-area/100-客户问题解决/小米使能kpatch失败/bpftace脚本_调试orc.md",
+    "02-area/100-客户问题解决/小米使能kpatch失败/orc_code.md",
+    "03-resource/01-QEMU_KVM/10-CPU/QEMU - CPU model.md",
+    "03-resource/01-QEMU_KVM/10-CPU/x86 CPU feature.md",
+    "03-resource/01-QEMU_KVM/10-CPU/CPU hotPlug.excalidraw.md",
+    "03-resource/02-kernel/fs/ext2/ext2_code.md",
+    "03-resource/02-kernel/fs/ext2/ext2_code.excalidraw.md",
+    "03-resource/02-kernel/fs/ext2/ext2_alloc_branch.excalidraw.md",
+    "03-resource/02-kernel/fs/ext2/ext2_alloc_blocks解析-CSDN博客.md",
+    "02-area/100-客户问题解决/小米使能kpatch失败",
+    "03-resource/01-QEMU_KVM/20-device/hotplug/01-qemu_device_hotplug.md",
+    "02-area/100-客户问题解决",
+    "03-resource/01-QEMU_KVM/20-device/hotplug/excalidraw/device_plug_overview.excalidraw.md",
+    "03-resource/01-QEMU_KVM/20-device/hotplug/excalidraw/device_unplug_overview.excalidraw.md",
+    "03-resource/01-QEMU_KVM/20-device/hotplug/excalidraw/device_hotplug_overview.excalidraw.md",
+    "03-resource/01-QEMU_KVM/20-device/hotplug/QEMU ACPI BIOS PCI hotplug interface.md",
+    "03-resource/99-pdf/82371_AB_PIIX4.pdf",
+    "02-area/99-daily/2026-07-03.md"
   ]
 }

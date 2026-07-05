@@ -1,0 +1,42 @@
+{
+  "version": "2.0",
+  "lastModified": 1782986311918,
+  "highlights": {
+    "highlight-1994164715-360": {
+      "text": "byte access",
+      "position": 360,
+      "created": 1782985768255,
+      "updated": 1782985768255,
+      "backgroundColor": "#40a9ff",
+      "contextBefore": "ace between QEMU and the ACPI BIOS. ## ACPI GPE block (IO ports 0xafe0-0xafe3,",
+      "contextAfter": ") Generic ACPI GPE block. **Bit 1 (GPE.1) used to ==notify PCI hotplug/eject ev",
+      "textFingerprint": "byte access",
+      "comments": [
+        {
+          "id": "comment-1782985768255-yzqwx6nqn",
+          "content": "这个地方少4-",
+          "created": 1782985768255,
+          "updated": 1782985768255
+        }
+      ]
+    },
+    "highlight-546869365-1066": {
+      "text": "**`_EJ0",
+      "position": 1066,
+      "created": 1782985891605,
+      "updated": 1782986311918,
+      "backgroundColor": "#ffeb3b",
+      "contextBefore": "I device eject (IO port 0xae08-0xae0b, 4-byte access) Write: Used by ACPI BIOS",
+      "contextAfter": "`**== method to request device removal.== One bit per slot. Read: Hotplug featu",
+      "textFingerprint": "**`_EJ0",
+      "comments": [
+        {
+          "id": "comment-1782985891605-cqu2zoazx",
+          "content": "这个method需要对照",
+          "created": 1782985891605,
+          "updated": 1782986311918
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "version": "2.0",
+  "lastModified": 1782998675829,
+  "highlights": {
+    "highlight-94374168-2734": {
+      "text": "无法保证分配的间接块在磁盘上连续，所以最多需要3项才能记录间接块的分配结果",
+      "position": 2734,
+      "created": 1782998675828,
+      "updated": 1782998675828,
+      "backgroundColor": "#fdbfff",
+      "contextBefore": "：1. 首先ext2文件系统的设计决定每次最多分配的间接块的数目为3（因为最多只有三级索引），而ext2\\_allocate\\_blocks()在实现的时候**",
+      "contextAfter": "**；2. **ext2\\_allocate\\_blocks()==保证分配的直接数据块在磁盘上连续==，因为它只是尽力分配，==不一定会分配到你想要的那么多的",
+      "textFingerprint": "无法保证分配的间接块在磁盘上连续，所以最多需要3项才能记录间接块的分配结果",
+      "comments": [
+        {
+          "id": "comment-1782998675828-xp7qxbltd",
+          "content": "get_block()要求得到的物理块必须连续",
+          "created": 1782998675828,
+          "updated": 1782998675828
+        }
+      ]
+    }
+  }
+}

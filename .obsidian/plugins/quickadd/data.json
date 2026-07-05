@@ -1,55 +1,6 @@
 {
   "choices": [
     {
-      "id": "38522a3f-dad8-4145-926c-bab2a54535f7",
-      "name": "kernel",
-      "type": "Capture",
-      "command": false,
-      "onePageInput": "always",
-      "appendLink": false,
-      "captureTo": "",
-      "captureToActiveFile": true,
-      "captureToCanvasNodeId": "",
-      "activeFileWritePosition": "cursor",
-      "createFileIfItDoesntExist": {
-        "enabled": false,
-        "createWithTemplate": false,
-        "template": ""
-      },
-      "format": {
-        "enabled": true,
-        "format": "```embed-cpp\nPATH: \"https://raw.githubusercontent.com/cai-fuqiang/{{VALUE:linux/v7.1-rc3,runninglinuxkernel_5.0/rlk_5.0|kernel version}}/{{VALUE:filepath|label:filepath}}\"\nLINES: \"{{value:1-10|label:lines, e.g. 1-10,11,12}}\"\nTITLE: \"{{value:do_rmdir|label:function_name, e.g. do_rmdir}}\"\nFONT_SIZE: 12\nCOMMENTS:\n```"
-      },
-      "insertAfter": {
-        "enabled": false,
-        "after": "",
-        "insertAtEnd": false,
-        "considerSubsections": false,
-        "createIfNotFound": false,
-        "createIfNotFoundLocation": "top",
-        "inline": false,
-        "replaceExisting": false,
-        "blankLineAfterMatchMode": "auto"
-      },
-      "newLineCapture": {
-        "enabled": false,
-        "direction": "below"
-      },
-      "prepend": false,
-      "task": false,
-      "openFile": false,
-      "fileOpening": {
-        "location": "tab",
-        "direction": "vertical",
-        "mode": "default",
-        "focus": true
-      },
-      "templater": {
-        "afterCapture": "none"
-      },
-      "useSelectionAsCaptureValue": true
-    },
-    {
       "id": "fac2ac58-8013-413a-b497-f233f06a7c12",
       "name": "日记-闪念",
       "type": "Capture",
@@ -97,6 +48,149 @@
       }
     },
     {
+      "id": "7bd6011b-bbbd-479d-b706-5c36be29b517",
+      "name": "date(Y:M:D H:m:s)",
+      "type": "Capture",
+      "command": false,
+      "appendLink": false,
+      "captureTo": "",
+      "captureToActiveFile": true,
+      "captureToCanvasNodeId": "",
+      "activeFileWritePosition": "cursor",
+      "createFileIfItDoesntExist": {
+        "enabled": false,
+        "createWithTemplate": false,
+        "template": ""
+      },
+      "format": {
+        "enabled": true,
+        "format": "{{date:YYYY-MM-DD HH:mm:ss}}"
+      },
+      "insertAfter": {
+        "enabled": false,
+        "after": "",
+        "insertAtEnd": false,
+        "considerSubsections": false,
+        "createIfNotFound": false,
+        "createIfNotFoundLocation": "top",
+        "inline": false,
+        "replaceExisting": false,
+        "blankLineAfterMatchMode": "auto"
+      },
+      "newLineCapture": {
+        "enabled": false,
+        "direction": "below"
+      },
+      "prepend": false,
+      "task": false,
+      "openFile": false,
+      "fileOpening": {
+        "location": "tab",
+        "direction": "vertical",
+        "mode": "default",
+        "focus": true
+      },
+      "templater": {
+        "afterCapture": "none"
+      }
+    },
+    {
+      "id": "a19a37c2-c103-4098-bd4f-d3494e0eba85",
+      "name": "add_acticle_attr_status",
+      "type": "Capture",
+      "command": false,
+      "appendLink": false,
+      "captureTo": "",
+      "captureToActiveFile": true,
+      "captureToCanvasNodeId": "",
+      "activeFileWritePosition": "cursor",
+      "createFileIfItDoesntExist": {
+        "enabled": false,
+        "createWithTemplate": false,
+        "template": ""
+      },
+      "format": {
+        "enabled": true,
+        "format": "{{value:not-start,doing,suspend,done}}"
+      },
+      "insertAfter": {
+        "enabled": false,
+        "after": "",
+        "insertAtEnd": false,
+        "considerSubsections": false,
+        "createIfNotFound": false,
+        "createIfNotFoundLocation": "top",
+        "inline": false,
+        "replaceExisting": false,
+        "blankLineAfterMatchMode": "auto"
+      },
+      "newLineCapture": {
+        "enabled": false,
+        "direction": "below"
+      },
+      "prepend": false,
+      "task": false,
+      "openFile": false,
+      "fileOpening": {
+        "location": "tab",
+        "direction": "vertical",
+        "mode": "default",
+        "focus": true
+      },
+      "templater": {
+        "afterCapture": "none"
+      }
+    },
+    {
+      "id": "38522a3f-dad8-4145-926c-bab2a54535f7",
+      "name": "kernel_code",
+      "type": "Capture",
+      "command": false,
+      "onePageInput": "always",
+      "appendLink": false,
+      "captureTo": "",
+      "captureToActiveFile": true,
+      "captureToCanvasNodeId": "",
+      "activeFileWritePosition": "cursor",
+      "createFileIfItDoesntExist": {
+        "enabled": false,
+        "createWithTemplate": false,
+        "template": ""
+      },
+      "format": {
+        "enabled": true,
+        "format": "```embed-cpp\nPATH: \"https://raw.githubusercontent.com/cai-fuqiang/{{VALUE:linux/v7.1-rc3,runninglinuxkernel_5.0/rlk_5.0|kernel version}}/{{VALUE:filepath|label:filepath}}\"\nLINES: \"{{value:1-10|label:lines, e.g. 1-10,11,12}}\"\nTITLE: \"{{value:do_rmdir|label:function_name, e.g. do_rmdir}}\"\nFONT_SIZE: 12\nCOMMENTS:\n```"
+      },
+      "insertAfter": {
+        "enabled": false,
+        "after": "",
+        "insertAtEnd": false,
+        "considerSubsections": false,
+        "createIfNotFound": false,
+        "createIfNotFoundLocation": "top",
+        "inline": false,
+        "replaceExisting": false,
+        "blankLineAfterMatchMode": "auto"
+      },
+      "newLineCapture": {
+        "enabled": false,
+        "direction": "below"
+      },
+      "prepend": false,
+      "task": false,
+      "openFile": false,
+      "fileOpening": {
+        "location": "tab",
+        "direction": "vertical",
+        "mode": "default",
+        "focus": true
+      },
+      "templater": {
+        "afterCapture": "none"
+      },
+      "useSelectionAsCaptureValue": true
+    },
+    {
       "id": "45e023d3-910f-4e68-a1ef-a7f547c9fe64",
       "name": "translate",
       "type": "Capture",
@@ -142,6 +236,149 @@
       "templater": {
         "afterCapture": "none"
       }
+    },
+    {
+      "id": "2b57c8ab-070a-4c7e-8eb4-53006ddfc742",
+      "name": "add_acticle_attr",
+      "type": "Capture",
+      "command": false,
+      "appendLink": false,
+      "captureTo": "",
+      "captureToActiveFile": true,
+      "captureToCanvasNodeId": "",
+      "activeFileWritePosition": "top",
+      "createFileIfItDoesntExist": {
+        "enabled": false,
+        "createWithTemplate": false,
+        "template": ""
+      },
+      "format": {
+        "enabled": true,
+        "format": "{{TEMPLATE:03-resource/1000-Templates/acticle temp.md}}\n"
+      },
+      "insertAfter": {
+        "enabled": false,
+        "after": "",
+        "insertAtEnd": false,
+        "considerSubsections": false,
+        "createIfNotFound": false,
+        "createIfNotFoundLocation": "top",
+        "inline": false,
+        "replaceExisting": false,
+        "blankLineAfterMatchMode": "auto"
+      },
+      "newLineCapture": {
+        "enabled": false,
+        "direction": "below"
+      },
+      "prepend": false,
+      "task": false,
+      "openFile": false,
+      "fileOpening": {
+        "location": "tab",
+        "direction": "vertical",
+        "mode": "default",
+        "focus": true
+      },
+      "templater": {
+        "afterCapture": "none"
+      }
+    },
+    {
+      "id": "5acc8197-7064-47ab-892f-7ab354715eb7",
+      "name": "label kbd",
+      "type": "Capture",
+      "command": false,
+      "appendLink": false,
+      "captureTo": "",
+      "captureToActiveFile": true,
+      "captureToCanvasNodeId": "",
+      "activeFileWritePosition": "cursor",
+      "createFileIfItDoesntExist": {
+        "enabled": false,
+        "createWithTemplate": false,
+        "template": ""
+      },
+      "format": {
+        "enabled": true,
+        "format": "<kbd></kbd>"
+      },
+      "insertAfter": {
+        "enabled": false,
+        "after": "",
+        "insertAtEnd": false,
+        "considerSubsections": false,
+        "createIfNotFound": false,
+        "createIfNotFoundLocation": "top",
+        "inline": false,
+        "replaceExisting": false,
+        "blankLineAfterMatchMode": "auto"
+      },
+      "newLineCapture": {
+        "enabled": false,
+        "direction": "below"
+      },
+      "prepend": false,
+      "task": false,
+      "openFile": false,
+      "fileOpening": {
+        "location": "tab",
+        "direction": "vertical",
+        "mode": "default",
+        "focus": true
+      },
+      "templater": {
+        "afterCapture": "none"
+      }
+    },
+    {
+      "id": "05bb65a1-58f2-4f71-9fb9-f5529a9f7e04",
+      "name": "qemu_code",
+      "type": "Capture",
+      "command": false,
+      "onePageInput": "always",
+      "appendLink": false,
+      "captureTo": "",
+      "captureToActiveFile": true,
+      "captureToCanvasNodeId": "",
+      "activeFileWritePosition": "cursor",
+      "createFileIfItDoesntExist": {
+        "enabled": false,
+        "createWithTemplate": false,
+        "template": ""
+      },
+      "format": {
+        "enabled": true,
+        "format": "```embed-cpp\nPATH: \"https://raw.githubusercontent.com/cai-fuqiang/{{VALUE:qemu/v11.0.0-tag,qemu/v11.0.0|qemu version}}/{{VALUE:filepath|label:filepath}}\"\nLINES: \"{{value:1-10|label:lines, e.g. 1-10,11,12}}\"\nTITLE: \"{{value:main|label:function_name, e.g. main}}\"\nFONT_SIZE: 12\nCOMMENTS:\n```"
+      },
+      "insertAfter": {
+        "enabled": false,
+        "after": "",
+        "insertAtEnd": false,
+        "considerSubsections": false,
+        "createIfNotFound": false,
+        "createIfNotFoundLocation": "top",
+        "inline": false,
+        "replaceExisting": false,
+        "blankLineAfterMatchMode": "auto"
+      },
+      "newLineCapture": {
+        "enabled": false,
+        "direction": "below"
+      },
+      "prepend": false,
+      "task": false,
+      "openFile": false,
+      "fileOpening": {
+        "location": "tab",
+        "direction": "vertical",
+        "mode": "default",
+        "focus": true
+      },
+      "templater": {
+        "afterCapture": "none"
+      },
+      "useSelectionAsCaptureValue": true
     }
   ],
   "inputPrompt": "single-line",
