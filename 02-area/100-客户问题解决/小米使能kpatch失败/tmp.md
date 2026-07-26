@@ -1,0 +1,33 @@
+加载`kprobe:vfs_write`
+```
+ #3 [ffffa50b8cd33ec8] vfs_write at ffffffff987652db
+    ffffa50b8cd33ed0: 0000000000000010 ffff91bc45763e80
+    ffffa50b8cd33ee0: ffff91bc45763e80 0000555bd0dbaa90
+    ffffa50b8cd33ef0: 0000000000000002 0000000000000000
+    ffffa50b8cd33f00: ffffffff984695e0[here] 0000000000000000
+    ffffa50b8cd33f10: 6ec956bf5ee9c400 0000000000000000
+    ffffa50b8cd33f20: ffffa50b8cd33f48 ffffa50b8cd33f58
+    ffffa50b8cd33f30: 0000000000000000 ffffffff98e62d0d
+ #4 [ffffa50b8cd33f38] do_syscall_64 at ffffffff98e62d0d
+    ffffa50b8cd33f40: 0000000000000000 0000000000000000
+    ffffa50b8cd33f50: ffffffff99000099
+```
+
+不加载
+```
+ #3 [ffffa50b8f2e7ec8] vfs_write at ffffffff987652db
+    ffffa50b8f2e7ed0: dead000000000100 ffff91c869623840
+    ffffa50b8f2e7ee0: ffff91c869623840 00005633800bea90
+    ffffa50b8f2e7ef0: 0000000000000002 0000000000000000
+    ffffa50b8f2e7f00: ffffffff9876573f
+ #4 [ffffa50b8f2e7f00] ksys_write at ffffffff9876573f
+    ffffa50b8f2e7f08: 0000000000000000 10dcff8325855000
+    ffffa50b8f2e7f18: 0000000000000000 ffffa50b8f2e7f48
+    ffffa50b8f2e7f28: ffffa50b8f2e7f58 0000000000000000
+    ffffa50b8f2e7f38: ffffffff98e62d0d
+ #5 [ffffa50b8f2e7f38] do_syscall_64 at ffffffff98e62d0d
+    ffffa50b8f2e7f40: 0000000000000000 0000000000000000
+    ffffa50b8f2e7f50: ffffffff99000099
+```
+
+

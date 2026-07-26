@@ -4,52 +4,46 @@
     "type": "split",
     "children": [
       {
-        "id": "40a31bd01e0e99ed",
+        "id": "0b3e7af1e102eb46",
         "type": "tabs",
         "children": [
           {
-            "id": "2bf933a33c3336f5",
+            "id": "9ce617b38969d30d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Clippings/卢曼：学习如何阅读.md",
+                "file": "EPT format.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "卢曼：学习如何阅读"
+              "title": "EPT format"
             }
           },
           {
-            "id": "130fc859d4997db0",
+            "id": "3a7be29d7ad76c59",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "excalidraw",
               "state": {
-                "file": "Clippings/卢曼：与卡片盒交流.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
+                "file": "01-project/CVE-2026-53359/poc_mem_layout.md"
               },
-              "icon": "lucide-file",
-              "title": "卢曼：与卡片盒交流"
+              "icon": "excalidraw-icon",
+              "title": "poc_mem_layout"
             }
           },
           {
-            "id": "cfac8666b30cc219",
+            "id": "8d18d6402744d1e5",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "excalidraw",
               "state": {
-                "file": "Clippings/我想在數位筆記軟體中使用卡片盒筆記法，該如何管理筆記檔案？.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
+                "file": "Excalidraw/Drawing 2026-07-24 15.21.47.excalidraw.md"
               },
-              "icon": "lucide-file",
-              "title": "我想在數位筆記軟體中使用卡片盒筆記法，該如何管理筆記檔案？"
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2026-07-24 15.21.47.excalidraw"
             }
           }
         ],
@@ -97,6 +91,18 @@
             }
           },
           {
+            "id": "64021c399e6e0513",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "01-project/CVE-2026-53359/poc_mem_layout.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "poc_mem_layout"
+            }
+          },
+          {
             "id": "da98be970893dd39",
             "type": "leaf",
             "state": {
@@ -105,12 +111,22 @@
               "icon": "lucide-bookmark",
               "title": "书签"
             }
+          },
+          {
+            "id": "49d762a22a6eaeaa",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新标签页"
+            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 469.5124969482422,
     "collapsed": true
   },
   "right": {
@@ -127,17 +143,17 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03-resource/01-QEMU_KVM/20-device/hotplug/01-qemu_device_hotplug.md",
+                "file": "01-project/CVE-2026-53359/闪记.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
-                "showSearch": false,
+                "showSearch": true,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "01-qemu_device_hotplug 的反向链接列表"
+              "title": "闪记 的反向链接列表"
             }
           },
           {
@@ -146,12 +162,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "03-resource/01-QEMU_KVM/20-device/hotplug/01-qemu_device_hotplug.md",
+                "file": "01-project/调研PVM/闪记.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "01-qemu_device_hotplug 的出链列表"
+              "title": "闪记 的出链列表"
             }
           },
           {
@@ -189,13 +205,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "03-resource/01-QEMU_KVM/20-device/hotplug/01-qemu_device_hotplug.md",
+                "file": "01-project/调研PVM/闪记.md",
                 "followCursor": false,
-                "showSearch": false,
+                "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "01-qemu_device_hotplug 的大纲"
+              "title": "闪记 的大纲"
             }
           },
           {
@@ -247,13 +263,24 @@
               "icon": "message-square",
               "title": "Copilot"
             }
+          },
+          {
+            "id": "b866e3b93f247d85",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw-sidepanel",
+              "state": {},
+              "icon": "excalidraw-icon",
+              "title": "Excalidraw 侧边面板"
+            }
           }
         ],
-        "currentTab": 9
+        "currentTab": 10
       }
     ],
     "direction": "horizontal",
-    "width": 671.5
+    "width": 671.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -280,44 +307,52 @@
       "meld-encrypt:Convert to or from an Encrypted note": false,
       "meld-encrypt:Encrypt Selection": false,
       "meld-encrypt:Decrypt at Cursor": false,
-      "copilot:Open Copilot Chat": false
+      "copilot:Open Copilot Chat": false,
+      "zettelflow:Create a new Zettel Note": false
     }
   },
-  "active": "cfac8666b30cc219",
+  "active": "8d18d6402744d1e5",
   "lastOpenFiles": [
-    "03-resource/99-pdf/卡片笔记写作法.epub",
-    "03-resource/99-pdf/How_to_Take_Smart_Notes__One_Simple_Techni_-_Sonke_Ahrens.pdf",
-    "Clippings/卢曼：与卡片盒交流.md",
-    "copilot/copilot-conversations/解释这段话@20260705_141506.md",
-    "copilot/copilot-conversations",
-    "copilot",
-    "Clippings/我想在數位筆記軟體中使用卡片盒筆記法，該如何管理筆記檔案？.md",
-    "Clippings/《防弹笔记法》为什么值得学习？.md",
-    "Clippings/卢曼：学习如何阅读.md",
-    "Clippings/(46 封私信  4 条消息) 什么是 Zettelkasten 卡片盒笔记法？.md",
-    "Clippings/卡片笔记写作法（读书笔记含思维导图）.md",
-    "Clippings/【卡片盒筆記法】讓知識產生複利的筆記方法.md",
-    "03-resource/03-efficient_knowledge_collection/PARA/如何分类笔记？一套简单又通用的分类架构— PARA.md",
-    "03-resource/03-efficient_knowledge_collection/PARA",
-    "02-area/100-客户问题解决/小米使能kpatch失败/小米客户 kpatch 使能失败.md",
-    "Clippings",
-    "02-area/100-客户问题解决/小米使能kpatch失败/bpftace脚本_调试orc.md",
-    "02-area/100-客户问题解决/小米使能kpatch失败/orc_code.md",
-    "03-resource/01-QEMU_KVM/10-CPU/QEMU - CPU model.md",
-    "03-resource/01-QEMU_KVM/10-CPU/x86 CPU feature.md",
-    "03-resource/01-QEMU_KVM/10-CPU/CPU hotPlug.excalidraw.md",
-    "03-resource/02-kernel/fs/ext2/ext2_code.md",
-    "03-resource/02-kernel/fs/ext2/ext2_code.excalidraw.md",
-    "03-resource/02-kernel/fs/ext2/ext2_alloc_branch.excalidraw.md",
-    "03-resource/02-kernel/fs/ext2/ext2_alloc_blocks解析-CSDN博客.md",
-    "02-area/100-客户问题解决/小米使能kpatch失败",
-    "03-resource/01-QEMU_KVM/20-device/hotplug/01-qemu_device_hotplug.md",
-    "02-area/100-客户问题解决",
-    "03-resource/01-QEMU_KVM/20-device/hotplug/excalidraw/device_plug_overview.excalidraw.md",
-    "03-resource/01-QEMU_KVM/20-device/hotplug/excalidraw/device_unplug_overview.excalidraw.md",
-    "03-resource/01-QEMU_KVM/20-device/hotplug/excalidraw/device_hotplug_overview.excalidraw.md",
-    "03-resource/01-QEMU_KVM/20-device/hotplug/QEMU ACPI BIOS PCI hotplug interface.md",
+    "Excalidraw/Drawing 2026-07-24 15.21.47.excalidraw.md",
+    "01-project/CVE-2026-53359/poc_mem_layout.md",
+    "EPT format.md",
+    "01-project/CVE-2026-53359/KVM中的写保护.md",
+    "Excalidraw/Drawing 2026-07-23 13.15.42.excalidraw.md",
+    "Excalidraw/Drawing 2026-07-16 18.10.14.excalidraw.md",
+    "Excalidraw/Drawing 2026-07-16 20.33.14.excalidraw.md",
+    "Excalidraw/Drawing 2026-07-24 15.07.41.excalidraw.md",
+    "未命名 1.md",
+    "未命名.md",
+    "01-project/CVE-2026-53359/test_units.md",
+    "01-project/CVE-2026-53359/tdp mmu概念.md",
+    "01-project/CVE-2026-53359/kvm_mmu_page_role.md",
+    "01-project/CVE-2026-53359/guest_walker定义.md",
+    "01-project/CVE-2026-53359/FNAME(page_fault)代码流程.md",
+    "01-project/CVE-2026-53359/闪记.md",
+    "01-project/CVE-2026-53359/嵌套虚拟化level计算.md",
+    "01-project/CVE-2026-53359/嵌套虚拟化只存4个shadow ept.md",
+    "01-project/CVE-2026-53359/(intel_spec)如何配置ept level.md",
+    "01-project/龙芯稳定性问题/闪记.md",
+    "01-project/龙芯稳定性问题/龙芯问题解决 -- r21 为0.md",
+    "01-project/龙芯稳定性问题/龙芯问题解决 -- die_lock() 死锁.md",
+    "01-project/龙芯稳定性问题/龙芯问题解决.md",
+    "01-project/调研PVM/嵌套虚拟化的问题.md",
+    "01-project/龙芯稳定性问题/测试.md",
+    "03-resource/99-pdf/SPEC/325462-sdm-vol-1-2abcd-3abcd-4.pdf",
+    "01-project/未命名.md",
+    "01-project/CVE-2026-53359",
+    "未命名.canvas",
+    "sosp2023-pvm-paper 1.webp",
+    "sosp2023-pvm-paper.webp",
     "03-resource/99-pdf/82371_AB_PIIX4.pdf",
-    "02-area/99-daily/2026-07-03.md"
+    "03-resource/99-pdf/SPEC/architecture-instruction-set-extensions-programming-reference.pdf",
+    "01-project/调研PVM/pdf/sosp2023-pvm-paper.pdf",
+    "01-project/龙芯稳定性问题/i-sk5x6324kp/info_regs.txt",
+    "01-project/龙芯稳定性问题/i-sk5x6324kp/info_regs.txt~",
+    "01-project/龙芯稳定性问题/i-sk5x6324kp/console.txt",
+    "01-project/龙芯稳定性问题/i-pybct2uwn4",
+    "01-project/龙芯稳定性问题/i-ps03tpknuy",
+    "01-project/调研PVM/PVM.canvas",
+    "test/test.canvas"
   ]
 }

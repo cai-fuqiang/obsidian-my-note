@@ -1,10 +1,12 @@
 {
   "version": "2.0",
   "mapping": {
-    "Clippings/卢曼：学习如何阅读.md": "clippings_卢曼：学习如何阅读.md.json",
-    "Clippings/卢曼：与卡片盒交流.md": "clippings_卢曼：与卡片盒交流.md.json",
-    "Clippings/《防弹笔记法》为什么值得学习？.md": "clippings_《防弹笔记法》为什么值得学习？.md.json",
-    "Clippings/我想在數位筆記軟體中使用卡片盒筆記法，該如何管理筆記檔案？.md": "clippings_我想在數位筆記軟體中使用卡片盒筆記法，該如何管理筆記檔案？.md.json"
+    ".hinote/highlights/03-resource 01-qemu kvm 20-device hotplug qemu acpi bios pci hotplug interface.md": ".hinote/highlights/03-resource_01-qemu_kvm_20-device_hotplug_qemu_acpi_bios_pci_hotplug_interface.md",
+    ".hinote/highlights/03-resource 02-kernel fs ext2 ext2 alloc blocks解析-csdn博客.md": ".hinote/highlights/03-resource_02-kernel_fs_ext2_ext2_alloc_blocks解析-csdn博客.md",
+    ".hinote/highlights/03-resource 100-computer arch 《大话存储》第3章-磁盘原理与技术详解（1）-csdn博客.md": ".hinote/highlights/03-resource_100-computer_arch_《大话存储》第3章-磁盘原理与技术详解（1）-csdn博客.md",
+    ".hinote/highlights/03-resource kernel vfs kernelprojectsiomap - linux kernel newbies.md": ".hinote/highlights/03-resource_kernel_vfs_kernelprojectsiomap_-_linux_kernel_newbies.md",
+    ".hinote/highlights/clippings 卢曼：与卡片盒交流.md": ".hinote/highlights/clippings_卢曼：与卡片盒交流.md",
+    ".hinote/highlights/clippings 卢曼：学习如何阅读.md": ".hinote/highlights/clippings_卢曼：学习如何阅读.md"
   },
-  "lastUpdated": 1783230688134
+  "lastUpdated": 1784877700688
 }

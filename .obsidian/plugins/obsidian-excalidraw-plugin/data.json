@@ -6464,7 +6464,7 @@
         "hidden": false
       },
       "Is Undocked": {
-        "value": false,
+        "value": true,
         "hidden": false
       },
       "Max Text Width": {
@@ -6476,7 +6476,7 @@
         "hidden": false
       },
       "Growth Mode": {
-        "value": "Right-facing",
+        "value": "Right-Left",
         "valueset": [
           "Radial",
           "Right-facing",
@@ -6519,7 +6519,9 @@
   "pinnedScripts": [
     "Excalidraw/Scripts/Downloaded/Mindmap format.md"
   ],
-  "sidepanelTabs": [],
+  "sidepanelTabs": [
+    "{\"script\":\"Downloaded/Mindmap Builder\",\"title\":\"Mind Map Builder\"}"
+  ],
   "customPens": [
     {
       "type": "default",

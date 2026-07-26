@@ -283,7 +283,13 @@
     "projects/qemu-wang-upstream/accel/kvm",
     "projects/qemu-wang-upstream/docs/spin"
   ],
-  "filesToIgnore": [],
+  "filesToIgnore": [
+    {
+      "match": "^01-project/调研PVM/嵌套虚拟化的问题\\.md$",
+      "flags": "",
+      "label": ""
+    }
+  ],
   "linterLocale": "system-default",
   "logLevel": "ERROR",
   "lintCommands": [],

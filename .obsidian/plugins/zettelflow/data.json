@@ -1,0 +1,54 @@
+{
+  "loggerEnabled": false,
+  "uniquePrefixEnabled": true,
+  "uniquePrefix": "YYYYMMDDHHmmss",
+  "foldersFlowsPath": "_ZettelFlow/folders",
+  "tableOfContentEnabled": true,
+  "installedTemplates": {
+    "steps": {
+      "0bad49cf626b6364": {
+        "title": "",
+        "description": "",
+        "id": "0bad49cf626b6364",
+        "template_type": "step",
+        "author": "You",
+        "root": true,
+        "actions": [
+          {
+            "type": "calendar",
+            "hasUI": true,
+            "id": "97e9a18b-228b-4cbf-9f26-56cb789d1896"
+          },
+          {
+            "type": "tags",
+            "description": "PVM",
+            "hasUI": true,
+            "id": "134e3525-6d87-46b4-8e50-5c989484bd69"
+          }
+        ],
+        "label": "",
+        "childrenHeader": ""
+      }
+    },
+    "actions": {
+      "134e3525-6d87-46b4-8e50-5c989484bd69": {
+        "template_type": "action",
+        "title": "New template",
+        "author": "You",
+        "hasUI": true,
+        "type": "tags",
+        "description": "PVM",
+        "id": "134e3525-6d87-46b4-8e50-5c989484bd69"
+      }
+    }
+  },
+  "communitySettings": {
+    "url": "http://127.0.0.1:8000",
+    "markdownTemplateFolder": "_ZettelFlowMdTemplates"
+  },
+  "hooks": {
+    "properties": {},
+    "folderFlowPath": "_ZettelFlow/hooks"
+  },
+  "ribbonCanvas": ""
+}

@@ -83,9 +83,5 @@
   "autoSchedule": true,
   "saveTaskOnClose": true,
   "projectFilters": {},
-  "collapsedTasks": {
-    "01-project/分区快照jdds.md": [
-      "oksmam9cmqrna3zl"
-    ]
-  }
+  "collapsedTasks": {}
 }
