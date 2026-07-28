@@ -4,50 +4,41 @@
     "type": "split",
     "children": [
       {
-        "id": "0b3e7af1e102eb46",
+        "id": "15f5cbefaf3038d6",
         "type": "tabs",
         "children": [
           {
-            "id": "9ce617b38969d30d",
+            "id": "250b36a6de66acfe",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "EPT format.md",
+                "file": "01-project/龙芯稳定性问题/do_ale,do_ade.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "EPT format"
+              "title": "do_ale,do_ade"
             }
           },
           {
-            "id": "3a7be29d7ad76c59",
+            "id": "a77da527b6a028a9",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "01-project/CVE-2026-53359/poc_mem_layout.md"
+                "file": "龙芯GPRs.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
               },
-              "icon": "excalidraw-icon",
-              "title": "poc_mem_layout"
-            }
-          },
-          {
-            "id": "8d18d6402744d1e5",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/Drawing 2026-07-24 15.21.47.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2026-07-24 15.21.47.excalidraw"
+              "icon": "lucide-file",
+              "title": "龙芯GPRs"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -126,8 +117,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 469.5124969482422,
-    "collapsed": true
+    "width": 469.5124969482422
   },
   "right": {
     "id": "dd0d68d2635be880",
@@ -275,7 +265,7 @@
             }
           }
         ],
-        "currentTab": 10
+        "currentTab": 8
       }
     ],
     "direction": "horizontal",
@@ -311,48 +301,55 @@
       "zettelflow:Create a new Zettel Note": false
     }
   },
-  "active": "8d18d6402744d1e5",
+  "active": "a77da527b6a028a9",
   "lastOpenFiles": [
-    "Excalidraw/Drawing 2026-07-24 15.21.47.excalidraw.md",
-    "01-project/CVE-2026-53359/poc_mem_layout.md",
-    "EPT format.md",
-    "01-project/CVE-2026-53359/KVM中的写保护.md",
-    "Excalidraw/Drawing 2026-07-23 13.15.42.excalidraw.md",
-    "Excalidraw/Drawing 2026-07-16 18.10.14.excalidraw.md",
-    "Excalidraw/Drawing 2026-07-16 20.33.14.excalidraw.md",
-    "Excalidraw/Drawing 2026-07-24 15.07.41.excalidraw.md",
-    "未命名 1.md",
+    "龙芯GPRs.md",
+    "01-project/龙芯稳定性问题/do_ale,do_ade.md",
+    "01-project/调研PVM/PVM.md",
     "未命名.md",
-    "01-project/CVE-2026-53359/test_units.md",
-    "01-project/CVE-2026-53359/tdp mmu概念.md",
-    "01-project/CVE-2026-53359/kvm_mmu_page_role.md",
-    "01-project/CVE-2026-53359/guest_walker定义.md",
-    "01-project/CVE-2026-53359/FNAME(page_fault)代码流程.md",
-    "01-project/CVE-2026-53359/闪记.md",
-    "01-project/CVE-2026-53359/嵌套虚拟化level计算.md",
-    "01-project/CVE-2026-53359/嵌套虚拟化只存4个shadow ept.md",
-    "01-project/CVE-2026-53359/(intel_spec)如何配置ept level.md",
-    "01-project/龙芯稳定性问题/闪记.md",
-    "01-project/龙芯稳定性问题/龙芯问题解决 -- r21 为0.md",
-    "01-project/龙芯稳定性问题/龙芯问题解决 -- die_lock() 死锁.md",
+    "01-project/CVE-2026-53359/Drawing 2026-07-16 20.33.14.excalidraw.md",
+    "01-project/CVE-2026-53359/Drawing 2026-07-23 13.15.42.excalidraw.md",
+    "01-project/CVE-2026-53359/Drawing 2026-07-24 15.21.47.excalidraw.md",
+    "01-project/CVE-2026-53359/Drawing 2026-07-16 18.10.14.excalidraw.md",
     "01-project/龙芯稳定性问题/龙芯问题解决.md",
-    "01-project/调研PVM/嵌套虚拟化的问题.md",
-    "01-project/龙芯稳定性问题/测试.md",
-    "03-resource/99-pdf/SPEC/325462-sdm-vol-1-2abcd-3abcd-4.pdf",
-    "01-project/未命名.md",
-    "01-project/CVE-2026-53359",
-    "未命名.canvas",
-    "sosp2023-pvm-paper 1.webp",
+    "01-project/龙芯稳定性问题/archive/龙芯问题解决 -- r21 为0.md",
+    "01-project/龙芯稳定性问题/archive/龙芯问题解决 -- die_lock() 死锁.md",
+    "01-project/龙芯稳定性问题/archive",
+    "01-project/龙芯稳定性问题/闪记.md",
+    "01-project/调研PVM/文献笔记/PVM 涉及的两个Hypervisor 内核模块.md",
+    "01-project/调研PVM/闪记引用标题索引.md",
     "sosp2023-pvm-paper.webp",
-    "03-resource/99-pdf/82371_AB_PIIX4.pdf",
-    "03-resource/99-pdf/SPEC/architecture-instruction-set-extensions-programming-reference.pdf",
+    "01-project/调研PVM/闪记.md",
+    "01-project/调研PVM/excalidraw/nested VMCS.excalidraw.md",
+    "01-project/调研PVM/文献笔记/PVM 设计简述.md",
+    "01-project/调研PVM/文献笔记/使用iaas搭建云原生基础设施背景.md",
+    "01-project/调研PVM/文献笔记/安全容器背景.md",
     "01-project/调研PVM/pdf/sosp2023-pvm-paper.pdf",
-    "01-project/龙芯稳定性问题/i-sk5x6324kp/info_regs.txt",
-    "01-project/龙芯稳定性问题/i-sk5x6324kp/info_regs.txt~",
-    "01-project/龙芯稳定性问题/i-sk5x6324kp/console.txt",
-    "01-project/龙芯稳定性问题/i-pybct2uwn4",
-    "01-project/龙芯稳定性问题/i-ps03tpknuy",
-    "01-project/调研PVM/PVM.canvas",
+    "01-project/调研PVM/文献笔记/PVM 性能评估总结- real world app.md",
+    "01-project/调研PVM/文献笔记/PVM为不同角色使用不同页表提升安全性.md",
+    "01-project/调研PVM/文献笔记/switcher 仿照 xen & lguest 等现有半虚拟化 架构设计，并做了改进.md",
+    "sosp2023-pvm-paper 9.webp",
+    "sosp2023-pvm-paper 8.webp",
+    "sosp2023-pvm-paper 7.webp",
+    "sosp2023-pvm-paper 6.webp",
+    "sosp2023-pvm-paper 5.webp",
+    "sosp2023-pvm-paper 4.webp",
+    "sosp2023-pvm-paper 3.webp",
+    "sosp2023-pvm-paper 2.webp",
+    "sosp2023-pvm-paper 1.webp",
+    "01-project/调研PVM/文献笔记/PVM概述.md",
+    "01-project/调研PVM/文献笔记/PVM三大组件.md",
+    "01-project/调研PVM/文献笔记/switcher 需要在多个地址空间中映射相同地址原因.md",
+    "01-project/调研PVM/文献笔记/switcher 组成包括高效简洁的汇编代码和数据结构.md",
+    "03-resource/99-pdf/qemu_kvm/Ben-Yehuda-nested-virt.pdf",
+    "01-project/调研PVM/archive",
+    "01-project/调研PVM/archive/PVM.canvas",
+    "01-project/调研PVM/excalidraw",
+    "03-resource/99-pdf/How_to_Take_Smart_Notes__One_Simple_Techni_-_Sonke_Ahrens.pdf",
+    "03-resource/99-pdf/82371_AB_PIIX4.pdf",
+    "03-resource/99-pdf/SPEC/325462-sdm-vol-1-2abcd-3abcd-4.pdf",
+    "01-project/CVE-2026-53359",
+    "03-resource/99-pdf/SPEC/architecture-instruction-set-extensions-programming-reference.pdf",
     "test/test.canvas"
   ]
 }

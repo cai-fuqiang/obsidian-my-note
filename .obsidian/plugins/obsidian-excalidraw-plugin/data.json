@@ -6519,9 +6519,7 @@
   "pinnedScripts": [
     "Excalidraw/Scripts/Downloaded/Mindmap format.md"
   ],
-  "sidepanelTabs": [
-    "{\"script\":\"Downloaded/Mindmap Builder\",\"title\":\"Mind Map Builder\"}"
-  ],
+  "sidepanelTabs": [],
   "customPens": [
     {
       "type": "default",
