@@ -361,3 +361,5 @@ title: 但是我个人认为，上面优势的kvm-ept(NST)测试项，会在安�
 
 # 参考链接
 1. [[Ben-Yehuda-nested-virt.pdf|利用VMX实现嵌套虚拟化论文]]
+2. #todo gvirsor
+3. #todo 内核版本 (期望5.10+) ，以及上游更新力度
