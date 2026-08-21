@@ -4,41 +4,40 @@
     "type": "split",
     "children": [
       {
-        "id": "17e7121624b1a5fb",
+        "id": "fbb6d2150dc5e89e",
         "type": "tabs",
         "children": [
           {
-            "id": "ea26ab3005ff0a00",
+            "id": "f0df631e65614adb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-project/龙芯稳定性问题/龙芯问题解决.md",
+                "file": "01-project/龙芯稳定性问题/问题定位/2026-08-21-guest-systemd-journal-kill.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "龙芯问题解决"
+              "title": "2026-08-21-guest-systemd-journal-kill"
             }
           },
           {
-            "id": "85dcd70bf82b8320",
+            "id": "fc4b60e8f7a2ec8b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02-area/99-daily/2026-07-01.md",
+                "file": "01-project/龙芯稳定性问题/问题定位/2026-07-29-i-48rkfdjq22-地址对齐异常.md",
                 "mode": "source",
-                "source": false,
+                "source": true,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "2026-07-01"
+              "title": "2026-07-29-i-48rkfdjq22-地址对齐异常"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -58,7 +57,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "文件列表"
@@ -89,8 +90,8 @@
               "state": {
                 "file": "01-project/CVE-2026-53359/poc_mem_layout.md"
               },
-              "icon": "excalidraw-icon",
-              "title": "poc_mem_layout"
+              "icon": "lucide-ghost",
+              "title": "excalidraw"
             }
           },
           {
@@ -117,7 +118,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 469.5124969482422
+    "width": 415.2961616516113,
+    "collapsed": true
   },
   "right": {
     "id": "dd0d68d2635be880",
@@ -133,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-project/CVE-2026-53359/闪记.md",
+                "file": "02-area/99-tmp-datadraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,7 +145,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "闪记 的反向链接列表"
+              "title": "反向链接"
             }
           },
           {
@@ -152,12 +154,22 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "01-project/调研PVM/闪记.md",
+                "file": "02-area/99-tmp-datadraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "闪记 的出链列表"
+              "title": "出链"
+            }
+          },
+          {
+            "id": "40f7570128245025",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新标签页"
             }
           },
           {
@@ -195,23 +207,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01-project/调研PVM/闪记.md",
+                "file": "02-area/99-tmp-datadraw.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "闪记 的大纲"
-            }
-          },
-          {
-            "id": "46fe179fb30eab7e",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {},
-              "icon": "calendar-with-checkmark",
-              "title": "Calendar"
+              "title": "大纲"
             }
           },
           {
@@ -220,8 +222,8 @@
             "state": {
               "type": "planner-timeline",
               "state": {},
-              "icon": "calendar-with-checkmark",
-              "title": "Timeline"
+              "icon": "lucide-ghost",
+              "title": "planner-timeline"
             }
           },
           {
@@ -230,8 +232,8 @@
             "state": {
               "type": "planner-time-tracker",
               "state": {},
-              "icon": "timer",
-              "title": "Time Tracker"
+              "icon": "lucide-ghost",
+              "title": "planner-time-tracker"
             }
           },
           {
@@ -250,8 +252,8 @@
             "state": {
               "type": "copilot-chat-view",
               "state": {},
-              "icon": "message-square",
-              "title": "Copilot"
+              "icon": "lucide-ghost",
+              "title": "copilot-chat-view"
             }
           },
           {
@@ -260,8 +262,18 @@
             "state": {
               "type": "excalidraw-sidepanel",
               "state": {},
-              "icon": "excalidraw-icon",
-              "title": "Excalidraw 侧边面板"
+              "icon": "lucide-ghost",
+              "title": "excalidraw-sidepanel"
+            }
+          },
+          {
+            "id": "58eb6520b5e3a32b",
+            "type": "leaf",
+            "state": {
+              "type": "planner-timeline",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Timeline"
             }
           }
         ],
@@ -269,7 +281,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 671.5,
+    "width": 264.8057861328125,
     "collapsed": true
   },
   "left-ribbon": {
@@ -286,11 +298,9 @@
       "pdf-plus:PDF++: Toggle auto-copy": false,
       "pdf-plus:PDF++: Toggle auto-focus": false,
       "pdf-plus:PDF++: Toggle auto-paste": false,
-      "code-files:Create Code File": false,
       "webpage-html-export:导出为HTML": false,
       "obsidian-day-planner:Open Timeline": false,
       "obsidian-day-planner:Open Multi-Day View": false,
-      "project-manager:Project manager": false,
       "hi-note:HiNote": false,
       "meld-encrypt:New encrypted note": false,
       "meld-encrypt:Lock and Close all open encrypted notes": false,
@@ -298,58 +308,60 @@
       "meld-encrypt:Encrypt Selection": false,
       "meld-encrypt:Decrypt at Cursor": false,
       "copilot:Open Copilot Chat": false,
-      "zettelflow:Create a new Zettel Note": false
+      "markdown-table-editor:Open Markdown Table Editor": false
     }
   },
-  "active": "85dcd70bf82b8320",
+  "active": "f0df631e65614adb",
   "lastOpenFiles": [
-    "02-area/99-daily/2026-06-30.md",
-    "02-area/99-daily/2026-06-29.md",
-    "02-area/99-daily/2026-06-24.md",
-    "02-area/99-daily/2026-06-22.md",
-    "02-area/99-daily/2026-06-23.md",
-    "02-area/100-客户问题解决/kylin内核nfs挂死/kylin内核nfs挂死.md",
-    "02-area/100-客户问题解决/kylin内核nfs挂死/中化k8s_pvc挂载nfs触发vmcore问题分析报告v1.2.pdf",
-    "02-area/99-tmp-datadraw.md",
-    "01-project/调研PVM/PVM.md",
-    "01-project/调研PVM/闪记引用标题索引.md",
+    "01-project/龙芯稳定性问题/问题定位/龙芯问题解决.md",
+    "01-project/龙芯稳定性问题/问题定位/2026-08-21-guest-systemd-journal-kill.md",
+    "01-project/龙芯稳定性问题/问题定位/2026-08-13-i-13b9a7wzk4-systemd-journal-SIGART.md",
+    "01-project/龙芯稳定性问题/问题定位/2026-07-29-i-48rkfdjq22-地址对齐异常.md",
+    "01-project/龙芯稳定性问题/问题定位/2026-08-20-cpu-hotplug-feature-verify.md",
+    "01-project/调研PVM/06a-测试安全容器启动.md",
+    "01-project/调研PVM/summary_by_test.csv",
+    "01-project/调研PVM/06-性能测试项.md",
+    "01-project/调研PVM/00-PVM-plan.md",
+    "01-project/调研PVM/PVM代码走读/PVM代码走读.md",
+    "01-project/异构机器装机优化/问题记录/tftpd变更.md",
+    "01-project/异构机器装机优化/问题记录/未命名.md",
+    "01-project/调研PVM/05-0-PVM-with-private-Dragonball/05-a-containerd-with-nydus.md",
+    "01-project/调研PVM/03-PVM-with-Dragonball初步测试失败.md",
+    "01-project/调研PVM/02-a-pvm-get-started-with-kata.md",
+    "01-project/调研PVM/02-0-PVM-practice.md",
+    "01-project/调研PVM/01-PVM introduce.md",
     "01-project/调研PVM/闪记.md",
-    "01-project/调研PVM/excalidraw/VMX 扩展.excalidraw.md",
-    "01-project/调研PVM/excalidraw/VM-exit forward.excalidraw.md",
-    "01-project/调研PVM/excalidraw/nested VMCS.excalidraw.md",
-    "01-project/调研PVM/excalidraw/mem.excalidraw.md",
-    "01-project/调研PVM/excalidraw/VMX non-root operation.excalidraw.md",
-    "01-project/CVE-2026-53359/(intel_spec)如何配置ept level.md",
-    "01-project/CVE-2026-53359/excalidraw/Drawing 2026-07-24 15.21.47.excalidraw.md",
-    "01-project/CVE-2026-53359/excalidraw/Drawing 2026-07-23 13.15.42.excalidraw.md",
-    "01-project/CVE-2026-53359/excalidraw/Drawing 2026-07-16 20.33.14.excalidraw.md",
-    "01-project/CVE-2026-53359/excalidraw/Drawing 2026-07-16 18.10.14.excalidraw.md",
-    "Excalidraw/Drawing 2026-07-29 17.32.27.excalidraw.md",
-    "01-project/CVE-2026-53359/kvm_mmu_page_role.md",
-    "01-project/CVE-2026-53359/guest_walker定义.md",
-    "01-project/CVE-2026-53359/FNAME(page_fault)代码流程.md",
-    "01-project/CVE-2026-53359/excalidraw",
-    "01-project/龙芯稳定性问题/2026-07-29-i-48rkfdjq22-地址对齐异常.md",
-    "01-project/龙芯稳定性问题/2026-07-28-i-gg4xbfrb3u-地址对齐异常.md",
-    "01-project/龙芯稳定性问题/龙芯问题HTML展示.html",
-    "01-project/龙芯稳定性问题/龙芯问题汇总.html",
-    "龙芯问题汇总.html",
-    "obsidian-my-note.html",
+    "01-project/调研PVM/cloud-hypervisor 启动PVM虚拟机报错.md",
+    "01-project/调研PVM/05-0-PVM-with-private-Dragonball/save_a_snap.sh.md",
+    "01-project/调研PVM/05-0-PVM-with-private-Dragonball/restore_a_pod.sh.md",
+    "01-project/调研PVM/05-0-PVM-with-private-Dragonball/start_a_pod_and_state.sh.md",
+    "01-project/调研PVM/05-0-PVM-with-private-Dragonball/05-0-PVM-with-private-Dragonball.md",
+    "01-project/调研PVM/05-0-PVM-with-private-Dragonball/pod-nydus-kata.json.md",
+    "03-resource/99-pdf/SPEC/PCI Express Base Specification Revision 6.0.pdf",
+    "01-project/调研PVM/闪记-2026-08-14.md",
+    "01-project/调研PVM/闪记引用标题索引.md",
+    "01-project/00-project.md",
+    "4876fc04211a541287be5a4ce0adf7b8.png",
+    "01-project/龙芯稳定性问题/pic/Pasted image 20260820183807.png",
+    "01-project/龙芯稳定性问题/pic/d5c5f4f955ecef8c5e1e15572057d66f.png",
+    "01-project/龙芯稳定性问题/pic",
+    "01-project/GPU vm",
+    "01-project/调研PVM/05-0-PVM-with-private-Dragonball",
+    "01-project/异构机器装机优化/pic/Pasted image 20260818175919.png",
+    "01-project/异构机器装机优化/pic/Pasted image 20260818180049.png",
     "03-resource/99-pdf/SPEC/龙芯架构参考手册卷一_r1p10.pdf",
-    "01-project/调研PVM/pdf/sosp2023-pvm-paper.pdf",
-    "01-project/龙芯稳定性问题/文献笔记",
-    "01-project/龙芯稳定性问题/archive",
-    "sosp2023-pvm-paper.webp",
-    "sosp2023-pvm-paper 9.webp",
-    "sosp2023-pvm-paper 8.webp",
-    "sosp2023-pvm-paper 7.webp",
-    "sosp2023-pvm-paper 6.webp",
-    "sosp2023-pvm-paper 5.webp",
-    "sosp2023-pvm-paper 4.webp",
-    "sosp2023-pvm-paper 3.webp",
-    "sosp2023-pvm-paper 2.webp",
-    "sosp2023-pvm-paper 1.webp",
+    "01-project/龙芯稳定性问题/问题定位/2026-08-17-guesthost-INE",
+    "01-project/龙芯稳定性问题/定位问题变更",
+    "01-project/龙芯稳定性问题/问题定位",
+    "01-project/龙芯稳定性问题/定位问题变更/2026-08-15-open-tracepoint-",
+    "01-project/异构机器装机优化/pic/Pasted image 20260817100626.png",
+    "01-project/异构机器装机优化/pic/Pasted image 20260815092127.png",
+    "01-project/异构机器装机优化/pic/Pasted image 20260817100227.png",
+    "01-project/异构机器装机优化/pic/Pasted image 20260815093729.png",
+    "01-project/异构机器装机优化/pic/Pasted image 20260815093324.png",
     "01-project/调研PVM/archive/PVM.canvas",
+    "01-project/调研PVM-new/archive/PVM.canvas",
+    "01-project/调研PVM/PVM.canvas",
     "test/test.canvas"
   ]
 }

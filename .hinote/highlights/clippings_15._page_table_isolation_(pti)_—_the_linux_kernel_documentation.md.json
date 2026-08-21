@@ -1,0 +1,24 @@
+{
+  "version": "2.0",
+  "lastModified": 1786544755156,
+  "highlights": {
+    "highlight-2002408346-2221": {
+      "text": " compile-time-fixed virtual address",
+      "position": 2408,
+      "created": 1786544492223,
+      "updated": 1786544755156,
+      "backgroundColor": "#affad1",
+      "contextBefore": "tructure which is placed in the fixmap which gives each CPU’s copy of the area a",
+      "contextAfter": ".** For new userspace mappings, the kernel makes the entries in its page tables",
+      "textFingerprint": "compile-time-fixed virtual address",
+      "comments": [
+        {
+          "id": "comment-1786544492223-gyx1m4x81",
+          "content": "cpu_entry_area放置在一个fixmap的位置",
+          "created": 1786544492223,
+          "updated": 1786544546933
+        }
+      ]
+    }
+  }
+}

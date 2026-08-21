@@ -213,7 +213,7 @@
     "faviconPath": "",
     "siteName": "obsidian-my-note",
     "iconEmojiStyle": "Native",
-    "exportRoot": "03-resource/02-kernel/fs/ext2",
+    "exportRoot": "01-project/龙芯稳定性问题",
     "includePluginCss": [],
     "includeStyleCssIds": [],
     "autoDisposeWebpages": true

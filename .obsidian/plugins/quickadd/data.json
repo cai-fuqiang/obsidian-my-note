@@ -159,7 +159,7 @@
       },
       "format": {
         "enabled": true,
-        "format": "```embed-cpp\nPATH: \"https://raw.githubusercontent.com/cai-fuqiang/{{VALUE:linux/v7.1-rc3,runninglinuxkernel_5.0/rlk_5.0|kernel version}}/{{VALUE:filepath|label:filepath}}\"\nLINES: \"{{value:1-10|label:lines, e.g. 1-10,11,12}}\"\nTITLE: \"{{value:do_rmdir|label:function_name, e.g. do_rmdir}}\"\nFONT_SIZE: 12\nCOMMENTS:\n```"
+        "format": "```embed-cpp\nPATH: \"https://raw.githubusercontent.com/cai-fuqiang/{{VALUE:linux/v7.1-rc3,runninglinuxkernel_5.0/rlk_5.0,linux-stable/pvm-612|kernel version}}/{{VALUE:filepath|label:filepath}}\"\nLINES: \"{{value:1-10|label:lines, e.g. 1-10,11,12}}\"\nTITLE: \"{{value:do_rmdir|label:function_name, e.g. do_rmdir}}\"\nFONT_SIZE: 12\nCOMMENTS:\n```"
       },
       "insertAfter": {
         "enabled": false,

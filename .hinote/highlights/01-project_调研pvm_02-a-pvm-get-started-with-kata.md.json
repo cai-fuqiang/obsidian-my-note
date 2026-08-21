@@ -1,0 +1,24 @@
+{
+  "version": "2.0",
+  "lastModified": 1786444654832,
+  "highlights": {
+    "highlight-1753618642-494": {
+      "text": "purpose-built",
+      "position": 571,
+      "created": 1785820941670,
+      "updated": 1786444654832,
+      "backgroundColor": "#d3f8b6",
+      "contextBefore": "r. ## Introduction --- `PVM` is a software virtualization technology that is",
+      "contextAfter": "to support **`Kata Containers`** **without the need for ==hardware virtualizati",
+      "textFingerprint": "purpose-built",
+      "comments": [
+        {
+          "id": "comment-1785820941670-2tz9t479a",
+          "content": "专门建造",
+          "created": 1785820941670,
+          "updated": 1785820941670
+        }
+      ]
+    }
+  }
+}
