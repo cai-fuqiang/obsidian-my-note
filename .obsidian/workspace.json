@@ -4,37 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "fbb6d2150dc5e89e",
+        "id": "7f32383b825ee1b3",
         "type": "tabs",
         "children": [
           {
-            "id": "f0df631e65614adb",
+            "id": "60c2700d90d1db53",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01-project/龙芯稳定性问题/问题定位/2026-08-21-guest-systemd-journal-kill.md",
+                "file": "00-inbox/mmu_zap_unsync_children流程.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "2026-08-21-guest-systemd-journal-kill"
-            }
-          },
-          {
-            "id": "fc4b60e8f7a2ec8b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01-project/龙芯稳定性问题/问题定位/2026-07-29-i-48rkfdjq22-地址对齐异常.md",
-                "mode": "source",
-                "source": true,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "2026-07-29-i-48rkfdjq22-地址对齐异常"
+              "title": "mmu_zap_unsync_children流程"
             }
           }
         ]
@@ -118,7 +103,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 415.2961616516113,
+    "width": 331.3437309265137,
     "collapsed": true
   },
   "right": {
@@ -135,14 +120,14 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "02-area/99-tmp-datadraw.md",
+                "file": "04-Zettelkasten-Source/01a-kvm-mmu/10-spt-pre_fault可以通过预填充spte减少因PF 造成的vm-exit.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": true,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
               "title": "反向链接"
@@ -154,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "02-area/99-tmp-datadraw.md",
+                "file": "04-Zettelkasten-Source/01a-kvm-mmu/10-spt-pre_fault可以通过预填充spte减少因PF 造成的vm-exit.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -207,7 +192,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02-area/99-tmp-datadraw.md",
+                "file": "04-Zettelkasten-Source/01a-kvm-mmu/10-spt-pre_fault可以通过预填充spte减少因PF 造成的vm-exit.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
@@ -222,8 +207,8 @@
             "state": {
               "type": "planner-timeline",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "planner-timeline"
+              "icon": "calendar-with-checkmark",
+              "title": "Timeline"
             }
           },
           {
@@ -232,8 +217,8 @@
             "state": {
               "type": "planner-time-tracker",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "planner-time-tracker"
+              "icon": "timer",
+              "title": "Time Tracker"
             }
           },
           {
@@ -252,8 +237,8 @@
             "state": {
               "type": "copilot-chat-view",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "copilot-chat-view"
+              "icon": "message-square",
+              "title": "Copilot"
             }
           },
           {
@@ -262,8 +247,8 @@
             "state": {
               "type": "excalidraw-sidepanel",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "excalidraw-sidepanel"
+              "icon": "excalidraw-icon",
+              "title": "Excalidraw 侧边面板"
             }
           },
           {
@@ -275,13 +260,25 @@
               "icon": "calendar-with-checkmark",
               "title": "Timeline"
             }
+          },
+          {
+            "id": "c704102efd78a028",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "01-project/调研PVM/06c01-进一步测试syscall/06c01-README.md"
+              },
+              "icon": "lucide-info",
+              "title": "笔记属性"
+            }
           }
         ],
-        "currentTab": 8
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
-    "width": 264.8057861328125,
+    "width": 866.3861083984375,
     "collapsed": true
   },
   "left-ribbon": {
@@ -311,56 +308,56 @@
       "markdown-table-editor:Open Markdown Table Editor": false
     }
   },
-  "active": "f0df631e65614adb",
+  "active": "60c2700d90d1db53",
   "lastOpenFiles": [
-    "01-project/龙芯稳定性问题/问题定位/龙芯问题解决.md",
-    "01-project/龙芯稳定性问题/问题定位/2026-08-21-guest-systemd-journal-kill.md",
-    "01-project/龙芯稳定性问题/问题定位/2026-08-13-i-13b9a7wzk4-systemd-journal-SIGART.md",
-    "01-project/龙芯稳定性问题/问题定位/2026-07-29-i-48rkfdjq22-地址对齐异常.md",
-    "01-project/龙芯稳定性问题/问题定位/2026-08-20-cpu-hotplug-feature-verify.md",
-    "01-project/调研PVM/06a-测试安全容器启动.md",
-    "01-project/调研PVM/summary_by_test.csv",
-    "01-project/调研PVM/06-性能测试项.md",
-    "01-project/调研PVM/00-PVM-plan.md",
-    "01-project/调研PVM/PVM代码走读/PVM代码走读.md",
-    "01-project/异构机器装机优化/问题记录/tftpd变更.md",
-    "01-project/异构机器装机优化/问题记录/未命名.md",
-    "01-project/调研PVM/05-0-PVM-with-private-Dragonball/05-a-containerd-with-nydus.md",
-    "01-project/调研PVM/03-PVM-with-Dragonball初步测试失败.md",
-    "01-project/调研PVM/02-a-pvm-get-started-with-kata.md",
-    "01-project/调研PVM/02-0-PVM-practice.md",
-    "01-project/调研PVM/01-PVM introduce.md",
-    "01-project/调研PVM/闪记.md",
-    "01-project/调研PVM/cloud-hypervisor 启动PVM虚拟机报错.md",
-    "01-project/调研PVM/05-0-PVM-with-private-Dragonball/save_a_snap.sh.md",
-    "01-project/调研PVM/05-0-PVM-with-private-Dragonball/restore_a_pod.sh.md",
-    "01-project/调研PVM/05-0-PVM-with-private-Dragonball/start_a_pod_and_state.sh.md",
-    "01-project/调研PVM/05-0-PVM-with-private-Dragonball/05-0-PVM-with-private-Dragonball.md",
-    "01-project/调研PVM/05-0-PVM-with-private-Dragonball/pod-nydus-kata.json.md",
-    "03-resource/99-pdf/SPEC/PCI Express Base Specification Revision 6.0.pdf",
-    "01-project/调研PVM/闪记-2026-08-14.md",
-    "01-project/调研PVM/闪记引用标题索引.md",
-    "01-project/00-project.md",
+    "00-inbox/2026-09-10-TODO.md",
+    "00-inbox/mmu_zap_unsync_children流程.md",
+    "00-inbox/00-index.md",
+    "04-Zettelkasten-Source/01a-kvm-mmu/影子页表数量接近最大规格会使用类似LRU的原则释放老的.md",
+    "04-Zettelkasten-Source/01a-kvm-mmu/kvm_mmu_page.root_count是该影子页表作为root sp role的次数.md",
+    "04-Zettelkasten-Source/01a-kvm-mmu/kvm_stat-mmu_shadow_pages表示当前已经分配的 shadow_pages数量.md",
+    "04-Zettelkasten-Source/01a-kvm-mmu/sp->role.invalid为true表示sp正在释放流程中，或者准备释放.md",
+    "04-Zettelkasten-Source/01a-kvm-mmu/shadow page 最大数量由kvm->arch.n_max_mmu_pages决定.md",
+    "04-Zettelkasten-Source/01a-kvm-mmu/10-spt-pre_fault可以通过预填充spte减少因PF 造成的vm-exit.md",
+    "04-Zettelkasten-Source/01a-kvm-mmu/01c-rmap_head作用是通过GFN可以找到所有指向他的spte.md",
+    "02-area/01-kernel-virt-study/01a01-kernel-KVM-NST-mm/00-kvm-mmu-index.md",
+    "00-inbox/2026-08-31-09-01 tmp.md",
+    "00-inbox/TODO.md",
+    "02-area/03-E-Learn/01-Zettelkasten/如何分类永久笔记和文献笔记.md",
+    "99-attachment/TODO_dummy_file.md",
+    "03-Zettelkasten/01a-kvm-mmu/vcpu_arch 的各个mmu作用.md",
+    "03-Zettelkasten/01a-kvm-mmu/kvm_cpu_role含义，以及初始化代码.md",
+    "03-Zettelkasten/01a-kvm-mmu/(kvm_mmu)_vcpu_arch中的各个mmu.md",
+    "03-Zettelkasten/01a-kvm-mmu",
+    "02-area/01-kernel-virt-study/01a02-pvm-kvm/00-kvm-pvm-index.md",
+    "02-area/01-kernel-virt-study/01a00-kernel-KVM-uncatergated/01a00a-kvm_x86_call(vcpu_run)() 返回EXIT_FASTPATH_REENTER_GUEST才被用作fastpath.md",
+    "04-Zettelkasten-Source/01u-kvm-pvm/PVM在使能了PCID feature下切换host CR3 不会flush(Guest) tlb.md",
+    "02-area/03-E-Learn/01-Zettelkasten",
+    "02-area/03-E-Learn",
+    "04-Zettelkasten-Source/01u-kvm-pvm/PVM影子页表始终是user-access.md",
+    "04-Zettelkasten-Source/01u-kvm-pvm/entry_SYSCALL_64_switcher作为Guest执行syscall的入口.md",
+    "04-Zettelkasten-Source/01u-kvm-pvm/entry_SYSCALL_64_pvm 是pvm guest 调用 syscall 的内核侧入口.md",
+    "04-Zettelkasten-Source/01a10-kvm-mmu-tdp/01a-(kvm_ept)-在EPT使能的情况下，不会置位 CR3 EXITING.md",
+    "99-attachment/Excalidraw/kvm_mmu",
+    "02-area/01-kernel-virt-study/99-pdf/SPEC/325462-sdm-vol-1-2abcd-3abcd-4.pdf",
+    "04-Zettelkasten-Source/20a-intel-spec",
+    "11-archive/01-completed-project/调研PVM-new/pdf/sosp2023-pvm-paper.pdf",
+    "01-project/调研PVM/06c01-进一步测试 page fault",
+    "01-project/调研PVM/06c01-microbench-test",
+    "02-area/01-kernel-virt-study/01a02-pvm-kvm/未整理",
+    "未命名.canvas",
+    "01-project/调研PVM/on-instance-muti-process.svg",
     "4876fc04211a541287be5a4ce0adf7b8.png",
     "01-project/龙芯稳定性问题/pic/Pasted image 20260820183807.png",
     "01-project/龙芯稳定性问题/pic/d5c5f4f955ecef8c5e1e15572057d66f.png",
-    "01-project/龙芯稳定性问题/pic",
-    "01-project/GPU vm",
-    "01-project/调研PVM/05-0-PVM-with-private-Dragonball",
-    "01-project/异构机器装机优化/pic/Pasted image 20260818175919.png",
-    "01-project/异构机器装机优化/pic/Pasted image 20260818180049.png",
-    "03-resource/99-pdf/SPEC/龙芯架构参考手册卷一_r1p10.pdf",
-    "01-project/龙芯稳定性问题/问题定位/2026-08-17-guesthost-INE",
-    "01-project/龙芯稳定性问题/定位问题变更",
-    "01-project/龙芯稳定性问题/问题定位",
-    "01-project/龙芯稳定性问题/定位问题变更/2026-08-15-open-tracepoint-",
-    "01-project/异构机器装机优化/pic/Pasted image 20260817100626.png",
-    "01-project/异构机器装机优化/pic/Pasted image 20260815092127.png",
-    "01-project/异构机器装机优化/pic/Pasted image 20260817100227.png",
-    "01-project/异构机器装机优化/pic/Pasted image 20260815093729.png",
-    "01-project/异构机器装机优化/pic/Pasted image 20260815093324.png",
+    "11-archive/01-completed-project/异构机器装机优化/pic/Pasted image 20260818175919.png",
+    "11-archive/01-completed-project/异构机器装机优化/pic/Pasted image 20260818180049.png",
+    "11-archive/01-completed-project/异构机器装机优化/pic/Pasted image 20260817100626.png",
+    "11-archive/01-completed-project/异构机器装机优化/pic/Pasted image 20260815092127.png",
+    "11-archive/01-completed-project/异构机器装机优化/pic/Pasted image 20260817100227.png",
+    "11-archive/01-completed-project/异构机器装机优化/pic/Pasted image 20260815093729.png",
     "01-project/调研PVM/archive/PVM.canvas",
-    "01-project/调研PVM-new/archive/PVM.canvas",
+    "11-archive/01-completed-project/调研PVM-new/archive/PVM.canvas",
     "01-project/调研PVM/PVM.canvas",
     "test/test.canvas"
   ]

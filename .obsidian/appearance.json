@@ -1,5 +1,8 @@
 {
   "theme": "moonstone",
-  "enabledCssSnippets": [],
+  "enabledCssSnippets": [
+    "custom-admonitions.6c865a",
+    "admonition-custom-colors"
+  ],
   "baseFontSize": 14
 }

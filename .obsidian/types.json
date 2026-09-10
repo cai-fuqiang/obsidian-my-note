@@ -26,6 +26,10 @@
     "TQ_show_tree": "checkbox",
     "TQ_show_urgency": "checkbox",
     "是否定位成功": "checkbox",
-    "is_issue": "checkbox"
+    "is_issue": "checkbox",
+    "created": "datetime",
+    "updated": "datetime",
+    "QA": "multitext",
+    "summary": "text"
   }
 }

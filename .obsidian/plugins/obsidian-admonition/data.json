@@ -10,11 +10,12 @@
       "command": false,
       "title": "translate",
       "styleWithCss": false,
-      "noTitle": false
+      "noTitle": false,
+      "copy": false
     },
     "ignore": {
       "type": "ignore",
-      "color": "80, 83, 81",
+      "color": "55, 149, 86",
       "icon": {
         "name": "expand-arrows-alt",
         "type": "font-awesome"
@@ -22,7 +23,20 @@
       "command": false,
       "title": "ignore",
       "styleWithCss": false,
-      "noTitle": false
+      "noTitle": false,
+      "copy": false
+    },
+    "notion": {
+      "type": "notion",
+      "color": "23, 222, 218",
+      "icon": {
+        "name": "lucide-lightbulb",
+        "type": "obsidian"
+      },
+      "command": false,
+      "styleWithCss": false,
+      "noTitle": false,
+      "copy": false
     }
   },
   "syntaxHighlight": false,
@@ -32,7 +46,7 @@
   "defaultCollapseType": "open",
   "injectColor": true,
   "parseTitles": true,
-  "dropShadow": true,
+  "dropShadow": false,
   "hideEmpty": false,
   "open": {
     "admonitions": true,
@@ -40,10 +54,13 @@
     "other": true,
     "advanced": true
   },
-  "icons": [],
+  "icons": [
+    "rpg",
+    "octicons"
+  ],
   "useFontAwesome": true,
   "rpgDownloadedOnce": false,
-  "msDocConverted": false,
-  "useSnippet": false,
+  "msDocConverted": true,
+  "useSnippet": true,
   "snippetPath": "custom-admonitions.6c865a"
 }

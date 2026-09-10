@@ -167,7 +167,7 @@ firmware = "/opt/kata/share/kata-qemu/qemu/qboot.rom"
 ```
 
 > [!todo] 
-> ![[02-a-pvm-get-started-with-kata#^691d34]]
+> ![[01-project/调研PVM/02-a-pvm-get-started-with-kata#^691d34]]
 > 我们这里暂时先不验证这个问题
 ## 配置 Cloud Hypervisor
 
@@ -178,7 +178,7 @@ wget https://github.com/cloud-hypervisor/cloud-hypervisor/releases/download/v53.
 ```
 
 原因是:
-![[02-a-pvm-get-started-with-kata#^d17536]]
+![[01-project/调研PVM/02-a-pvm-get-started-with-kata#^d17536]]
 
 ## 具体测试结果
 
@@ -191,11 +191,11 @@ sudo nerdctl run --net=none --runtime "io.containerd.kata-clh.v2" --rm -t --name
 ```
 
 其中 qemu 测试成功, `cloud-hypervisor` 命令执行报下面错误:
-[[cloud-hypervisor 启动PVM虚拟机报错]]
+[[01-project/调研PVM/cloud-hypervisor 启动PVM虚拟机报错]]
 
 而链接<sup>1</sup>中暴露了 `CH`的另一个问题。
-![[02-a-pvm-get-started-with-kata#^7953de]] 
-![[02-a-pvm-get-started-with-kata#^8ddd3a]]
+![[01-project/调研PVM/02-a-pvm-get-started-with-kata#^7953de]] 
+![[01-project/调研PVM/02-a-pvm-get-started-with-kata#^8ddd3a]]
 
 > [!fail] 根据, [issue](https://github.com/virt-pvm/linux/issues/1) 的堆栈，发现堆栈不一样。所以这应该是另一个问题
 

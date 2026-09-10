@@ -163,9 +163,8 @@ crash> rd 0x9000000100238390
 
 > [!tip]  也可以通过反汇编来查看，下面我们会详细解释
 
-```ad-question
-究竟是在等待哪个CPU呢?
-```
+> [!question]
+> 究竟是在等待哪个CPU呢?
 
 ## 寻找等待的cpu
 
@@ -279,9 +278,8 @@ struct call_single_data_t {
 
 `u_flags`  居然是0 !, 而 在上面通过 t0 看 `u_flags`为1
 
-```ad-danger
-title: 不会这么巧, 在softlockup 处理期间，u_flags 发生了改变吧...
-```
+> [!danger] 不会这么巧, 在softlockup 处理期间，u_flags 发生了改变吧...
+> 
 
 > [!note]  进一步通过`call_single_queue:0` 验证下CPU 0 是否已经处理完 CPU 2 的CSD
 > ```
@@ -294,11 +292,10 @@ title: 不会这么巧, 在softlockup 处理期间，u_flags 发生了改变吧.
 > ```
 > 目前CPU0 链上**只有一个csd，该csd 不是 `cfd:2->csd:0`**
 
-```ad-summary
-目前的结论是:
-* 目前CPU 2 等待的CPU 是 **CPU0**
-* 但是目前 看起来**==CPU 0 已经执行完`csd_unlock`==**
-```
+> [!summary]
+> 目前的结论是:
+> * 目前CPU 2 等待的CPU 是 **CPU0**
+> * 但是目前 看起来**==CPU 0 已经执行完`csd_unlock`==**
 
 
 <!--

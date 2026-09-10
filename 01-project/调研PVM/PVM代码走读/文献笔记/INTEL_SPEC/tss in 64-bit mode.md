@@ -1,3 +1,6 @@
+---
+modified: 2026-09-08T18:37:32+08:00
+---
 > [!summary] 64-bit mode中不再支持基于硬件的task switch
 > [[325462-sdm-vol-1-2abcd-3abcd-4.pdf#page=3262&selection=9,86,10,71|📖 64-bit mode中没有task switch]], [[325462-sdm-vol-1-2abcd-3abcd-4.pdf#page=3262&selection=10,71,11,23&color=important|📖64 bit mode中task switch 由软件负责]]
 

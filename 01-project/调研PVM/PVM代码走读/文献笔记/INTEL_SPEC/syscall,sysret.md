@@ -1,3 +1,6 @@
+---
+modified: 2026-09-08T18:37:38+08:00
+---
 > [!summary] syscall/sysret 用作快速的系统调用
 
 > [!question]  为什么syscall, sysret 的性能要好很多 ?

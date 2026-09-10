@@ -1,0 +1,6 @@
+
+在[[11-archive/01-completed-project/调研PVM-new/文献笔记/安全容器背景|安全容器广泛使用]] + [[11-archive/01-completed-project/调研PVM-new/文献笔记/使用iaas搭建云原生基础设施背景|云原生基础设施使用IAAS]] 的双重背景下,  造成了一种软件架构上的需求:
+> [!summary]
+> 需要使用嵌套虚拟化以便在 iaas云原生设施中使用安全容器
+
+而 [[11-archive/01-completed-project/调研PVM-new/文献笔记/嵌套虚拟化的问题|嵌套虚拟化又有增加云管复杂以及安全性的缺点]] , PVM 要做的就是L2 不使用KVM 嵌套虚拟化。

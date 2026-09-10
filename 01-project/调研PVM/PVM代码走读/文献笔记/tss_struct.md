@@ -1,3 +1,6 @@
+---
+modified: 2026-09-08T18:38:28+08:00
+---
 # 数据结构
 **内核中使用`tss_struct`** 数据结构来描述TSS:
 
@@ -16,15 +19,13 @@ COMMENTS:
 而`struct x86_hw_tss` 根据32-bit 还是64-bit 分为两种定义，这里我们只关注64-bit
 
 
-```ad-note
-title: x86_hw_tss
-collapse: true
-````embed-cpp
-PATH: "https://raw.githubusercontent.com/cai-fuqiang/linux/v7.1-rc3/arch/x86/include/asm/processor.h"
-LINES: "313-333"
-TITLE: "x86_hw_tss"
-FONT_SIZE: 10
-COMMENTS:
-````
+> [!note]- x86_hw_tss
+> ```embed-cpp
+> PATH: "https://raw.githubusercontent.com/cai-fuqiang/linux/v7.1-rc3/arch/x86/include/asm/processor.h"
+> LINES: "313-333"
+> TITLE: "x86_hw_tss"
+> FONT_SIZE: 10
+> COMMENTS:
+> ```
 
 和硬件定义一致

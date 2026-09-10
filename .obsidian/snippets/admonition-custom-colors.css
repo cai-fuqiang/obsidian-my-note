@@ -1,0 +1,60 @@
+/* Keep custom Admonition types colored in notes and in the plugin settings preview. */
+
+.callout[data-callout="translate"] {
+  --callout-color: 30, 159, 75;
+  --callout-icon: lucide-languages;
+}
+
+.callout[data-callout="ignore"] {
+  --callout-color: 55, 149, 86;
+}
+
+.callout[data-callout="notion"] {
+  --callout-color: 23, 222, 218;
+  --callout-icon: lucide-lightbulb;
+}
+
+.callout:is(
+    .admonition-plugin,
+    [data-callout="translate"],
+    [data-callout="ignore"],
+    [data-callout="notion"]
+  ) {
+  background-color: rgba(var(--callout-color), 0.12) !important;
+  border-color: rgba(var(--callout-color), 0.45) !important;
+}
+
+.callout:is(
+      .admonition-plugin,
+      [data-callout="translate"],
+      [data-callout="ignore"],
+      [data-callout="notion"]
+    )
+  > .callout-title,
+.callout:is(
+      .admonition-plugin,
+      [data-callout="translate"],
+      [data-callout="ignore"],
+      [data-callout="notion"]
+    )
+  > .callout-title
+  .callout-icon,
+.callout:is(
+      .admonition-plugin,
+      [data-callout="translate"],
+      [data-callout="ignore"],
+      [data-callout="notion"]
+    )
+  > .callout-title
+  .callout-icon
+  svg,
+.callout:is(
+      .admonition-plugin,
+      [data-callout="translate"],
+      [data-callout="ignore"],
+      [data-callout="notion"]
+    )
+  > .callout-title
+  .callout-title-inner {
+  color: rgb(var(--callout-color)) !important;
+}

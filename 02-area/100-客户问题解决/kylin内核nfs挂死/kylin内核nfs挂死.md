@@ -1,42 +1,40 @@
 # 问题现象
 
-```ad-error
-collapse: closea
-
-[ 1928.886924] CPU: 84 PID: 52027 Comm: umount.nfs Kdump: loaded Tainted: G           OE     4.19.90-23.57.v2101.ky10.x86_64 #1
-[ 1928.899930] Hardware name: Suma R6240H0/62DB32, BIOS CXYH051029 09/06/2023
-[ 1928.908096] RIP: 0010:kfree+0x4f/0x160
-[ 1928.912764] Code: 80 49 01 da 0f 82 1b 01 00 00 48 c7 c7 00 00 00 80 48 2b 3d 3b b6 0b 01 49 01 fa 49 c1 ea 0c 49 c1 e2 06 4c 03 15 19 b6 0b 01 <49> 8b 42 08 48 8d 50 ff a8 01 4c 0f 45 d2 49 8b 52 08 48 8d 42 ff
-[ 1928.934206] RSP: 0018:ffffb2bc8f2af678 EFLAGS: 00010203
-[ 1928.940523] RAX: 00000000000001fe RBX: 9d819651fb8d1bfd RCX: 0000000000000000
-[ 1928.948973] RDX: 0000000000000000 RSI: ffffd4520002fdc0 RDI: 0000693200000000
-[ 1928.957422] RBP: ffff96fd80bf7000 R08: 0000000000000000 R09: 0000000000000000
-[ 1928.965871] R10: 0275dc4f51ee3440 R11: 0000000000000000 R12: ffffffffc0ae363d
-[ 1928.974321] R13: 0000000000000000 R14: ffff96fd6181ec58 R15: 0000000000000001
-[ 1928.982769] FS:  00007fe8baa22840(0000) GS:ffff96fdbfd00000(0000) knlGS:0000000000000000
-[ 1928.992284] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
-[ 1928.999182] CR2: 00007fc0bd5f8768 CR3: 000000103c93e000 CR4: 00000000003406e0
-[ 1929.007631] Call Trace:
-[ 1929.010857]  nfs_readdir_clear_array+0x4d/0x70 [nfs]
-[ 1929.016887]  page_cache_free_page.isra.35+0x1a/0x90
-[ 1929.022817]  delete_from_page_cache_batch+0x1cf/0x2c0
-[ 1929.028946]  truncate_inode_pages_range+0x24d/0x910
-...
-[ 1929.368622]  nfs_evict_inode+0x15/0x30 [nfs]
-[ 1929.373876]  evict+0x115/0x2b0
-...
-[ 1929.382721]  dispose_list+0x48/0x60
-[ 1929.387099]  evict_inodes+0x16c/0x1b0
-[ 1929.391674]  generic_shutdown_super+0x3f/0x120
-[ 1929.397123]  nfs_kill_super+0x1b/0x40 [nfs]
-[ 1929.402275]  deactivate_locked_super+0x3f/0x70
-[ 1929.407718]  cleanup_mnt+0x3b/0x80
-[ 1929.412001]  task_work_run+0x8a/0xb0
-[ 1929.416482]  exit_to_usermode_loop+0xeb/0xf0
-[ 1929.421733]  do_syscall_64+0x1a3/0x1c0
-[ 1929.426402]  entry_SYSCALL_64_after_hwframe+0x44/0xa9
-[ 1929.432528] RIP: 0033:0x7fe8bb0cad1b
-```
+> [!error]-
+> 
+> [ 1928.886924] CPU: 84 PID: 52027 Comm: umount.nfs Kdump: loaded Tainted: G           OE     4.19.90-23.57.v2101.ky10.x86_64 #1
+> [ 1928.899930] Hardware name: Suma R6240H0/62DB32, BIOS CXYH051029 09/06/2023
+> [ 1928.908096] RIP: 0010:kfree+0x4f/0x160
+> [ 1928.912764] Code: 80 49 01 da 0f 82 1b 01 00 00 48 c7 c7 00 00 00 80 48 2b 3d 3b b6 0b 01 49 01 fa 49 c1 ea 0c 49 c1 e2 06 4c 03 15 19 b6 0b 01 <49> 8b 42 08 48 8d 50 ff a8 01 4c 0f 45 d2 49 8b 52 08 48 8d 42 ff
+> [ 1928.934206] RSP: 0018:ffffb2bc8f2af678 EFLAGS: 00010203
+> [ 1928.940523] RAX: 00000000000001fe RBX: 9d819651fb8d1bfd RCX: 0000000000000000
+> [ 1928.948973] RDX: 0000000000000000 RSI: ffffd4520002fdc0 RDI: 0000693200000000
+> [ 1928.957422] RBP: ffff96fd80bf7000 R08: 0000000000000000 R09: 0000000000000000
+> [ 1928.965871] R10: 0275dc4f51ee3440 R11: 0000000000000000 R12: ffffffffc0ae363d
+> [ 1928.974321] R13: 0000000000000000 R14: ffff96fd6181ec58 R15: 0000000000000001
+> [ 1928.982769] FS:  00007fe8baa22840(0000) GS:ffff96fdbfd00000(0000) knlGS:0000000000000000
+> [ 1928.992284] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+> [ 1928.999182] CR2: 00007fc0bd5f8768 CR3: 000000103c93e000 CR4: 00000000003406e0
+> [ 1929.007631] Call Trace:
+> [ 1929.010857]  nfs_readdir_clear_array+0x4d/0x70 [nfs]
+> [ 1929.016887]  page_cache_free_page.isra.35+0x1a/0x90
+> [ 1929.022817]  delete_from_page_cache_batch+0x1cf/0x2c0
+> [ 1929.028946]  truncate_inode_pages_range+0x24d/0x910
+> ...
+> [ 1929.368622]  nfs_evict_inode+0x15/0x30 [nfs]
+> [ 1929.373876]  evict+0x115/0x2b0
+> ...
+> [ 1929.382721]  dispose_list+0x48/0x60
+> [ 1929.387099]  evict_inodes+0x16c/0x1b0
+> [ 1929.391674]  generic_shutdown_super+0x3f/0x120
+> [ 1929.397123]  nfs_kill_super+0x1b/0x40 [nfs]
+> [ 1929.402275]  deactivate_locked_super+0x3f/0x70
+> [ 1929.407718]  cleanup_mnt+0x3b/0x80
+> [ 1929.412001]  task_work_run+0x8a/0xb0
+> [ 1929.416482]  exit_to_usermode_loop+0xeb/0xf0
+> [ 1929.421733]  do_syscall_64+0x1a3/0x1c0
+> [ 1929.426402]  entry_SYSCALL_64_after_hwframe+0x44/0xa9
+> [ 1929.432528] RIP: 0033:0x7fe8bb0cad1b
 
 发生在内核在umount时，会kill super ，evict inodes, release pagecache. nfs的dir pagecache比较特殊，其不只是block 块的映射，还有一些其他的数据，这些其他的数据里面存放了一些指向kernel memory的指针。
 

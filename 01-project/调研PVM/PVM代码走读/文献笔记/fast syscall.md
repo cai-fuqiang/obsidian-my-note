@@ -1,3 +1,6 @@
+---
+modified: 2026-09-08T18:38:37+08:00
+---
 # fast syscall引入背景
 
 > [!attention] 奔腾4在syscall测试中，比奔腾三相比出现了严重的性能下降。
