@@ -1,5 +1,5 @@
 ---
-modified: 2026-09-04T15:44:02+08:00
+modified: 2026-09-18T09:17:00+08:00
 ---
 
 首先，在vm init时，获取全局的 `host_mmu_root_pgd`:

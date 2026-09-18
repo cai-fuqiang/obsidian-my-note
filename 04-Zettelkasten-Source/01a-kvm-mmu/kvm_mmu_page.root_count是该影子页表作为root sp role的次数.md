@@ -4,7 +4,7 @@ status: reading
 category: kvm_mmu
 summary: '`kvm_mmu_page.root_count` 记录着该sp作为了几次root_sp, 但是注意该变量不用于tdp_mmu, 其拥有自己的"`root_count`"'
 created: 2026-09-10T10:11:07+08:00
-modified: 2026-09-10T18:51:59+08:00
+modified: 2026-09-11T15:29:19+08:00
 QA:
   - kvm_mmu_page.root_count起到什么作用
 share_link: https://share.note.sx/bistbrqj#tvLqWSsa/MHbFsJ3ZLSUeA

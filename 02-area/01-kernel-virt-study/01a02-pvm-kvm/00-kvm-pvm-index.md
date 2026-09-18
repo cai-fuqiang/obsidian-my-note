@@ -4,7 +4,7 @@ status: active
 created: 2026-09-04
 updated: 2026-09-04
 summary: 从运行模式、syscall、事件、地址空间和上下文保存五条路径组织 PVM/KVM 源码阅读
-modified: 2026-09-10T18:01:32+08:00
+modified: 2026-09-17T18:13:03+08:00
 ---
 # PVM/KVM 源码阅读
 

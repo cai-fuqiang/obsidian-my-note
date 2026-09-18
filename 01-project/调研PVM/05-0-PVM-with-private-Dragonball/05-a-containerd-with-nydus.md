@@ -1,3 +1,6 @@
+---
+modified: 2026-09-18T18:48:13+08:00
+---
 # 安装依赖
 * cni
 	* ` wget https://github.com/containernetworking/plugins/releases/download/v1.9.1/cni-plugins-linux-amd64-v1.9.1.tgz`

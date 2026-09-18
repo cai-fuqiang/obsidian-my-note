@@ -4,7 +4,7 @@ status: reading
 category: kvm_mmu
 summary: 该值用来限制当前虚拟机所申请的最大mmu pages的数量，其可以通过qemu kvm-shadow-mem prop设置，如果未设置默认为当前内存总量的 $\frac{1}{50}$
 created: 2026-09-10T14:00:39+08:00
-modified: 2026-09-10T18:51:55+08:00
+modified: 2026-09-11T11:37:10+08:00
 QA:
   - shadow page 生命周期?
   - shadow page 有没有最大数量限制

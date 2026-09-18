@@ -1,6 +1,7 @@
 ---
 share_link: https://share.note.sx/j2hu253r#btxIN1OnumnLrznOdOeo2A
 share_updated: 2026-08-20T13:59:21+08:00
+modified: 2026-09-18T13:07:31+08:00
 ---
 # 使用dbs-cli启动
 

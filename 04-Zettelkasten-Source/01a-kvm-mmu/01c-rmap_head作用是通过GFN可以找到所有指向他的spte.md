@@ -4,7 +4,7 @@ status: processed
 category: kvm_mmu
 summary: 当拿到一个page 或者拿到一个gfn时，可以通过kvm_memory_slot.arch.rmap找到和该page /gfn相关的所有spte
 created: 2026-09-09T17:55:39+08:00
-modified: 2026-09-10T18:49:29+08:00
+modified: 2026-09-11T15:29:17+08:00
 QA:
 share_link: https://share.note.sx/lz6sxl2p#3bIASIg7XcRvfobm+4qUGg
 share_updated: 2026-09-10T15:08:23+08:00

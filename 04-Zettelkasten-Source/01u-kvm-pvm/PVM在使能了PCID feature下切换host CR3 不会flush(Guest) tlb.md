@@ -4,7 +4,7 @@ status: processed
 category: pvm_mmu
 summary: host如果使能了PCID在进入Guest前，先设置host_cr3 中的NOFLUSH bit，而在后续Guest trap hypervisor则直接切换到之前设置的host_cr3
 created: 2026-09-04T14:50:47+08:00
-modified: 2026-09-10T17:36:27+08:00
+modified: 2026-09-17T18:25:06+08:00
 QA:
   - PVM优化切换过程中为避免TLBflush 做了哪些优化
 share_link: https://share.note.sx/evyxoony#q/XaFJ3CjC5Hdkpq2PCrKw

@@ -1,6 +1,7 @@
 ---
 share_link: https://share.note.sx/vy5ya5gv#Pjmb2kis9UNXaxsY/nnw9Q
 share_updated: 2026-09-01T11:19:38+08:00
+modified: 2026-09-17T10:52:13+08:00
 ---
 执行命令: `perf bench syscall all` 命令
 
@@ -15,6 +16,8 @@ share_updated: 2026-09-01T11:19:38+08:00
 | kvm-on-kvm         | 0.248                                         | 0.243        | 992.347                                               | 1174.314                                         |
 | pvm-on-bare        | 0.296                                         | 0.29         | 2236.468                                              | 2215.337                                         |
 | pvm-on-kvm         | 0.291                                         | 0.289        | 3007.75                                               | 2635.854                                         |
+
+^88d1fd
 
 > [!summary] 
 > 1. 无论是 `kvm-on-kvm`, 还是`kvm-on-bare`, 开启pti 会导致一定的性能下降

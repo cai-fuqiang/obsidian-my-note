@@ -1,5 +1,5 @@
 ---
-modified: 2026-09-10T18:46:42+08:00
+modified: 2026-09-15T21:49:15+08:00
 ---
 > [!summary]  `kvm_cpu_role`
 > `role`的含义是角色的意思，而`mmu.cpu_role` 表示 `vcpu mmu`，所代表的角色。而描述一个角色/身份需要一些属性。`kvm_vcpu_role`即描述 `vcpu mmu` 的一些行为属性。而 `vcpu mmu` 的行为由什么控制呢? 往往有一些控制寄存器/MSR控制(cr0, cr4, efer)， 例如cr0 控制保护模式开启，而cr4控制pcid。

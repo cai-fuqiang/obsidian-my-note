@@ -1,7 +1,7 @@
 ---
 share_link: https://share.note.sx/zgdoo2q8#GuMIQEQFICFx9MkfZ1uN9w
 share_updated: 2026-08-27T21:53:54+08:00
-modified: 2026-09-09T17:49:26+08:00
+modified: 2026-09-17T10:52:08+08:00
 ---
 # 测试结果
 
@@ -11,6 +11,9 @@ modified: 2026-09-09T17:49:26+08:00
 | KVM-on-KVM      | 19982                                          |
 | PVM-on-BARE     | <mark style="background:#affad1">1405</mark>   |
 | ==PVM-on-KVM==  | ==3073==                                       |
+
+^76e8c3
+
 > [!summary] 
 > 结果很意外
 > 1. `PVM-on-KVM`的性能比`KVM-on-BARE`性能要低不少。原因未知。(这可能是个优化点)

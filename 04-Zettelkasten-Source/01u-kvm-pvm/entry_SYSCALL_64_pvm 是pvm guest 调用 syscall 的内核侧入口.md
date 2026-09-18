@@ -4,7 +4,7 @@ status: processed
 category: pvm_syscall
 summary: Guest 调用syscall 首先要, guest 调用syscall时，首先要进入 switcher 入口，switcher 在将代码跳转回guest，而`entry_SYSCALL_64_pvm` 就是Guest 内核侧处理syscall 的入口函数。
 created: 2026-09-04T13:44:30+08:00
-modified: 2026-09-10T17:36:22+08:00
+modified: 2026-09-17T18:24:56+08:00
 QA:
   - Guest 调用syscall会经过哪些流程
   - entry_SYSCALL_64_pvm && entry_SYSCALL_64_switcher怎么配合

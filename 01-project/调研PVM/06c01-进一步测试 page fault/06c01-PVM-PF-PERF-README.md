@@ -1,8 +1,8 @@
 ---
-modified: 2026-09-10T11:10:07+08:00
+modified: 2026-09-18T18:48:35+08:00
 created: 2026-09-04T15:47:22+08:00
 share_link: https://share.note.sx/cu8ajq1r#CQiNG3WHpmKsph4Bq2rbOg
-share_updated: 2026-09-10T11:04:08+08:00
+share_updated: 2026-09-17T10:52:00+08:00
 ---
 # 论文原文
 
@@ -553,8 +553,53 @@ addr(7f2315608000) error_code (6)
 > * 16线程, 性能提升至`9.xxx` s !
 > > [!warning] 不过性能仍弱于 嵌套虚拟化。
 
+***
+
+`KVM nest` 性能为什么那么好呢？原因在于L0 "影子" L1 的 EPT (EPT <sub>12</sub>), EPT <sub>12</sub> 存储的是 GPA<sub>L2</sub>->HPA<sub>L1</sub>映射关系，该映射关系在没开启部分内存优化的场景下(例如swap， ksm) 等等，其几乎不会改变。所以其损耗几乎是一次性的。（也就是说如果我们踩过一遍内存，其影子页表几乎就fix 住了)。
+
+> [!bug] 这里有几个例外:
+> 1. L2 超卖量不能太高。（不能超过1:5），否则会因switch root，而触发 `free_root`(影子页表也存在类似问题)
+> 2. 影子页表数量不能太多。（内存1/50）
+
+那是不是说，嵌套虚拟化在第一次踩内存时，并且`PVM` 能够使用 `pre-fault`, 是不是性能远比`PVM`低? 我们来测试下.
+
+# first walk memory benchmark
+
+我们启动一个 8 GB 的l2虚拟机，使用 `pf_trigger` 程序，直接attach 4GB 内存。（一次性mmap 4G内存，并逐页访问)。
+
+> [!bug] 注意, 需要观察L2 qemu 是否使用了磁盘上的文件作为memory backend。如果时，请手动配置memory backend, 否则会因为 writeback 机制，周期性的触发 kvmmmu notify，而频繁的 `drop_spte()`。
+
+| 测试项目                              | 首次touch内存耗时 | touch 一遍内存后再次touch耗时 |
+| --------------------------------- | ----------- | -------------------- |
+| ept-nst-memfd-no_MAP_POPULATE     | 19s         | 1.62s                |
+| ept-nst-memfd-MAP_POPULATE        | 18s         | 1.9s                 |
+| pvm-memfd-MAP_POPULATE            | 7.363s      | 2.496s               |
+| pvm-memfd-no_MAP_POPULATE         | 11s         | 6.8s                 |
+| ept-nst-hugetlb2M-MAP_POPULATE    | 1.606s      | 1.541s               |
+| ept-nst-hugetlb2M-no_MAP_POPULATE | 1.92s       | 1.85s                |
+| pvm-hugetlb2M-no_MAP_POPULATE     | 6.58s       | 6.58s                |
+| pvm-hugetlb2M-MAP_POPULATE        | 2.39s       | 2.39s                |
+
+PVM 使用`pf-trigger` walk memory，在不带`MAP_POPULATE` 参数的情况下，首次touch内存比`kvm-nst`性能快 `40%+`, 再次touch比`kvm-nst` 性能低`300%+`。
+
+而如果使用`MAP_POPULATE`参数，在首次touch 内存时, 比 kvm-nst性能高 `250%~`, 再次touch 内存时，比`kvm-nst` 性能低 `50%`。
+
+# 总结
+
+> [!summary] 
+> * 不擅长
+> 	1. `PVM` 非常不擅长进程频繁mmap，unmap的场景。并且`mmap`, `unmap` 过程中每次触发`#PF` 内核只modify one pte. 这种情况下，比嵌套虚拟化性能低很多。
+> 	2. `PVM` 不擅长进程起停，频繁起停进程会让频繁zap, create mmu pages
+> 	3. `PVM` 和`kvm-nst` 相比,  `kvm-nst` 非常擅长，长时间运行任务，因为长时间运行的任务，内存几乎预热完成。`L2`用户态`PF`, 直接交给 `L2 kernel` 处理。
+> *  擅长
+> 	1. `PVM` 比较擅长提前准备好页表（映射）的场景，这样`pre-fault` 可以大幅度减少 `#PF`。
+> 	2. `PVM` 比较擅长 `vm first walk memory`
+> 	3. 结合上面两点，我这边能想到的`PVM` 擅长的工作:
+> 		*  L2 内核启动（首先内核启动触发PF时，基本上已经准备好了页表, 其次 内核的映射几乎不变，再次内核会touch 很多内存...)
+
 # TODO
 
-* [ ] 🔺 分析嵌套虚拟化在什么场景下性能比较差
-* [ ] 🔼 PVM 在触发 `#PF` 时, 争抢 `kvm->mmu_lock` 这个能否优化?
+* [x] 🔺 分析嵌套虚拟化在什么场景下性能比较差 ✅ 2026-09-14
+* [x] 🔼 PVM 在触发 `#PF` 时, 争抢 `kvm->mmu_lock` 这个能否优化? ✅ 2026-09-14
+	* pvm upstream 没有合入
 * [ ] 🔽  pvm kernel bpftrace 对kprobe的支持不好

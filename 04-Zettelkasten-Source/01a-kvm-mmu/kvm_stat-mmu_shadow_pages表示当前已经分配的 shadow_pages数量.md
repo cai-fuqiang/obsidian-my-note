@@ -4,7 +4,7 @@ status: reading
 category: kvm_mmu
 summary: 表示已分配的shadow pages数量，随着shadow page的生命周期变动而自增自减
 created: 2026-09-10T15:12:26+08:00
-modified: 2026-09-10T18:51:58+08:00
+modified: 2026-09-11T15:29:22+08:00
 QA:
   - 怎么获取当前已经分配的shadow pages?
 ---

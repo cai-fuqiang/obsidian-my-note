@@ -9,6 +9,7 @@ tags:
   - clippings
 share_link: https://share.note.sx/n3nncxcy#48VwJYgpeJEUvvw8z4HHlg
 share_updated: 2026-08-20T13:59:16+08:00
+modified: 2026-09-18T13:19:03+08:00
 ---
 This document provides an overview on how to run Kata Containers with PVM hypervisor.
 

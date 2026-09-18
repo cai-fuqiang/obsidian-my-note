@@ -1,6 +1,7 @@
 ---
 share_link: https://share.note.sx/qoigcyvz#kQOdPC1dkln6dIPl6E8gyw
 share_updated: 2026-09-01T11:19:27+08:00
+modified: 2026-09-17T10:52:10+08:00
 ---
 
 | test_item                                              | null_io      | stat   | open       | select | sig_install | sig_handle | fork      | exec      | shell      |
@@ -53,6 +54,8 @@ share_updated: 2026-09-01T11:19:27+08:00
 | kvm-on-bare-32                                        | 2.8       | 6.29      | 14.364     | 4.909                                         | 0.234                                         | 2.762      | 873.104   | 2624.517   | 3770.646   |
 | <mark style="background:#d3f8b6">kvm-on-kvm-32</mark> | 2.64      | 6.339     | 13.943     | 7.298                                         | 0.221                                         | 2.689      | 1255.852  | 4412.984   | 6141.244   |
 | ==pvm-on-kvm-32==                                     | ==2.389== | ==6.176== | ==13.734== | <mark style="background:#d3f8b6">7.498</mark> | <mark style="background:#d3f8b6">0.439</mark> | ==2.601==  | 50006.33  | 128668.074 | 193721.949 |
+
+^00c9d5
 
 使用ubuntu 镜像测试减少为两次。
 

@@ -4,7 +4,7 @@ status: reading
 category: kvm_mmu
 summary: 当影子页表申请数量接近最大规格时，会扫描active_mmu_pages 链表，优先释放链表末尾的sp
 created: 2026-09-10T17:32:45+08:00
-modified: 2026-09-10T19:59:47+08:00
+modified: 2026-09-11T15:29:19+08:00
 QA:
   - shadow page 生命周期?
 ---

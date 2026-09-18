@@ -1,3 +1,6 @@
+---
+modified: 2026-09-18T13:19:04+08:00
+---
 # pvm_vcpu_run
 ```
 pvm_vcpu_run
